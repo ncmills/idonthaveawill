@@ -17,13 +17,16 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Free Will Creator | idonthaveawill.com — Create a Legal Will in 10 Minutes",
+  title: "Free Will Creator | idonthaveawill.com — Draft a Simple Will in 10 Minutes",
   description:
-    "Create a simple, state-compliant last will and testament for free. No account needed. Covers all 50 US states and DC. Your data never leaves your browser.",
+    "A free self-help tool to draft a simple will. No account needed. Covers all 50 US states and DC. Your data never leaves your browser. Not legal advice — have an attorney review your draft.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "You Don't Have a Will. Let's Fix That.",
     description:
-      "Create a free, legally formatted will in 10 minutes. All 50 states + DC. No account needed.",
+      "A free tool to help you draft a simple will in about 10 minutes. All 50 states + DC. No account needed.",
     type: "website",
     url: "https://idonthaveawill.com",
   },
