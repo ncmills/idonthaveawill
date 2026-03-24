@@ -17,12 +17,20 @@ export default function Header() {
             idonthaveawill<span className="text-[var(--color-accent)]">.com</span>
           </span>
         </Link>
-        <Link
-          href="/create"
-          className="text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
-        >
-          Get Started
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/will-requirements"
+            className="text-sm text-gray-500 hover:text-gray-700 transition-colors hidden sm:block"
+          >
+            State Requirements
+          </Link>
+          <Link
+            href="/create"
+            className="text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
+          >
+            Get Started
+          </Link>
+        </div>
       </div>
     </header>
   );

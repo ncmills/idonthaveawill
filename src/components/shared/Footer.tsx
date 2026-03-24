@@ -26,6 +26,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex gap-6 text-sm text-gray-500">
+            <Link href="/will-requirements" className="hover:text-gray-700 transition-colors">
+              State Requirements
+            </Link>
             <Link href="/terms" className="hover:text-gray-700 transition-colors">
               Terms
             </Link>
