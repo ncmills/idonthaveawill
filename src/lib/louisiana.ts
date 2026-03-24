@@ -12,7 +12,10 @@ export function generateLouisianaWill(
 
   const title = `NOTARIAL TESTAMENT OF ${fullName.toUpperCase()}`;
 
-  const preamble = `BE IT KNOWN that on this _______ day of _________________, 20_____, before me, the undersigned Notary Public, duly commissioned and qualified in and for the State of Louisiana, and in the presence of the undersigned competent witnesses, personally came and appeared ${fullName}, of the City of ${answers.city}, Parish of ${answers.county}, State of Louisiana, who declared that ${answers.fullName.first} is of sound mind, is of the age of majority, is not acting under duress, menace, fraud, or undue influence, and that ${answers.fullName.first} desires to make this Notarial Testament, revoking all prior testaments and codicils.`;
+  let preamble = `BE IT KNOWN that on this _______ day of _________________, 20_____, before me, the undersigned Notary Public, duly commissioned and qualified in and for the State of Louisiana, and in the presence of the undersigned competent witnesses, personally came and appeared ${fullName}, of the City of ${answers.city}, Parish of ${answers.county}, State of Louisiana, who declared that ${answers.fullName.first} is of sound mind, is of the age of majority, is not acting under duress, menace, fraud, or undue influence, and that ${answers.fullName.first} desires to make this Notarial Testament, revoking all prior testaments and codicils.`;
+  if (answers.maritalStatus === "married") {
+    preamble += ` The Testator acknowledges that Louisiana is a community property state. This testament disposes only of the Testator's separate property and the Testator's one-half interest in community property, as authorized under the laws of Louisiana.`;
+  }
 
   const articles: WillArticle[] = [];
   let articleNum = 1;
@@ -124,10 +127,65 @@ export function generateLouisianaWill(
     }
   }
 
+  // Minor Children's Inheritance
+  if (answers.inheritanceAge && answers.inheritanceAge > 18) {
+    const content = `Any property distributable to a beneficiary who has not yet attained the age of ${answers.inheritanceAge} years shall be held in trust by the Executor or a trustee appointed by the court for the benefit of such beneficiary. The trustee may use the income and principal of the trust for the beneficiary's health, education, maintenance, and support. When the beneficiary attains the age of ${answers.inheritanceAge} years, the remaining trust property shall be distributed to the beneficiary outright and free of trust.`;
+    articles.push({ heading: `ARTICLE ${articleNum++} — MINOR BENEFICIARY PROVISIONS`, content });
+  }
+
+  // Digital Assets
+  if (answers.includeDigitalAssets && answers.digitalExecutor?.name) {
+    let content = `The Testator appoints ${answers.digitalExecutor.name}, ${answers.digitalExecutor.relationship} of the Testator, as digital executor with authority to access, manage, distribute, and dispose of the Testator's digital assets, including but not limited to email accounts, social media accounts, digital photographs, digital financial accounts, cryptocurrency, domain names, and other online accounts. `;
+    if (answers.digitalInstructions) {
+      content += `The Testator directs the following specific instructions regarding digital assets: ${answers.digitalInstructions} `;
+    }
+    if (answers.passwordManagerLocation) {
+      content += `Information regarding access credentials may be found at the following location: ${answers.passwordManagerLocation}. `;
+    }
+    articles.push({ heading: `ARTICLE ${articleNum++} — DIGITAL ASSETS`, content });
+  }
+
+  // Pet Care
+  if (answers.pets.length > 0) {
+    let content = "";
+    answers.pets.forEach((p) => {
+      content += `The Testator requests that ${p.caretaker.name}, ${p.caretaker.relationship} of the Testator, assume the care and custody of ${p.description}. `;
+      if (p.careFund && p.careFundAmount) {
+        content += `The Testator directs the Executor to set aside the sum of $${p.careFundAmount.toLocaleString()} from the estate for the care and maintenance of said pet. `;
+      }
+    });
+    articles.push({ heading: `ARTICLE ${articleNum++} — PET CARE`, content });
+  }
+
+  // Simultaneous Death
+  if (answers.simultaneousDeathBeneficiary?.name) {
+    const primaryBeneficiary = answers.maritalStatus === "married" ? answers.spouseName : answers.residuaryBeneficiaries[0]?.name;
+    const content = `If ${primaryBeneficiary || "the primary beneficiary"} and the Testator shall die simultaneously, or under circumstances that make it impossible to determine which survived the other, it shall be conclusively presumed for purposes of this testament that the Testator survived ${primaryBeneficiary || "said beneficiary"}. In such event, the estate shall pass to ${answers.simultaneousDeathBeneficiary.name}, ${answers.simultaneousDeathBeneficiary.relationship} of the Testator.`;
+    articles.push({ heading: `ARTICLE ${articleNum++} — SIMULTANEOUS DEATH`, content });
+  }
+
+  // No-Contest
+  if (answers.includeNoContest) {
+    const content = `If any legatee under this testament, or any person claiming under or through any legatee, shall contest or attack this testament or any of its provisions, any legacy given to that contesting legatee under this testament is hereby revoked and shall be disposed of as if that contesting legatee had predeceased the Testator without issue.`;
+    articles.push({ heading: `ARTICLE ${articleNum++} — NO-CONTEST CLAUSE`, content });
+  }
+
+  // Final Wishes
+  if (answers.funeralWishes) {
+    let content = "The Testator expresses the following wishes regarding funeral and disposition of remains: ";
+    if (answers.funeralWishes.preferBurial) content += "The Testator wishes to be buried. ";
+    if (answers.funeralWishes.preferCremation) content += "The Testator wishes to be cremated. ";
+    if (answers.funeralWishes.specificLocation) content += `The Testator wishes to be interred at ${answers.funeralWishes.specificLocation}. `;
+    if (answers.funeralWishes.religiousService) content += `The Testator wishes to have a religious service: ${answers.funeralWishes.religiousService}. `;
+    if (answers.funeralWishes.otherInstructions) content += answers.funeralWishes.otherInstructions + " ";
+    content += "These wishes are not legally binding but express the Testator's sincere desires. ";
+    articles.push({ heading: `ARTICLE ${articleNum++} — FINAL WISHES`, content });
+  }
+
   // General provisions
   articles.push({
     heading: `ARTICLE ${articleNum++} — GENERAL PROVISIONS`,
-    content: "This testament shall be governed by and construed in accordance with the laws of the State of Louisiana. If any provision is held invalid, the remaining provisions shall remain in effect.",
+    content: "This testament shall be governed by and construed in accordance with the laws of the State of Louisiana. If any provision is held invalid, the remaining provisions shall remain in effect. All references to \"descendants\" or \"issue\" in this testament shall mean lineal descendants of all degrees, and the distribution to such descendants shall be per stirpes.",
   });
 
   const testimonium = `Thus done and signed by the Testator, ${fullName}, at the end of this testament and at the bottom of each other separate page, in the presence of the undersigned Notary Public and witnesses, after the Testator declared and signified to the Notary Public and witnesses that this instrument is the Testator's testament, and after this testament was read aloud by the Testator (or by the Notary at the Testator's request), all in the City of ${answers.city}, Parish of ${answers.county}, State of Louisiana.`;

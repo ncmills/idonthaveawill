@@ -1,5 +1,5 @@
 import type { WillAnswers, GeneratedWill, WillArticle, StateRequirements } from "./types";
-import { getStateByAbbreviation } from "./stateData";
+import { getStateByAbbreviation, isCommunityPropertyState } from "./stateData";
 import { generateLouisianaWill } from "./louisiana";
 import { generateExecutionChecklist } from "./executionChecklist";
 
@@ -18,7 +18,11 @@ export function generateWill(answers: WillAnswers): GeneratedWill {
 
   const title = `LAST WILL AND TESTAMENT OF ${fullName.toUpperCase()}`;
 
-  const preamble = `I, ${fullName}, of the City of ${answers.city}, County of ${answers.county}, State of ${stateReqs.state}, being of sound mind and disposing memory, and not acting under duress, menace, fraud, or undue influence of any person whomsoever, do hereby declare this to be my Last Will and Testament, and I hereby revoke all prior wills and codicils heretofore made by me.`;
+  const isCPState = isCommunityPropertyState(answers.state);
+  let preamble = `I, ${fullName}, of the City of ${answers.city}, County of ${answers.county}, State of ${stateReqs.state}, being of sound mind and disposing memory, and not acting under duress, menace, fraud, or undue influence of any person whomsoever, do hereby declare this to be my Last Will and Testament, and I hereby revoke all prior wills and codicils heretofore made by me.`;
+  if (isCPState && answers.maritalStatus === "married") {
+    preamble += ` I acknowledge that ${stateReqs.state} is a community property state. This Will disposes only of my separate property and my one-half interest in community property, as I am authorized to do under the laws of ${stateReqs.state}.`;
+  }
 
   const articles: WillArticle[] = [];
   let articleNum = 1;
@@ -177,7 +181,12 @@ export function generateWill(answers: WillAnswers): GeneratedWill {
 
   // Article — No-Contest
   if (answers.includeNoContest) {
-    const content = `If any beneficiary under this Will, or any person claiming under or through any beneficiary, shall contest or attack this Will or any of its provisions, any share or interest in my estate given to that contesting beneficiary under this Will is hereby revoked and shall be disposed of in the same manner provided herein as if that contesting beneficiary had predeceased me without issue.`;
+    let content = `If any beneficiary under this Will, or any person claiming under or through any beneficiary, shall contest or attack this Will or any of its provisions, any share or interest in my estate given to that contesting beneficiary under this Will is hereby revoked and shall be disposed of in the same manner provided herein as if that contesting beneficiary had predeceased me without issue.`;
+    if (answers.state === "FL") {
+      content += ` NOTE: Florida law (Fla. Stat. § 732.517) limits the enforceability of no-contest clauses. Under Florida's statute, a no-contest clause is unenforceable if the contestant has probable cause for the contest. This clause is included to express the Testator's intent but may not be fully enforceable under Florida law.`;
+    } else if (answers.state === "IN") {
+      content += ` NOTE: Indiana courts have historically disfavored no-contest clauses and may construe them narrowly. This clause is included to express the Testator's intent but its enforceability may be limited under Indiana law.`;
+    }
     articles.push({ heading: `ARTICLE ${toRoman(articleNum++)} — NO-CONTEST CLAUSE`, content });
   }
 
@@ -200,7 +209,9 @@ export function generateWill(answers: WillAnswers): GeneratedWill {
   }
 
   // Testimonium
-  const testimonium = `IN WITNESS WHEREOF, I, ${fullName}, the Testator, sign my name to this instrument this _______ day of _________________, 20_____, and being first duly sworn, do hereby declare to the undersigned authority that I sign and execute this instrument as my Last Will and Testament and that I sign it willingly, that I execute it as my free and voluntary act for the purposes therein expressed, and that I am eighteen (18) years of age or older, of sound mind, and under no constraint or undue influence.`;
+  const minAge = stateReqs.minimum_age.standard;
+  const minAgeWord = minAge === 18 ? "eighteen (18)" : minAge === 16 ? "sixteen (16)" : minAge === 14 ? "fourteen (14)" : `${minAge}`;
+  const testimonium = `IN WITNESS WHEREOF, I, ${fullName}, the Testator, sign my name to this instrument this _______ day of _________________, 20_____, and being first duly sworn, do hereby declare to the undersigned authority that I sign and execute this instrument as my Last Will and Testament and that I sign it willingly, that I execute it as my free and voluntary act for the purposes therein expressed, and that I am ${minAgeWord} years of age or older, of sound mind, and under no constraint or undue influence.`;
 
   // Signature block
   const signatureBlock = `
@@ -212,7 +223,9 @@ ${fullName}, Testator`;
   const witnessCount = stateReqs.witness_requirements.count;
   let witnessBlock = "";
   if (witnessCount > 0) {
-    witnessBlock = `\nATTESTATION CLAUSE\n\nThe foregoing instrument was signed, published, and declared by the above-named Testator, ${fullName}, as ${answers.fullName.first === answers.fullName.first ? "their" : "their"} Last Will and Testament, in our presence, and we, at the Testator's request and in the Testator's presence${stateReqs.state === "Vermont" ? " and in the presence of each other" : ""}, have subscribed our names as witnesses thereto. We declare under penalty of perjury that the foregoing is true and correct.\n`;
+    const presenceRules = stateReqs.witness_requirements.presence_rules.toLowerCase();
+    const requiresMutualPresence = presenceRules.includes("presence of each other") || presenceRules.includes("of each other");
+    witnessBlock = `\nATTESTATION CLAUSE\n\nThe foregoing instrument was signed, published, and declared by the above-named Testator, ${fullName}, as their Last Will and Testament, in our presence, and we, at the Testator's request and in the Testator's presence${requiresMutualPresence ? " and in the presence of each other" : ""}, have subscribed our names as witnesses thereto. We declare under penalty of perjury that the foregoing is true and correct.\n`;
 
     for (let i = 1; i <= witnessCount; i++) {
       witnessBlock += `

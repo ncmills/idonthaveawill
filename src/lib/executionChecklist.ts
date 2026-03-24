@@ -228,6 +228,64 @@ export function generateExecutionChecklist(
     required: false,
   });
 
+  // Florida homestead warning
+  if (answers.state === "FL" && answers.maritalStatus === "married" && answers.specificBequests.some((b) => b.isRealEstate)) {
+    items.push({
+      step: step++,
+      title: "WARNING: Florida homestead restrictions apply",
+      requirement:
+        "Florida's homestead protections prevent you from devising your homestead property away from your surviving spouse or minor children. If any of your real estate bequests involve your primary residence, those provisions may be unenforceable.",
+      howTo:
+        "Review each real estate bequest in your will. If your primary residence (homestead) is bequeathed to someone other than your surviving spouse, that bequest will likely be overridden by Florida law. Your surviving spouse has the option to either take a life estate in the homestead or an undivided one-half interest as a tenant in common. Consult a Florida estate planning attorney to discuss your homestead and how to structure your will accordingly.",
+      why:
+        "Florida's homestead protection is one of the strongest in the country and is embedded in the Florida Constitution (Article X, Section 4). Unlike most will provisions, homestead restrictions cannot be overridden by a will. If you attempt to devise your homestead to someone other than your spouse while you have a surviving spouse or minor children, the bequest is void and the property passes under the homestead descent rules instead. This is one of the most common mistakes in Florida estate planning.",
+      citations: [
+        { text: "Fla. Const. Art. X, § 4 (Homestead exemptions)" },
+        { text: "Fla. Stat. § 732.4015 (Devise of homestead)" },
+        { text: "Fla. Stat. § 732.401 (Descent of homestead)" },
+      ],
+      required: true,
+    });
+  }
+
+  // Special needs warning
+  if (answers.children.some((c) => c.hasSpecialNeeds)) {
+    items.push({
+      step: step++,
+      title: "IMPORTANT: Consult an attorney about a Special Needs Trust",
+      requirement:
+        "You indicated that one or more of your children has special needs. Leaving an inheritance directly to a person with disabilities can disqualify them from means-tested government benefits like SSI and Medicaid. A Special Needs Trust (also called a Supplemental Needs Trust) is strongly recommended.",
+      howTo:
+        "Contact an estate planning attorney who specializes in special needs planning. They can draft a Special Needs Trust that allows your child to benefit from the inheritance while preserving their eligibility for government assistance. The trust can pay for supplemental needs — things that government benefits don't cover, like recreation, education, personal care, and quality-of-life expenses. This is a critical step that a will-generation tool cannot do for you; it requires individualized legal drafting.",
+      why:
+        "If a person receiving SSI or Medicaid inherits more than $2,000 in assets directly, they can lose their benefits. A Special Needs Trust holds the inheritance in a way that doesn't count as the beneficiary's personal asset, preserving benefit eligibility while still providing for their needs. Without this trust, your well-intentioned inheritance could actually harm your child by causing a loss of essential healthcare coverage and income support. This is one of the most important reasons to consult an attorney.",
+      citations: [],
+      required: true,
+    });
+  }
+
+  // Elective share warning for spouse disinheritance
+  if (
+    answers.maritalStatus === "married" &&
+    answers.disinheritances.some((d) => d.name === answers.spouseName) &&
+    answers.state !== "GA"
+  ) {
+    items.push({
+      step: step++,
+      title: "WARNING: Your spouse may have elective share rights",
+      requirement:
+        `You have chosen to disinherit your spouse. In ${stateName}, a surviving spouse has the legal right to claim an "elective share" of your estate regardless of what your will says. This typically ranges from one-third to one-half of the estate depending on your state.`,
+      howTo:
+        "Consult an estate planning attorney to understand the elective share rules in your state. In most states, a surviving spouse can reject the will and instead claim their statutory share. This right exists specifically to prevent one spouse from completely disinheriting the other. The only way to waive elective share rights is through a valid prenuptial or postnuptial agreement. If you and your spouse have such an agreement, bring it to your attorney review.",
+      why:
+        `Almost every state except Georgia gives surviving spouses a right to elect against the will. In ${stateName}, ${stateReqs.special_provisions.includes("elective share") ? stateReqs.special_provisions.split(". ").find((s) => s.toLowerCase().includes("elective share")) || "the surviving spouse has an elective share right" : "the surviving spouse has an elective share right"}. Your disinheritance clause will be in the will, but your spouse can override it by filing an election with the probate court. An attorney can help you understand whether your specific situation has any viable strategies.`,
+      citations: stateReqs.statute_citations
+        .filter((c) => c.toLowerCase().includes("elective") || c.toLowerCase().includes("election"))
+        .map((c) => ({ text: c })),
+      required: true,
+    });
+  }
+
   // Have an attorney review your draft (recommended, not required)
   items.push({
     step: step++,
