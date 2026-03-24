@@ -4,7 +4,9 @@ import { Resend } from "resend";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 
 export async function POST(request: Request) {
@@ -33,7 +35,7 @@ export async function POST(request: Request) {
     }
 
     // Sync to Resend audience (if configured)
-    if (AUDIENCE_ID) {
+    if (AUDIENCE_ID && resend) {
       try {
         await resend.contacts.create({
           email,
