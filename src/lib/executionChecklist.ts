@@ -9,23 +9,7 @@ export function generateExecutionChecklist(
   const stateName = stateReqs.state;
   const witnessCount = stateReqs.witness_requirements.count;
 
-  // 1. Have an attorney review your draft
-  items.push({
-    step: step++,
-    title: "Have an attorney review your draft",
-    requirement:
-      "Before signing, have a licensed attorney in your state review this document to make sure it meets your needs and complies with current law.",
-    howTo:
-      "Find an estate planning attorney in your area. Many offer a flat fee for a simple will review — often $150–$500. You can search your state's bar association website for referrals, or use a service like your local legal aid society if cost is a concern. Bring a printed copy of this draft and be prepared to discuss your family situation and assets.",
-    why:
-      "This tool generates a draft based on general state requirements, but every person's situation is different. An attorney can catch issues this tool can't — like whether your estate would benefit from a trust, whether your beneficiary designations on retirement accounts conflict with your will, or whether your state has specific formalities we may not have fully addressed. A will that doesn't comply with your state's law may be partially or entirely invalid.",
-    citations: stateReqs.statute_citations
-      .filter((c) => c.toLowerCase().includes("execution") || c.toLowerCase().includes("who may"))
-      .map((c) => ({ text: c })),
-    required: true,
-  });
-
-  // 2. Print
+  // 1. Print
   items.push({
     step: step++,
     title: "Print your will on paper",
@@ -241,6 +225,22 @@ export function generateExecutionChecklist(
     why:
       "Families often don't talk about death and estate planning, which leads to surprises, hurt feelings, and legal disputes. The most common will contests happen when a family member is surprised by what's in the will — or surprised that a will exists at all. A brief, honest conversation now can save your family significant grief, money, and time later.",
     citations: [],
+    required: false,
+  });
+
+  // Have an attorney review your draft (recommended, not required)
+  items.push({
+    step: step++,
+    title: "Have an attorney review your will",
+    requirement:
+      "This is not required by law — you can sign and execute your will without an attorney. However, we strongly recommend having a licensed attorney in your state review your document before or after signing.",
+    howTo:
+      "Find an estate planning attorney in your area. Many offer a flat fee for a simple will review — often $150–$500. You can search your state's bar association website for referrals, or use a service like your local legal aid society if cost is a concern. Bring a printed copy of your will (signed or unsigned) and be prepared to discuss your family situation and assets. An attorney can review it in a single meeting and flag any issues.",
+    why:
+      "No state requires you to hire an attorney to make a valid will — this tool exists precisely because a simple will can be prepared without one. That said, an attorney can catch issues this tool can't: whether your estate would benefit from a trust, whether your beneficiary designations on retirement accounts or life insurance conflict with your will, whether your state has formalities or recent law changes we may not have fully addressed, or whether your specific family situation creates complications (like blended families or property in multiple states). Think of it as a second set of eyes. The cost of a review is small compared to the cost of a will that doesn't hold up.",
+    citations: stateReqs.statute_citations
+      .filter((c) => c.toLowerCase().includes("execution") || c.toLowerCase().includes("who may"))
+      .map((c) => ({ text: c })),
     required: false,
   });
 
