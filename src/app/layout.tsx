@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   title: "Free Will Creator | idonthaveawill.com — Draft a Simple Will in 10 Minutes",
   description:
     "A free self-help tool to draft a simple will. No account needed. Covers all 50 US states and DC. Your data never leaves your browser. Not legal advice — have an attorney review your draft.",
+  metadataBase: new URL("https://idonthaveawill.com"),
   icons: {
     icon: "/favicon.svg",
   },
@@ -29,6 +30,13 @@ export const metadata: Metadata = {
       "A free tool to help you draft a simple will in about 10 minutes. All 50 states + DC. No account needed.",
     type: "website",
     url: "https://idonthaveawill.com",
+    siteName: "idonthaveawill.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "You Don't Have a Will. Let's Fix That.",
+    description:
+      "A free tool to help you draft a simple will in about 10 minutes. All 50 states + DC. No account needed.",
   },
 };
 
