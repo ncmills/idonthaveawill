@@ -31,7 +31,7 @@ export default function FinalWishes({ answers, updateAnswers, onNext, onPrev, is
       onPrev={onPrev}
       isFirst={isFirst}
       isLast={isLast}
-      whyWeAsk="This is optional, but many people want to make their wishes known — burial vs. cremation, a particular cemetery, a simple service. It takes the guesswork away from your family during a hard time."
+      whyWeAsk="This section is entirely optional, but it can be a real gift to your family. When someone passes away, their loved ones are grieving and often unsure what the person would have wanted. By writing down your preferences — burial vs. cremation, a specific cemetery, a religious service, or even 'keep it simple' — you remove that guesswork and potential family disagreements. Important: funeral wishes in a will are generally not legally binding (because the will often isn't read until after the funeral), but they clearly document your intent. Many people also share these wishes separately with their executor or family. If you have strong preferences, writing them here and telling someone close to you is the best approach."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Do you have any preferences for your funeral or burial?

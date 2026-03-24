@@ -23,7 +23,7 @@ export default function Disinheritance({ answers, updateAnswers, onNext, onPrev,
   function removePerson(i: number) { updateAnswers({ disinheritances: disinheritances.filter((_, j) => j !== i) }); }
 
   return (
-    <QuestionCard stepKey="disinherit" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="If you leave someone out of your will and don't say it was on purpose, they might challenge the will in court and claim it was an oversight. Putting it in writing that the exclusion is intentional makes your will much harder to challenge.">
+    <QuestionCard stepKey="disinherit" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="If you leave someone out of your will — especially a spouse or child — and don't say it was intentional, they can go to court and argue it was an accident or that you forgot about them. This is called a 'pretermitted heir' claim, and courts sometimes award them a share as if you'd died without a will. By explicitly stating the exclusion is intentional, you make it much harder for them to challenge successfully. That said, there are legal limits: in Louisiana, you cannot disinherit children under 24 (they're 'forced heirs'). In community property states, your spouse always owns their half regardless. And in most other states, a surviving spouse can claim an 'elective share' (typically one-third) even if you left them nothing. An attorney can advise on the specific limitations in your state.">
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Is there anyone you want to specifically exclude?
       </h2>

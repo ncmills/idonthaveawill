@@ -18,7 +18,7 @@ export default function NoContest({ answers, updateAnswers, onNext, onPrev, isFi
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <QuestionCard stepKey="nocontest" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="A no-contest clause discourages people from fighting over your will. It's like saying 'take what I gave you and be happy, or risk getting nothing.' These clauses are enforceable in most states, but not all — we'll check your state's rules.">
+    <QuestionCard stepKey="nocontest" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="A no-contest clause (also called an 'in terrorem' clause) says: if any beneficiary challenges the will in court and loses, they forfeit whatever you left them — they get nothing. It's a powerful deterrent against will contests. These clauses are enforceable in most states, but there are exceptions: Florida generally won't enforce them, and some states only enforce them if the challenge was made without 'probable cause.' If you're worried someone might fight over your will — an unhappy family member, a disinherited relative — this gives them a strong reason not to. It costs nothing to include and is very common in estate planning.">
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Do you want to include a &quot;no-contest clause&quot;?
       </h2>

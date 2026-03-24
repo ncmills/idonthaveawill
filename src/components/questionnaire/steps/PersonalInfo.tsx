@@ -40,7 +40,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!canProceed}
-      whyWeAsk="Your will needs your full legal name exactly as it appears on your ID — this makes sure there's no confusion about whose will it is. Your city, county, and state go at the top of the will. Your date of birth confirms you're old enough to make a will in your state."
+      whyWeAsk="Your will must identify you clearly so there's no confusion about who wrote it. We use your full legal name — the one on your driver's license or passport — because that's what a court will look at. Your city and county go at the top of the will to establish where you live (this determines which court handles the will later). Your date of birth confirms you meet the minimum age to make a will in your state — that's 18 in most states, 16 in Louisiana, and 14 in Georgia."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Tell us about yourself

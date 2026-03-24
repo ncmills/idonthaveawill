@@ -54,7 +54,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!canProceed}
-      whyWeAsk="Children are one of the most important parts of a will. You may want to leave them something, name someone to take care of them if they're young, or — in some states — the law requires you to leave them a share."
+      whyWeAsk="Children are one of the most important parts of any will, for several reasons. First, if you have minor children (under 18), your will is the place where you name a guardian — the person who will raise them if something happens to you. Without a will, a judge picks for you. Second, you'll decide how to divide your estate among your children and others. Third, in Louisiana, children under 24 are 'forced heirs' — the law requires you to leave them a minimum share of your estate, and you cannot override this. We also ask about stepchildren because they do NOT automatically have inheritance rights in most states — they only inherit if you specifically name them. Finally, if any child has special needs, leaving them money directly could disqualify them from government benefits, so we'll flag that for you."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Do you have any children?

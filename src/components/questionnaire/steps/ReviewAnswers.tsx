@@ -32,7 +32,7 @@ export default function ReviewAnswers({ answers, onNext, onPrev, isFirst, isLast
   const fullName = [answers.fullName.first, answers.fullName.middle, answers.fullName.last].filter(Boolean).join(" ");
 
   return (
-    <QuestionCard stepKey="review" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} nextLabel="Generate My Will" whyWeAsk="This is your chance to double-check everything before we generate your will. Click 'Edit' on any section to go back and make changes.">
+    <QuestionCard stepKey="review" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} nextLabel="Generate My Will" whyWeAsk="This is your chance to double-check every detail before we generate your draft. Names must be spelled exactly right — a misspelled name can cause real problems in probate court. Percentages must add up to 100%. Make sure the people you've named as executor and guardian are people you've actually talked to (or plan to). Click 'Edit' on any section to go back. Once you generate the draft, we strongly recommend having it reviewed by a licensed attorney in your state before you sign it.">
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Review everything before we generate your will
       </h2>

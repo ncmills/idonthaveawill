@@ -24,7 +24,7 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
       onPrev={onPrev}
       isFirst={isFirst}
       isLast={isLast}
-      whyWeAsk="Your digital life has real value — from photos and memories to cryptocurrency and domain names. Without instructions, your family might not be able to access accounts or might lose important things."
+      whyWeAsk="Most people have more digital property than they realize: email accounts, social media profiles, cloud photo storage, cryptocurrency wallets, domain names, online banking, streaming subscriptions, and more. Without instructions, your family may not know these accounts exist, may not be able to access them, and could lose irreplaceable photos or real money (especially crypto). A 'digital executor' is the person you authorize to access and manage these accounts. We don't put passwords in the will itself — because wills become public documents when filed with the court — but we can note where your executor should look to find login information (like a password manager or a sealed envelope in a safe). Many states have adopted the Revised Uniform Fiduciary Access to Digital Assets Act, which gives your executor legal authority to manage digital accounts if you grant it in your will."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Do you want to include instructions for your online accounts and digital stuff?

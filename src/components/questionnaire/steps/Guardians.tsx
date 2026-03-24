@@ -28,7 +28,7 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!canProceed}
-      whyWeAsk="If both parents pass away, the court decides who raises your children — unless your will names a guardian. This is one of the most important reasons to have a will. Without it, a judge who doesn't know your family makes the call."
+      whyWeAsk="Naming a guardian is one of the most important things a will does for parents with young children. If both parents pass away (or if you're a single parent), a court decides who raises your kids. Without a will, the judge makes that choice based on state law and whoever petitions — which may not be the person you'd choose. By naming a guardian here, you tell the court your preference. Courts almost always honor the parent's choice unless there's a serious concern. We also ask for a backup guardian in case your first choice can't serve. The inheritance age question lets you control when your children actually receive money — many parents choose 21 or 25 instead of 18, because an 18-year-old suddenly receiving a large sum can be risky. Until that age, the money is managed by your executor or a court-appointed trustee for the child's care, education, and support."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         If something happened to you, who would raise your kids?

@@ -23,7 +23,7 @@ export default function PetCare({ answers, updateAnswers, onNext, onPrev, isFirs
   function removePet(i: number) { updateAnswers({ pets: pets.filter((_, j) => j !== i) }); }
 
   return (
-    <QuestionCard stepKey="pets" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="Pets can't inherit money, but you can name someone to take care of them and set aside money for their care.">
+    <QuestionCard stepKey="pets" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="Under the law, pets are considered property — they can't inherit money or be named as beneficiaries. But you can do two important things: (1) name a specific person to take care of your pet, so they don't end up at a shelter, and (2) set aside a dollar amount from your estate to cover the pet's food, vet bills, and other expenses. Without this, your pet's fate is up to whoever ends up handling your estate, and they may not be an animal person. Some states also allow formal 'pet trusts' for ongoing care, but naming a caretaker and setting aside funds in your will is the simplest approach and works in every state.">
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">Do you have any pets you want to make plans for?</h2>
 
       {hasPets === null && (

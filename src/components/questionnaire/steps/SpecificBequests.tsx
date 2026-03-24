@@ -55,7 +55,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!canProceed}
-      whyWeAsk="Specific gifts let you make sure certain items go to certain people. Things like jewelry, a car, a family heirloom, a bank account, or even a dollar amount."
+      whyWeAsk="Specific gifts (lawyers call them 'specific bequests') let you say exactly which items go to exactly which people. Without them, everything goes into one big pot and gets divided according to the percentages you set in the next step. Examples of specific gifts: 'My diamond engagement ring to my daughter Sarah,' '$10,000 to my brother Mike,' 'My 2022 Toyota Camry to my nephew James,' or 'My savings account at Chase Bank ending in 4521 to my sister.' You can give away physical items, dollar amounts, specific bank accounts, real estate, or anything else you own. For each gift, we also ask what happens if that person dies before you do — because if they're gone and you haven't said what to do, the gift may fall back into your general estate or get tied up in court. For real estate, we ask for the full address so the property is clearly identified in the will — vague descriptions can cause disputes."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Do you want to leave any specific items to specific people?

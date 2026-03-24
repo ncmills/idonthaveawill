@@ -72,7 +72,7 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!canProceed}
-      whyWeAsk="This is the biggest part of most wills. It covers everything you didn't specifically give to someone — bank accounts, investments, furniture, and anything else. Most people leave it to their spouse, their kids, or split it."
+      whyWeAsk="After your specific gifts are distributed, everything left over is called your 'residuary estate.' This is usually the biggest part of a will because it catches everything you didn't specifically mention — your bank accounts, investments, retirement funds, furniture, clothing, electronics, and anything else you own. It also catches things you might acquire in the future that aren't covered by a specific gift. Most people leave their residuary estate to their spouse, split it among their children, or name one primary person with a backup. We ask for a backup because if your primary beneficiary dies before you and there's no backup named, the court has to figure out where it goes using your state's default rules — which may not be what you want. If you split it among multiple people, the percentages must add up to 100%."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         After any specific gifts, who should get everything else you own?

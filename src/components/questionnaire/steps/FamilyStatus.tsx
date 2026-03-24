@@ -35,7 +35,7 @@ export default function FamilyStatus({ answers, updateAnswers, onNext, onPrev, i
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!canProceed}
-      whyWeAsk="Your marital status affects your will in a big way. In most states, your spouse has a legal right to a share of your estate even if you leave them nothing in your will. We need to know this so your will accounts for it correctly."
+      whyWeAsk="Your marital status changes how your will works in important ways. In most states, your spouse has what's called an 'elective share' — a legal right to claim a portion of your estate (usually between one-third and one-half) even if you leave them nothing in your will. In the 9 community property states (like California and Texas), most property acquired during the marriage is automatically owned 50/50 — your will can only control your half. If you're divorced, we include language to make clear that any gifts to your ex-spouse from a prior will are cancelled. If you're widowed or single, your will is simpler since there's no spousal claim to account for."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         What is your current marital status?

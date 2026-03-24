@@ -27,7 +27,7 @@ export default function StateSelection({ answers, updateAnswers, onNext, onPrev,
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!answers.state}
-      whyWeAsk="Every state has its own rules for what makes a will legal — how many witnesses you need, whether it needs to be notarized, and more. We use your state to make sure your will follows the right rules."
+      whyWeAsk="Each of the 50 states (and DC) has its own set of laws about what makes a will valid. For example, most states require two witnesses to watch you sign, but Pennsylvania doesn't require any at the time of signing. Louisiana requires a notary to be present. Some states accept handwritten wills; others don't. By knowing your state, we can format your draft to match your state's specific requirements and give you the right instructions for signing. If you move to a different state later, you may want to update your will — but a properly executed will from one state is generally respected in another."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         What state do you live in?

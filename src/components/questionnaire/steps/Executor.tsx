@@ -28,7 +28,7 @@ export default function Executor({ answers, updateAnswers, onNext, onPrev, isFir
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={!canProceed}
-      whyWeAsk="Your executor is the person who makes sure your wishes actually happen. They gather your assets, pay any debts, and give people what you left them. Pick someone you trust who is organized and responsible. It doesn't need to be a family member."
+      whyWeAsk="Your executor (sometimes called a 'personal representative') is the person responsible for carrying out your will after you pass away. Their job includes: filing the will with the probate court, notifying beneficiaries and creditors, gathering all your assets (bank accounts, property, investments), paying off your debts and taxes, and distributing what's left to the people you named. This can take several months to over a year depending on the complexity. Pick someone you trust who is organized, responsible, and willing to do paperwork. It does NOT need to be a family member — it can be a trusted friend, or even a professional (like an attorney or bank). A backup executor is important in case your first choice has moved, become ill, or simply doesn't want the job when the time comes. The bond waiver saves your estate money — a bond is basically insurance the court requires in case the executor makes a mistake, and waiving it is standard when you trust your executor. Granting the power to sell property lets your executor sell a house or car without going back to court for permission, which saves time and legal fees."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         Who do you want in charge of carrying out your will?

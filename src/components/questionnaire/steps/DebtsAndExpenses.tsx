@@ -23,7 +23,7 @@ export default function DebtsAndExpenses({ answers, updateAnswers, onNext, onPre
       isFirst={isFirst}
       isLast={isLast}
       nextDisabled={answers.debtHandling === ""}
-      whyWeAsk="When someone passes away, their debts don't just disappear. Your estate is used to pay them off before anything gets distributed. Most people let the executor handle this from the general estate."
+      whyWeAsk="When someone passes away, their debts don't disappear — they become the responsibility of the estate (not your family members personally, in most cases). Before any beneficiary receives anything, your executor must use your estate's assets to pay off outstanding debts, final income taxes, medical bills from your last illness, and funeral costs. This is required by law in every state. Most people choose 'pay from my general estate,' which means the executor uses whatever assets are available. But if you have specific wishes — like 'pay off the mortgage using my life insurance policy' or 'use my savings account for funeral costs before anything else' — you can spell that out here. These instructions help your executor prioritize and can prevent disputes among beneficiaries about which assets get used to pay debts."
     >
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">
         How should your remaining debts and final expenses be paid?
