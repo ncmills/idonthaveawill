@@ -87,9 +87,27 @@ export default function TermsPage() {
             Data Privacy
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            All data you enter into this tool remains on your device. We do not
-            transmit, store, or have access to any information you provide. Your
-            will is generated entirely within your web browser.
+            Your will content is generated entirely within your web browser and
+            never leaves your device. We collect anonymized, aggregate usage
+            statistics (such as state selection and feature usage rates) that
+            contain no personally identifiable information. If you opt in to
+            email reminders, we store your email address and state only. See
+            our Privacy Policy for full details.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-[var(--color-brand)]">
+            Affiliate Disclosure
+          </h2>
+          <p className="text-gray-600 leading-relaxed">
+            This site may contain links to third-party attorney referral
+            services, state bar associations, and other legal service
+            providers. Some of these links may be affiliate links, meaning we
+            may receive a referral fee or commission at no additional cost to
+            you. This does not influence our recommendations. We only link to
+            services we believe are legitimate and helpful. Your will drafting
+            tool is and will always remain free to use.
           </p>
         </section>
       </div>

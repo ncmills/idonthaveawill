@@ -8,30 +8,40 @@ import DisclaimerBanner from "@/components/shared/DisclaimerBanner";
 import WillPreview from "@/components/will/WillPreview";
 import ExecutionChecklist from "@/components/will/ExecutionChecklist";
 import DownloadButton from "@/components/will/DownloadButton";
+import AttorneyReferral from "@/components/will/AttorneyReferral";
+import EmailCapture from "@/components/will/EmailCapture";
+import { sendAnonymizedStats } from "@/lib/analytics";
+import { getStateByAbbreviation } from "@/lib/stateData";
 import Link from "next/link";
 import { Suspense } from "react";
 
 function ReviewContent() {
   const searchParams = useSearchParams();
   const [will, setWill] = useState<GeneratedWill | null>(null);
+  const [answers, setAnswers] = useState<WillAnswers | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     try {
+      let parsedAnswers: WillAnswers | null = null;
       const data = searchParams.get("data");
       if (!data) {
         // Try sessionStorage
         const stored = sessionStorage.getItem("idonthaveawill_answers");
         if (stored) {
-          const answers: WillAnswers = JSON.parse(stored);
-          setWill(generateWill(answers));
+          parsedAnswers = JSON.parse(stored);
+        } else {
+          setError("No will data found. Please go back and complete the questionnaire.");
           return;
         }
-        setError("No will data found. Please go back and complete the questionnaire.");
-        return;
+      } else {
+        parsedAnswers = JSON.parse(atob(data));
       }
-      const answers: WillAnswers = JSON.parse(atob(data));
-      setWill(generateWill(answers));
+      if (parsedAnswers) {
+        setAnswers(parsedAnswers);
+        setWill(generateWill(parsedAnswers));
+        sendAnonymizedStats(parsedAnswers);
+      }
     } catch (e) {
       setError("Something went wrong generating your will. Please try again.");
       console.error(e);
@@ -88,6 +98,17 @@ function ReviewContent() {
         <div className="mt-12 no-print">
           <ExecutionChecklist items={will.executionChecklist} />
         </div>
+
+        {/* Attorney referral + Email capture */}
+        {answers && (
+          <div className="mt-12 space-y-6 no-print">
+            <AttorneyReferral
+              stateAbbr={answers.state}
+              stateName={getStateByAbbreviation(answers.state)?.state || answers.state}
+            />
+            <EmailCapture stateAbbr={answers.state} />
+          </div>
+        )}
       </div>
     </div>
   );
