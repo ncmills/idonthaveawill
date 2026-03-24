@@ -6,7 +6,7 @@ const features = [
       </svg>
     ),
     title: "All 50 states + DC",
-    description: "We know the rules for every state.",
+    description: "Formatted based on each state's requirements.",
   },
   {
     icon: (
@@ -50,8 +50,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
       </svg>
     ),
-    title: "Customized to your state",
-    description: "Witness rules, notarization — everything matches YOUR state's law.",
+    title: "State-specific guidance",
+    description: "Shows your state's witness, notarization, and signing requirements.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function Features() {
     <section className="py-20 md:py-28 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="font-[family-name:var(--font-serif)] text-3xl md:text-4xl font-bold text-center text-[var(--color-brand)]">
-          What You Get
+          How This Tool Helps
         </h2>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

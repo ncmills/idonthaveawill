@@ -10,9 +10,9 @@ export default function Footer() {
               idonthaveawill.com &middot; Made with care. Not a law firm.
             </p>
             <p className="text-xs text-gray-400 mt-1 max-w-lg">
-              This tool generates a simple will document. It is not legal advice
-              and we are not attorneys. For complex estates, consult an estate
-              planning attorney.
+              This is a self-help document preparation tool, not legal advice.
+              We are not attorneys. Have your draft reviewed by a licensed
+              attorney before signing.
             </p>
           </div>
           <div className="flex gap-6 text-sm text-gray-500">

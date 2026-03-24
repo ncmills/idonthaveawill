@@ -23,16 +23,16 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          It takes 10 minutes. It&apos;s free. No account needed.
+          A free tool that helps you draft a simple will in about 10 minutes.
           <br className="hidden md:block" />
-          Your data never leaves your browser.
+          No account needed. Your data never leaves your browser.
         </p>
 
         <Link
           href="/create"
           className="mt-10 inline-flex items-center gap-2 bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white font-semibold text-lg px-8 py-4 rounded-xl transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-green-900/20"
         >
-          Create My Will — Free
+          Get Started — Free
           <svg
             className="w-5 h-5"
             fill="none"
@@ -45,7 +45,7 @@ export default function Hero() {
         </Link>
 
         <p className="mt-6 text-sm text-gray-400">
-          Covers all 50 states + Washington DC
+          Helps you draft a will for all 50 states + Washington DC
         </p>
       </div>
     </section>
