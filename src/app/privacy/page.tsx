@@ -1,5 +1,12 @@
-export const metadata = {
-  title: "Privacy Policy | idonthaveawill.com",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for idonthaveawill.com. Your data never leaves your browser. We do not collect, store, or transmit any personal information.",
+  alternates: {
+    canonical: "https://idonthaveawill.com/privacy",
+  },
 };
 
 export default function PrivacyPage() {

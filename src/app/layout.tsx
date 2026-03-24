@@ -17,26 +17,45 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Free Will Creator | idonthaveawill.com — Draft a Simple Will in 10 Minutes",
-  description:
-    "A free self-help tool to draft a simple will. No account needed. Covers all 50 US states and DC. Your data never leaves your browser. Not legal advice — have an attorney review your draft.",
   metadataBase: new URL("https://idonthaveawill.com"),
+  title: {
+    default: "Free Will Drafting Tool | idonthaveawill.com",
+    template: "%s | idonthaveawill.com",
+  },
+  description:
+    "A free self-help tool to draft a simple will in about 10 minutes. Covers all 50 US states and DC. No account needed. Your data never leaves your browser. Not legal advice.",
   icons: {
     icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
+  alternates: {
+    canonical: "https://idonthaveawill.com",
   },
   openGraph: {
     title: "You Don't Have a Will. Let's Fix That.",
     description:
-      "A free tool to help you draft a simple will in about 10 minutes. All 50 states + DC. No account needed.",
+      "A free self-help tool to draft a simple will in about 10 minutes. All 50 states + DC. No account, no cost, no data stored.",
     type: "website",
     url: "https://idonthaveawill.com",
     siteName: "idonthaveawill.com",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "You Don't Have a Will. Let's Fix That.",
     description:
-      "A free tool to help you draft a simple will in about 10 minutes. All 50 states + DC. No account needed.",
+      "A free self-help tool to draft a simple will in about 10 minutes. All 50 states + DC. No account needed.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

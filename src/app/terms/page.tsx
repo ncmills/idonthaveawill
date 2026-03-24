@@ -1,5 +1,12 @@
-export const metadata = {
-  title: "Terms of Service | idonthaveawill.com",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service & Legal Disclaimer",
+  description:
+    "Terms of service, legal disclaimer, and limitations for idonthaveawill.com. This tool is not legal advice and is not a substitute for an attorney.",
+  alternates: {
+    canonical: "https://idonthaveawill.com/terms",
+  },
 };
 
 export default function TermsPage() {
