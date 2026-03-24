@@ -189,7 +189,10 @@ export interface GeneratedWill {
 export interface ChecklistItem {
   step: number;
   title: string;
-  description: string;
+  requirement: string;
+  howTo: string;
+  why: string;
+  citations: { text: string; url?: string }[];
   required: boolean;
 }
 
