@@ -1,8 +1,10 @@
 import { NextResponse } from "next/server";
+import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
 
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const resend = new Resend(process.env.RESEND_API_KEY);
-
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 
 export async function POST(request: Request) {
@@ -18,19 +20,32 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Invalid state" }, { status: 400 });
     }
 
-    if (!AUDIENCE_ID) {
-      // If no audience configured yet, just log and succeed
-      // This lets the UI work before Resend audience is set up
-      console.log(`[subscribe] email=${email} state=${state} (no audience configured)`);
-      return NextResponse.json({ success: true });
+    // Store in Supabase (primary store)
+    if (supabaseUrl && supabaseKey) {
+      const supabase = createClient(supabaseUrl, supabaseKey);
+      const { error } = await supabase.from("email_subscribers").upsert(
+        { email, state, subscribed_at: new Date().toISOString() },
+        { onConflict: "email" }
+      );
+      if (error) {
+        console.error("[subscribe] supabase error:", error);
+      }
     }
 
-    await resend.contacts.create({
-      email,
-      audienceId: AUDIENCE_ID,
-      firstName: state || "", // Store state in firstName field as a tag
-      unsubscribed: false,
-    });
+    // Sync to Resend audience (if configured)
+    if (AUDIENCE_ID) {
+      try {
+        await resend.contacts.create({
+          email,
+          audienceId: AUDIENCE_ID,
+          firstName: state || "",
+          unsubscribed: false,
+        });
+      } catch (resendErr) {
+        // Don't fail the request if Resend sync fails
+        console.error("[subscribe] resend sync error:", resendErr);
+      }
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
