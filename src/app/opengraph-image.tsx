@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "idonthaveawill.com — Free Will Creator";
+export const alt = "idonthaveawill.com — A free tool to help you draft a simple will";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -45,7 +45,7 @@ export default async function Image() {
             style={{
               fontSize: "72px",
               fontWeight: 700,
-              color: "#e2b340",
+              color: "#16a34a",
               textAlign: "center",
               lineHeight: 1.1,
               letterSpacing: "-2px",

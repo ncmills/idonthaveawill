@@ -12,15 +12,15 @@ export default function NotFound() {
       <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
         <Link
           href="/create"
-          className="inline-block px-8 py-3 bg-[var(--color-brand)] text-white font-semibold rounded-lg hover:opacity-90 transition"
+          className="inline-block px-8 py-3 bg-[var(--color-accent)] text-white font-semibold rounded-xl hover:bg-[var(--color-accent-hover)] transition"
         >
-          Create My Will
+          Draft Your Will
         </Link>
         <Link
-          href="/"
-          className="inline-block px-8 py-3 border-2 border-[var(--color-brand)] text-[var(--color-brand)] font-semibold rounded-lg hover:bg-gray-50 transition"
+          href="/will-requirements"
+          className="inline-block px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition"
         >
-          Go Home
+          Browse State Requirements
         </Link>
       </div>
     </section>

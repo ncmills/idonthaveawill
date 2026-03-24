@@ -61,9 +61,13 @@ export default async function StatePage({ params }: Props) {
 
   const isCommunity = COMMUNITY_PROPERTY_STATES.includes(state.abbreviation);
   const allStates = getAllStates();
+  const currentIndex = allStates.findIndex((s) => s.abbreviation === state.abbreviation);
   const neighbors = allStates
-    .filter((s) => s.abbreviation !== state.abbreviation)
-    .sort(() => 0.5 - Math.random())
+    .filter((_, i) => i !== currentIndex)
+    .slice(
+      Math.max(0, currentIndex - 3),
+      Math.max(6, currentIndex + 3)
+    )
     .slice(0, 6);
 
   const jsonLd = {

@@ -18,6 +18,9 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://idonthaveawill.com"),
+  verification: {
+    google: "aSAROWRm5tmjvMJ71KHMPTVNVZCIcIyBpY0o7WbHN10",
+  },
   title: {
     default: "Free Will Drafting Tool | idonthaveawill.com",
     template: "%s | idonthaveawill.com",
