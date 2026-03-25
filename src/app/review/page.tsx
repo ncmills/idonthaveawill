@@ -80,10 +80,10 @@ function ReviewContent() {
               Review it below, then follow the steps to make it official.
             </p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <Link
               href="/create"
-              className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-50 transition-colors"
+              className="px-4 py-2.5 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-50 transition-colors text-center text-sm sm:text-base"
             >
               Edit Answers
             </Link>

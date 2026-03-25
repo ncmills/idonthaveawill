@@ -82,11 +82,11 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
       </p>
 
       {residuaryType === "" && (
-        <div className="mt-6 grid grid-cols-2 gap-3">
-          <button onClick={setSingle} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <button onClick={setSingle} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-base sm:text-lg font-medium text-gray-700 transition-all">
             One person gets everything
           </button>
-          <button onClick={setSplit} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">
+          <button onClick={setSplit} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-base sm:text-lg font-medium text-gray-700 transition-all">
             Split between multiple people
           </button>
         </div>
@@ -148,7 +148,7 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
                   <button onClick={() => removeBeneficiary(i)} className="text-sm text-red-500 hover:text-red-700">Remove</button>
                 )}
               </div>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <input type="text" placeholder="Full name" value={b.name} onChange={(e) => updateBeneficiary(i, { name: e.target.value })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
                 <input type="text" placeholder="Relationship" value={b.relationship} onChange={(e) => updateBeneficiary(i, { relationship: e.target.value })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
                 <div className="relative">

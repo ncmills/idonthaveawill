@@ -47,7 +47,7 @@ export default function Executor({ answers, updateAnswers, onNext, onPrev, isFir
             onChange={(e) => updateAnswers({ executor: { ...executor, name: e.target.value } })}
             className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
           />
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
               type="text"
               placeholder="Relationship (e.g., brother)"
@@ -76,7 +76,7 @@ export default function Executor({ answers, updateAnswers, onNext, onPrev, isFir
             onChange={(e) => updateAnswers({ alternateExecutor: { ...alternateExecutor, name: e.target.value } })}
             className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
           />
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
               type="text"
               placeholder="Relationship"
@@ -100,7 +100,7 @@ export default function Executor({ answers, updateAnswers, onNext, onPrev, isFir
               type="checkbox"
               checked={waiveBond}
               onChange={(e) => updateAnswers({ waiveBond: e.target.checked })}
-              className="mt-1 w-4 h-4 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
+              className="mt-1 w-5 h-5 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
             />
             <div>
               <span className="text-gray-700 font-medium">
@@ -117,7 +117,7 @@ export default function Executor({ answers, updateAnswers, onNext, onPrev, isFir
               type="checkbox"
               checked={executorCanSellProperty}
               onChange={(e) => updateAnswers({ executorCanSellProperty: e.target.checked })}
-              className="mt-1 w-4 h-4 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
+              className="mt-1 w-5 h-5 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
             />
             <div>
               <span className="text-gray-700 font-medium">

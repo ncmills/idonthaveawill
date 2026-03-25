@@ -41,7 +41,7 @@ export default function FamilyStatus({ answers, updateAnswers, onNext, onPrev, i
         What is your current marital status?
       </h2>
 
-      <div className="mt-6 grid grid-cols-2 gap-3">
+      <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
         {statuses.map((s) => (
           <button
             key={s.value}

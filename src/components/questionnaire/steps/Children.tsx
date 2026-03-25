@@ -61,7 +61,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
       </h2>
 
       {hasChildren === null && (
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button
             onClick={() => {
               updateAnswers({ hasChildren: true, children: [{ ...emptyChild }] });
@@ -121,7 +121,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                 className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
               />
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                   <label className="block text-xs text-gray-500 mb-1">Date of birth</label>
                   <input
@@ -167,7 +167,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                   type="checkbox"
                   checked={child.hasSpecialNeeds}
                   onChange={(e) => updateChild(i, { hasSpecialNeeds: e.target.checked })}
-                  className="w-4 h-4 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
+                  className="w-5 h-5 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
                 />
                 This child has a disability or special needs
               </label>

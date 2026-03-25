@@ -51,7 +51,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Full legal name
           </label>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <input
               type="text"
               placeholder="First"
@@ -91,7 +91,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               City

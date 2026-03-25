@@ -6,7 +6,7 @@ interface Props {
 
 export default function WillPreview({ will }: Props) {
   return (
-    <div className="will-document bg-white border border-gray-200 rounded-lg shadow-sm p-8 md:p-12" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
+    <div className="will-document bg-white border border-gray-200 rounded-lg shadow-sm p-4 sm:p-8 md:p-12" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
       <p className="text-xs text-gray-400 italic mb-6 no-print">
         This document was prepared using idonthaveawill.com and does not
         constitute legal advice. Consult an attorney for complex estate planning

@@ -38,7 +38,7 @@ export default function FinalWishes({ answers, updateAnswers, onNext, onPrev, is
       </h2>
 
       {answers.hasFuneralWishes === null && (
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button onClick={() => updateAnswers({ hasFuneralWishes: true })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">Yes</button>
           <button onClick={() => updateAnswers({ hasFuneralWishes: false, funeralWishes: undefined })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">No, skip this</button>
         </div>

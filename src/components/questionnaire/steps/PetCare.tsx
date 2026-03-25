@@ -27,7 +27,7 @@ export default function PetCare({ answers, updateAnswers, onNext, onPrev, isFirs
       <h2 className="text-2xl font-bold text-[var(--color-brand)]">Do you have any pets you want to make plans for?</h2>
 
       {hasPets === null && (
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button onClick={() => updateAnswers({ hasPets: true, pets: [{ ...emptyPet }] })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">Yes</button>
           <button onClick={() => updateAnswers({ hasPets: false, pets: [] })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">No</button>
         </div>
@@ -43,12 +43,12 @@ export default function PetCare({ answers, updateAnswers, onNext, onPrev, isFirs
             <div key={i} className="p-4 bg-gray-50 rounded-xl space-y-3">
               <div className="flex justify-between"><span className="text-sm font-medium text-gray-500">Pet {i + 1}</span>{pets.length > 1 && <button onClick={() => removePet(i)} className="text-sm text-red-500">Remove</button>}</div>
               <input type="text" placeholder='e.g., "My golden retriever, Max"' value={pet.description} onChange={(e) => updatePet(i, { description: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input type="text" placeholder="Caretaker's name" value={pet.caretaker.name} onChange={(e) => updatePet(i, { caretaker: { ...pet.caretaker, name: e.target.value } })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
                 <input type="text" placeholder="Relationship" value={pet.caretaker.relationship} onChange={(e) => updatePet(i, { caretaker: { ...pet.caretaker, relationship: e.target.value } })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
               </div>
               <label className="flex items-center gap-2 text-sm text-gray-600 cursor-pointer">
-                <input type="checkbox" checked={pet.careFund} onChange={(e) => updatePet(i, { careFund: e.target.checked })} className="w-4 h-4 rounded border-gray-300 text-[var(--color-accent)]" />
+                <input type="checkbox" checked={pet.careFund} onChange={(e) => updatePet(i, { careFund: e.target.checked })} className="w-5 h-5 rounded border-gray-300 text-[var(--color-accent)]" />
                 Set aside money for their care
               </label>
               {pet.careFund && (

@@ -132,7 +132,7 @@ export default function ExecutionChecklist({ items }: Props) {
 
               {/* Expanded details */}
               {isExpanded && (
-                <div className="px-4 pb-4 ml-9 space-y-4 border-t border-gray-100 pt-4">
+                <div className="px-4 pb-4 ml-0 sm:ml-9 space-y-4 border-t border-gray-100 pt-4">
                   {/* How to do this */}
                   <div>
                     <h4 className="text-sm font-semibold text-[var(--color-brand)] mb-1">

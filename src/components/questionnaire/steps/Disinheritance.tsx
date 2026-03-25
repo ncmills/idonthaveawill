@@ -30,7 +30,7 @@ export default function Disinheritance({ answers, updateAnswers, onNext, onPrev,
       <p className="mt-2 text-gray-500">For example, an estranged child or a relative you don&apos;t want to receive anything.</p>
 
       {hasDisinheritances === null && (
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button onClick={() => updateAnswers({ hasDisinheritances: true, disinheritances: [{ name: "", relationship: "" }] })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">Yes</button>
           <button onClick={() => updateAnswers({ hasDisinheritances: false, disinheritances: [] })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">No, everyone is covered</button>
         </div>
@@ -67,7 +67,7 @@ export default function Disinheritance({ answers, updateAnswers, onNext, onPrev,
           {disinheritances.map((d, i) => (
             <div key={i} className="p-4 bg-gray-50 rounded-xl">
               <div className="flex justify-between mb-2"><span className="text-sm font-medium text-gray-500">Person {i + 1}</span>{disinheritances.length > 1 && <button onClick={() => removePerson(i)} className="text-sm text-red-500">Remove</button>}</div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input type="text" placeholder="Full name" value={d.name} onChange={(e) => updatePerson(i, { name: e.target.value })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
                 <input type="text" placeholder="Relationship" value={d.relationship} onChange={(e) => updatePerson(i, { relationship: e.target.value })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
               </div>

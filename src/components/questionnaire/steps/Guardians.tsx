@@ -53,7 +53,7 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
             onChange={(e) => updateAnswers({ guardian: { ...guardian, name: e.target.value } })}
             className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
           />
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
               type="text"
               placeholder="Relationship (e.g., sister)"
@@ -82,7 +82,7 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
             onChange={(e) => updateAnswers({ alternateGuardian: { ...altGuardian, name: e.target.value } })}
             className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
           />
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
               type="text"
               placeholder="Relationship"

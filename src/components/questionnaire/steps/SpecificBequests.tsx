@@ -65,7 +65,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
       </p>
 
       {hasSpecificBequests === null && (
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button
             onClick={() => updateAnswers({ hasSpecificBequests: true, specificBequests: [{ ...emptyBequest }] })}
             className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all"
@@ -115,7 +115,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                   <label className="block text-xs text-gray-500 mb-1">Who gets it?</label>
                   <input
@@ -166,7 +166,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                   type="checkbox"
                   checked={bequest.isRealEstate}
                   onChange={(e) => updateBequest(i, { isRealEstate: e.target.checked })}
-                  className="w-4 h-4 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
+                  className="w-5 h-5 rounded border-gray-300 text-[var(--color-accent)] focus:ring-[var(--color-accent)]"
                 />
                 This is real estate (house, land, condo)
               </label>

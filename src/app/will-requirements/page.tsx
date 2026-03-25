@@ -104,8 +104,9 @@ export default function WillRequirementsHub() {
       <p className="mt-2 text-gray-500 text-sm">
         Key requirements at a glance across all jurisdictions.
       </p>
-      <div className="mt-4 overflow-x-auto">
-        <table className="w-full text-sm border-collapse">
+      <div className="mt-4 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+        <p className="text-xs text-gray-400 mb-2 sm:hidden">Swipe to see all columns &rarr;</p>
+        <table className="w-full text-sm border-collapse min-w-[640px]">
           <thead>
             <tr className="bg-gray-50">
               <th className="text-left p-3 border-b border-gray-200 font-medium text-gray-700">State</th>

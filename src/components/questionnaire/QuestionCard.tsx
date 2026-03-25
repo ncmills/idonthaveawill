@@ -39,7 +39,7 @@ export default function QuestionCard({
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="w-full"
     >
-      <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 md:p-8">
+      <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-4 sm:p-6 md:p-8">
         {children}
 
         {/* Why we ask */}

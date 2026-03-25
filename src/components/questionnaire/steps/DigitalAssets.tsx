@@ -34,7 +34,7 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
       </p>
 
       {includeDigitalAssets === null && (
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button onClick={() => updateAnswers({ includeDigitalAssets: true })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">Yes</button>
           <button onClick={() => updateAnswers({ includeDigitalAssets: false })} className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all">No, skip this</button>
         </div>
@@ -51,7 +51,7 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
         <div className="mt-6 space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Who should have access to your digital accounts?</label>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <input type="text" placeholder="Full name" value={digitalExecutor?.name ?? ""} onChange={(e) => updateAnswers({ digitalExecutor: { name: e.target.value, relationship: digitalExecutor?.relationship ?? "" } })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
               <input type="text" placeholder="Relationship" value={digitalExecutor?.relationship ?? ""} onChange={(e) => updateAnswers({ digitalExecutor: { name: digitalExecutor?.name ?? "", relationship: e.target.value } })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
             </div>
@@ -71,8 +71,8 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Do you have a password manager or written list of passwords?</label>
             <div className="flex gap-3">
-              <button onClick={() => updateAnswers({ hasPasswordManager: true })} className={`px-4 py-2 rounded-lg border ${hasPasswordManager === true ? "border-[var(--color-accent)] bg-green-50 text-[var(--color-accent)]" : "border-gray-200 text-gray-600"}`}>Yes</button>
-              <button onClick={() => updateAnswers({ hasPasswordManager: false, passwordManagerLocation: undefined })} className={`px-4 py-2 rounded-lg border ${hasPasswordManager === false ? "border-[var(--color-accent)] bg-green-50 text-[var(--color-accent)]" : "border-gray-200 text-gray-600"}`}>No</button>
+              <button onClick={() => updateAnswers({ hasPasswordManager: true })} className={`px-5 py-3 rounded-lg border ${hasPasswordManager === true ? "border-[var(--color-accent)] bg-green-50 text-[var(--color-accent)]" : "border-gray-200 text-gray-600"}`}>Yes</button>
+              <button onClick={() => updateAnswers({ hasPasswordManager: false, passwordManagerLocation: undefined })} className={`px-5 py-3 rounded-lg border ${hasPasswordManager === false ? "border-[var(--color-accent)] bg-green-50 text-[var(--color-accent)]" : "border-gray-200 text-gray-600"}`}>No</button>
             </div>
           </div>
 
