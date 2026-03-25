@@ -87,7 +87,7 @@ function ReviewContent() {
             >
               Edit Answers
             </Link>
-            <DownloadButton />
+            <DownloadButton will={will} />
           </div>
         </div>
 
