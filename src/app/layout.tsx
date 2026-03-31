@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import PostHogProvider from "@/components/PostHogProvider";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -72,9 +73,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${dmSerif.variable}`}>
       <body className="min-h-screen flex flex-col bg-white">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <PostHogProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </PostHogProvider>
         <Analytics />
         <SpeedInsights />
       </body>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WillCounter from "./WillCounter";
 
 export default function Hero() {
   return (
@@ -47,6 +48,7 @@ export default function Hero() {
         <p className="mt-6 text-sm text-gray-400">
           Helps you draft a will for all 50 states + Washington DC
         </p>
+        <WillCounter />
       </div>
     </section>
   );
