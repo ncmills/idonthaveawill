@@ -73,6 +73,21 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${dmSerif.variable}`}>
       <body className="min-h-screen flex flex-col bg-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "idonthaveawill.com",
+            "url": "https://idonthaveawill.com",
+            "sameAs": [
+              "https://whatpeptidesdo.com",
+              "https://tourdefore.com",
+              "https://doppelwriter.com",
+              "https://imfrustrated.org"
+            ]
+          }) }}
+        />
         <PostHogProvider>
           <Header />
           <main className="flex-1">{children}</main>
