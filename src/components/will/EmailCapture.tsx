@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEmailCaptured } from "@/lib/tracking";
 
 interface EmailCaptureProps {
   stateAbbr: string;
@@ -27,6 +28,7 @@ export default function EmailCapture({ stateAbbr }: EmailCaptureProps) {
         throw new Error(data.error || "Failed to subscribe");
       }
       setStatus("success");
+      trackEmailCaptured("review");
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong");

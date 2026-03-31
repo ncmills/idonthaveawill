@@ -11,6 +11,7 @@ import DownloadButton from "@/components/will/DownloadButton";
 import AttorneyReferral from "@/components/will/AttorneyReferral";
 import EmailCapture from "@/components/will/EmailCapture";
 import { sendAnonymizedStats } from "@/lib/analytics";
+import { trackWillGenerated } from "@/lib/tracking";
 import { getStateByAbbreviation } from "@/lib/stateData";
 import Link from "next/link";
 import { Suspense } from "react";
@@ -41,6 +42,7 @@ function ReviewContent() {
         setAnswers(parsedAnswers);
         setWill(generateWill(parsedAnswers));
         sendAnonymizedStats(parsedAnswers);
+        trackWillGenerated(parsedAnswers.state);
       }
     } catch (e) {
       setError("Something went wrong generating your will. Please try again.");
@@ -87,7 +89,7 @@ function ReviewContent() {
             >
               Edit Answers
             </Link>
-            <DownloadButton will={will} />
+            <DownloadButton will={will} stateAbbr={answers?.state} />
           </div>
         </div>
 

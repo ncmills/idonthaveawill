@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEmailCaptured } from "@/lib/tracking";
 
 export default function HomepageEmailCapture() {
   const [email, setEmail] = useState("");
@@ -23,6 +24,7 @@ export default function HomepageEmailCapture() {
         throw new Error(data.error || "Failed to subscribe");
       }
       setStatus("success");
+      trackEmailCaptured("homepage");
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong");

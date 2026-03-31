@@ -1,9 +1,11 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { AnimatePresence } from "motion/react";
 import { useQuestionnaire } from "@/hooks/useQuestionnaire";
 import ProgressBar from "./ProgressBar";
 import DisclaimerBanner from "@/components/shared/DisclaimerBanner";
+import { trackStepViewed, trackStepCompleted } from "@/lib/tracking";
 
 // Step components
 import StateSelection from "./steps/StateSelection";
@@ -60,8 +62,17 @@ export default function QuestionnaireShell() {
   } = useQuestionnaire();
 
   const StepComponent = STEP_COMPONENTS[currentStep.component];
+  const prevStepRef = useRef(currentStep.id);
+
+  // Track step views
+  useEffect(() => {
+    trackStepViewed(currentStep.id, currentStepIndex);
+  }, [currentStep.id, currentStepIndex]);
 
   const handleNext = () => {
+    trackStepCompleted(prevStepRef.current, currentStepIndex, {
+      state: answers.state || undefined,
+    });
     if (isLast) {
       // Navigate to review page with generated will
       const params = new URLSearchParams();
@@ -70,6 +81,7 @@ export default function QuestionnaireShell() {
     } else {
       next();
     }
+    prevStepRef.current = currentStep.id;
   };
 
   return (
