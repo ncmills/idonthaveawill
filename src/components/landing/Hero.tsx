@@ -48,6 +48,14 @@ export default function Hero() {
         <p className="mt-6 text-sm text-gray-400">
           Helps you draft a will for all 50 states + Washington DC
         </p>
+
+        <div className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-gray-400">
+          <Link href="/will-requirements/california" className="hover:text-gray-300 transition-colors">California</Link>
+          <Link href="/will-requirements/texas" className="hover:text-gray-300 transition-colors">Texas</Link>
+          <Link href="/will-requirements/florida" className="hover:text-gray-300 transition-colors">Florida</Link>
+          <Link href="/will-requirements/new-york" className="hover:text-gray-300 transition-colors">New York</Link>
+          <Link href="/will-requirements" className="hover:text-gray-300 transition-colors">All States →</Link>
+        </div>
         <WillCounter />
       </div>
     </section>
