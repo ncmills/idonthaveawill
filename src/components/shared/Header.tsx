@@ -25,6 +25,12 @@ export default function Header() {
             State Requirements
           </Link>
           <Link
+            href="/estate-planning"
+            className="text-sm text-gray-500 hover:text-gray-700 transition-colors hidden sm:block"
+          >
+            Estate Planning
+          </Link>
+          <Link
             href="/create"
             className="text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
           >

@@ -29,6 +29,9 @@ export default function Footer() {
             <Link href="/will-requirements" className="hover:text-gray-700 transition-colors">
               State Requirements
             </Link>
+            <Link href="/estate-planning" className="hover:text-gray-700 transition-colors">
+              Estate Planning
+            </Link>
             <Link href="/terms" className="hover:text-gray-700 transition-colors">
               Terms
             </Link>

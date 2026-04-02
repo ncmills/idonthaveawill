@@ -12,6 +12,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const estatePlanningPages = getAllStates().map((s) => ({
+    url: `${baseUrl}/estate-planning/${stateToSlug(s.state)}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     {
       url: baseUrl,
@@ -32,6 +39,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     ...statePages,
+    {
+      url: `${baseUrl}/estate-planning`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...estatePlanningPages,
     {
       url: `${baseUrl}/terms`,
       lastModified: new Date(),
