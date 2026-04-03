@@ -47,6 +47,8 @@ export default function Footer() {
             <a href="https://doppelwriter.com" className="hover:text-gray-400 transition-colors">doppelwriter.com</a>
             {" · "}
             <a href="https://imfrustrated.org" className="hover:text-gray-400 transition-colors">imfrustrated.org</a>
+            {" · "}
+            <a href="https://tourdefore.com" className="hover:text-gray-400 transition-colors">tourdefore.com</a>
           </p>
         </div>
       </div>
