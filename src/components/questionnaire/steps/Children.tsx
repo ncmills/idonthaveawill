@@ -105,6 +105,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                 </span>
                 {children.length > 1 && (
                   <button
+                    type="button"
                     onClick={() => removeChild(i)}
                     className="text-sm text-red-500 hover:text-red-700"
                   >
@@ -113,18 +114,23 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                 )}
               </div>
 
-              <input
-                type="text"
-                placeholder="Full legal name"
-                value={child.name}
-                onChange={(e) => updateChild(i, { name: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
-              />
+              <div>
+                <label htmlFor={`child-name-${i}`} className="sr-only">Child {i + 1} full legal name</label>
+                <input
+                  id={`child-name-${i}`}
+                  type="text"
+                  placeholder="Full legal name"
+                  value={child.name}
+                  onChange={(e) => updateChild(i, { name: e.target.value })}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                />
+              </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs text-gray-500 mb-1">Date of birth</label>
+                  <label htmlFor={`child-dob-${i}`} className="block text-xs text-gray-500 mb-1">Date of birth</label>
                   <input
+                    id={`child-dob-${i}`}
                     type="date"
                     value={child.dateOfBirth}
                     onChange={(e) => updateChild(i, { dateOfBirth: e.target.value })}
@@ -132,8 +138,9 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                   />
                 </div>
                 <div>
-                  <label className="block text-xs text-gray-500 mb-1">Relationship</label>
+                  <label htmlFor={`child-rel-${i}`} className="block text-xs text-gray-500 mb-1">Relationship</label>
                   <select
+                    id={`child-rel-${i}`}
                     value={child.relationship}
                     onChange={(e) =>
                       updateChild(i, {
@@ -187,6 +194,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
           ))}
 
           <button
+            type="button"
             onClick={addChild}
             className="w-full py-3 rounded-xl border-2 border-dashed border-gray-300 text-gray-500 hover:border-gray-400 hover:text-gray-700 transition-colors"
           >

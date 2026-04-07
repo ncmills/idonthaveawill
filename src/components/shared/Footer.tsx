@@ -18,7 +18,7 @@ export default function Footer() {
               <p className="text-sm text-gray-500">
                 idonthaveawill.com &middot; Made with care. Not a law firm.
               </p>
-              <p className="text-xs text-gray-400 mt-1 max-w-lg">
+              <p className="text-xs text-gray-500 mt-1 max-w-lg">
                 This is a self-help document preparation tool, not legal advice.
                 We are not attorneys. Have your draft reviewed by a licensed
                 attorney before signing.

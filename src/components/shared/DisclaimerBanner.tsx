@@ -31,8 +31,9 @@ export default function DisclaimerBanner() {
           or trusts, please consult an estate planning attorney.
         </p>
         <button
+          type="button"
           onClick={() => setDismissed(true)}
-          className="text-amber-600 hover:text-amber-800 transition-colors"
+          className="min-w-[44px] min-h-[44px] flex items-center justify-center text-amber-600 hover:text-amber-800 transition-colors"
           aria-label="Dismiss"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">

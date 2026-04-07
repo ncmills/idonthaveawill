@@ -48,6 +48,7 @@ export default function ExecutionChecklist({ items }: Props) {
         {items.map((item) => {
           const isChecked = checked.has(item.step);
           const isExpanded = expanded.has(item.step);
+          const panelId = `checklist-panel-${item.step}`;
 
           return (
             <div
@@ -59,12 +60,19 @@ export default function ExecutionChecklist({ items }: Props) {
               }`}
             >
               {/* Header row — clickable to expand */}
-              <div
-                className="flex items-start gap-3 p-4 cursor-pointer"
+              <button
+                type="button"
+                className="flex items-start gap-3 p-4 w-full text-left cursor-pointer"
                 onClick={() => toggleExpand(item.step)}
+                aria-expanded={isExpanded}
+                aria-controls={panelId}
               >
                 {/* Checkbox */}
-                <div
+                <span
+                  role="checkbox"
+                  aria-checked={isChecked}
+                  aria-label={`Mark step ${item.step} complete`}
+                  tabIndex={0}
                   className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 transition-all ${
                     isChecked
                       ? "bg-[var(--color-accent)] border-[var(--color-accent)]"
@@ -74,6 +82,13 @@ export default function ExecutionChecklist({ items }: Props) {
                     e.stopPropagation();
                     toggleCheck(item.step);
                   }}
+                  onKeyDown={(e) => {
+                    if (e.key === " " || e.key === "Enter") {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      toggleCheck(item.step);
+                    }
+                  }}
                 >
                   {isChecked && (
                     <svg
@@ -82,15 +97,16 @@ export default function ExecutionChecklist({ items }: Props) {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       strokeWidth={3}
+                      aria-hidden="true"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   )}
-                </div>
+                </span>
 
                 {/* Title + badges */}
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 flex-wrap">
+                <span className="flex-1">
+                  <span className="flex items-center gap-2 flex-wrap">
                     <h3
                       className={`font-semibold ${
                         isChecked
@@ -110,11 +126,11 @@ export default function ExecutionChecklist({ items }: Props) {
                         Recommended
                       </span>
                     )}
-                  </div>
+                  </span>
                   <p className="text-sm text-gray-500 mt-1">
                     {item.requirement}
                   </p>
-                </div>
+                </span>
 
                 {/* Expand arrow */}
                 <svg
@@ -125,14 +141,15 @@ export default function ExecutionChecklist({ items }: Props) {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}
+                  aria-hidden="true"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
-              </div>
+              </button>
 
               {/* Expanded details */}
               {isExpanded && (
-                <div className="px-4 pb-4 ml-0 sm:ml-9 space-y-4 border-t border-gray-100 pt-4">
+                <div id={panelId} role="region" className="px-4 pb-4 ml-0 sm:ml-9 space-y-4 border-t border-gray-100 pt-4">
                   {/* How to do this */}
                   <div>
                     <h4 className="text-sm font-semibold text-[var(--color-brand)] mb-1">

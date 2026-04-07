@@ -112,7 +112,7 @@ export default function PrivacyPage() {
           </h2>
           <p className="text-gray-600 leading-relaxed">
             If you have questions about this privacy policy, contact us at
-            privacy@idonthaveawill.com.
+            info@idonthaveawill.com.
           </p>
         </section>
       </div>

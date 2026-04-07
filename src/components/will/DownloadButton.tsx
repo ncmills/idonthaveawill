@@ -25,7 +25,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
 
   async function handleEmailSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email || !email.includes("@")) return;
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
 
     setSubmitting(true);
     setEmailError("");
@@ -100,7 +100,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
-            {submitting ? "..." : "Unlock Download"}
+            {submitting ? "Submitting..." : "Unlock Download"}
           </button>
         </form>
         {emailError && <p className="mt-1 text-red-600 text-xs">{emailError}</p>}
@@ -114,6 +114,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
       <button
         onClick={handleDownloadWord}
         disabled={loading !== null}
+        aria-busy={loading === "word"}
         className={`${btnBase} bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white`}
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
@@ -125,6 +126,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
       <button
         onClick={handleDownloadPdf}
         disabled={loading !== null}
+        aria-busy={loading === "pdf"}
         className={`${btnBase} bg-white border border-[var(--color-accent)] text-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-white`}
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">

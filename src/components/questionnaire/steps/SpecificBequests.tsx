@@ -100,13 +100,14 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
               <div className="flex justify-between items-center">
                 <span className="text-sm font-medium text-gray-500">Gift {i + 1}</span>
                 {specificBequests.length > 1 && (
-                  <button onClick={() => removeBequest(i)} className="text-sm text-red-500 hover:text-red-700">Remove</button>
+                  <button type="button" onClick={() => removeBequest(i)} className="text-sm text-red-500 hover:text-red-700">Remove</button>
                 )}
               </div>
 
               <div>
-                <label className="block text-xs text-gray-500 mb-1">What do you want to give?</label>
+                <label htmlFor={`bequest-item-${i}`} className="block text-xs text-gray-500 mb-1">What do you want to give?</label>
                 <input
+                  id={`bequest-item-${i}`}
                   type="text"
                   placeholder='e.g., "My diamond engagement ring" or "$10,000"'
                   value={bequest.item}
@@ -117,8 +118,9 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs text-gray-500 mb-1">Who gets it?</label>
+                  <label htmlFor={`bequest-recipient-${i}`} className="block text-xs text-gray-500 mb-1">Who gets it?</label>
                   <input
+                    id={`bequest-recipient-${i}`}
                     type="text"
                     placeholder="Full name"
                     value={bequest.recipient.name}
@@ -127,8 +129,9 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                   />
                 </div>
                 <div>
-                  <label className="block text-xs text-gray-500 mb-1">Relationship</label>
+                  <label htmlFor={`bequest-relationship-${i}`} className="block text-xs text-gray-500 mb-1">Relationship</label>
                   <input
+                    id={`bequest-relationship-${i}`}
                     type="text"
                     placeholder="e.g., daughter"
                     value={bequest.recipient.relationship}
@@ -139,8 +142,9 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
               </div>
 
               <div>
-                <label className="block text-xs text-gray-500 mb-1">If that person passes away before you?</label>
+                <label htmlFor={`bequest-alternate-${i}`} className="block text-xs text-gray-500 mb-1">If that person passes away before you?</label>
                 <select
+                  id={`bequest-alternate-${i}`}
                   value={bequest.alternateDisposition}
                   onChange={(e) => updateBequest(i, { alternateDisposition: e.target.value as SpecificBequest["alternateDisposition"] })}
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent bg-white"

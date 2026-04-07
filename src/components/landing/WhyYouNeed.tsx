@@ -101,17 +101,23 @@ export default function WhyYouNeed() {
                 key={i}
                 className="flex items-center gap-3 cursor-pointer group"
               >
-                <div
-                  className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all ${
-                    checked[i]
-                      ? "bg-[var(--color-accent)] border-[var(--color-accent)]"
-                      : "border-gray-300 group-hover:border-gray-400"
-                  }`}
-                  onClick={() => {
+                <input
+                  type="checkbox"
+                  checked={checked[i]}
+                  onChange={() => {
                     const next = [...checked];
                     next[i] = !next[i];
                     setChecked(next);
                   }}
+                  className="sr-only peer"
+                />
+                <span
+                  className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all ${
+                    checked[i]
+                      ? "bg-[var(--color-accent)] border-[var(--color-accent)]"
+                      : "border-gray-300 group-hover:border-gray-400"
+                  } peer-focus-visible:ring-2 peer-focus-visible:ring-[var(--color-accent)] peer-focus-visible:ring-offset-2`}
+                  aria-hidden="true"
                 >
                   {checked[i] && (
                     <svg
@@ -125,7 +131,7 @@ export default function WhyYouNeed() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   )}
-                </div>
+                </span>
                 <span className="text-gray-700">{item}</span>
               </label>
             ))}

@@ -14,7 +14,9 @@ export default function WillCounter() {
       .catch(() => {});
   }, []);
 
-  if (count === null) return null;
+  if (count === null) {
+    return <p className="mt-6 text-sm h-5" aria-hidden="true" />;
+  }
 
   return (
     <p className="mt-6 text-sm text-gray-400">

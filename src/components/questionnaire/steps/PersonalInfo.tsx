@@ -47,56 +47,69 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
       </h2>
 
       <div className="mt-6 space-y-4">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+        <fieldset>
+          <legend className="block text-sm font-medium text-gray-700 mb-1">
             Full legal name
-          </label>
+          </legend>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <input
-              type="text"
-              placeholder="First"
-              value={fullName.first}
-              onChange={(e) =>
-                updateAnswers({
-                  fullName: { ...fullName, first: e.target.value },
-                })
-              }
-              className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
-            />
-            <input
-              type="text"
-              placeholder="Middle (optional)"
-              value={fullName.middle}
-              onChange={(e) =>
-                updateAnswers({
-                  fullName: { ...fullName, middle: e.target.value },
-                })
-              }
-              className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
-            />
-            <input
-              type="text"
-              placeholder="Last"
-              value={fullName.last}
-              onChange={(e) =>
-                updateAnswers({
-                  fullName: { ...fullName, last: e.target.value },
-                })
-              }
-              className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
-            />
+            <div>
+              <label htmlFor="name-first" className="sr-only">First name</label>
+              <input
+                id="name-first"
+                type="text"
+                placeholder="First"
+                value={fullName.first}
+                onChange={(e) =>
+                  updateAnswers({
+                    fullName: { ...fullName, first: e.target.value },
+                  })
+                }
+                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label htmlFor="name-middle" className="sr-only">Middle name (optional)</label>
+              <input
+                id="name-middle"
+                type="text"
+                placeholder="Middle (optional)"
+                value={fullName.middle}
+                onChange={(e) =>
+                  updateAnswers({
+                    fullName: { ...fullName, middle: e.target.value },
+                  })
+                }
+                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label htmlFor="name-last" className="sr-only">Last name</label>
+              <input
+                id="name-last"
+                type="text"
+                placeholder="Last"
+                value={fullName.last}
+                onChange={(e) =>
+                  updateAnswers({
+                    fullName: { ...fullName, last: e.target.value },
+                  })
+                }
+                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              />
+            </div>
           </div>
           <p className="mt-1 text-xs text-gray-400">
             Use your name exactly as it appears on your ID
           </p>
-        </div>
+        </fieldset>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="personal-city" className="block text-sm font-medium text-gray-700 mb-1">
               City
             </label>
             <input
+              id="personal-city"
               type="text"
               placeholder="City"
               value={city}
@@ -105,10 +118,11 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="personal-county" className="block text-sm font-medium text-gray-700 mb-1">
               County
             </label>
             <input
+              id="personal-county"
               type="text"
               placeholder="County"
               value={county}
@@ -119,10 +133,11 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="personal-dob" className="block text-sm font-medium text-gray-700 mb-1">
             Date of birth
           </label>
           <input
+            id="personal-dob"
             type="date"
             value={dateOfBirth}
             onChange={(e) => updateAnswers({ dateOfBirth: e.target.value })}
@@ -131,7 +146,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
         </div>
 
         {dateOfBirth && !ageValid && (
-          <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-800">
+          <div role="alert" className="p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-800">
             In {stateReqs?.state ?? "your state"}, you must be at least {minAge}{" "}
             to make a will. If you&apos;re emancipated or married, you may still
             qualify — check with an attorney.

@@ -45,8 +45,11 @@ export default function QuestionCard({
         {/* Why we ask */}
         <div className="mt-6 border-t border-gray-100 pt-4">
           <button
+            type="button"
             onClick={() => setShowWhy(!showWhy)}
             className="flex items-center gap-2 text-sm text-gray-400 hover:text-gray-600 transition-colors"
+            aria-expanded={showWhy}
+            aria-controls={`why-panel-${stepKey}`}
           >
             <svg
               className={`w-4 h-4 transition-transform ${showWhy ? "rotate-90" : ""}`}
@@ -62,6 +65,7 @@ export default function QuestionCard({
           </button>
           {showWhy && (
             <motion.p
+              id={`why-panel-${stepKey}`}
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               className="mt-3 text-sm text-gray-500 leading-relaxed bg-gray-50 rounded-lg p-4"
@@ -75,6 +79,7 @@ export default function QuestionCard({
         <div className="mt-6 flex justify-between items-center">
           {!isFirst ? (
             <button
+              type="button"
               onClick={onPrev}
               className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700 transition-colors"
             >
@@ -92,7 +97,7 @@ export default function QuestionCard({
             disabled={nextDisabled}
             className={`flex items-center gap-2 font-medium px-6 py-3 rounded-xl transition-all ${
               nextDisabled
-                ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                ? "bg-gray-200 text-gray-500 cursor-not-allowed"
                 : isLast
                 ? "bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white hover:scale-[1.02] active:scale-[0.98]"
                 : "bg-[var(--color-brand)] hover:bg-[var(--color-brand-light)] text-white hover:scale-[1.02] active:scale-[0.98]"
