@@ -42,13 +42,13 @@ export default function Footer() {
         </div>
         <div className="mt-4 pt-3 border-t border-gray-100 text-center">
           <p className="text-[10px] text-gray-300">
-            <a href="https://whatpeptidesdo.com" className="hover:text-gray-400 transition-colors">whatpeptidesdo.com</a>
+            <a href="https://whatpeptidesdo.com" rel="nofollow" className="hover:text-gray-400 transition-colors">whatpeptidesdo.com</a>
             {" · "}
-            <a href="https://doppelwriter.com" className="hover:text-gray-400 transition-colors">doppelwriter.com</a>
+            <a href="https://doppelwriter.com" rel="nofollow" className="hover:text-gray-400 transition-colors">doppelwriter.com</a>
             {" · "}
-            <a href="https://imfrustrated.org" className="hover:text-gray-400 transition-colors">imfrustrated.org</a>
+            <a href="https://imfrustrated.org" rel="nofollow" className="hover:text-gray-400 transition-colors">imfrustrated.org</a>
             {" · "}
-            <a href="https://tourdefore.com" className="hover:text-gray-400 transition-colors">tourdefore.com</a>
+            <a href="https://tourdefore.com" rel="nofollow" className="hover:text-gray-400 transition-colors">tourdefore.com</a>
           </p>
         </div>
       </div>

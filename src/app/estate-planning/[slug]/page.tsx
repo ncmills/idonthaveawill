@@ -51,6 +51,16 @@ export default async function EstatePlanningStatePage({ params }: Props) {
     .slice(Math.max(0, currentIndex - 3), Math.max(6, currentIndex + 3))
     .slice(0, 6);
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://idonthaveawill.com" },
+      { "@type": "ListItem", position: 2, name: "Estate Planning", item: "https://idonthaveawill.com/estate-planning" },
+      { "@type": "ListItem", position: 3, name: state.state },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -94,6 +104,10 @@ export default async function EstatePlanningStatePage({ params }: Props) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

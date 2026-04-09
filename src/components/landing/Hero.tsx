@@ -58,6 +58,20 @@ export default function Hero() {
           <Link href="/will-requirements" className="hover:text-gray-300 transition-colors">All States →</Link>
         </div>
         <WillCounter />
+
+        {/* Invisible estate-planning state links for SEO cross-linking */}
+        <div className="sr-only" aria-hidden="true">
+          <Link href="/estate-planning/california" tabIndex={-1}>Estate Planning in California</Link>
+          <Link href="/estate-planning/texas" tabIndex={-1}>Estate Planning in Texas</Link>
+          <Link href="/estate-planning/florida" tabIndex={-1}>Estate Planning in Florida</Link>
+          <Link href="/estate-planning/new-york" tabIndex={-1}>Estate Planning in New York</Link>
+          <Link href="/estate-planning/pennsylvania" tabIndex={-1}>Estate Planning in Pennsylvania</Link>
+          <Link href="/estate-planning/illinois" tabIndex={-1}>Estate Planning in Illinois</Link>
+          <Link href="/estate-planning/ohio" tabIndex={-1}>Estate Planning in Ohio</Link>
+          <Link href="/estate-planning/georgia" tabIndex={-1}>Estate Planning in Georgia</Link>
+          <Link href="/estate-planning/north-carolina" tabIndex={-1}>Estate Planning in North Carolina</Link>
+          <Link href="/estate-planning/michigan" tabIndex={-1}>Estate Planning in Michigan</Link>
+        </div>
       </div>
     </section>
   );

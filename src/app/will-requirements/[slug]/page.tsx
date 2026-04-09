@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllStates } from "@/lib/stateData";
-import { slugToState, stateToSlug, getStateUrl } from "@/lib/stateSlugs";
+import { slugToState, stateToSlug, getStateUrl, getEstatePlanningUrl } from "@/lib/stateSlugs";
 import { COMMUNITY_PROPERTY_STATES } from "@/lib/types";
 
 interface Props {
@@ -70,6 +70,16 @@ export default async function StatePage({ params }: Props) {
     )
     .slice(0, 6);
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://idonthaveawill.com" },
+      { "@type": "ListItem", position: 2, name: "Will Requirements", item: "https://idonthaveawill.com/will-requirements" },
+      { "@type": "ListItem", position: 3, name: state.state },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -117,8 +127,22 @@ export default async function StatePage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
+      {/* Invisible cross-link for SEO — links will-requirements to estate-planning */}
+      <Link
+        href={getEstatePlanningUrl(state.state)}
+        className="sr-only"
+        aria-hidden="true"
+        tabIndex={-1}
+      >
+        Estate Planning in {state.state}
+      </Link>
 
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Breadcrumbs */}

@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://idonthaveawill.com/terms",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function TermsPage() {

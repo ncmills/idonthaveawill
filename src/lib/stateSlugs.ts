@@ -17,3 +17,7 @@ export function getAllStateSlugs(): string[] {
 export function getStateUrl(stateName: string): string {
   return `/will-requirements/${stateToSlug(stateName)}`;
 }
+
+export function getEstatePlanningUrl(stateName: string): string {
+  return `/estate-planning/${stateToSlug(stateName)}`;
+}
