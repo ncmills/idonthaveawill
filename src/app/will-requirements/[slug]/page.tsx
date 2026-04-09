@@ -122,7 +122,7 @@ export default async function StatePage({ params }: Props) {
 
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Breadcrumbs */}
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav aria-label="Breadcrumb" className="text-sm text-gray-400 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">/</span>
           <Link href="/will-requirements" className="hover:text-gray-600">Will Requirements</Link>

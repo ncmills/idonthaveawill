@@ -3,7 +3,6 @@ import {
   Paragraph,
   TextRun,
   AlignmentType,
-  HeadingLevel,
   Packer,
   SectionType,
 } from "docx";

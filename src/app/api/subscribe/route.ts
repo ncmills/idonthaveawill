@@ -1,19 +1,25 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { supabase } from "@/lib/supabase";
 import { Resend } from "resend";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const resend = process.env.RESEND_API_KEY
   ? new Resend(process.env.RESEND_API_KEY)
   : null;
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export async function POST(request: Request) {
   try {
-    const { email, state } = await request.json();
+    const { email: rawEmail, state } = await request.json();
 
-    if (!email || typeof email !== "string" || !email.includes("@")) {
+    if (!rawEmail || typeof rawEmail !== "string") {
+      return NextResponse.json({ error: "Valid email required" }, { status: 400 });
+    }
+
+    const email = rawEmail.trim().toLowerCase();
+
+    if (email.length > 254 || !EMAIL_REGEX.test(email)) {
       return NextResponse.json({ error: "Valid email required" }, { status: 400 });
     }
 
@@ -23,8 +29,7 @@ export async function POST(request: Request) {
     }
 
     // Store in Supabase (primary store)
-    if (supabaseUrl && supabaseKey) {
-      const supabase = createClient(supabaseUrl, supabaseKey);
+    {
       const { error } = await supabase.from("email_subscribers").upsert(
         { email, state, subscribed_at: new Date().toISOString() },
         { onConflict: "email" }

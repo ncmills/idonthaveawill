@@ -1,8 +1,5 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+import { supabase } from "@/lib/supabase";
 
 const ALLOWED_EVENTS = [
   "step_viewed",
@@ -11,6 +8,18 @@ const ALLOWED_EVENTS = [
   "download",
   "email_captured",
 ];
+
+const ALLOWED_PROPERTY_KEYS = new Set([
+  "step",
+  "step_id",
+  "step_index",
+  "step_label",
+  "state",
+  "format",
+  "source",
+  "duration_ms",
+  "total_steps",
+]);
 
 export async function POST(request: Request) {
   try {
@@ -21,19 +30,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Invalid event" }, { status: 400 });
     }
 
-    // Strip any string value longer than 50 chars to prevent PII leakage
+    // Only allow whitelisted property keys, and strip long string values
     const safeProps: Record<string, unknown> = {};
     for (const [key, value] of Object.entries(properties)) {
+      if (!ALLOWED_PROPERTY_KEYS.has(key)) continue;
       if (typeof value === "string" && value.length > 50) continue;
       safeProps[key] = value;
     }
-
-    if (!supabaseUrl || !supabaseKey) {
-      console.log("[funnel] received (no Supabase):", event, safeProps);
-      return NextResponse.json({ success: true });
-    }
-
-    const supabase = createClient(supabaseUrl, supabaseKey);
 
     const { error } = await supabase.from("funnel_events").insert({
       event,

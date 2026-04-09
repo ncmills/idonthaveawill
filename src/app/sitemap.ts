@@ -7,14 +7,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const statePages = getAllStates().map((s) => ({
     url: `${baseUrl}/will-requirements/${stateToSlug(s.state)}`,
-    lastModified: new Date(),
+    lastModified: "2026-04-08",
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   const estatePlanningPages = getAllStates().map((s) => ({
     url: `${baseUrl}/estate-planning/${stateToSlug(s.state)}`,
-    lastModified: new Date(),
+    lastModified: "2026-04-08",
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -22,39 +22,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: "2026-04-08",
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/create`,
-      lastModified: new Date(),
+      lastModified: "2026-04-08",
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/will-requirements`,
-      lastModified: new Date(),
+      lastModified: "2026-04-08",
       changeFrequency: "weekly",
       priority: 0.9,
     },
     ...statePages,
     {
       url: `${baseUrl}/estate-planning`,
-      lastModified: new Date(),
+      lastModified: "2026-04-08",
       changeFrequency: "weekly",
       priority: 0.8,
     },
     ...estatePlanningPages,
     {
       url: `${baseUrl}/terms`,
-      lastModified: new Date(),
+      lastModified: "2026-04-08",
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
+      lastModified: "2026-04-08",
       changeFrequency: "yearly",
       priority: 0.3,
     },

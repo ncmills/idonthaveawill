@@ -83,13 +83,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "idonthaveawill.com",
-            "url": "https://idonthaveawill.com",
-            "sameAs": [
-              "https://whatpeptidesdo.com",
-              "https://tourdefore.com",
-              "https://doppelwriter.com",
-              "https://imfrustrated.org"
-            ]
+            "url": "https://idonthaveawill.com"
           }) }}
         />
         <PostHogProvider>

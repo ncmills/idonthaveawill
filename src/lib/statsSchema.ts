@@ -1,5 +1,6 @@
 import type { WillAnswers } from "./types";
 import { isCommunityPropertyState } from "./stateData";
+import { getAge } from "./questionFlow";
 
 // Whitelist schema — this is ALL that gets collected. No PII, no free text.
 export interface AnonymizedStats {
@@ -22,17 +23,6 @@ export interface AnonymizedStats {
   include_simultaneous_death: boolean;
   has_funeral_wishes: boolean;
   is_community_property_state: boolean;
-}
-
-function getAge(dateOfBirth: string): number {
-  const dob = new Date(dateOfBirth);
-  const today = new Date();
-  let age = today.getFullYear() - dob.getFullYear();
-  const monthDiff = today.getMonth() - dob.getMonth();
-  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
-    age--;
-  }
-  return age;
 }
 
 /**

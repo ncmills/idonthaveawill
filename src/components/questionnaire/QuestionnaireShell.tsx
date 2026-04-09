@@ -25,7 +25,6 @@ import SimultaneousDeath from "./steps/SimultaneousDeath";
 import NoContest from "./steps/NoContest";
 import ReviewAnswers from "./steps/ReviewAnswers";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const STEP_COMPONENTS: Record<string, React.ComponentType<any>> = {
   StateSelection,
   PersonalInfo,

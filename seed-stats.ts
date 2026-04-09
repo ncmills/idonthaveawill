@@ -9,7 +9,11 @@ import { extractAnonymizedStats } from "./src/lib/statsSchema";
 import type { WillAnswers } from "./src/lib/types";
 import { EMPTY_ANSWERS } from "./src/lib/types";
 
-const API_URL = "https://idonthaveawill.com/api/stats";
+const API_URL = process.env.SEED_API_URL || "http://localhost:3000/api/stats";
+if (API_URL.includes("idonthaveawill.com")) {
+  console.error("Refusing to seed production. Set SEED_API_URL to localhost.");
+  process.exit(1);
+}
 
 function makeTestAnswers(abbr: string): WillAnswers {
   return {

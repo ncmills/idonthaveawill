@@ -1,10 +1,7 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { supabase } from "@/lib/supabase";
 import type { AnonymizedStats } from "@/lib/statsSchema";
 import { validateNoPI } from "@/lib/statsSchema";
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 export async function POST(request: Request) {
   try {
@@ -17,14 +14,6 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-
-    if (!supabaseUrl || !supabaseKey) {
-      // If Supabase isn't configured yet, just log and succeed
-      console.log("[stats] received (no Supabase configured):", JSON.stringify(stats));
-      return NextResponse.json({ success: true });
-    }
-
-    const supabase = createClient(supabaseUrl, supabaseKey);
 
     const { error } = await supabase.from("will_stats").insert({
       state: stats.state,

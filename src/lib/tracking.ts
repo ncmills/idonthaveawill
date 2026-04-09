@@ -5,7 +5,7 @@
 
 function getPostHog(): { capture: (event: string, props?: Record<string, unknown>) => void } | null {
   if (typeof window === "undefined") return null;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // eslint-disable-next-line
   const ph = (window as any).posthog;
   if (!ph || typeof ph.capture !== "function") return null;
   return ph;
