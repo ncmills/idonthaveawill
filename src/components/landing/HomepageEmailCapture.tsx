@@ -17,7 +17,7 @@ export default function HomepageEmailCapture() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, state: "XX" }),
+        body: JSON.stringify({ email, state: null }),
       });
       if (!res.ok) {
         const data = await res.json();

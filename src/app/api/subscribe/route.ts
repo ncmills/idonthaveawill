@@ -23,15 +23,14 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Valid email required" }, { status: 400 });
     }
 
-    // Validate state is a 2-letter code (no PII can sneak in)
-    if (state && (typeof state !== "string" || state.length !== 2)) {
-      return NextResponse.json({ error: "Invalid state" }, { status: 400 });
-    }
+    // Validate state is a 2-letter code (no PII can sneak in), or null/empty
+    const validState = state && typeof state === "string" && state.length === 2 ? state : null;
+
 
     // Store in Supabase (primary store)
     {
       const { error } = await supabase.from("email_subscribers").upsert(
-        { email, state, subscribed_at: new Date().toISOString() },
+        { email, state: validState, subscribed_at: new Date().toISOString() },
         { onConflict: "email" }
       );
       if (error) {
@@ -45,7 +44,7 @@ export async function POST(request: Request) {
         await resend.contacts.create({
           email,
           audienceId: AUDIENCE_ID,
-          firstName: state || "",
+          firstName: validState || "",
           unsubscribed: false,
         });
       } catch (resendErr) {

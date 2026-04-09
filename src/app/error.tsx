@@ -1,13 +1,19 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 
 export default function Error({
+  error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  useEffect(() => {
+    console.error("Application error:", error);
+  }, [error]);
+
   return (
     <section className="max-w-2xl mx-auto px-4 py-24 md:py-32 text-center">
       <h1 className="font-[family-name:var(--font-serif)] text-4xl md:text-5xl font-bold text-[var(--color-brand)]">

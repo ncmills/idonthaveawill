@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 
+export const revalidate = 300;
+
 export async function GET() {
   try {
     const { count, error } = await supabase
