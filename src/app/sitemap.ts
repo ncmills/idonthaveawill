@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllStates } from "@/lib/stateData";
 import { stateToSlug } from "@/lib/stateSlugs";
+import { BLOG_POSTS } from "@/lib/blog-posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://idonthaveawill.com";
@@ -17,6 +18,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: "2026-04-08",
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  const blogPages = BLOG_POSTS.map((p) => ({
+    url: `${baseUrl}/blog/${p.slug}`,
+    lastModified: p.date,
+    changeFrequency: "monthly" as const,
+    priority: p.category === "State Law" ? 0.7 : 0.8,
   }));
 
   return [
@@ -46,6 +54,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     ...estatePlanningPages,
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: "2026-04-10",
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...blogPages,
     {
       url: `${baseUrl}/terms`,
       lastModified: "2026-04-08",

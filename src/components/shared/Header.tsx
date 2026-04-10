@@ -48,6 +48,12 @@ export default function Header() {
             Estate Planning
           </Link>
           <Link
+            href="/blog"
+            className="text-sm text-gray-500 hover:text-gray-700 transition-colors hidden sm:block"
+          >
+            Blog
+          </Link>
+          <Link
             href="/create"
             className="text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
           >
@@ -87,6 +93,13 @@ export default function Header() {
                   className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
                 >
                   Estate Planning
+                </Link>
+                <Link
+                  href="/blog"
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                >
+                  Blog
                 </Link>
                 <Link
                   href="/create"
