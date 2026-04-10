@@ -1,0 +1,19 @@
+# I Don't Have a Will
+
+> Free, programmatic estate planning resource with state-by-state will requirements and DIY guidance.
+
+I Don't Have a Will helps people who don't have estate planning in place understand what happens if they die intestate, what their state requires for a valid will, and how to take a first step. The site is programmatic SEO covering all 50 states plus general estate planning topics.
+
+## Key pages
+- [Estate Planning Overview](https://idonthaveawill.com/estate-planning)
+- [Will Requirements by State](https://idonthaveawill.com/will-requirements)
+- [Why You Need a Will](https://idonthaveawill.com/why-you-need-a-will)
+
+## State coverage
+50 state pages under `/will-requirements/[state]` covering legal requirements, witness rules, holographic will rules, and intestate succession.
+
+## Important
+This site is informational only. It is NOT legal advice. Users with complex estates should consult an attorney.
+
+## Optional
+- [Sitemap (XML)](https://idonthaveawill.com/sitemap.xml)
