@@ -33,11 +33,13 @@ export default function HomepageEmailCapture() {
 
   if (status === "success") {
     return (
-      <section className="py-12 bg-white">
-        <div className="max-w-xl mx-auto px-4">
-          <div className="bg-green-50 border border-green-200 rounded-2xl p-6 text-center">
-            <p className="font-semibold text-green-800">You&apos;re signed up.</p>
-            <p className="text-green-600 text-sm mt-1">
+      <section className="py-16 bg-[var(--color-cream-deep)]">
+        <div className="max-w-xl mx-auto px-6">
+          <div className="border-l-2 border-[var(--color-sage)] pl-6">
+            <p className="font-[family-name:var(--font-display)] italic text-[20px] text-[var(--color-ink)]">
+              You&apos;re signed up.
+            </p>
+            <p className="mt-2 text-[15px] text-[var(--color-ink-soft)]">
               We&apos;ll send you a reminder once a year to review your will.
             </p>
           </div>
@@ -47,38 +49,46 @@ export default function HomepageEmailCapture() {
   }
 
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-xl mx-auto px-4 text-center">
-        <h3 className="font-[family-name:var(--font-serif)] text-xl font-bold text-[var(--color-brand)]">
-          Get a free annual reminder to review your will
+    <section className="py-20 md:py-24 bg-[var(--color-cream-deep)]">
+      <div className="max-w-xl mx-auto px-6 text-center">
+        <p className="iha-caps">Annual correspondence</p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[26px] md:text-[30px] font-medium text-[var(--color-ink)] leading-tight">
+          A yearly reminder to review your will.
         </h3>
-        <p className="mt-2 text-gray-500 text-sm">
+        <p className="mt-4 font-[family-name:var(--font-display)] italic text-[16px] text-[var(--color-ink-soft)]">
           Life changes. We&apos;ll email you once a year to check if your will needs updating. That&apos;s it.
         </p>
 
-        <form onSubmit={handleSubmit} className="mt-4 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <form onSubmit={handleSubmit} className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <label className="sr-only" htmlFor="iha-home-email">
+            Your email address
+          </label>
           <input
+            id="iha-home-email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
             required
-            className="flex-1 px-4 py-2.5 rounded-lg border border-gray-300 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+            className="flex-1 px-4 py-3 bg-[var(--color-cream)] border border-[var(--color-rule)] text-[var(--color-ink)] text-[15px] placeholder:text-[var(--color-ink-soft)]/70 focus:outline-none focus:border-[var(--color-ink)]"
           />
           <button
             type="submit"
             disabled={status === "loading"}
-            className="px-6 py-2.5 bg-[var(--color-brand)] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity text-sm disabled:opacity-50 cursor-pointer"
+            className="iha-seal justify-center disabled:opacity-60"
           >
-            {status === "loading" ? "Signing up..." : "Remind Me"}
+            <span className="iha-seal-mark" aria-hidden="true" />
+            {status === "loading" ? "Signing up…" : "Remind me"}
           </button>
         </form>
 
         {status === "error" && (
-          <p className="mt-2 text-red-600 text-xs">{errorMsg}</p>
+          <p className="mt-3 text-[13px] text-[var(--color-ink)]" role="alert">
+            {errorMsg}
+          </p>
         )}
 
-        <p className="mt-3 text-gray-400 text-xs">
+        <p className="mt-4 text-[12px] text-[var(--color-ink-soft)]">
           No spam, ever. Unsubscribe anytime.
         </p>
       </div>

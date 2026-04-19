@@ -1,14 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
-  <!-- Document body -->
-  <path d="M8 4C8 2.89543 8.89543 2 10 2H24L32 10V36C32 37.1046 31.1046 38 30 38H10C8.89543 38 8 37.1046 8 36V4Z" fill="#1a1a2e"/>
-  <!-- Folded corner -->
-  <path d="M24 2L32 10H26C24.8954 10 24 9.10457 24 8V2Z" fill="#2d2d4a"/>
-  <!-- Text lines -->
-  <rect x="13" y="15" width="14" height="1.5" rx="0.75" fill="#4a4a6a"/>
-  <rect x="13" y="19.5" width="10" height="1.5" rx="0.75" fill="#4a4a6a"/>
-  <rect x="13" y="24" width="12" height="1.5" rx="0.75" fill="#4a4a6a"/>
-  <!-- Checkmark circle -->
-  <circle cx="28" cy="30" r="9" fill="#16a34a"/>
-  <!-- Checkmark -->
-  <path d="M23.5 30L26.5 33L32.5 27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 60" fill="none" role="img" aria-label="idonthaveawill.com">
+  <!-- Wordmark set in Lora-equivalent serif with oversized sage period -->
+  <!-- Fallback-friendly: uses system serif stack if Lora unavailable -->
+  <text x="0" y="42"
+    font-family="Lora, 'Iowan Old Style', 'Hoefler Text', Georgia, 'Times New Roman', serif"
+    font-weight="500"
+    font-size="38"
+    letter-spacing="-0.5"
+    fill="#1a1815">idonthaveawill</text>
+  <!-- Oversized sage period (1.3x size, sage color) -->
+  <text x="256" y="46"
+    font-family="Lora, 'Iowan Old Style', 'Hoefler Text', Georgia, 'Times New Roman', serif"
+    font-weight="600"
+    font-size="50"
+    fill="#7a8a6f">.</text>
+  <text x="268" y="42"
+    font-family="Lora, 'Iowan Old Style', 'Hoefler Text', Georgia, 'Times New Roman', serif"
+    font-weight="500"
+    font-size="38"
+    letter-spacing="-0.5"
+    fill="#1a1815">com</text>
 </svg>

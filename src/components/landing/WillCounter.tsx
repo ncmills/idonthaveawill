@@ -15,12 +15,14 @@ export default function WillCounter() {
   }, []);
 
   if (count === null) {
-    return <p className="mt-6 text-sm h-5" aria-hidden="true" />;
+    return <p className="mt-8 text-sm h-5" aria-hidden="true" />;
   }
 
   return (
-    <p className="mt-6 text-sm text-gray-400">
-      <span className="text-white font-semibold">{count.toLocaleString()}</span>{" "}
+    <p className="mt-8 text-[13px] text-[var(--color-ink-soft)]">
+      <span className="font-[family-name:var(--font-display)] italic text-[var(--color-ink)] text-[15px]">
+        {count.toLocaleString()}
+      </span>{" "}
       wills drafted so far
     </p>
   );

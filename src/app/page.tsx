@@ -3,15 +3,18 @@ import WhyYouNeed from "@/components/landing/WhyYouNeed";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Features from "@/components/landing/Features";
 import TrustSignals from "@/components/landing/TrustSignals";
+import PreviewWill from "@/components/landing/PreviewWill";
 import HomepageEmailCapture from "@/components/landing/HomepageEmailCapture";
 import Disclaimer from "@/components/landing/Disclaimer";
 
 function InlineDisclaimer() {
   return (
-    <div className="bg-white border-b border-gray-200">
-      <div className="max-w-3xl mx-auto px-4 py-6 text-center">
-        <p className="text-sm text-gray-600 leading-relaxed">
-          <strong className="text-gray-800">This tool is not legal advice.</strong>{" "}
+    <div className="bg-[var(--color-cream)] border-y border-[var(--color-rule)]">
+      <div className="max-w-3xl mx-auto px-6 py-5 text-center">
+        <p className="font-[family-name:var(--font-display)] italic text-[14px] text-[var(--color-ink-soft)] leading-relaxed">
+          <span className="not-italic font-[family-name:var(--font-sans)] text-[var(--color-ink)] font-medium">
+            This tool is not legal advice.
+          </span>{" "}
           idonthaveawill.com helps you prepare a draft will — it is not a law firm
           and is not a substitute for an attorney. We strongly recommend that
           everyone have their will reviewed by their own legal counsel before
@@ -170,6 +173,7 @@ export default function Home() {
       <TrustSignals />
       <WhyYouNeed />
       <HowItWorks />
+      <PreviewWill />
       <Features />
       <HomepageEmailCapture />
       <Disclaimer />

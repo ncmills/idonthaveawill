@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,44 +19,47 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="no-print border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5">
-          <Image
-            src="/logo.svg"
-            alt="idonthaveawill.com logo"
-            width={28}
-            height={28}
-            className="shrink-0"
-          />
-          <span className="font-semibold text-lg text-[var(--color-brand)]">
-            idonthaveawill<span className="text-[var(--color-accent)]">.com</span>
+    <header className="no-print bg-[var(--color-cream)] border-b border-[var(--color-rule)]">
+      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+        <Link href="/" className="group" aria-label="idonthaveawill.com — home">
+          <span className="font-[family-name:var(--font-display)] text-[21px] md:text-[22px] font-medium text-[var(--color-ink)] tracking-[-0.01em] leading-none">
+            idonthaveawill
+            <span
+              className="inline-block text-[var(--color-sage)] font-semibold"
+              style={{ fontSize: "1.3em", lineHeight: 0, verticalAlign: "baseline" }}
+              aria-hidden="true"
+            >
+              .
+            </span>
+            <span className="sr-only">.</span>
+            com
           </span>
         </Link>
-        <div className="flex items-center gap-6">
+
+        <div className="flex items-center gap-7">
           <Link
             href="/will-requirements"
-            className="text-sm text-gray-500 hover:text-gray-700 transition-colors hidden sm:block"
+            className="text-[13px] text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] transition-colors hidden sm:block"
           >
             State Requirements
           </Link>
           <Link
             href="/estate-planning"
-            className="text-sm text-gray-500 hover:text-gray-700 transition-colors hidden sm:block"
+            className="text-[13px] text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] transition-colors hidden sm:block"
           >
             Estate Planning
           </Link>
           <Link
             href="/blog"
-            className="text-sm text-gray-500 hover:text-gray-700 transition-colors hidden sm:block"
+            className="text-[13px] text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] transition-colors hidden sm:block"
           >
             Blog
           </Link>
           <Link
             href="/create"
-            className="text-sm font-medium text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
+            className="font-[family-name:var(--font-display)] italic text-[14px] text-[var(--color-ink)] underline decoration-[var(--color-sage)] decoration-[1.5px] underline-offset-[5px] hover:decoration-[var(--color-ink)] transition-colors"
           >
-            Get Started
+            Begin a draft
           </Link>
 
           {/* Mobile hamburger */}
@@ -65,11 +67,11 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setMenuOpen(!menuOpen)}
-              className="min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] transition-colors"
               aria-expanded={menuOpen}
               aria-label="Menu"
             >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
                 {menuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -79,34 +81,34 @@ export default function Header() {
             </button>
 
             {menuOpen && (
-              <div className="absolute right-0 top-full mt-2 w-52 bg-white border border-gray-200 rounded-xl shadow-lg py-2 z-50">
+              <div className="absolute right-0 top-full mt-3 w-56 bg-[var(--color-cream)] border border-[var(--color-rule)] shadow-lg py-2 z-50">
                 <Link
                   href="/will-requirements"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="block px-5 py-3 text-[14px] text-[var(--color-ink)] hover:bg-[var(--color-cream-deep)] transition-colors"
                 >
                   State Requirements
                 </Link>
                 <Link
                   href="/estate-planning"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="block px-5 py-3 text-[14px] text-[var(--color-ink)] hover:bg-[var(--color-cream-deep)] transition-colors"
                 >
                   Estate Planning
                 </Link>
                 <Link
                   href="/blog"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="block px-5 py-3 text-[14px] text-[var(--color-ink)] hover:bg-[var(--color-cream-deep)] transition-colors"
                 >
                   Blog
                 </Link>
                 <Link
                   href="/create"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-4 py-3 text-sm font-medium text-[var(--color-accent)] hover:bg-gray-50 transition-colors"
+                  className="block px-5 py-3 font-[family-name:var(--font-display)] italic text-[14px] text-[var(--color-ink)] hover:bg-[var(--color-cream-deep)] transition-colors"
                 >
-                  Get Started
+                  Begin a draft
                 </Link>
               </div>
             )}

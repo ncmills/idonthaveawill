@@ -1,27 +1,141 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "DM Serif Display", ui-serif, Georgia, serif;
-  --color-brand: #1a1a2e;
-  --color-brand-light: #2d2d4a;
-  --color-accent: #16a34a;
-  --color-accent-hover: #15803d;
+  /* Stationery-forward palette: warm paper, deep ink, considered sage */
+  --color-ink: #1a1815;
+  --color-ink-soft: #5a544d;
+  --color-cream: #f8f3ea;
+  --color-cream-deep: #ede5d4;
+  --color-sage: #7a8a6f;
+  --color-sage-deep: #5c6e53;
+  --color-rule: #d9d1be;
+
+  /* Typography — old-style serif display, quiet body, typewriter mono */
+  --font-display: "Lora", "Iowan Old Style", "Hoefler Text", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Legacy --font-serif kept as alias for pages still using var(--font-serif) */
+
+  /* Legacy color aliases — kept so /create, /blog, /privacy, state pages
+     don't need to be touched. They now inherit the stationery palette. */
+  --color-brand: #1a1815;
+  --color-brand-light: #5a544d;
+  --color-accent: #7a8a6f;
+  --color-accent-hover: #5c6e53;
   --color-warm: #fefce8;
   --color-warm-border: #fef08a;
-  --color-info: #eff6ff;
-  --color-info-border: #bfdbfe;
+  --color-info: #f1f2ed;
+  --color-info-border: #d9d1be;
   --color-danger: #fef2f2;
   --color-danger-border: #fecaca;
+}
+
+/* Legacy pages reference var(--font-serif); inherit the next/font Lora URL
+   that layout.tsx injects into --font-display. */
+:root {
+  --font-serif: var(--font-display);
 }
 
 @layer base {
   body {
     font-family: var(--font-sans);
-    color: #1a1a2e;
+    background: var(--color-cream);
+    color: var(--color-ink);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
   }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-cream);
+  }
+}
+
+/* Editorial utility — Inter in small-caps for stat labels, metadata */
+.iha-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--color-ink-soft);
+}
+
+/* Lora italic numeral for editorial stat figures */
+.iha-figure {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  line-height: 1;
+}
+
+/* Envelope-seal primary button — ink fill, cream text, subtle lift */
+.iha-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  padding: 0.95rem 1.65rem;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    background 220ms ease,
+    box-shadow 220ms ease;
+  box-shadow: 0 1px 0 rgba(26, 24, 21, 0.15);
+}
+
+.iha-seal:hover {
+  background: #000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px -6px rgba(26, 24, 21, 0.35);
+}
+
+.iha-seal:active {
+  transform: translateY(0);
+}
+
+.iha-seal .iha-seal-mark {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-sage);
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.iha-seal:hover .iha-seal-mark {
+  transform: scale(1.25);
+}
+
+/* Thin editorial rule */
+.iha-rule {
+  height: 1px;
+  background: var(--color-rule);
+  border: 0;
+}
+
+/* Fade-in for subtle reveals */
+@keyframes iha-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: iha-fade-up 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @media print {
