@@ -1,4 +1,4 @@
-import type { WillAnswers, GeneratedWill, WillArticle, StateRequirements } from "./types";
+import type { WillAnswers, GeneratedWill, WillArticle } from "./types";
 import { getStateByAbbreviation, isCommunityPropertyState } from "./stateData";
 import { generateLouisianaWill } from "./louisiana";
 import { generateExecutionChecklist } from "./executionChecklist";

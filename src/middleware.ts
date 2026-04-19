@@ -65,7 +65,9 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Prefer Vercel's trusted header (spoof-resistant) over generic x-forwarded-for.
   const ip =
+    request.headers.get("x-vercel-forwarded-for")?.split(",")[0]?.trim() ||
     request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
     request.headers.get("x-real-ip") ||
     "unknown";

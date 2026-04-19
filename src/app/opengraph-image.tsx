@@ -11,69 +11,104 @@ export default async function Image() {
     (
       <div
         style={{
-          background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+          background: "#f8f3ea",
           width: "100%",
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "60px 80px",
+          padding: "80px 96px",
+          fontFamily: "Georgia, 'Iowan Old Style', serif",
+          position: "relative",
         }}
       >
+        {/* Top editorial rule */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "24px",
+            fontSize: "18px",
+            textTransform: "uppercase",
+            letterSpacing: "0.22em",
+            color: "#5a544d",
+            fontFamily: "system-ui, sans-serif",
+            fontWeight: 500,
+          }}
+        >
+          <span>idonthaveawill<span style={{ color: "#7a8a6f", fontFamily: "Georgia, serif", fontSize: "26px", fontWeight: 700 }}>.</span>com</span>
+          <div style={{ flex: 1, height: "1px", background: "#d9d1be" }} />
+          <span>Vol. I · Plain Language</span>
+        </div>
+
+        {/* Headline */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            gap: "24px",
+            justifyContent: "center",
+            flex: 1,
+            marginTop: "48px",
           }}
         >
           <div
             style={{
-              fontSize: "72px",
-              fontWeight: 700,
-              color: "#ffffff",
-              textAlign: "center",
-              lineHeight: 1.1,
+              fontSize: "108px",
+              color: "#1a1815",
+              lineHeight: 1.04,
               letterSpacing: "-2px",
+              fontWeight: 600,
             }}
           >
             You Don&apos;t Have a Will.
           </div>
           <div
             style={{
-              fontSize: "72px",
-              fontWeight: 700,
-              color: "#16a34a",
-              textAlign: "center",
-              lineHeight: 1.1,
+              fontSize: "108px",
+              color: "#1a1815",
+              lineHeight: 1.04,
               letterSpacing: "-2px",
+              fontStyle: "italic",
+              fontWeight: 500,
+              marginTop: "4px",
             }}
           >
             Let&apos;s Fix That.
           </div>
+
           <div
             style={{
               fontSize: "28px",
-              color: "#94a3b8",
-              textAlign: "center",
-              marginTop: "16px",
-              lineHeight: 1.4,
+              color: "#5a544d",
+              marginTop: "48px",
+              fontStyle: "italic",
+              fontFamily: "Georgia, serif",
             }}
           >
-            Free. 10 minutes. All 50 states + DC. No account needed.
+            A free tool. Drafts prepared for all fifty states.
           </div>
-          <div
-            style={{
-              fontSize: "22px",
-              color: "#64748b",
-              textAlign: "center",
-              marginTop: "8px",
-            }}
-          >
-            idonthaveawill.com
-          </div>
+        </div>
+
+        {/* Bottom rule + stats line */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "28px",
+            fontSize: "20px",
+            textTransform: "uppercase",
+            letterSpacing: "0.22em",
+            color: "#5a544d",
+            fontFamily: "system-ui, sans-serif",
+            fontWeight: 500,
+            marginTop: "32px",
+          }}
+        >
+          <span>100% Free</span>
+          <span style={{ color: "#d9d1be" }}>·</span>
+          <span>Ten Minutes</span>
+          <span style={{ color: "#d9d1be" }}>·</span>
+          <span>No Account</span>
+          <div style={{ flex: 1, height: "1px", background: "#d9d1be" }} />
         </div>
       </div>
     ),

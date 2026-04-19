@@ -70,7 +70,7 @@ export default function HomepageEmailCapture() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
             required
-            className="flex-1 px-4 py-3 bg-[var(--color-cream)] border border-[var(--color-rule)] text-[var(--color-ink)] text-[15px] placeholder:text-[var(--color-ink-soft)]/70 focus:outline-none focus:border-[var(--color-ink)]"
+            className="flex-1 px-4 py-3 bg-[var(--color-cream)] border border-[var(--color-rule)] text-[var(--color-ink)] text-[15px] placeholder:text-[var(--color-ink-soft)]/70 focus:outline-none focus:border-[var(--color-ink)] focus-visible:ring-2 focus-visible:ring-[var(--color-sage)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-cream-deep)]"
           />
           <button
             type="submit"

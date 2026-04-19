@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Lora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
@@ -75,6 +75,13 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#f8f3ea",
+  colorScheme: "light",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -96,9 +103,15 @@ export default function RootLayout({
             "url": "https://idonthaveawill.com"
           }) }}
         />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-[var(--color-ink)] focus:text-[var(--color-cream)] focus:px-4 focus:py-2 focus:text-sm focus:rounded-none focus:outline-none focus:ring-2 focus:ring-[var(--color-sage)]"
+        >
+          Skip to main content
+        </a>
         <PostHogProvider>
           <Header />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">{children}</main>
           <Footer />
         </PostHogProvider>
         <Analytics />

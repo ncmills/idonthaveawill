@@ -53,6 +53,7 @@ export async function POST(request: Request) {
       }
     }
 
+    console.log(`[LEAD] subscribe email=${email} state=${validState ?? "-"}`);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("[subscribe] error:", error);

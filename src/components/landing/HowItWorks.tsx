@@ -47,7 +47,7 @@ export default function HowItWorks() {
               )}
 
               <div className="md:pl-4">
-                <span className="font-[family-name:var(--font-display)] italic text-[20px] text-[var(--color-sage)] tracking-wide">
+                <span className="font-[family-name:var(--font-display)] italic text-[20px] text-[var(--color-sage-deep)] tracking-wide">
                   {step.number}
                 </span>
                 <h3 className="mt-3 font-[family-name:var(--font-display)] text-[24px] md:text-[26px] font-medium text-[var(--color-ink)] leading-[1.25]">
