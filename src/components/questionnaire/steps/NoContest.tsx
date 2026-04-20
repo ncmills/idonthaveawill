@@ -19,7 +19,7 @@ export default function NoContest({ answers, updateAnswers, onNext, onPrev, isFi
 
   return (
     <QuestionCard stepKey="nocontest" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="A no-contest clause (also called an 'in terrorem' clause) says: if any beneficiary challenges the will in court and loses, they forfeit whatever you left them — they get nothing. It's a powerful deterrent against will contests. These clauses are enforceable in most states, but there are exceptions: Florida generally won't enforce them, and some states only enforce them if the challenge was made without 'probable cause.' If you're worried someone might fight over your will — an unhappy family member, a disinherited relative — this gives them a strong reason not to. It costs nothing to include and is very common in estate planning.">
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         Do you want to include a &quot;no-contest clause&quot;?
       </h2>
       <p className="mt-2 text-gray-500">
@@ -48,7 +48,7 @@ export default function NoContest({ answers, updateAnswers, onNext, onPrev, isFi
       </div>
 
       {showMore && (
-        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800 space-y-2">
+        <div className="iha-callout space-y-2">
           <p>If you think there&apos;s any chance someone might challenge your will, this is usually a good idea.</p>
           <p>It&apos;s a common provision and costs nothing to include. It basically says: &quot;If you try to fight this will and lose, you forfeit everything I left you.&quot;</p>
           <p>This is enforceable in most states, though a few states (like Florida and Indiana) limit their enforcement.</p>

@@ -33,30 +33,30 @@ export default function QuestionCard({
   return (
     <motion.div
       key={stepKey}
-      initial={{ x: direction * 100, opacity: 0 }}
+      initial={{ x: direction * 60, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      exit={{ x: direction * -100, opacity: 0 }}
+      exit={{ x: direction * -60, opacity: 0 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="w-full"
+      className="w-full iha-wizard"
     >
-      <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-4 sm:p-6 md:p-8">
+      <div className="bg-[var(--color-cream-deep)] border border-[var(--color-rule)] p-5 sm:p-7 md:p-9">
         {children}
 
-        {/* Why we ask */}
-        <div className="mt-6 border-t border-gray-100 pt-4">
+        {/* Why we ask — editorial disclosure */}
+        <div className="mt-8 border-t border-[var(--color-rule)] pt-5">
           <button
             type="button"
             onClick={() => setShowWhy(!showWhy)}
-            className="flex items-center gap-2 text-sm text-gray-400 hover:text-gray-600 transition-colors"
+            className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] transition-colors font-[family-name:var(--font-display)] italic"
             aria-expanded={showWhy}
             aria-controls={`why-panel-${stepKey}`}
           >
             <svg
-              className={`w-4 h-4 transition-transform ${showWhy ? "rotate-90" : ""}`}
+              className={`w-3.5 h-3.5 transition-transform ${showWhy ? "rotate-90" : ""}`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth={1.5}
               aria-hidden="true"
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -68,7 +68,7 @@ export default function QuestionCard({
               id={`why-panel-${stepKey}`}
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
-              className="mt-3 text-sm text-gray-500 leading-relaxed bg-gray-50 rounded-lg p-4"
+              className="mt-4 pl-4 border-l border-[var(--color-sage)] text-[14px] text-[var(--color-ink)] leading-relaxed"
             >
               {whyWeAsk}
             </motion.p>
@@ -76,14 +76,14 @@ export default function QuestionCard({
         </div>
 
         {/* Navigation */}
-        <div className="mt-6 flex justify-between items-center">
+        <div className="mt-8 flex justify-between items-center gap-4">
           {!isFirst ? (
             <button
               type="button"
               onClick={onPrev}
-              className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              className="flex items-center gap-2 text-[14px] font-[family-name:var(--font-display)] italic text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] transition-colors min-h-[44px]"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
               Back
@@ -95,16 +95,11 @@ export default function QuestionCard({
           <button
             onClick={onNext}
             disabled={nextDisabled}
-            className={`flex items-center gap-2 font-medium px-6 py-3 rounded-xl transition-all ${
-              nextDisabled
-                ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                : isLast
-                ? "bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white hover:scale-[1.02] active:scale-[0.98]"
-                : "bg-[var(--color-brand)] hover:bg-[var(--color-brand-light)] text-white hover:scale-[1.02] active:scale-[0.98]"
-            }`}
+            className={`iha-seal ${nextDisabled ? "opacity-50 cursor-not-allowed" : ""}`}
           >
-            {nextLabel ?? (isLast ? "Generate My Will" : "Continue")}
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+            <span className="iha-seal-mark" aria-hidden="true" />
+            {nextLabel ?? (isLast ? "Generate the draft" : "Continue")}
+            <svg className="w-3.5 h-3.5 ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </button>

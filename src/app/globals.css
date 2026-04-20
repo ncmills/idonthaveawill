@@ -127,6 +127,75 @@
   border: 0;
 }
 
+/* Wizard step heading treatment — upgrades step-component h2s to Lora
+   without having to edit all 17 step files individually. */
+.iha-wizard h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+
+@media (min-width: 640px) {
+  .iha-wizard h2 {
+    font-size: 28px;
+  }
+}
+
+.iha-wizard h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+/* Editorial callout — replaces amber/blue info boxes in wizard */
+.iha-callout {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-cream);
+  border-left: 2px solid var(--color-sage);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+
+.iha-callout strong {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-right: 0.25rem;
+}
+
+/* Text-input treatment used across the wizard */
+.iha-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--color-cream);
+  border: 1px solid var(--color-rule);
+  color: var(--color-ink);
+  font-size: 15px;
+  font-family: var(--font-sans);
+  transition: border-color 180ms ease;
+}
+
+.iha-input::placeholder {
+  color: color-mix(in srgb, var(--color-ink-soft) 70%, transparent);
+}
+
+.iha-input:focus {
+  outline: none;
+  border-color: var(--color-ink);
+  box-shadow: 0 0 0 2px var(--color-sage), 0 0 0 4px var(--color-cream-deep);
+}
+
+.iha-input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 /* Fade-in for subtle reveals */
 @keyframes iha-fade-up {
   from {

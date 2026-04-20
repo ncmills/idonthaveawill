@@ -33,7 +33,7 @@ export default function FinalWishes({ answers, updateAnswers, onNext, onPrev, is
       isLast={isLast}
       whyWeAsk="This section is entirely optional, but it can be a real gift to your family. When someone passes away, their loved ones are grieving and often unsure what the person would have wanted. By writing down your preferences — burial vs. cremation, a specific cemetery, a religious service, or even 'keep it simple' — you remove that guesswork and potential family disagreements. Important: funeral wishes in a will are generally not legally binding (because the will often isn't read until after the funeral), but they clearly document your intent. Many people also share these wishes separately with their executor or family. If you have strong preferences, writing them here and telling someone close to you is the best approach."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         Do you have any preferences for your funeral or burial?
       </h2>
 
@@ -66,17 +66,17 @@ export default function FinalWishes({ answers, updateAnswers, onNext, onPrev, is
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Specific cemetery or location? <span className="text-gray-400">(optional)</span></label>
-            <input type="text" placeholder="e.g., Green Hills Cemetery, Springfield" value={wishes.specificLocation ?? ""} onChange={(e) => setWishes({ specificLocation: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
+            <input type="text" placeholder="e.g., Green Hills Cemetery, Springfield" value={wishes.specificLocation ?? ""} onChange={(e) => setWishes({ specificLocation: e.target.value })} className="iha-input" />
           </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Religious service preferences? <span className="text-gray-400">(optional)</span></label>
-            <input type="text" placeholder="e.g., Catholic mass at St. Mary's" value={wishes.religiousService ?? ""} onChange={(e) => setWishes({ religiousService: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
+            <input type="text" placeholder="e.g., Catholic mass at St. Mary's" value={wishes.religiousService ?? ""} onChange={(e) => setWishes({ religiousService: e.target.value })} className="iha-input" />
           </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Other instructions? <span className="text-gray-400">(optional)</span></label>
-            <textarea placeholder='e.g., "Keep it simple — no flowers" or "Play my favorite song"' value={wishes.otherInstructions ?? ""} onChange={(e) => setWishes({ otherInstructions: e.target.value })} rows={2} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent resize-none" />
+            <textarea placeholder='e.g., "Keep it simple — no flowers" or "Play my favorite song"' value={wishes.otherInstructions ?? ""} onChange={(e) => setWishes({ otherInstructions: e.target.value })} rows={2} className="iha-input resize-none" />
           </div>
 
           <button onClick={() => updateAnswers({ hasFuneralWishes: null, funeralWishes: undefined })} className="text-sm text-gray-400 hover:text-gray-600">Actually, skip this</button>

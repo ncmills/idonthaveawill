@@ -42,7 +42,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
       nextDisabled={!canProceed}
       whyWeAsk="Your will must identify you clearly so there's no confusion about who wrote it. We use your full legal name — the one on your driver's license or passport — because that's what a court will look at. Your city and county go at the top of the will to establish where you live (this determines which court handles the will later). Your date of birth confirms you meet the minimum age to make a will in your state — that's 18 in most states, 16 in Louisiana, and 14 in Georgia."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         Tell us about yourself
       </h2>
 
@@ -64,7 +64,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
                     fullName: { ...fullName, first: e.target.value },
                   })
                 }
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                className="iha-input"
               />
             </div>
             <div>
@@ -79,7 +79,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
                     fullName: { ...fullName, middle: e.target.value },
                   })
                 }
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                className="iha-input"
               />
             </div>
             <div>
@@ -94,7 +94,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
                     fullName: { ...fullName, last: e.target.value },
                   })
                 }
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                className="iha-input"
               />
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
               placeholder="City"
               value={city}
               onChange={(e) => updateAnswers({ city: e.target.value })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
           </div>
           <div>
@@ -127,7 +127,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
               placeholder="County"
               value={county}
               onChange={(e) => updateAnswers({ county: e.target.value })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, i
             type="date"
             value={dateOfBirth}
             onChange={(e) => updateAnswers({ dateOfBirth: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+            className="iha-input"
           />
         </div>
 

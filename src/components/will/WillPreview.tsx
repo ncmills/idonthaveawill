@@ -6,57 +6,66 @@ interface Props {
 
 export default function WillPreview({ will }: Props) {
   return (
-    <div className="will-document bg-white border border-gray-200 rounded-lg shadow-sm p-4 sm:p-8 md:p-12" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
-      <p className="text-xs text-gray-400 italic mb-6 no-print">
-        This document was prepared using idonthaveawill.com and does not
-        constitute legal advice. Consult an attorney for complex estate planning
-        needs.
-      </p>
+    <div className="relative">
+      {/* Paper-on-paper shadow */}
+      <div
+        aria-hidden="true"
+        className="absolute -inset-2 bg-[var(--color-cream-deep)] translate-x-2 translate-y-3 no-print"
+      />
 
-      <h1 className="text-xl font-bold text-center mb-8 tracking-wide">
-        {will.title}
-      </h1>
+      <article
+        className="relative will-document bg-white border border-[var(--color-rule)] p-6 sm:p-10 md:p-14"
+        style={{ fontFamily: '"Times New Roman", Times, serif' }}
+      >
+        <p className="text-[11px] tracking-[0.22em] uppercase text-[var(--color-ink-soft)] mb-10 no-print">
+          Prepared by idonthaveawill.com · Draft · Not legal advice
+        </p>
 
-      <p className="mb-6 leading-relaxed">{will.preamble}</p>
+        <h1 className="text-xl md:text-2xl font-bold text-center mb-10 tracking-wide">
+          {will.title}
+        </h1>
 
-      {will.articles.map((article, i) => (
-        <div key={i} className="mb-6">
-          <h2 className="font-bold text-sm tracking-wide mb-2 uppercase">
-            {article.heading}
-          </h2>
-          <p className="leading-relaxed whitespace-pre-wrap">{article.content}</p>
-        </div>
-      ))}
+        <p className="mb-6 leading-relaxed">{will.preamble}</p>
 
-      <div className="mt-10 mb-6">
-        <p className="leading-relaxed whitespace-pre-wrap">{will.testimonium}</p>
-      </div>
-
-      <div className="whitespace-pre-wrap font-mono text-sm">
-        {will.signatureBlock}
-      </div>
-
-      {will.witnessBlock && (
-        <div className="mt-10 whitespace-pre-wrap font-mono text-sm">
-          {will.witnessBlock}
-        </div>
-      )}
-
-      {will.selfProvingAffidavit && (
-        <div className="mt-10 pt-10 border-t border-gray-300">
-          <div className="whitespace-pre-wrap font-mono text-sm">
-            {will.selfProvingAffidavit}
+        {will.articles.map((article, i) => (
+          <div key={i} className="mb-6">
+            <h2 className="font-bold text-sm tracking-wide mb-2 uppercase">
+              {article.heading}
+            </h2>
+            <p className="leading-relaxed whitespace-pre-wrap">{article.content}</p>
           </div>
-        </div>
-      )}
+        ))}
 
-      {will.notarialAttestation && (
-        <div className="mt-10 pt-10 border-t border-gray-300">
-          <div className="whitespace-pre-wrap font-mono text-sm">
-            {will.notarialAttestation}
-          </div>
+        <div className="mt-10 mb-6">
+          <p className="leading-relaxed whitespace-pre-wrap">{will.testimonium}</p>
         </div>
-      )}
+
+        <div className="whitespace-pre-wrap font-mono text-sm">
+          {will.signatureBlock}
+        </div>
+
+        {will.witnessBlock && (
+          <div className="mt-10 whitespace-pre-wrap font-mono text-sm">
+            {will.witnessBlock}
+          </div>
+        )}
+
+        {will.selfProvingAffidavit && (
+          <div className="mt-10 pt-10 border-t border-[var(--color-rule)]">
+            <div className="whitespace-pre-wrap font-mono text-sm">
+              {will.selfProvingAffidavit}
+            </div>
+          </div>
+        )}
+
+        {will.notarialAttestation && (
+          <div className="mt-10 pt-10 border-t border-[var(--color-rule)]">
+            <div className="whitespace-pre-wrap font-mono text-sm">
+              {will.notarialAttestation}
+            </div>
+          </div>
+        )}
+      </article>
     </div>
   );
 }

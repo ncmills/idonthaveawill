@@ -30,7 +30,7 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
       nextDisabled={!canProceed}
       whyWeAsk="Naming a guardian is one of the most important things a will does for parents with young children. If both parents pass away (or if you're a single parent), a court decides who raises your kids. Without a will, the judge makes that choice based on state law and whoever petitions — which may not be the person you'd choose. By naming a guardian here, you tell the court your preference. Courts almost always honor the parent's choice unless there's a serious concern. We also ask for a backup guardian in case your first choice can't serve. The inheritance age question lets you control when your children actually receive money — many parents choose 21 or 25 instead of 18, because an 18-year-old suddenly receiving a large sum can be risky. Until that age, the money is managed by your executor or a court-appointed trustee for the child's care, education, and support."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         If something happened to you, who would raise your kids?
       </h2>
       <p className="mt-2 text-gray-500">
@@ -51,7 +51,7 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
             placeholder="Full name"
             value={guardian.name}
             onChange={(e) => updateAnswers({ guardian: { ...guardian, name: e.target.value } })}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+            className="iha-input"
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
@@ -59,14 +59,14 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
               placeholder="Relationship (e.g., sister)"
               value={guardian.relationship}
               onChange={(e) => updateAnswers({ guardian: { ...guardian, relationship: e.target.value } })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
             <input
               type="text"
               placeholder="City, State"
               value={guardian.cityState}
               onChange={(e) => updateAnswers({ guardian: { ...guardian, cityState: e.target.value } })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
             placeholder="Full name"
             value={altGuardian.name}
             onChange={(e) => updateAnswers({ alternateGuardian: { ...altGuardian, name: e.target.value } })}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+            className="iha-input"
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
@@ -88,14 +88,14 @@ export default function Guardians({ answers, updateAnswers, onNext, onPrev, isFi
               placeholder="Relationship"
               value={altGuardian.relationship}
               onChange={(e) => updateAnswers({ alternateGuardian: { ...altGuardian, relationship: e.target.value } })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
             <input
               type="text"
               placeholder="City, State"
               value={altGuardian.cityState}
               onChange={(e) => updateAnswers({ alternateGuardian: { ...altGuardian, cityState: e.target.value } })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
           </div>
         </div>

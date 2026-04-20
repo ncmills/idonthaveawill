@@ -74,7 +74,7 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
       nextDisabled={!canProceed}
       whyWeAsk="After your specific gifts are distributed, everything left over is called your 'residuary estate.' This is usually the biggest part of a will because it catches everything you didn't specifically mention — your bank accounts, investments, retirement funds, furniture, clothing, electronics, and anything else you own. It also catches things you might acquire in the future that aren't covered by a specific gift. Most people leave their residuary estate to their spouse, split it among their children, or name one primary person with a backup. We ask for a backup because if your primary beneficiary dies before you and there's no backup named, the court has to figure out where it goes using your state's default rules — which may not be what you want. If you split it among multiple people, the percentages must add up to 100%."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         After any specific gifts, who should get everything else you own?
       </h2>
       <p className="mt-2 text-gray-500">
@@ -101,14 +101,14 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
               placeholder="Full name"
               value={residuaryBeneficiaries[0]?.name ?? ""}
               onChange={(e) => updateBeneficiary(0, { name: e.target.value })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
             <input
               type="text"
               placeholder="Relationship (e.g., spouse, son)"
               value={residuaryBeneficiaries[0]?.relationship ?? ""}
               onChange={(e) => updateBeneficiary(0, { relationship: e.target.value })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
           </div>
 
@@ -119,14 +119,14 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
               placeholder="Full name"
               value={residuaryAlternate?.name ?? ""}
               onChange={(e) => updateAnswers({ residuaryAlternate: { name: e.target.value, relationship: residuaryAlternate?.relationship ?? "" } })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
             <input
               type="text"
               placeholder="Relationship"
               value={residuaryAlternate?.relationship ?? ""}
               onChange={(e) => updateAnswers({ residuaryAlternate: { name: residuaryAlternate?.name ?? "", relationship: e.target.value } })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+              className="iha-input"
             />
           </div>
 
@@ -152,7 +152,7 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
                 <input type="text" placeholder="Full name" value={b.name} onChange={(e) => updateBeneficiary(i, { name: e.target.value })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
                 <input type="text" placeholder="Relationship" value={b.relationship} onChange={(e) => updateBeneficiary(i, { relationship: e.target.value })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
                 <div className="relative">
-                  <input type="number" min="0" max="100" placeholder="%" value={b.percentage || ""} onChange={(e) => updateBeneficiary(i, { percentage: Number(e.target.value) })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
+                  <input type="number" min="0" max="100" placeholder="%" value={b.percentage || ""} onChange={(e) => updateBeneficiary(i, { percentage: Number(e.target.value) })} className="iha-input" />
                   <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">%</span>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
             <select
               value={answers.residuaryAlternateRule ?? "split_among_others"}
               onChange={(e) => updateAnswers({ residuaryAlternateRule: e.target.value as WillAnswers["residuaryAlternateRule"] })}
-              className="mt-2 w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent bg-white"
+              className="mt-2 iha-input bg-white"
             >
               <option value="split_among_others">Split their share among the others</option>
               <option value="their_children">Their share goes to their children</option>

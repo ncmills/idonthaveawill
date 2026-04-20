@@ -56,7 +56,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
       nextDisabled={!canProceed}
       whyWeAsk="Children are one of the most important parts of any will, for several reasons. First, if you have minor children (under 18), your will is the place where you name a guardian — the person who will raise them if something happens to you. Without a will, a judge picks for you. Second, you'll decide how to divide your estate among your children and others. Third, in Louisiana, children under 24 are 'forced heirs' — the law requires you to leave them a minimum share of your estate, and you cannot override this. We also ask about stepchildren because they do NOT automatically have inheritance rights in most states — they only inherit if you specifically name them. Finally, if any child has special needs, leaving them money directly could disqualify them from government benefits, so we'll flag that for you."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         Do you have any children?
       </h2>
 
@@ -122,7 +122,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                   placeholder="Full legal name"
                   value={child.name}
                   onChange={(e) => updateChild(i, { name: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                  className="iha-input"
                 />
               </div>
 
@@ -134,7 +134,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                     type="date"
                     value={child.dateOfBirth}
                     onChange={(e) => updateChild(i, { dateOfBirth: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                    className="iha-input"
                   />
                 </div>
                 <div>
@@ -147,7 +147,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
                         relationship: e.target.value as Child["relationship"],
                       })
                     }
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent bg-white"
+                    className="iha-input bg-white"
                   >
                     <option value="biological">Biological</option>
                     <option value="adopted">Adopted</option>

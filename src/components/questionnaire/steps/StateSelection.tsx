@@ -29,15 +29,13 @@ export default function StateSelection({ answers, updateAnswers, onNext, onPrev,
       nextDisabled={!answers.state}
       whyWeAsk="Each of the 50 states (and DC) has its own set of laws about what makes a will valid. For example, most states require two witnesses to watch you sign, but Pennsylvania doesn't require any at the time of signing. Louisiana requires a notary to be present. Some states accept handwritten wills; others don't. By knowing your state, we can format your draft to match your state's specific requirements and give you the right instructions for signing. If you move to a different state later, you may want to update your will — but a properly executed will from one state is generally respected in another."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
-        What state do you live in?
-      </h2>
+      <h2>What state do you live in?</h2>
 
       <div className="mt-6">
         <select
           value={answers.state}
           onChange={(e) => updateAnswers({ state: e.target.value })}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 text-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent bg-white"
+          className="w-full px-4 py-3 bg-[var(--color-cream)] border border-[var(--color-rule)] text-[16px] text-[var(--color-ink)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-sage)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-cream-deep)] focus:border-[var(--color-ink)]"
         >
           <option value="">Select your state...</option>
           {states.map((s) => (
@@ -50,19 +48,19 @@ export default function StateSelection({ answers, updateAnswers, onNext, onPrev,
 
       {/* State-specific callouts */}
       {answers.state === "LA" && (
-        <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-800">
+        <div className="iha-callout">
           <strong>Heads up:</strong> Louisiana has different rules than every other state. Your will needs to be signed in front of a notary and two witnesses. We&apos;ll walk you through it.
         </div>
       )}
 
       {answers.state === "PA" && (
-        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800">
+        <div className="iha-callout">
           <strong>Good news:</strong> Pennsylvania has some of the simplest will rules in the country. You don&apos;t even need witnesses when you sign (though we recommend them).
         </div>
       )}
 
       {answers.state === "GA" && (
-        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800">
+        <div className="iha-callout">
           In Georgia, you can make a will at age 14 — younger than any other state.
         </div>
       )}

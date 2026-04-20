@@ -11,17 +11,24 @@ export default function ProgressBar({
 }: ProgressBarProps) {
   return (
     <div className="w-full">
-      <div className="flex justify-between items-center mb-2">
-        <span className="text-sm text-gray-500">
-          Step {currentStep + 1} of {totalSteps}
+      <div className="flex justify-between items-baseline mb-3">
+        <span className="iha-caps">
+          Folio{" "}
+          <span className="font-[family-name:var(--font-display)] italic text-[13px] text-[var(--color-ink)] normal-case tracking-normal">
+            {currentStep + 1} of {totalSteps}
+          </span>
         </span>
-        <span className="text-sm text-gray-400">
-          {Math.round(progress)}% complete
-        </span>
+        <span className="iha-caps">{Math.round(progress)}% complete</span>
       </div>
-      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+      <div
+        className="w-full h-[2px] bg-[var(--color-rule)] overflow-hidden"
+        role="progressbar"
+        aria-valuenow={Math.round(progress)}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      >
         <div
-          className="h-full bg-[var(--color-accent)] rounded-full transition-all duration-500 ease-out"
+          className="h-full bg-[var(--color-sage-deep)] transition-all duration-500 ease-out"
           style={{ width: `${progress}%` }}
         />
       </div>

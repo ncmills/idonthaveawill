@@ -31,52 +31,54 @@ export default function ExecutionChecklist({ items }: Props) {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-[var(--color-brand)] mb-2">
-        Steps to Make Your Will Official
+      <p className="iha-caps">Executing the document</p>
+      <h2 className="mt-3 font-[family-name:var(--font-display)] text-[28px] md:text-[34px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
+        Steps to make your will official.
       </h2>
-      <p className="text-gray-500 mb-6">
-        Follow these steps in order. Click any step to see detailed instructions, an explanation of why it matters, and the relevant legal citations for your state.
+      <p className="mt-3 font-[family-name:var(--font-display)] italic text-[16px] text-[var(--color-ink-soft)]">
+        Follow these in order. Click any step for detailed instructions, an
+        explanation of why it matters, and the relevant legal citations for your state.
       </p>
 
       {requiredComplete && (
-        <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-xl text-green-800">
-          All required steps are marked complete. Make sure you&apos;ve actually done each one — checking a box here doesn&apos;t make it legally so.
+        <div className="mt-6 iha-callout" role="status">
+          <strong>All required steps marked complete.</strong>
+          Make sure you&apos;ve actually done each one — checking a box here
+          doesn&apos;t make it legally so.
         </div>
       )}
 
-      <div className="space-y-4">
+      <ol className="mt-8 space-y-3">
         {items.map((item) => {
           const isChecked = checked.has(item.step);
           const isExpanded = expanded.has(item.step);
           const panelId = `checklist-panel-${item.step}`;
 
           return (
-            <div
+            <li
               key={item.step}
-              className={`rounded-xl border transition-all ${
+              className={`border transition-colors ${
                 isChecked
-                  ? "bg-green-50 border-green-200"
-                  : "bg-white border-gray-200"
+                  ? "bg-[var(--color-cream-deep)] border-[var(--color-sage)]"
+                  : "bg-[var(--color-cream)] border-[var(--color-rule)]"
               }`}
             >
-              {/* Header row — clickable to expand */}
               <button
                 type="button"
-                className="flex items-start gap-3 p-4 w-full text-left cursor-pointer"
+                className="flex items-start gap-4 p-4 md:p-5 w-full text-left cursor-pointer"
                 onClick={() => toggleExpand(item.step)}
                 aria-expanded={isExpanded}
                 aria-controls={panelId}
               >
-                {/* Checkbox */}
                 <span
                   role="checkbox"
                   aria-checked={isChecked}
                   aria-label={`Mark step ${item.step} complete`}
                   tabIndex={0}
-                  className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 transition-all ${
+                  className={`w-6 h-6 border flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
                     isChecked
-                      ? "bg-[var(--color-accent)] border-[var(--color-accent)]"
-                      : "border-gray-300"
+                      ? "bg-[var(--color-ink)] border-[var(--color-ink)]"
+                      : "bg-[var(--color-cream)] border-[var(--color-ink-soft)]"
                   }`}
                   onClick={(e) => {
                     e.stopPropagation();
@@ -92,7 +94,7 @@ export default function ExecutionChecklist({ items }: Props) {
                 >
                   {isChecked && (
                     <svg
-                      className="w-4 h-4 text-white"
+                      className="w-3.5 h-3.5 text-[var(--color-cream)]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -104,92 +106,84 @@ export default function ExecutionChecklist({ items }: Props) {
                   )}
                 </span>
 
-                {/* Title + badges */}
                 <span className="flex-1">
-                  <span className="flex items-center gap-2 flex-wrap">
+                  <span className="flex items-baseline gap-3 flex-wrap">
+                    <span
+                      className="font-[family-name:var(--font-display)] italic text-[var(--color-sage-deep)] text-[14px] tracking-wide"
+                      aria-hidden="true"
+                    >
+                      {item.step.toString().padStart(2, "0")}
+                    </span>
                     <h3
-                      className={`font-semibold ${
-                        isChecked
-                          ? "text-green-800 line-through"
-                          : "text-[var(--color-brand)]"
+                      className={`font-[family-name:var(--font-display)] text-[18px] md:text-[19px] font-medium leading-snug ${
+                        isChecked ? "text-[var(--color-ink-soft)] line-through" : "text-[var(--color-ink)]"
                       }`}
                     >
-                      Step {item.step}: {item.title}
+                      {item.title}
                     </h3>
                     {item.required && !isChecked && (
-                      <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full">
-                        Required
-                      </span>
+                      <span className="iha-caps">Required</span>
                     )}
                     {!item.required && (
-                      <span className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">
-                        Recommended
-                      </span>
+                      <span className="iha-caps">Recommended</span>
                     )}
                   </span>
-                  <p className="text-sm text-gray-500 mt-1">
+                  <p className="mt-1.5 text-[14px] text-[var(--color-ink-soft)] leading-relaxed">
                     {item.requirement}
                   </p>
                 </span>
 
-                {/* Expand arrow */}
                 <svg
-                  className={`w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform ${
+                  className={`w-4 h-4 text-[var(--color-ink-soft)] shrink-0 mt-1 transition-transform ${
                     isExpanded ? "rotate-180" : ""
                   }`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
+                  strokeWidth={1.5}
                   aria-hidden="true"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
 
-              {/* Expanded details */}
               {isExpanded && (
-                <div id={panelId} role="region" className="px-4 pb-4 ml-0 sm:ml-9 space-y-4 border-t border-gray-100 pt-4">
-                  {/* How to do this */}
+                <div
+                  id={panelId}
+                  role="region"
+                  className="px-4 md:px-5 pb-5 ml-0 sm:ml-10 space-y-5 border-t border-[var(--color-rule)] pt-5"
+                >
                   <div>
-                    <h4 className="text-sm font-semibold text-[var(--color-brand)] mb-1">
-                      How to do this:
-                    </h4>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <h4 className="iha-caps">How to do this</h4>
+                    <p className="mt-2 text-[14.5px] text-[var(--color-ink)] leading-relaxed">
                       {item.howTo}
                     </p>
                   </div>
 
-                  {/* Why this matters */}
                   <div>
-                    <h4 className="text-sm font-semibold text-[var(--color-brand)] mb-1">
-                      Why this matters:
-                    </h4>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <h4 className="iha-caps">Why this matters</h4>
+                    <p className="mt-2 text-[14.5px] text-[var(--color-ink)] leading-relaxed">
                       {item.why}
                     </p>
                   </div>
 
-                  {/* Legal citations */}
                   {item.citations.length > 0 && (
                     <div>
-                      <h4 className="text-sm font-semibold text-[var(--color-brand)] mb-1">
-                        Legal authority:
-                      </h4>
-                      <ul className="space-y-1">
+                      <h4 className="iha-caps">Legal authority</h4>
+                      <ul className="mt-2 space-y-1.5">
                         {item.citations.map((citation, i) => (
-                          <li key={i} className="text-sm text-gray-500">
+                          <li key={i} className="text-[13.5px] text-[var(--color-ink-soft)]">
                             {citation.url ? (
                               <a
                                 href={citation.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline"
+                                className="font-[family-name:var(--font-display)] italic text-[var(--color-ink)] underline decoration-[var(--color-rule)] underline-offset-[4px] hover:decoration-[var(--color-ink)] transition-colors"
                               >
                                 {citation.text}
                               </a>
                             ) : (
-                              <span className="font-mono text-xs bg-gray-100 px-2 py-1 rounded">
+                              <span className="font-[family-name:var(--font-mono)] text-[12px] bg-[var(--color-cream-deep)] px-2 py-1 border border-[var(--color-rule)]">
                                 {citation.text}
                               </span>
                             )}
@@ -200,10 +194,10 @@ export default function ExecutionChecklist({ items }: Props) {
                   )}
                 </div>
               )}
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ol>
     </div>
   );
 }

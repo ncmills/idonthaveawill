@@ -52,10 +52,16 @@ function ReviewContent() {
 
   if (error) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
-        <p className="text-red-600 mb-4">{error}</p>
-        <Link href="/create" className="text-[var(--color-accent)] hover:underline">
-          Go back to questionnaire
+      <div className="max-w-2xl mx-auto px-6 py-20 text-center">
+        <p className="iha-caps">An interruption</p>
+        <p className="mt-4 font-[family-name:var(--font-display)] italic text-[18px] text-[var(--color-ink)]">
+          {error}
+        </p>
+        <Link
+          href="/create"
+          className="inline-block mt-6 font-[family-name:var(--font-display)] italic text-[16px] text-[var(--color-ink)] underline decoration-[var(--color-sage)] decoration-[1.5px] underline-offset-[6px] hover:decoration-[var(--color-ink)] transition-colors"
+        >
+          Go back to questionnaire →
         </Link>
       </div>
     );
@@ -63,8 +69,11 @@ function ReviewContent() {
 
   if (!will) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
-        <p className="text-gray-500">Generating your will...</p>
+      <div className="max-w-2xl mx-auto px-6 py-20 text-center">
+        <p className="iha-caps">Preparing</p>
+        <p className="mt-4 font-[family-name:var(--font-display)] italic text-[18px] text-[var(--color-ink-soft)]">
+          Typesetting your draft…
+        </p>
       </div>
     );
   }
@@ -72,22 +81,23 @@ function ReviewContent() {
   return (
     <div>
       <DisclaimerBanner />
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 no-print">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10 no-print">
           <div>
-            <h1 className="text-2xl font-bold text-[var(--color-brand)]">
-              Your Will is Ready
+            <p className="iha-caps">The draft</p>
+            <h1 className="mt-3 font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
+              Your will is ready.
             </h1>
-            <p className="text-gray-500 mt-1">
+            <p className="mt-2 font-[family-name:var(--font-display)] italic text-[16px] text-[var(--color-ink-soft)]">
               Review it below, then follow the steps to make it official.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <Link
               href="/create"
-              className="px-4 py-2.5 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-50 transition-colors text-center text-sm sm:text-base"
+              className="inline-flex items-center justify-center gap-2 px-5 py-[0.95rem] border border-[var(--color-ink)] text-[var(--color-ink)] text-[0.92rem] font-medium tracking-[0.02em] uppercase hover:bg-[var(--color-cream-deep)] transition-colors"
             >
-              Edit Answers
+              Edit answers
             </Link>
             <DownloadButton will={will} stateAbbr={answers?.state} />
           </div>

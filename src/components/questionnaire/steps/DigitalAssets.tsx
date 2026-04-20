@@ -26,7 +26,7 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
       isLast={isLast}
       whyWeAsk="Most people have more digital property than they realize: email accounts, social media profiles, cloud photo storage, cryptocurrency wallets, domain names, online banking, streaming subscriptions, and more. Without instructions, your family may not know these accounts exist, may not be able to access them, and could lose irreplaceable photos or real money (especially crypto). A 'digital executor' is the person you authorize to access and manage these accounts. We don't put passwords in the will itself — because wills become public documents when filed with the court — but we can note where your executor should look to find login information (like a password manager or a sealed envelope in a safe). Many states have adopted the Revised Uniform Fiduciary Access to Digital Assets Act, which gives your executor legal authority to manage digital accounts if you grant it in your will."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         Do you want to include instructions for your online accounts and digital stuff?
       </h2>
       <p className="mt-2 text-gray-500">
@@ -52,8 +52,8 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Who should have access to your digital accounts?</label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <input type="text" placeholder="Full name" value={digitalExecutor?.name ?? ""} onChange={(e) => updateAnswers({ digitalExecutor: { name: e.target.value, relationship: digitalExecutor?.relationship ?? "" } })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
-              <input type="text" placeholder="Relationship" value={digitalExecutor?.relationship ?? ""} onChange={(e) => updateAnswers({ digitalExecutor: { name: digitalExecutor?.name ?? "", relationship: e.target.value } })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
+              <input type="text" placeholder="Full name" value={digitalExecutor?.name ?? ""} onChange={(e) => updateAnswers({ digitalExecutor: { name: e.target.value, relationship: digitalExecutor?.relationship ?? "" } })} className="iha-input" />
+              <input type="text" placeholder="Relationship" value={digitalExecutor?.relationship ?? ""} onChange={(e) => updateAnswers({ digitalExecutor: { name: digitalExecutor?.name ?? "", relationship: e.target.value } })} className="iha-input" />
             </div>
           </div>
 
@@ -64,7 +64,7 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
               value={digitalInstructions ?? ""}
               onChange={(e) => updateAnswers({ digitalInstructions: e.target.value })}
               rows={3}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent resize-none"
+              className="iha-input resize-none"
             />
           </div>
 
@@ -79,7 +79,7 @@ export default function DigitalAssets({ answers, updateAnswers, onNext, onPrev, 
           {hasPasswordManager === true && (
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Where is it? <span className="text-gray-400 font-normal">(Don&apos;t type passwords — just the location)</span></label>
-              <input type="text" placeholder='e.g., "In the fireproof safe" or "In 1Password, executor has the master password"' value={passwordManagerLocation ?? ""} onChange={(e) => updateAnswers({ passwordManagerLocation: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
+              <input type="text" placeholder='e.g., "In the fireproof safe" or "In 1Password, executor has the master password"' value={passwordManagerLocation ?? ""} onChange={(e) => updateAnswers({ passwordManagerLocation: e.target.value })} className="iha-input" />
               <p className="mt-1 text-xs text-gray-400">We won&apos;t put passwords in the will — it becomes a public document. We just note where to look.</p>
             </div>
           )}

@@ -22,10 +22,10 @@ export default function EstatePlanningHub() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-16">
-      <h1 className="font-[family-name:var(--font-serif)] text-3xl md:text-4xl font-bold text-[var(--color-brand)]">
+      <h1 className="font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
         Estate Planning by State
       </h1>
-      <p className="mt-4 text-gray-600 max-w-3xl leading-relaxed">
+      <p className="mt-4 text-[var(--color-ink-soft)] max-w-3xl leading-relaxed">
         Every state has its own rules for wills, trusts, and probate. Estate
         planning starts with understanding what your state requires &mdash;
         and the single most important step is creating a valid will. Below
@@ -33,18 +33,18 @@ export default function EstatePlanningHub() {
         DC.
       </p>
 
-      <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-800">
+      <div className="mt-6 iha-callout">
         This information is for general reference only and is not legal advice.
         Laws change &mdash; always verify current requirements with a licensed
         attorney in your state.
       </div>
 
       {/* What is estate planning */}
-      <div className="mt-10 p-6 bg-gray-50 rounded-2xl border border-gray-200">
-        <h2 className="text-lg font-bold text-[var(--color-brand)]">
+      <div className="mt-10 p-6 bg-[var(--color-cream-deep)] border border-[var(--color-rule)]">
+        <h2 className="font-[family-name:var(--font-display)] text-[20px] font-medium text-[var(--color-ink)]">
           What Is Estate Planning?
         </h2>
-        <p className="mt-2 text-gray-600 leading-relaxed">
+        <p className="mt-2 text-[var(--color-ink-soft)] leading-relaxed">
           Estate planning is the process of deciding what happens to your money,
           property, and family if you die or become incapacitated. It typically
           involves creating a will, setting up powers of attorney, and making
@@ -55,7 +55,7 @@ export default function EstatePlanningHub() {
       </div>
 
       {/* State grid */}
-      <h2 className="mt-12 text-2xl font-bold text-[var(--color-brand)]">
+      <h2 className="mt-12 font-[family-name:var(--font-display)] text-[26px] md:text-[30px] font-medium text-[var(--color-ink)]">
         Choose Your State
       </h2>
       <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -63,13 +63,13 @@ export default function EstatePlanningHub() {
           <Link
             key={state.abbreviation}
             href={`/estate-planning/${stateToSlug(state.state)}`}
-            className="flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-[var(--color-accent)] hover:bg-green-50 transition-all group"
+            className="flex items-center justify-between p-4 rounded-xl border border-[var(--color-rule)] hover:border-[var(--color-accent)] hover:bg-[var(--color-cream)] transition-all group"
           >
             <div>
               <span className="font-medium text-[var(--color-brand)] group-hover:text-[var(--color-accent)]">
                 {state.state}
               </span>
-              <span className="block text-xs text-gray-400 mt-0.5">
+              <span className="block text-xs text-[var(--color-ink-soft)] mt-0.5">
                 Estate planning guide
               </span>
             </div>
@@ -81,18 +81,18 @@ export default function EstatePlanningHub() {
       </div>
 
       {/* CTA */}
-      <div className="mt-16 text-center p-8 bg-gray-50 rounded-2xl">
-        <h2 className="text-xl font-bold text-[var(--color-brand)]">
+      <div className="mt-16 text-center p-8 bg-[var(--color-cream-deep)]">
+        <h2 className="font-[family-name:var(--font-display)] text-[22px] font-medium text-[var(--color-ink)]">
           Start with a will &mdash; it takes 10 minutes
         </h2>
-        <p className="mt-2 text-gray-500">
+        <p className="mt-2 text-[var(--color-ink-soft)]">
           A will is the foundation of every estate plan. Our free tool walks you
           through plain-English questions and generates a draft formatted for
           your state.
         </p>
         <Link
           href="/create"
-          className="mt-4 inline-flex items-center gap-2 bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white font-semibold px-8 py-3 rounded-xl transition-all hover:scale-[1.02] active:scale-[0.98]"
+          className="mt-4 inline-flex items-center gap-2 iha-seal"
         >
           Get Started &mdash; Free
         </Link>

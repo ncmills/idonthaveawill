@@ -57,7 +57,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
       nextDisabled={!canProceed}
       whyWeAsk="Specific gifts (lawyers call them 'specific bequests') let you say exactly which items go to exactly which people. Without them, everything goes into one big pot and gets divided according to the percentages you set in the next step. Examples of specific gifts: 'My diamond engagement ring to my daughter Sarah,' '$10,000 to my brother Mike,' 'My 2022 Toyota Camry to my nephew James,' or 'My savings account at Chase Bank ending in 4521 to my sister.' You can give away physical items, dollar amounts, specific bank accounts, real estate, or anything else you own. For each gift, we also ask what happens if that person dies before you do — because if they're gone and you haven't said what to do, the gift may fall back into your general estate or get tied up in court. For real estate, we ask for the full address so the property is clearly identified in the will — vague descriptions can cause disputes."
     >
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">
+      <h2 >
         Do you want to leave any specific items to specific people?
       </h2>
       <p className="mt-2 text-gray-500">
@@ -112,7 +112,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                   placeholder='e.g., "My diamond engagement ring" or "$10,000"'
                   value={bequest.item}
                   onChange={(e) => updateBequest(i, { item: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                  className="iha-input"
                 />
               </div>
 
@@ -125,7 +125,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                     placeholder="Full name"
                     value={bequest.recipient.name}
                     onChange={(e) => updateBequest(i, { recipient: { ...bequest.recipient, name: e.target.value } })}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                    className="iha-input"
                   />
                 </div>
                 <div>
@@ -136,7 +136,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                     placeholder="e.g., daughter"
                     value={bequest.recipient.relationship}
                     onChange={(e) => updateBequest(i, { recipient: { ...bequest.recipient, relationship: e.target.value } })}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                    className="iha-input"
                   />
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                   id={`bequest-alternate-${i}`}
                   value={bequest.alternateDisposition}
                   onChange={(e) => updateBequest(i, { alternateDisposition: e.target.value as SpecificBequest["alternateDisposition"] })}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent bg-white"
+                  className="iha-input bg-white"
                 >
                   <option value="residuary">Goes back into the rest of my estate</option>
                   <option value="their_children">Goes to their children</option>
@@ -161,7 +161,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                   placeholder="Alternate recipient's full name"
                   value={bequest.alternatePerson?.name ?? ""}
                   onChange={(e) => updateBequest(i, { alternatePerson: { name: e.target.value, relationship: bequest.alternatePerson?.relationship ?? "" } as Person })}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                  className="iha-input"
                 />
               )}
 
@@ -181,7 +181,7 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
                   placeholder="Full property address"
                   value={bequest.propertyAddress ?? ""}
                   onChange={(e) => updateBequest(i, { propertyAddress: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                  className="iha-input"
                 />
               )}
             </div>

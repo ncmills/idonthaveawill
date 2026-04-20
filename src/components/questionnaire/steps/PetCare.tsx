@@ -24,7 +24,7 @@ export default function PetCare({ answers, updateAnswers, onNext, onPrev, isFirs
 
   return (
     <QuestionCard stepKey="pets" direction={direction} onNext={onNext} onPrev={onPrev} isFirst={isFirst} isLast={isLast} whyWeAsk="Under the law, pets are considered property — they can't inherit money or be named as beneficiaries. But you can do two important things: (1) name a specific person to take care of your pet, so they don't end up at a shelter, and (2) set aside a dollar amount from your estate to cover the pet's food, vet bills, and other expenses. Without this, your pet's fate is up to whoever ends up handling your estate, and they may not be an animal person. Some states also allow formal 'pet trusts' for ongoing care, but naming a caretaker and setting aside funds in your will is the simplest approach and works in every state.">
-      <h2 className="text-2xl font-bold text-[var(--color-brand)]">Do you have any pets you want to make plans for?</h2>
+      <h2 >Do you have any pets you want to make plans for?</h2>
 
       {hasPets === null && (
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -42,7 +42,7 @@ export default function PetCare({ answers, updateAnswers, onNext, onPrev, isFirs
           {pets.map((pet, i) => (
             <div key={i} className="p-4 bg-gray-50 rounded-xl space-y-3">
               <div className="flex justify-between"><span className="text-sm font-medium text-gray-500">Pet {i + 1}</span>{pets.length > 1 && <button onClick={() => removePet(i)} className="text-sm text-red-500">Remove</button>}</div>
-              <input type="text" placeholder='e.g., "My golden retriever, Max"' value={pet.description} onChange={(e) => updatePet(i, { description: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
+              <input type="text" placeholder='e.g., "My golden retriever, Max"' value={pet.description} onChange={(e) => updatePet(i, { description: e.target.value })} className="iha-input" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input type="text" placeholder="Caretaker's name" value={pet.caretaker.name} onChange={(e) => updatePet(i, { caretaker: { ...pet.caretaker, name: e.target.value } })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />
                 <input type="text" placeholder="Relationship" value={pet.caretaker.relationship} onChange={(e) => updatePet(i, { caretaker: { ...pet.caretaker, relationship: e.target.value } })} className="px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent" />

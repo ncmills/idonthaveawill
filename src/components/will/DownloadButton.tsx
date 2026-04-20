@@ -33,7 +33,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, state: stateAbbr || "XX" }),
+        body: JSON.stringify({ email, state: stateAbbr || null }),
       });
       if (!res.ok) {
         const data = await res.json();
@@ -77,34 +77,39 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
     }
   }
 
-  const btnBase =
-    "inline-flex items-center justify-center gap-2 font-medium px-5 py-2.5 rounded-lg transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base";
-
   if (!emailSubmitted) {
     return (
       <div className="w-full sm:w-auto">
         <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-2">
+          <label className="sr-only" htmlFor="iha-download-email">
+            Your email address
+          </label>
           <input
+            id="iha-download-email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
             required
-            className="flex-1 px-4 py-2.5 rounded-lg border border-gray-300 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+            className="iha-input flex-1"
           />
           <button
             type="submit"
             disabled={submitting}
-            className={`${btnBase} bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white`}
+            className="iha-seal justify-center disabled:opacity-60"
           >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            {submitting ? "Submitting..." : "Unlock Download"}
+            <span className="iha-seal-mark" aria-hidden="true" />
+            {submitting ? "Unlocking…" : "Unlock download"}
           </button>
         </form>
-        {emailError && <p className="mt-1 text-red-600 text-xs">{emailError}</p>}
-        <p className="mt-1 text-gray-400 text-xs">Enter your email to download. We&apos;ll send one annual reminder to review your will.</p>
+        {emailError && (
+          <p className="mt-2 text-[12.5px] text-[var(--color-ink)]" role="alert">
+            {emailError}
+          </p>
+        )}
+        <p className="mt-2 text-[12px] text-[var(--color-ink-soft)]">
+          Enter your email to download. We&apos;ll send one annual reminder to review your will.
+        </p>
       </div>
     );
   }
@@ -115,24 +120,19 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
         onClick={handleDownloadWord}
         disabled={loading !== null}
         aria-busy={loading === "word"}
-        className={`${btnBase} bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white`}
+        className="iha-seal justify-center"
       >
-        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        {loading === "word" ? "Generating..." : "Word Document"}
+        <span className="iha-seal-mark" aria-hidden="true" />
+        {loading === "word" ? "Generating…" : "Word document"}
       </button>
 
       <button
         onClick={handleDownloadPdf}
         disabled={loading !== null}
         aria-busy={loading === "pdf"}
-        className={`${btnBase} bg-white border border-[var(--color-accent)] text-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-white`}
+        className="inline-flex items-center justify-center gap-2.5 px-6 py-[0.95rem] bg-[var(--color-cream)] border border-[var(--color-ink)] text-[var(--color-ink)] text-[0.92rem] font-medium tracking-[0.02em] uppercase transition-colors hover:bg-[var(--color-cream-deep)] disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        {loading === "pdf" ? "Generating..." : "PDF Document"}
+        {loading === "pdf" ? "Generating…" : "PDF"}
       </button>
     </div>
   );
