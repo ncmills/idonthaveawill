@@ -238,9 +238,17 @@ Address                                      Date
     }
   }
 
-  // Self-proving affidavit
+  // Self-proving affidavit — only render when witnesses exist. Pennsylvania's
+  // state data has `witnessCount: 0` + `self_proving_affidavit.available: true`,
+  // which previously produced a legally-nonsensical block with two named witness
+  // signature lines. Skip the affidavit entirely when there are no witnesses;
+  // otherwise loop the witness signature lines to match the actual count.
   let selfProvingAffidavit: string | undefined;
-  if (stateReqs.self_proving_affidavit.available) {
+  if (stateReqs.self_proving_affidavit.available && witnessCount > 0) {
+    const witnessSignatureLines = Array.from({ length: witnessCount }, (_, i) =>
+      `________________________________________    ________________________________________\nWitness ${i + 1} Signature                          Printed Name`
+    ).join("\n\n");
+
     selfProvingAffidavit = `
 SELF-PROVING AFFIDAVIT
 
@@ -252,8 +260,7 @@ Before me, the undersigned authority, on this _______ day of _________________, 
 ________________________________________
 ${fullName}, Testator
 
-________________________________________    ________________________________________
-Witness 1 Signature                          Witness 2 Signature
+${witnessSignatureLines}
 
 Subscribed, sworn to, and acknowledged before me by ${fullName}, the Testator, and subscribed and sworn to before me by the witnesses, on this date.
 

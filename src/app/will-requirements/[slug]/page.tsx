@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const state = slugToState(slug);
   if (!state) return {};
 
-  const title = `${state.state} Will Requirements — How to Make a Valid Will in ${state.abbreviation}`;
-  const description = `Learn what's required to make a legally valid will in ${state.state}. ${state.witness_requirements.count} witnesses${state.notarization.required ? ", notarization required" : ""}, minimum age ${state.minimum_age.standard}${state.holographic_wills.recognized ? ", holographic wills accepted" : ""}. Free will drafting tool included.`;
+  const title = `How to Make a Will in ${state.state} (2026)`;
+  const description = `Everything you need to make a valid will in ${state.state}: witness and notary rules, signing steps, and a free drafting tool. Updated 2026.`;
 
   return {
     title,

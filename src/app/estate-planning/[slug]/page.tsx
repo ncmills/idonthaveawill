@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const state = slugToState(slug);
   if (!state) return {};
 
-  const title = `Estate Planning in ${state.state} — What You Need to Know`;
-  const description = `A plain-English guide to estate planning in ${state.state}. Learn about wills, witnesses, notarization, probate, and how to protect your family. Free will drafting tool included.`;
+  const title = `${state.state} Estate Planning (2026): Wills, Probate & Intestate Laws`;
+  const description = `A plain-English guide to ${state.state} estate planning: wills, probate, intestate succession, and how to protect your family. Free will drafting tool. Updated 2026.`;
 
   return {
     title,

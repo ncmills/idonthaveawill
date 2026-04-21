@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     google: "aSAROWRm5tmjvMJ71KHMPTVNVZCIcIyBpY0o7WbHN10",
   },
   title: {
-    default: "Free Will Drafting Tool | idonthaveawill.com",
+    default: "Free Will Maker — Draft a Legal Will in 10 Minutes (All 50 States)",
     template: "%s | idonthaveawill.com",
   },
   description:
-    "A free self-help tool to draft a simple will in about 10 minutes. Covers all 50 US states and DC. No account needed. Your data never leaves your browser. Not legal advice.",
+    "A free self-help tool to draft a valid will in about 10 minutes. All 50 states + DC. No account, no cost — your data never leaves your browser.",
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg",

@@ -9,11 +9,14 @@ export const ALL_STEPS: StepDefinition[] = [
     id: "guardians",
     label: "Guardians",
     component: "Guardians",
+    // Show the step whenever there's ANY reason to name a guardian:
+    // a confirmed minor child, OR any child whose date-of-birth was left
+    // blank (previously the step was silently skipped for blank DOBs, which
+    // cut off users who typed a child in but didn't finish the DOB field).
     condition: (a) =>
       a.children.some((c) => {
-        if (!c.dateOfBirth) return false;
-        const age = getAge(c.dateOfBirth);
-        return age < 18;
+        if (!c.dateOfBirth) return true;
+        return getAge(c.dateOfBirth) < 18;
       }),
   },
   { id: "executor", label: "Executor", component: "Executor" },
