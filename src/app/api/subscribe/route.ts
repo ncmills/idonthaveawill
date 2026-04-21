@@ -9,6 +9,13 @@ const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+const US_STATE_ABBRS = new Set([
+  "AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN",
+  "IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH",
+  "NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT",
+  "VT","VA","WA","WV","WI","WY",
+]);
+
 export async function POST(request: Request) {
   try {
     const { email: rawEmail, state } = await request.json();
@@ -23,8 +30,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Valid email required" }, { status: 400 });
     }
 
-    // Validate state is a 2-letter code (no PII can sneak in), or null/empty
-    const validState = state && typeof state === "string" && state.length === 2 ? state : null;
+    // Validate state against real US-state/DC list so junk like "XX" / "ZZ" can't
+    // pollute Resend or email_subscribers.
+    const validState =
+      typeof state === "string" && US_STATE_ABBRS.has(state.toUpperCase())
+        ? state.toUpperCase()
+        : null;
 
 
     // Store in Supabase (primary store)
@@ -44,7 +55,6 @@ export async function POST(request: Request) {
         await resend.contacts.create({
           email,
           audienceId: AUDIENCE_ID,
-          firstName: validState || "",
           unsubscribed: false,
         });
       } catch (resendErr) {

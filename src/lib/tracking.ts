@@ -3,23 +3,21 @@
  * All calls are fire-and-forget and never block UX.
  */
 
-function getPostHog(): { capture: (event: string, props?: Record<string, unknown>) => void } | null {
-  if (typeof window === "undefined") return null;
-  // eslint-disable-next-line
-  const ph = (window as any).posthog;
-  if (!ph || typeof ph.capture !== "function") return null;
-  return ph;
-}
+import posthog from "posthog-js";
 
 function track(event: string, props?: Record<string, unknown>) {
-  getPostHog()?.capture(event, props);
+  if (typeof window !== "undefined" && posthog.__loaded) {
+    posthog.capture(event, props);
+  }
 
   // Also log to Supabase funnel table
   fetch("/api/funnel", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ event, ...props }),
-  }).catch(() => {});
+  }).catch((err) => {
+    if (typeof console !== "undefined") console.warn("[tracking] funnel post failed", err);
+  });
 }
 
 // ── Questionnaire funnel ──

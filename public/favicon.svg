@@ -1,10 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-  <!-- Warm paper background -->
-  <rect width="48" height="48" rx="6" fill="#f8f3ea"/>
   <!-- Paper with folded corner -->
   <path d="M12 8h18l8 8v24a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2Z" fill="none" stroke="#1a1815" stroke-width="1.75" stroke-linejoin="round"/>
   <!-- Folded corner triangle -->
-  <path d="M30 8v6a2 2 0 0 0 2 2h6" fill="#ede5d4" stroke="#1a1815" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M30 8v6a2 2 0 0 0 2 2h6" fill="none" stroke="#1a1815" stroke-width="1.75" stroke-linejoin="round"/>
   <!-- Ruled lines (text) -->
   <line x1="15" y1="24" x2="33" y2="24" stroke="#1a1815" stroke-width="1" stroke-linecap="round" opacity="0.85"/>
   <line x1="15" y1="29" x2="33" y2="29" stroke="#1a1815" stroke-width="1" stroke-linecap="round" opacity="0.85"/>

@@ -73,10 +73,16 @@ export default function QuestionnaireShell() {
       state: answers.state || undefined,
     });
     if (isLast) {
-      // Navigate to review page with generated will
-      const params = new URLSearchParams();
-      params.set("data", btoa(JSON.stringify(answers)));
-      window.location.href = `/review?${params.toString()}`;
+      // Hand off answers via sessionStorage so the review page can restore them.
+      // (Previously we serialized via btoa() in a URL param — that throws on any
+      // non-Latin-1 character, so names with accents or curly apostrophes silently
+      // broke the final step.)
+      try {
+        sessionStorage.setItem("idonthaveawill_answers", JSON.stringify(answers));
+      } catch {
+        // Quota / private-mode — review page will prompt to start over.
+      }
+      window.location.href = "/review";
     } else {
       next();
     }

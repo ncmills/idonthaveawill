@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import type { WillAnswers, GeneratedWill } from "@/lib/types";
 import { generateWill } from "@/lib/willGenerator";
 import DisclaimerBanner from "@/components/shared/DisclaimerBanner";
@@ -17,38 +16,30 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 function ReviewContent() {
-  const searchParams = useSearchParams();
   const [will, setWill] = useState<GeneratedWill | null>(null);
   const [answers, setAnswers] = useState<WillAnswers | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const didRun = useRef(false);
 
   useEffect(() => {
+    if (didRun.current) return;
+    didRun.current = true;
     try {
-      let parsedAnswers: WillAnswers | null = null;
-      const data = searchParams.get("data");
-      if (!data) {
-        // Try sessionStorage
-        const stored = sessionStorage.getItem("idonthaveawill_answers");
-        if (stored) {
-          parsedAnswers = JSON.parse(stored);
-        } else {
-          setError("No will data found. Please go back and complete the questionnaire.");
-          return;
-        }
-      } else {
-        parsedAnswers = JSON.parse(atob(data));
+      const stored = sessionStorage.getItem("idonthaveawill_answers");
+      if (!stored) {
+        setError("No will data found. Please go back and complete the questionnaire.");
+        return;
       }
-      if (parsedAnswers) {
-        setAnswers(parsedAnswers);
-        setWill(generateWill(parsedAnswers));
-        sendAnonymizedStats(parsedAnswers);
-        trackWillGenerated(parsedAnswers.state);
-      }
+      const parsedAnswers = JSON.parse(stored) as WillAnswers;
+      setAnswers(parsedAnswers);
+      setWill(generateWill(parsedAnswers));
+      sendAnonymizedStats(parsedAnswers);
+      trackWillGenerated(parsedAnswers.state);
     } catch (e) {
       setError("Something went wrong generating your will. Please try again.");
       console.error(e);
     }
-  }, [searchParams]);
+  }, []);
 
   if (error) {
     return (
