@@ -1,7 +1,11 @@
 "use client";
 
 import type { WillAnswers } from "@/lib/types";
-import { getStateList, getStateByAbbreviation, isCommunityPropertyState } from "@/lib/stateData";
+import {
+  getStateListClient,
+  getStateSlim,
+  isCommunityPropertyStateClient,
+} from "@/lib/stateDataClient";
 import QuestionCard from "../QuestionCard";
 
 interface Props {
@@ -15,8 +19,8 @@ interface Props {
 }
 
 export default function StateSelection({ answers, updateAnswers, onNext, onPrev, isFirst, isLast, direction }: Props) {
-  const states = getStateList();
-  const selected = getStateByAbbreviation(answers.state);
+  const states = getStateListClient();
+  const selected = getStateSlim(answers.state);
 
   return (
     <QuestionCard
@@ -66,13 +70,13 @@ export default function StateSelection({ answers, updateAnswers, onNext, onPrev,
       )}
 
       {selected && (
-        <div className="mt-4 text-sm text-gray-500">
+        <div className="mt-4 text-sm text-[var(--color-ink-soft)]">
           <strong>{selected.state}</strong> requires{" "}
-          {selected.witness_requirements.count} witness{selected.witness_requirements.count !== 1 ? "es" : ""}.
-          {selected.notarization.required
+          {selected.witnessCount} witness{selected.witnessCount !== 1 ? "es" : ""}.
+          {selected.notaryRequired
             ? " Notarization is required."
             : " Notarization is recommended but not required."}
-          {isCommunityPropertyState(answers.state) &&
+          {isCommunityPropertyStateClient(answers.state) &&
             " This is a community property state."}
         </div>
       )}

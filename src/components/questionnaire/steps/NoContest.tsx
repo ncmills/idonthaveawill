@@ -29,21 +29,21 @@ export default function NoContest({ answers, updateAnswers, onNext, onPrev, isFi
       <div className="mt-6 space-y-3">
         <button
           onClick={() => { updateAnswers({ includeNoContest: true }); setShowMore(false); }}
-          className={`w-full py-4 px-6 rounded-xl border-2 text-left transition-all ${answers.includeNoContest === true ? "border-[var(--color-accent)] bg-green-50" : "border-gray-200 hover:border-gray-300"}`}
+          className={`w-full py-4 px-6 rounded-xl border-2 text-left transition-all ${answers.includeNoContest === true ? "border-[var(--color-ink)] bg-[var(--color-cream-deep)] text-[var(--color-ink)]" : "border-[var(--color-rule)] hover:border-[var(--color-ink)]"}`}
         >
-          <span className="font-medium text-gray-700">Yes, include it</span>
+          <span className="font-medium text-[var(--color-ink)]">Yes, include it</span>
         </button>
         <button
           onClick={() => { updateAnswers({ includeNoContest: false }); setShowMore(false); }}
-          className={`w-full py-4 px-6 rounded-xl border-2 text-left transition-all ${answers.includeNoContest === false ? "border-[var(--color-accent)] bg-green-50" : "border-gray-200 hover:border-gray-300"}`}
+          className={`w-full py-4 px-6 rounded-xl border-2 text-left transition-all ${answers.includeNoContest === false ? "border-[var(--color-ink)] bg-[var(--color-cream-deep)] text-[var(--color-ink)]" : "border-[var(--color-rule)] hover:border-[var(--color-ink)]"}`}
         >
-          <span className="font-medium text-gray-700">No, skip it</span>
+          <span className="font-medium text-[var(--color-ink)]">No, skip it</span>
         </button>
         <button
           onClick={() => setShowMore(!showMore)}
-          className="w-full py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-left transition-all"
+          className="w-full py-4 px-6 rounded-xl border-2 border-[var(--color-rule)] hover:border-[var(--color-ink)] text-left transition-all"
         >
-          <span className="font-medium text-gray-700">Not sure — tell me more</span>
+          <span className="font-medium text-[var(--color-ink-soft)]">Not sure — tell me more</span>
         </button>
       </div>
 

@@ -1,7 +1,10 @@
 "use client";
 
 import type { WillAnswers, Person } from "@/lib/types";
-import { isCommunityPropertyState, getStateByAbbreviation } from "@/lib/stateData";
+import {
+  isCommunityPropertyStateClient,
+  getStateSlim,
+} from "@/lib/stateDataClient";
 import QuestionCard from "../QuestionCard";
 
 interface Props {
@@ -16,7 +19,7 @@ interface Props {
 
 export default function Disinheritance({ answers, updateAnswers, onNext, onPrev, isFirst, isLast, direction }: Props) {
   const { hasDisinheritances, disinheritances } = answers;
-  const stateReqs = getStateByAbbreviation(answers.state);
+  const stateReqs = getStateSlim(answers.state);
 
   function addPerson() { updateAnswers({ disinheritances: [...disinheritances, { name: "", relationship: "" }] }); }
   function updatePerson(i: number, partial: Partial<Person>) { updateAnswers({ disinheritances: disinheritances.map((d, j) => j === i ? { ...d, ...partial } : d) }); }
@@ -48,7 +51,7 @@ export default function Disinheritance({ answers, updateAnswers, onNext, onPrev,
               <strong>Louisiana law:</strong> You cannot fully disinherit children under 24 or children with disabilities — they are &quot;forced heirs.&quot; We&apos;ll include the required share automatically.
             </div>
           )}
-          {isCommunityPropertyState(answers.state) && answers.state !== "LA" && (
+          {isCommunityPropertyStateClient(answers.state) && answers.state !== "LA" && (
             <div className="p-3 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800">
               You can exclude your spouse from your will, but they still have a right to their half of community property. Your will can only control YOUR half.
             </div>
@@ -58,7 +61,7 @@ export default function Disinheritance({ answers, updateAnswers, onNext, onPrev,
               Georgia is one of the only states where you CAN fully disinherit a spouse (there&apos;s no elective share). We&apos;ll include clear language.
             </div>
           )}
-          {stateReqs && !isCommunityPropertyState(answers.state) && answers.state !== "GA" && answers.state !== "LA" && answers.maritalStatus === "married" && (
+          {stateReqs && !isCommunityPropertyStateClient(answers.state) && answers.state !== "GA" && answers.state !== "LA" && answers.maritalStatus === "married" && (
             <div className="p-3 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800">
               In {stateReqs.state}, your spouse has a legal right to claim a portion of your estate even if you leave them nothing. Your will can express your wish, but the law may override it.
             </div>

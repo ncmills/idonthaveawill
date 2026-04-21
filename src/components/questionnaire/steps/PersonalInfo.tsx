@@ -1,7 +1,7 @@
 "use client";
 
 import type { WillAnswers } from "@/lib/types";
-import { getStateByAbbreviation } from "@/lib/stateData";
+import { getStateSlim } from "@/lib/stateDataClient";
 import { getAge } from "@/lib/questionFlow";
 import QuestionCard from "../QuestionCard";
 
@@ -17,8 +17,8 @@ interface Props {
 
 export default function PersonalInfo({ answers, updateAnswers, onNext, onPrev, isFirst, isLast, direction }: Props) {
   const { fullName, city, county, dateOfBirth } = answers;
-  const stateReqs = getStateByAbbreviation(answers.state);
-  const minAge = stateReqs?.minimum_age.standard ?? 18;
+  const stateReqs = getStateSlim(answers.state);
+  const minAge = stateReqs?.minimumAge ?? 18;
 
   const ageValid =
     !dateOfBirth || getAge(dateOfBirth) >= minAge;

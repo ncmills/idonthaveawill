@@ -34,8 +34,8 @@ export default function DebtsAndExpenses({ answers, updateAnswers, onNext, onPre
           onClick={() => updateAnswers({ debtHandling: "general", debtInstructions: undefined })}
           className={`py-4 px-6 rounded-xl border-2 text-left transition-all ${
             answers.debtHandling === "general"
-              ? "border-[var(--color-accent)] bg-green-50"
-              : "border-gray-200 hover:border-gray-300"
+              ? "border-[var(--color-ink)] bg-[var(--color-cream-deep)] text-[var(--color-ink)]"
+              : "border-[var(--color-rule)] hover:border-[var(--color-ink)]"
           }`}
         >
           <span className="font-medium text-gray-700">Pay them from my general estate</span>
@@ -45,8 +45,8 @@ export default function DebtsAndExpenses({ answers, updateAnswers, onNext, onPre
           onClick={() => updateAnswers({ debtHandling: "specific" })}
           className={`py-4 px-6 rounded-xl border-2 text-left transition-all ${
             answers.debtHandling === "specific"
-              ? "border-[var(--color-accent)] bg-green-50"
-              : "border-gray-200 hover:border-gray-300"
+              ? "border-[var(--color-ink)] bg-[var(--color-cream-deep)] text-[var(--color-ink)]"
+              : "border-[var(--color-rule)] hover:border-[var(--color-ink)]"
           }`}
         >
           <span className="font-medium text-gray-700">I have specific instructions</span>

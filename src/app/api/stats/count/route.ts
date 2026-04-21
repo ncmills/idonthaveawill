@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { supabaseAdmin } from "@/lib/supabase";
 
 export const revalidate = 300;
 
 export async function GET() {
   try {
-    const { count, error } = await supabase
+    const { count, error } = await supabaseAdmin
       .from("will_stats")
       .select("*", { count: "exact", head: true });
 

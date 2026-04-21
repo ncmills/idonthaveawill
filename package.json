@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "indexnow": "npx tsx scripts/submit-indexnow.ts",
+    "build:state-slim": "node scripts/build-state-slim.mjs",
     "deploy": "npx vercel --prod --yes && npx tsx scripts/submit-indexnow.ts"
   },
   "dependencies": {

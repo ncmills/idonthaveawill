@@ -127,10 +127,10 @@ export default async function EstatePlanningStatePage({ params }: Props) {
           <span className="text-gray-700">{state.state}</span>
         </nav>
 
-        <h1 className="font-[family-name:var(--font-serif)] text-3xl md:text-4xl font-bold text-[var(--color-brand)]">
+        <h1 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-medium text-[var(--color-ink)] tracking-[-0.01em]">
           Estate Planning in {state.state}
         </h1>
-        <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+        <p className="mt-4 font-[family-name:var(--font-display)] italic text-[17px] text-[var(--color-ink-soft)] leading-relaxed max-w-3xl">
           Estate planning doesn&apos;t have to be complicated. In{" "}
           {state.state}, the most important step is creating a valid will
           &mdash; a legal document that says who gets your property, who raises
@@ -138,8 +138,8 @@ export default async function EstatePlanningStatePage({ params }: Props) {
           overview of what {state.state} requires and how to get started.
         </p>
 
-        <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-800">
-          This is general information, not legal advice. Laws can change.
+        <div className="iha-callout mt-6">
+          <strong>General information, not legal advice.</strong> Laws can change.
           Consult a {state.state} attorney to confirm current requirements.
         </div>
 

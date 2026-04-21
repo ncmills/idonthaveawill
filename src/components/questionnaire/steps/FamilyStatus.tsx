@@ -1,7 +1,7 @@
 "use client";
 
 import type { WillAnswers } from "@/lib/types";
-import { isCommunityPropertyState } from "@/lib/stateData";
+import { isCommunityPropertyStateClient } from "@/lib/stateDataClient";
 import QuestionCard from "../QuestionCard";
 
 interface Props {
@@ -54,8 +54,8 @@ export default function FamilyStatus({ answers, updateAnswers, onNext, onPrev, i
             }
             className={`py-4 px-6 rounded-xl border-2 text-lg font-medium transition-all ${
               answers.maritalStatus === s.value
-                ? "border-[var(--color-accent)] bg-green-50 text-[var(--color-accent)]"
-                : "border-gray-200 hover:border-gray-300 text-gray-700"
+                ? "border-[var(--color-ink)] bg-[var(--color-cream-deep)] text-[var(--color-ink)]"
+                : "border-[var(--color-rule)] hover:border-[var(--color-ink)] text-[var(--color-ink-soft)]"
             }`}
           >
             {s.label}
@@ -76,7 +76,7 @@ export default function FamilyStatus({ answers, updateAnswers, onNext, onPrev, i
             className="iha-input"
           />
 
-          {isCommunityPropertyState(answers.state) && (
+          {isCommunityPropertyStateClient(answers.state) && (
             <div className="iha-callout">
               <strong>Community property state:</strong> Most property you and your spouse got during your marriage is owned equally by both of you. Your will can only give away YOUR half of community property. Keep this in mind as you answer the next questions.
             </div>

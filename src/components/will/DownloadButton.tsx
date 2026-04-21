@@ -89,17 +89,16 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="your@email.com"
-            required
+            placeholder="your@email.com (optional)"
             className="iha-input flex-1"
           />
           <button
             type="submit"
-            disabled={submitting}
+            disabled={submitting || !email}
             className="iha-seal justify-center disabled:opacity-60"
           >
             <span className="iha-seal-mark" aria-hidden="true" />
-            {submitting ? "Unlocking…" : "Unlock download"}
+            {submitting ? "Unlocking…" : "Unlock + remind me"}
           </button>
         </form>
         {emailError && (
@@ -108,7 +107,15 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
           </p>
         )}
         <p className="mt-2 text-[12px] text-[var(--color-ink-soft)]">
-          Enter your email to download. We&apos;ll send one annual reminder to review your will.
+          Optional. If you leave one, we&apos;ll send a single annual reminder to review your will.{" "}
+          <button
+            type="button"
+            onClick={() => setEmailSubmitted(true)}
+            className="underline decoration-[var(--color-rule)] decoration-[1.5px] underline-offset-[3px] hover:decoration-[var(--color-ink)] transition-colors"
+          >
+            Skip and download
+          </button>
+          .
         </p>
       </div>
     );

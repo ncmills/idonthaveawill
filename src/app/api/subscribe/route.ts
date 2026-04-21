@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { supabaseAdmin } from "@/lib/supabase";
 import { Resend } from "resend";
 
 const resend = process.env.RESEND_API_KEY
@@ -40,7 +40,7 @@ export async function POST(request: Request) {
 
     // Store in Supabase (primary store)
     {
-      const { error } = await supabase.from("email_subscribers").upsert(
+      const { error } = await supabaseAdmin.from("email_subscribers").upsert(
         { email, state: validState, subscribed_at: new Date().toISOString() },
         { onConflict: "email" }
       );

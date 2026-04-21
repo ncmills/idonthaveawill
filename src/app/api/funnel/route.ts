@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { supabaseAdmin } from "@/lib/supabase";
 
 const ALLOWED_EVENTS = [
   "step_viewed",
@@ -38,7 +38,7 @@ export async function POST(request: Request) {
       safeProps[key] = value;
     }
 
-    const { error } = await supabase.from("funnel_events").insert({
+    const { error } = await supabaseAdmin.from("funnel_events").insert({
       event,
       properties: safeProps,
     });

@@ -9,6 +9,28 @@ const FONT = "times";
 const FONT_SIZE = 12;
 const LINE_HEIGHT = 16;
 
+/**
+ * jsPDF's built-in fonts (Times / Helvetica / Courier) use WinAnsi encoding,
+ * which silently renders em-dashes, curly quotes, accented names, etc. as `?`.
+ * Until we ship a Unicode TTF, normalize incoming text to a Latin-1-safe form:
+ *   — / –   → -- / -
+ *   ' ' " " → straight quotes
+ *   é ñ â … → decompose to base letter + strip combining marks
+ *   anything else non-ASCII → fall back to ? (rare — worst case preserves the
+ *   document's validity while making it visually obvious where a character was
+ *   lost, rather than silently corrupting the name).
+ */
+function sanitizeForWinAnsi(text: string): string {
+  return text
+    .replace(/—/g, "--")
+    .replace(/–/g, "-")
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/…/g, "...")
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "");
+}
+
 export function downloadPdf(will: GeneratedWill) {
   const doc = new jsPDF({ unit: "pt", format: "letter" });
   let y = MARGIN;
@@ -30,7 +52,7 @@ export function downloadPdf(will: GeneratedWill) {
     doc.setFontSize(size);
 
     const lineH = (size / FONT_SIZE) * LINE_HEIGHT;
-    const paragraphs = text.split("\n");
+    const paragraphs = sanitizeForWinAnsi(text).split("\n");
 
     for (const para of paragraphs) {
       const displayText = options?.allCaps ? para.toUpperCase() : para;

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { supabaseAdmin } from "@/lib/supabase";
 import type { AnonymizedStats } from "@/lib/statsSchema";
 import { validateNoPI } from "@/lib/statsSchema";
 
@@ -15,7 +15,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { error } = await supabase.from("will_stats").insert({
+    const { error } = await supabaseAdmin.from("will_stats").insert({
       state: stats.state,
       marital_status: stats.marital_status,
       has_children: stats.has_children,

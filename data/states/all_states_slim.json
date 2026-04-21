@@ -1,0 +1,461 @@
+[
+  {
+    "abbreviation": "AL",
+    "state": "Alabama",
+    "slug": "alabama",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "AK",
+    "state": "Alaska",
+    "slug": "alaska",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "AZ",
+    "state": "Arizona",
+    "slug": "arizona",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "AR",
+    "state": "Arkansas",
+    "slug": "arkansas",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "CA",
+    "state": "California",
+    "slug": "california",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "CO",
+    "state": "Colorado",
+    "slug": "colorado",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "CT",
+    "state": "Connecticut",
+    "slug": "connecticut",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "DE",
+    "state": "Delaware",
+    "slug": "delaware",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "DC",
+    "state": "District of Columbia",
+    "slug": "district-of-columbia",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "FL",
+    "state": "Florida",
+    "slug": "florida",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "GA",
+    "state": "Georgia",
+    "slug": "georgia",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 14,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "HI",
+    "state": "Hawaii",
+    "slug": "hawaii",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "ID",
+    "state": "Idaho",
+    "slug": "idaho",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "IL",
+    "state": "Illinois",
+    "slug": "illinois",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "IN",
+    "state": "Indiana",
+    "slug": "indiana",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "IA",
+    "state": "Iowa",
+    "slug": "iowa",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "KS",
+    "state": "Kansas",
+    "slug": "kansas",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "KY",
+    "state": "Kentucky",
+    "slug": "kentucky",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "LA",
+    "state": "Louisiana",
+    "slug": "louisiana",
+    "witnessCount": 2,
+    "notaryRequired": true,
+    "minimumAge": 16,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "ME",
+    "state": "Maine",
+    "slug": "maine",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "MD",
+    "state": "Maryland",
+    "slug": "maryland",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "MA",
+    "state": "Massachusetts",
+    "slug": "massachusetts",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "MI",
+    "state": "Michigan",
+    "slug": "michigan",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "MN",
+    "state": "Minnesota",
+    "slug": "minnesota",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "MS",
+    "state": "Mississippi",
+    "slug": "mississippi",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "MO",
+    "state": "Missouri",
+    "slug": "missouri",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "MT",
+    "state": "Montana",
+    "slug": "montana",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "NE",
+    "state": "Nebraska",
+    "slug": "nebraska",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "NV",
+    "state": "Nevada",
+    "slug": "nevada",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "NH",
+    "state": "New Hampshire",
+    "slug": "new-hampshire",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "NJ",
+    "state": "New Jersey",
+    "slug": "new-jersey",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "NM",
+    "state": "New Mexico",
+    "slug": "new-mexico",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "NY",
+    "state": "New York",
+    "slug": "new-york",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "NC",
+    "state": "North Carolina",
+    "slug": "north-carolina",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "ND",
+    "state": "North Dakota",
+    "slug": "north-dakota",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "OH",
+    "state": "Ohio",
+    "slug": "ohio",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "OK",
+    "state": "Oklahoma",
+    "slug": "oklahoma",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "OR",
+    "state": "Oregon",
+    "slug": "oregon",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "PA",
+    "state": "Pennsylvania",
+    "slug": "pennsylvania",
+    "witnessCount": 0,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "RI",
+    "state": "Rhode Island",
+    "slug": "rhode-island",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "SC",
+    "state": "South Carolina",
+    "slug": "south-carolina",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "SD",
+    "state": "South Dakota",
+    "slug": "south-dakota",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "TN",
+    "state": "Tennessee",
+    "slug": "tennessee",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "TX",
+    "state": "Texas",
+    "slug": "texas",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "UT",
+    "state": "Utah",
+    "slug": "utah",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "VT",
+    "state": "Vermont",
+    "slug": "vermont",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "VA",
+    "state": "Virginia",
+    "slug": "virginia",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "WA",
+    "state": "Washington",
+    "slug": "washington",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "WV",
+    "state": "West Virginia",
+    "slug": "west-virginia",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  },
+  {
+    "abbreviation": "WI",
+    "state": "Wisconsin",
+    "slug": "wisconsin",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": false
+  },
+  {
+    "abbreviation": "WY",
+    "state": "Wyoming",
+    "slug": "wyoming",
+    "witnessCount": 2,
+    "notaryRequired": false,
+    "minimumAge": 18,
+    "holographicRecognized": true
+  }
+]

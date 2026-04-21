@@ -11,7 +11,7 @@ import AttorneyReferral from "@/components/will/AttorneyReferral";
 import EmailCapture from "@/components/will/EmailCapture";
 import { sendAnonymizedStats } from "@/lib/analytics";
 import { trackWillGenerated } from "@/lib/tracking";
-import { getStateByAbbreviation } from "@/lib/stateData";
+import { getStateNameByAbbr } from "@/lib/stateDataClient";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -107,7 +107,7 @@ function ReviewContent() {
           <div className="mt-12 space-y-6 no-print">
             <AttorneyReferral
               stateAbbr={answers.state}
-              stateName={getStateByAbbreviation(answers.state)?.state || answers.state}
+              stateName={getStateNameByAbbr(answers.state)}
             />
             <EmailCapture stateAbbr={answers.state} />
           </div>
