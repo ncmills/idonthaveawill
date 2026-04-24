@@ -20,8 +20,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const state = slugToState(slug);
   if (!state) return {};
 
-  const title = `${state.state} Estate Planning (2026): Wills, Probate & Intestate Laws`;
-  const description = `A plain-English guide to ${state.state} estate planning: wills, probate, intestate succession, and how to protect your family. Free will drafting tool. Updated 2026.`;
+  // Differentiate from /will-requirements/[slug] by leading with community
+  // property + intestate-succession angles. Estate-planning intent = "what
+  // happens to my stuff when I die," not "how to sign a will."
+  const isCommunity = COMMUNITY_PROPERTY_STATES.includes(state.abbreviation);
+
+  const title = `${state.state} Estate Planning: Probate, Intestate Laws & Wills (2026)`;
+  const description = `${state.state} is a ${isCommunity ? "community property" : "separate property (common law)"} state. Guide to intestate succession, probate, will requirements, and how to protect your family. Free will drafting tool. Updated 2026.`;
 
   return {
     title,
@@ -30,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://idonthaveawill.com/estate-planning/${slug}`,
     },
     openGraph: {
-      title: `Estate Planning in ${state.state}`,
+      title: `${state.state} Estate Planning`,
       description,
     },
   };

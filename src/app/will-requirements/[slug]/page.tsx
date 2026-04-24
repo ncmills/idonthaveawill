@@ -20,8 +20,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const state = slugToState(slug);
   if (!state) return {};
 
-  const title = `How to Make a Will in ${state.state} (2026)`;
-  const description = `Everything you need to make a valid will in ${state.state}: witness and notary rules, signing steps, and a free drafting tool. Updated 2026.`;
+  // Pack state-specific legal facts into title + description so search snippets
+  // match query intent. Ranking queries like "california holographic will
+  // requirements" and "are handwritten wills legal in florida" show 0% CTR on
+  // the old generic "How to Make a Will in X" template.
+  const witnesses = state.witness_requirements.count;
+  const needsNotary = state.notarization.required;
+  const holographic = state.holographic_wills.recognized;
+  const electronic = state.electronic_wills.recognized;
+
+  const hookParts: string[] = [];
+  if (holographic) hookParts.push("Holographic Wills");
+  hookParts.push(`${witnesses} Witnesses`);
+  if (needsNotary) hookParts.push("Notary Required");
+  else if (!holographic && electronic) hookParts.push("Electronic Wills");
+  const title = `${state.state} Will Requirements (2026): ${hookParts.slice(0, 3).join(", ")}`;
+
+  const notaryClause = needsNotary
+    ? `${witnesses} witnesses plus notarization`
+    : `${witnesses} witnesses (no notarization needed)`;
+  const holographicClause = holographic
+    ? "Handwritten (holographic) wills are valid."
+    : "Handwritten (holographic) wills are not recognized.";
+  const electronicClause = electronic
+    ? " Electronic wills are recognized."
+    : "";
+  const description = `${state.state} wills require ${notaryClause}. ${holographicClause}${electronicClause} Full guide to signing, self-proving affidavits, and revocation. Updated 2026.`;
 
   return {
     title,
@@ -30,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://idonthaveawill.com/will-requirements/${slug}`,
     },
     openGraph: {
-      title: `Will Requirements in ${state.state}`,
+      title: `${state.state} Will Requirements`,
       description,
     },
   };
