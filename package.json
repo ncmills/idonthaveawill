@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "npx tsx scripts/submit-indexnow.ts || true",
     "start": "next start",
     "lint": "next lint",
     "indexnow": "npx tsx scripts/submit-indexnow.ts",
