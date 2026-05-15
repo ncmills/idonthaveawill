@@ -4,16 +4,16 @@ import { getAllStates } from "@/lib/stateData";
 import { getStateUrl } from "@/lib/stateSlugs";
 
 export const metadata: Metadata = {
-  title: "Will Requirements by State — All 50 States + DC",
+  title: "Will Requirements by State: Notarization, Witnesses & Handwritten Wills",
   description:
-    "Find the legal requirements for making a valid will in your state. Covers witnesses, notarization, holographic wills, minimum age, and more for all 50 US states and Washington DC.",
+    "Louisiana is the only U.S. state that requires a will to be notarized. 48 states use a self-proving affidavit instead. Full witness, holographic, and signing rules for all 50 states + DC.",
   alternates: {
     canonical: "https://idonthaveawill.com/will-requirements",
   },
   openGraph: {
-    title: "Will Requirements by State — All 50 States + DC",
+    title: "Will Requirements by State (50 States + DC)",
     description:
-      "Every state has different rules for making a valid will. Find your state's requirements for witnesses, notarization, signatures, and more.",
+      "Which states require a will to be notarized? Only Louisiana. Full breakdown of witness counts, holographic wills, and electronic wills for every state.",
   },
 };
 
@@ -23,9 +23,55 @@ export default function WillRequirementsHub() {
   const statesWithNotarization = states.filter((s) => s.notarization.required);
   const statesWithHolographic = states.filter((s) => s.holographic_wills.recognized);
   const statesWithEwills = states.filter((s) => s.electronic_wills.recognized);
+  const statesWithSelfProving = states.filter((s) => s.self_proving_affidavit.available);
+  const witness2 = states.filter((s) => s.witness_requirements.count === 2).length;
+  const witness3 = states.filter((s) => s.witness_requirements.count === 3).length;
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What states require a will to be notarized?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Louisiana is the only U.S. state that requires a notarial testament to be executed before a notary and two witnesses (La. C.C. art. 1577). Every other state lets you make a valid will with witnesses alone. However, ${statesWithSelfProving.length} states offer an optional self-proving affidavit — a separate notarized statement attached to the will — which speeds up probate by removing the need to call witnesses to testify.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many witnesses does a will need?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${witness2} states require 2 witnesses; ${witness3} state${witness3 === 1 ? "s require" : "s require"} 3. Witnesses generally must be at least 18, mentally competent, and disinterested (not named as beneficiaries). Most states also require witnesses to sign in the testator's presence and, in some, in each other's presence.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do all states recognize handwritten (holographic) wills?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `No. ${statesWithHolographic.length} states recognize holographic (handwritten, unwitnessed) wills, typically only if the material provisions and signature are in the testator's handwriting. The remaining ${50 + 1 - statesWithHolographic.length} states require witnesses regardless of whether the will is handwritten or typed.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are electronic (digital) wills legal?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${statesWithEwills.length} states have enacted electronic wills statutes that recognize wills signed and witnessed via electronic means under specific procedural rules. The majority of states still require a physical signed and witnessed paper document.`,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <h1 className="font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
         Will Requirements by State
       </h1>
@@ -35,6 +81,25 @@ export default function WillRequirementsHub() {
         notarized, to whether a handwritten will counts. Below you&apos;ll find
         a guide for each of the 50 US states and Washington DC.
       </p>
+
+      {/* Featured-snippet answer block: top GSC query is
+          "what states require a will to be notarized" — answer is Louisiana only. */}
+      <div className="mt-8 p-6 border-l-2 border-[var(--color-accent)] bg-[var(--color-cream-deep)]">
+        <div className="text-xs uppercase tracking-[0.12em] text-[var(--color-ink-soft)] font-medium">
+          Short answer
+        </div>
+        <p className="mt-2 text-[var(--color-ink)] leading-relaxed">
+          <strong>Louisiana</strong> is the only U.S. state that requires a will to be
+          notarized to be legally valid (La. C.C. art. 1577 — notarial testament).
+          Every other state lets you make a valid will with witnesses alone.
+        </p>
+        <p className="mt-3 text-sm text-[var(--color-ink-soft)] leading-relaxed">
+          {statesWithSelfProving.length} states offer an optional{" "}
+          <em>self-proving affidavit</em> — a separate notarized statement attached
+          to the will. It&apos;s not required for the will to be valid, but it
+          speeds up probate by removing the need to call witnesses to testify.
+        </p>
+      </div>
 
       <div className="mt-6 iha-callout">
         This information is for general reference only and is not legal advice.
@@ -136,6 +201,67 @@ export default function WillRequirementsHub() {
             ))}
           </tbody>
         </table>
+      </div>
+
+      {/* FAQ — answers the four highest-impression GSC queries hitting this page. */}
+      <h2 className="mt-16 font-[family-name:var(--font-display)] text-[26px] md:text-[30px] font-medium text-[var(--color-ink)]">
+        Common Questions
+      </h2>
+
+      <div className="mt-6 space-y-6">
+        <div>
+          <h3 className="font-medium text-[var(--color-ink)] text-lg">
+            What states require a will to be notarized?
+          </h3>
+          <p className="mt-2 text-[var(--color-ink-soft)] leading-relaxed">
+            Louisiana is the only U.S. state that requires a notarial testament
+            to be executed before a notary and two witnesses (La. C.C. art. 1577).
+            Every other state lets you make a valid will with witnesses alone.
+            However, {statesWithSelfProving.length} states offer an optional{" "}
+            <em>self-proving affidavit</em> — a separate notarized statement attached
+            to the will — which speeds up probate by removing the need to call
+            witnesses to testify.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="font-medium text-[var(--color-ink)] text-lg">
+            How many witnesses does a will need?
+          </h3>
+          <p className="mt-2 text-[var(--color-ink-soft)] leading-relaxed">
+            {witness2} states require 2 witnesses;{" "}
+            {witness3 === 1 ? "1 state requires" : `${witness3} states require`} 3.
+            Witnesses generally must be at least 18, mentally competent, and
+            disinterested (not named as beneficiaries). Most states also require
+            witnesses to sign in the testator&apos;s presence and, in some, in
+            each other&apos;s presence.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="font-medium text-[var(--color-ink)] text-lg">
+            Do all states recognize handwritten (holographic) wills?
+          </h3>
+          <p className="mt-2 text-[var(--color-ink-soft)] leading-relaxed">
+            No. {statesWithHolographic.length} states recognize holographic
+            (handwritten, unwitnessed) wills, typically only if the material
+            provisions and signature are in the testator&apos;s handwriting.
+            The remaining {51 - statesWithHolographic.length} jurisdictions
+            require witnesses regardless of whether the will is handwritten or typed.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="font-medium text-[var(--color-ink)] text-lg">
+            Are electronic (digital) wills legal?
+          </h3>
+          <p className="mt-2 text-[var(--color-ink-soft)] leading-relaxed">
+            {statesWithEwills.length} states have enacted electronic wills
+            statutes that recognize wills signed and witnessed via electronic
+            means under specific procedural rules. The majority of states still
+            require a physical, signed, and witnessed paper document.
+          </p>
+        </div>
       </div>
 
       {/* CTA */}
