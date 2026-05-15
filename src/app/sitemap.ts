@@ -56,6 +56,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...statePages,
     {
+      url: `${baseUrl}/data`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/data/2026-state-will-laws-report`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/estate-planning`,
       lastModified: now,
       changeFrequency: "weekly",
