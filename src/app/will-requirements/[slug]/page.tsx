@@ -85,13 +85,18 @@ export default async function StatePage({ params }: Props) {
 
   const isCommunity = COMMUNITY_PROPERTY_STATES.includes(state.abbreviation);
   const allStates = getAllStates();
-  const currentIndex = allStates.findIndex((s) => s.abbreviation === state.abbreviation);
-  const neighbors = allStates
-    .filter((_, i) => i !== currentIndex)
-    .slice(
-      Math.max(0, currentIndex - 3),
-      Math.max(6, currentIndex + 3)
-    )
+
+  // Featured-states "Related states" surface. GSC shows California, Florida,
+  // Texas, and New York all collect dense impressions on state-law queries
+  // but rank too deep to earn clicks. Surfacing them as the curated "Other
+  // states" row from every state page (51 inbound links) builds the internal
+  // link equity needed to lift those rankings. Illinois and Pennsylvania
+  // round out the row so it doesn't read as four-state spam.
+  const FEATURED_STATE_ABBRS = ["CA", "TX", "FL", "NY", "IL", "PA"];
+  const relatedStates = FEATURED_STATE_ABBRS
+    .filter((abbr) => abbr !== state.abbreviation)
+    .map((abbr) => allStates.find((s) => s.abbreviation === abbr))
+    .filter((s): s is NonNullable<typeof s> => Boolean(s))
     .slice(0, 6);
 
   const breadcrumbLd = {
@@ -410,7 +415,7 @@ export default async function StatePage({ params }: Props) {
             Will Requirements in Other States
           </h2>
           <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-3">
-            {neighbors.map((s) => (
+            {relatedStates.map((s) => (
               <Link
                 key={s.abbreviation}
                 href={getStateUrl(s.state)}

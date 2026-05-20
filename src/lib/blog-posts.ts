@@ -570,7 +570,9 @@ const HAND_WRITTEN_POSTS: BlogPost[] = [
 
 <p>Some states accept "holographic" wills — entirely handwritten and signed by the testator, no witnesses required. Most states do not. If you write a holographic will in a state that doesn't recognize them, it's invalid.</p>
 
-<p><strong>The fix:</strong> Unless you're sure your state allows holographic wills and you're sure you've followed all the specific rules (which are fussier than people assume), use a typed will signed in front of witnesses. It works in every state.</p>
+<p>The states most likely to give people the wrong impression are the ones that do allow handwritten wills under tight rules — including <a href="/will-requirements/california">California</a>, <a href="/will-requirements/texas">Texas</a>, and a handful of others. Even in those states the requirements are fussier than people assume: the material provisions and signature usually have to be in the testator's own handwriting, and getting any of it wrong can void the document. <a href="/will-requirements/florida">Florida</a> and most other states don't recognize holographic wills at all.</p>
+
+<p><strong>The fix:</strong> Unless you're sure your state allows holographic wills and you're sure you've followed all the specific rules, use a typed will signed in front of witnesses. It works in every state. Check your state's exact rules on the <a href="/will-requirements">will requirements page</a>.</p>
 
 <h2>The Simplest Path to a Valid Will</h2>
 

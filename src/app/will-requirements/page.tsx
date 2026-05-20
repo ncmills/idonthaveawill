@@ -135,8 +135,58 @@ export default function WillRequirementsHub() {
         </div>
       </div>
 
-      {/* State grid */}
+      {/* Featured states — the four most-searched state guides surfaced
+          above the alphabetized grid. California, Texas, Florida, and New
+          York carry the bulk of state-law impressions in GSC; the grid below
+          alphabetizes them into visual parity with the other 47 jurisdictions,
+          which buries the queries that are actually asked. */}
       <h2 className="mt-12 font-[family-name:var(--font-display)] text-[26px] md:text-[30px] font-medium text-[var(--color-ink)]">
+        Most-Searched State Guides
+      </h2>
+      <p className="mt-2 text-[var(--color-ink-soft)] text-sm">
+        The four state guides readers reach for most often. Each one covers
+        witness rules, notarization, holographic wills, and signing steps in
+        full detail.
+      </p>
+      <div className="mt-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {[
+          {
+            name: "California",
+            note: "2 witnesses · Holographic wills recognized · Self-proving affidavit available",
+          },
+          {
+            name: "Texas",
+            note: "2 witnesses · Holographic wills recognized · Self-proving affidavit available",
+          },
+          {
+            name: "Florida",
+            note: "2 witnesses · Holographic wills not recognized · Electronic wills allowed",
+          },
+          {
+            name: "New York",
+            note: "2 witnesses · Handwritten wills limited to military · Electronic wills allowed",
+          },
+        ].map((featured) => (
+          <Link
+            key={featured.name}
+            href={getStateUrl(featured.name)}
+            className="block p-5 bg-[var(--color-cream-deep)] border-l-2 border-[var(--color-accent)] hover:bg-[var(--color-cream)] transition-colors group"
+          >
+            <div className="font-[family-name:var(--font-display)] text-[20px] font-medium text-[var(--color-ink)] group-hover:text-[var(--color-accent)]">
+              {featured.name}
+            </div>
+            <div className="mt-1 text-xs text-[var(--color-ink-soft)] leading-snug">
+              {featured.note}
+            </div>
+            <div className="mt-3 text-xs font-[family-name:var(--font-display)] italic text-[var(--color-sage-deep)]">
+              Read the guide &rarr;
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* State grid */}
+      <h2 className="mt-14 font-[family-name:var(--font-display)] text-[26px] md:text-[30px] font-medium text-[var(--color-ink)]">
         Choose Your State
       </h2>
       <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
