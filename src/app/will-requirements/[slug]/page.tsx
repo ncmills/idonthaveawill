@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getAllStates } from "@/lib/stateData";
 import { slugToState, stateToSlug, getStateUrl, getEstatePlanningUrl } from "@/lib/stateSlugs";
 import { COMMUNITY_PROPERTY_STATES } from "@/lib/types";
+import { getStateDeepDive } from "@/lib/stateDeepDives";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -45,7 +46,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const electronicClause = electronic
     ? " Electronic wills are recognized."
     : "";
-  const description = `${state.state} wills require ${notaryClause}. ${holographicClause}${electronicClause} Full guide to signing, self-proving affidavits, and revocation. Updated 2026.`;
+  const templatedDescription = `${state.state} wills require ${notaryClause}. ${holographicClause}${electronicClause} Full guide to signing, self-proving affidavits, and revocation. Updated 2026.`;
+
+  // A state with an editorial deep dive can override the templated description
+  // with unique copy — part of de-duplicating these pages for search.
+  const deepDive = getStateDeepDive(state.abbreviation);
+  const description = deepDive?.seoDescription ?? templatedDescription;
 
   return {
     title,
@@ -85,6 +91,7 @@ export default async function StatePage({ params }: Props) {
 
   const isCommunity = COMMUNITY_PROPERTY_STATES.includes(state.abbreviation);
   const allStates = getAllStates();
+  const deepDive = getStateDeepDive(state.abbreviation);
 
   // Featured-states "Related states" surface. GSC shows California, Florida,
   // Texas, and New York all collect dense impressions on state-law queries
@@ -149,6 +156,13 @@ export default async function StatePage({ params }: Props) {
           text: `The minimum age to make a will in ${state.state} is ${state.minimum_age.standard}. ${state.minimum_age.exceptions}`,
         },
       },
+      // State-specific FAQs from the editorial deep dive (NY only today) are
+      // merged in so the rich-result eligibility matches the unique copy below.
+      ...(deepDive?.faqs ?? []).map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: f.answer },
+      })),
     ],
   };
 
@@ -240,6 +254,103 @@ export default async function StatePage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        {/* ─── Editorial deep dive (per-state, opt-in via stateDeepDives.ts) ─── */}
+        {deepDive && (
+          <div className="mt-14 space-y-12">
+            <section>
+              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)] mb-3">
+                {state.state} in depth
+              </p>
+              {deepDive.intro.map((para, i) => (
+                <p
+                  key={i}
+                  className={`${i === 0 ? "text-lg" : "mt-4"} text-gray-700 leading-relaxed max-w-3xl`}
+                >
+                  {para}
+                </p>
+              ))}
+            </section>
+
+            {/* Pitfalls */}
+            <section>
+              <h2 className="text-xl font-bold text-[var(--color-brand)]">
+                {deepDive.pitfalls.heading}
+              </h2>
+              {deepDive.pitfalls.intro && (
+                <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
+                  {deepDive.pitfalls.intro}
+                </p>
+              )}
+              <ol className="mt-6 space-y-5 list-none">
+                {deepDive.pitfalls.items.map((item, i) => (
+                  <li
+                    key={i}
+                    className="relative pl-12 py-1"
+                  >
+                    <span className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 rounded-full bg-[var(--color-brand)] text-white text-sm font-semibold">
+                      {i + 1}
+                    </span>
+                    <h3 className="font-semibold text-[var(--color-brand)]">
+                      {item.title}
+                    </h3>
+                    <p className="mt-1.5 text-gray-600 leading-relaxed max-w-3xl">
+                      {item.body}
+                    </p>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            {/* Editorial sections */}
+            {deepDive.sections.map((sec, i) => (
+              <section key={i}>
+                <h2 className="text-xl font-bold text-[var(--color-brand)]">
+                  {sec.heading}
+                </h2>
+                {sec.body.map((para, j) => (
+                  <p key={j} className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
+                    {para}
+                  </p>
+                ))}
+              </section>
+            ))}
+
+            {/* State-specific FAQ (visible; also in FAQPage JSON-LD) */}
+            <section>
+              <h2 className="text-xl font-bold text-[var(--color-brand)]">
+                Common questions about {state.state} wills
+              </h2>
+              <div className="mt-5 space-y-5">
+                {deepDive.faqs.map((f, i) => (
+                  <div key={i}>
+                    <h3 className="font-semibold text-[var(--color-brand)]">{f.question}</h3>
+                    <p className="mt-1.5 text-gray-600 leading-relaxed max-w-3xl">{f.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Sources — signals real primary-source research */}
+            <section>
+              <h2 className="text-lg font-bold text-[var(--color-brand)]">Sources</h2>
+              <ul className="mt-3 space-y-2">
+                {deepDive.sources.map((s, i) => (
+                  <li key={i} className="text-sm">
+                    <a
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener nofollow"
+                      className="text-[var(--color-accent)] hover:underline break-words"
+                    >
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </div>
+        )}
 
         {/* Detailed sections */}
         <div className="mt-12 space-y-10">
