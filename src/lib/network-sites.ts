@@ -1,11 +1,10 @@
 /**
- * Canonical list of Nick's network of sites.
+ * Cross-site footer links — LEGAL / SELF-HELP CLUSTER (funnel).
  *
- * Used for cross-site footer links on blog and site-wide footers.
- *
- * To add a new site: add an entry below, THEN copy this file's NETWORK_SITES array
- * to the sibling projects' src/lib/network-sites.ts (peptide-stack, doppelwriter, tour-de-fore,
- * idonthaveawill, and any other project that renders a network footer).
+ * Network footers are siloed by topic so links stay topically relevant and don't
+ * read as a cross-niche link scheme. Equity funnels UPSTREAM toward the highest-
+ * priority site only. Cluster priority: aissdi > idonthaveawill > doppelwriter > imfrustrated.
+ * This site (idonthaveawill, priority 2) links ONLY to sites above it → just aissdi.
  */
 export interface NetworkSite {
   domain: string; // bare domain, no protocol
@@ -14,13 +13,6 @@ export interface NetworkSite {
 }
 
 export const NETWORK_SITES: NetworkSite[] = [
-  { domain: "tourdefore.com", label: "Tour de Fore", tagline: "Group golf trip planner" },
-  { domain: "whatpeptidesdo.com", label: "WPD", tagline: "Peptides, simplified" },
-  { domain: "doppelwriter.com", label: "DoppelWriter", tagline: "AI that writes in your voice" },
-  { domain: "bestmanhq.com", label: "BESTMAN HQ", tagline: "Bachelor party planner" },
-  { domain: "maidofhonorhq.com", label: "Maid of Honor HQ", tagline: "Bachelorette party planner" },
-  { domain: "idonthaveawill.com", label: "I Don't Have a Will", tagline: "Free will drafting tool" },
-  { domain: "imfrustrated.org", label: "I'm Frustrated", tagline: "Legal self-help directory" },
   { domain: "aissdi.com", label: "AISSDI", tagline: "Free SSDI approval-odds & judge lookup tools" },
 ];
 
