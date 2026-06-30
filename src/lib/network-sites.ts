@@ -21,6 +21,7 @@ export const NETWORK_SITES: NetworkSite[] = [
   { domain: "maidofhonorhq.com", label: "Maid of Honor HQ", tagline: "Bachelorette party planner" },
   { domain: "idonthaveawill.com", label: "I Don't Have a Will", tagline: "Free will drafting tool" },
   { domain: "imfrustrated.org", label: "I'm Frustrated", tagline: "Legal self-help directory" },
+  { domain: "aissdi.com", label: "AISSDI", tagline: "Free SSDI approval-odds & judge lookup tools" },
 ];
 
 /** Returns sites excluding the current domain (prevents self-linking). */
