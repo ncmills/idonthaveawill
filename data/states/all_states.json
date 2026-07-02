@@ -1901,6 +1901,7 @@
     },
     "electronic_wills": {
       "recognized": true,
+      "effective_date": "2027-12-01",
       "notes": "New York signed an electronic wills law in 2025 (S2224/A1614), effective December 2027. Will allow electronic execution and remote witnessing via audio-video technology"
     },
     "holographic_wills": {

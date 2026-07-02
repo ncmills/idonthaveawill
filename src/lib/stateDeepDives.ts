@@ -106,11 +106,11 @@ const NEW_YORK: StateDeepDive = {
       heading: "Where a New York will is proved: Surrogate's Court",
       body: [
         "New York probates wills in Surrogate's Court — a court that exists in each of the state's 62 counties. Your will is filed in the county where you were domiciled (your primary residence) at death.",
-        "This is the court that decides whether your will was validly executed, which is exactly why the signing formalities above carry so much weight. A clean execution, with a self-proving affidavit attached, is what keeps a probate uncontested and fast.",
+        "This is the court that decides whether your will was validly executed, which is exactly why the signing formalities above carry so much weight. A clean execution, with a SCPA § 1406 witness affidavit attached, is what keeps a probate uncontested and fast.",
       ],
     },
     {
-      heading: "Make it self-proving with a SCPA § 1406 affidavit",
+      heading: "New York's alternative: a SCPA § 1406 witness affidavit",
       body: [
         "New York does not use the classic notarized \"self-proving affidavit\" found in many states. Instead, SCPA § 1406 lets your two witnesses swear an affidavit — before a notary — at the time of signing, confirming the will was properly executed.",
         "Without it, the Surrogate's Court may have to track down your witnesses years later to testify in person. With it, the will can usually be admitted to probate without producing them at all. Execute the affidavit the same day you sign the will; it is far harder to arrange later.",
@@ -145,7 +145,7 @@ const NEW_YORK: StateDeepDive = {
     {
       question: "Does a will need to be notarized in New York?",
       answer:
-        "No. Notarization is not required for a New York will to be valid. But you should have your two witnesses sign an affidavit before a notary at the time of signing (SCPA § 1406) so the will is self-proving and can be admitted to probate without locating the witnesses years later.",
+        "No. Notarization is not required for a New York will to be valid. But you should have your two witnesses sign an affidavit before a notary at the time of signing (SCPA § 1406) so the will can be admitted to probate without locating the witnesses years later. New York doesn't use a traditional self-proving affidavit — the § 1406 witness affidavit serves the same practical purpose.",
     },
     {
       question: "Where is a will probated in New York?",

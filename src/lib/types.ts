@@ -18,7 +18,10 @@ export interface StateRequirements {
   };
   notarization: { required: boolean; notes: string };
   self_proving_affidavit: { available: boolean; requirements: string };
-  electronic_wills: { recognized: boolean; notes: string };
+  // effective_date (optional, ISO "YYYY-MM-DD"): set when a law is ENACTED but not yet in force.
+  // The at-a-glance badge shows "Enacted — effective <Month YYYY>" until that date passes, then
+  // reverts to "Recognized" automatically on the next static rebuild. Absent = in force now.
+  electronic_wills: { recognized: boolean; notes: string; effective_date?: string | null };
   holographic_wills: { recognized: boolean; notes: string };
   nuncupative_wills: { recognized: boolean; notes: string };
   revocation: { methods: string[]; notes: string };

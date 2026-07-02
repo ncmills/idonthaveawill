@@ -84,6 +84,32 @@ function YesNo({ value, yesLabel, noLabel }: { value: boolean; yesLabel?: string
   );
 }
 
+// Electronic wills need a THIRD state: a law can be ENACTED but not yet in force (e.g. NY's
+// S2224/A1614 is effective Dec 2027). Rendering such a law as a green "Recognized" pill is
+// misleading — a will executed electronically today would be invalid. When recognized is true but
+// effective_date is still in the future (evaluated at build time — static pages regenerate, so it
+// self-corrects once the date passes), show a distinct amber "Enacted — effective <Month YYYY>".
+function ElectronicWillsBadge({
+  ew,
+}: {
+  ew: { recognized: boolean; effective_date?: string | null };
+}) {
+  const eff = ew.effective_date ? new Date(`${ew.effective_date}T00:00:00Z`) : null;
+  const pending = ew.recognized && eff !== null && !Number.isNaN(eff.getTime()) && eff.getTime() > Date.now();
+  if (pending && eff) {
+    const when = eff.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+    return (
+      <span className="inline-flex items-center gap-1 text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full text-sm font-medium">
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        Enacted — effective {when}
+      </span>
+    );
+  }
+  return <YesNo value={ew.recognized} yesLabel="Recognized" noLabel="Not recognized" />;
+}
+
 export default async function StatePage({ params }: Props) {
   const { slug } = await params;
   const state = slugToState(slug);
@@ -240,7 +266,7 @@ export default async function StatePage({ params }: Props) {
             </div>
             <div className="flex justify-between items-center py-2 border-b border-gray-200">
               <span className="text-gray-600">Electronic wills</span>
-              <YesNo value={state.electronic_wills.recognized} yesLabel="Recognized" noLabel="Not recognized" />
+              <ElectronicWillsBadge ew={state.electronic_wills} />
             </div>
             <div className="flex justify-between items-center py-2 border-b border-gray-200">
               <span className="text-gray-600">Oral (nuncupative) wills</span>
