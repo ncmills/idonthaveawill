@@ -285,9 +285,977 @@ const CALIFORNIA: StateDeepDive = {
   ],
 };
 
+const GEORGIA: StateDeepDive = {
+  seoDescription:
+    "Georgia will requirements (2026): two witnesses who sign in your presence, notarization NOT required, and no handwritten (holographic) wills at all. The O.C.G.A. § 53-4-20 rules, why Georgia has no spousal elective share — a spouse can be disinherited, subject only to Year's Support — the age-14 minimum, the beneficiary-witness trap, and Probate Court, in plain English.",
+  intro: [
+    "Georgia is strict in one direction and unusually loose in two others. It flatly refuses to recognize handwritten (holographic) wills — a will needs two witnesses, no exceptions — yet it lets a 14-year-old make one, and it lets you disinherit your spouse entirely. Most people get at least one of these backwards.",
+    "The statute facts above give you the rules. This section covers where Georgia wills actually go wrong, and the one protection Georgia law builds in for a surviving spouse that surprises almost everyone: not an elective share, but Year's Support.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Georgia will goes wrong",
+    intro:
+      "Most Georgia wills that fail, fail on how they were signed — or on a wrong assumption about what Georgia protects. These are the recurring ones.",
+    items: [
+      {
+        title: "Assuming a handwritten note counts as a will",
+        body:
+          "Georgia does not recognize holographic (handwritten, unwitnessed) wills at all. Every will must be in writing and attested and subscribed by two or more competent witnesses in the testator's presence (O.C.G.A. § 53-4-20). A heartfelt letter in your own hand, however clear and however clearly signed, is not a valid will in Georgia without those two witnesses.",
+      },
+      {
+        title: "Using a beneficiary as one of your two witnesses",
+        body:
+          "If a witness is also a beneficiary, the will still stands and the witness is still competent — but the gift to that witness is void unless at least two other witnesses signed who are not beneficiaries (O.C.G.A. § 53-4-23). Sign with two neutral witnesses who inherit nothing, and the problem never arises.",
+      },
+      {
+        title: "Assuming you can't disinherit a spouse",
+        body:
+          "You can. Georgia has no elective or forced share — a spouse left out of the will has no automatic claim to a fixed fraction of the estate. What a surviving spouse (and minor children) can do is petition the Probate Court for Year's Support (O.C.G.A. § 53-3-1), which is a different and often smaller thing. Plan around Year's Support, not a New York-style elective share that Georgia doesn't have.",
+      },
+      {
+        title: "Relying on a notary instead of two witnesses",
+        body:
+          "Notarization does not make a Georgia will valid — two witnesses do (O.C.G.A. § 53-4-20). A notary matters only for the optional self-proving affidavit, which speeds probate but adds nothing to the will's underlying validity (O.C.G.A. § 53-4-24). A carefully notarized will signed by fewer than two competent witnesses is not validly executed.",
+      },
+      {
+        title: "Signing electronically or by video",
+        body:
+          "As of 2026, Georgia has not adopted an electronic wills act, and § 53-4-20 requires witnesses to attest \"in the presence of the testator.\" A scanned PDF, an e-signature, or a will \"witnessed\" over a video call is not a valid Georgia will. The valid route is still a physical document signed in wet ink with two witnesses physically present.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "Georgia has no elective share — a spouse can be disinherited, but Year's Support fills the gap",
+      body: [
+        "This is the single most surprising Georgia rule. Georgia is not a community-property state and it has no elective or forced share for a surviving spouse. If your will leaves your spouse nothing, the will controls — there is no statute letting the spouse claim a guaranteed one-third or one-half against it the way New York or the community-property states allow.",
+        "What Georgia gives a surviving spouse and minor children instead is Year's Support: a claim, filed in the Probate Court, for property from the estate sufficient to support them for 12 months from the date of death (O.C.G.A. § 53-3-1). Year's Support takes priority over most debts and even over the will's own bequests, but its amount is what the court finds necessary for support — not a fixed fraction of the estate. If your plan depends on leaving a spouse little or nothing, understand that Year's Support, not an elective share, is what they can assert.",
+      ],
+    },
+    {
+      heading: "No handwritten wills: two witnesses, and no exceptions",
+      body: [
+        "Georgia is a two-witness state with none of the carve-outs some states keep. A will must be in writing, signed by the testator (or by someone else in the testator's presence and at the testator's express direction), and attested and subscribed in the testator's presence by two or more competent witnesses (O.C.G.A. § 53-4-20). A witness may attest by mark, but the two-witness floor never drops.",
+        "There is no holographic-will exception, no nuncupative (oral) will, and no military or mariner carve-out of the kind New York keeps. Because there is no harmless-error or dispensing power in Georgia's code, a court cannot rescue a will that was signed with only one witness by finding you \"intended\" it to be your will. Get two competent, disinterested witnesses in the room, or the document is not a will.",
+      ],
+    },
+    {
+      heading: "The beneficiary-witness trap: the will stands, the gift falls",
+      body: [
+        "Using someone who inherits under the will as one of your witnesses is a classic Georgia mistake. It does not void the will, and it does not make the witness incompetent. What it does is void the gift to that witness — unless there are at least two other subscribing witnesses who are not beneficiaries (O.C.G.A. § 53-4-23).",
+        "There is a narrow spouse exception: you may witness a will that leaves a gift to your own spouse, and that fact goes only to your credibility, not to the gift's validity (O.C.G.A. § 53-4-23(b)). The safe practice is simpler than the exceptions — use two witnesses who take nothing under the will, and no gift is ever at risk.",
+      ],
+    },
+    {
+      heading: "The self-proving affidavit, and where a Georgia will is probated",
+      body: [
+        "Georgia does not require notarization for a will to be valid, but it does offer a self-proving affidavit: at signing (or any later date during the lifetimes of the testator and witnesses), the testator and both witnesses swear before a notary that the will was properly executed (O.C.G.A. § 53-4-24). A self-proved will can be admitted to probate without tracking down the witnesses to testify — but it can still be contested, revoked, or amended exactly like any other will.",
+        "Georgia probates wills in the Probate Court, which has exclusive jurisdiction over the probate of wills (O.C.G.A. § 53-5-1). The petition is filed in the Probate Court of the county where the testator was domiciled — the primary residence — at death. This is the court that decides whether your will was validly executed, which is exactly why the two-witness formality carries so much weight; a self-proving affidavit is what keeps that probate uncontested and quick.",
+      ],
+    },
+    {
+      heading: "Marriage, a new child, and divorce all rewrite a Georgia will",
+      body: [
+        "If you marry, have a child, or adopt a child after signing a will that made no provision in contemplation of that event, Georgia does not throw the whole will out — but the new spouse or child takes the share they would have received had you died with no will at all, paid from the residue of the estate (O.C.G.A. § 53-4-48). A gift to a class of \"my children\" is presumed to include later-born or later-adopted members, so naming your existing kids does not by itself defeat the protection.",
+        "Divorce cuts the other way. Every provision of a will made before your final divorce or annulment, where no provision was made in contemplation of it, takes effect as if your former spouse had predeceased you (O.C.G.A. § 53-4-49) — the ex is written out by operation of law. If you later remarry that same person and never revoked the will, those provisions revive. The safe move is the same in every case: revisit the will after any marriage, divorce, birth, or adoption. And remember a will can be revoked outright at any time before death (O.C.G.A. § 53-4-40), including by destroying it with intent to revoke (O.C.G.A. § 53-4-44).",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Georgia?",
+      answer:
+        "No. A Georgia will is valid when you sign it and two competent witnesses attest and subscribe it in your presence (O.C.G.A. § 53-4-20). Notarization is not required for validity. A notary is used only for the optional self-proving affidavit (O.C.G.A. § 53-4-24), which lets the will be admitted to probate without producing the witnesses — but that affidavit speeds probate and adds nothing to whether the will is legally valid. The two witnesses are what matter.",
+    },
+    {
+      question: "Can I write my own will by hand in Georgia?",
+      answer:
+        "You can write it by hand, but it is not valid unless two competent witnesses also attest and subscribe it in your presence (O.C.G.A. § 53-4-20). Georgia does not recognize holographic wills — a handwritten, unwitnessed will has no legal effect here, unlike in California or Texas. Handwriting the document is fine; skipping the two witnesses is fatal.",
+    },
+    {
+      question: "How many witnesses does a will need in Georgia?",
+      answer:
+        "Two. A Georgia will must be attested and subscribed by two or more competent witnesses, and they must sign in the testator's presence (O.C.G.A. § 53-4-20). Choose witnesses who are not beneficiaries: if a witness also inherits under the will, that gift is void unless two other non-beneficiary witnesses signed (O.C.G.A. § 53-4-23).",
+    },
+    {
+      question: "Can my spouse be left out of a Georgia will?",
+      answer:
+        "Yes. Georgia has no elective or forced share and is not a community-property state, so a spouse can be disinherited by the will. The one protection is Year's Support: a surviving spouse (and minor children) can petition the Probate Court for property sufficient to support them for 12 months after death, which takes priority over most debts and bequests (O.C.G.A. § 53-3-1). That is a support claim, not a fixed share of the estate.",
+    },
+    {
+      question: "Can I sign my will electronically in Georgia?",
+      answer:
+        "Not as of 2026. Georgia has not adopted an electronic wills act, and the statute requires witnesses to attest in the testator's presence (O.C.G.A. § 53-4-20). A scanned PDF, an e-signature, or a will \"witnessed\" over video is not a valid Georgia will. The valid route is a physical document signed in wet ink with two witnesses physically present.",
+    },
+  ],
+  sources: [
+    { label: "O.C.G.A. § 53-4-10 — Minimum age (14) to make a will", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-10/" },
+    { label: "O.C.G.A. § 53-4-11 — Testamentary capacity", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-11/" },
+    { label: "O.C.G.A. § 53-4-20 — Required writing; signing; two witnesses", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-20/" },
+    { label: "O.C.G.A. § 53-4-23 — Interested (beneficiary) witness", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-23/" },
+    { label: "O.C.G.A. § 53-4-24 — Self-proved will or codicil", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-24/" },
+    { label: "O.C.G.A. § 53-4-40 — Right to revoke a will", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-40/" },
+    { label: "O.C.G.A. § 53-4-44 — Revocation by physical act", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-44/" },
+    { label: "O.C.G.A. § 53-4-48 — Child born or spouse after execution", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-48/" },
+    { label: "O.C.G.A. § 53-4-49 — Effect of divorce or annulment", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-4-49/" },
+    { label: "O.C.G.A. § 53-3-1 — Year's Support for spouse and minor children", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-3-1/" },
+    { label: "O.C.G.A. § 53-5-1 — Probate Court jurisdiction and venue", url: "https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-5-1/" },
+    { label: "GeorgiaLegalAid — What should I know about making a will?", url: "https://www.georgialegalaid.org/resource/what-should-i-know-about-making-a-will" },
+    { label: "Georgia.gov — Write a Will", url: "https://georgia.gov/write-will" },
+    { label: "Georgia Courts — Council of Probate Court Judges", url: "https://georgiacourts.gov/council-of-probate-judges-of-georgia/" },
+  ],
+};
+
+const NORTH_CAROLINA: StateDeepDive = {
+  seoDescription:
+    "North Carolina will requirements (2026): two competent witnesses who sign in your presence, no notary required, and handwritten (holographic) wills valid with no witnesses. The strict § 31-3.3 rules, why NC has no harmless-error rescue, the sliding-scale elective share a spouse can claim, the 2021 repeal of the old \"found among valuable papers\" rule, and Clerk of Superior Court probate — in plain English.",
+  intro: [
+    "North Carolina sits in the middle on formality: it recognizes handwritten wills and does not require a notary, but it demands strict compliance with its execution statute and gives judges no power to forgive a signing that went wrong. A will that misses a formality is simply invalid — there is no harmless-error safety valve to fall back on.",
+    "The statute facts above give you the rules. This section covers where North Carolina wills actually go wrong, a 2021 change that quietly made handwritten wills easier, and the spousal protections built into North Carolina law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a North Carolina will goes wrong",
+    intro:
+      "Most North Carolina wills that fail, fail on how they were signed — not on what they say. And because North Carolina has no harmless-error rule, a defect is usually fatal. These are the recurring ones.",
+    items: [
+      {
+        title: "Assuming there is a safety net for a botched signing",
+        body:
+          "North Carolina requires strict compliance: no will is valid unless it complies with the requirements of the Chapter (§ 31-3.1). Unlike California, North Carolina has not adopted a harmless-error or \"dispensing power\" rule, so a court cannot rescue a will that was signed or witnessed incorrectly no matter how clear your intent was. Get the formalities right the first time — there is no do-over after death.",
+      },
+      {
+        title: "A \"holographic\" will that isn't entirely in your handwriting",
+        body:
+          "North Carolina recognizes handwritten wills, but only if the will is \"written entirely in the handwriting of the testator\" and signed by the testator (§ 31-3.4). People fill in a store-bought or typed form in their own hand and assume it counts. If material words are printed or typed rather than handwritten, and there are no two witnesses, it is neither a valid holographic will nor a valid attested one.",
+      },
+      {
+        title: "Using a beneficiary as one of your two witnesses",
+        body:
+          "A gift to someone who also served as a witness is void unless at least two other disinterested witnesses signed the will (§ 31-10). North Carolina's rule is all-or-nothing: without two other disinterested witnesses, the interested witness and their spouse \"shall take nothing under the will.\" The will itself survives, but that person's inheritance does not. Keep your witnesses neutral parties who inherit nothing.",
+      },
+      {
+        title: "Relying on a notary instead of two witnesses",
+        body:
+          "An attested North Carolina will must be signed by the testator and attested by at least two competent witnesses who sign in the testator's presence (§ 31-3.3). Notarization is not required and does not substitute for a witness. A notary's role is separate: it makes the will \"self-proved\" for probate (§ 31-11.6), not validly executed. A notarized will signed by fewer than two witnesses is not a valid will.",
+      },
+      {
+        title: "Signing electronically or by video",
+        body:
+          "As of 2026, North Carolina has not adopted electronic wills. The only electronic provision in Chapter 31 lets a licensed attorney store an electronic copy of an already-executed paper will (Article 11) — it does not authorize signing a will electronically. A scanned PDF, an e-signature, or a will \"witnessed\" over a video call is not a valid North Carolina will. The valid route is still wet ink with two witnesses physically present.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't fully disinherit a spouse in North Carolina",
+      body: [
+        "North Carolina is not a community-property state, but it still protects a surviving spouse through an elective share. A spouse who is left too little can claim a percentage of the decedent's \"Total Net Assets\" that increases with the length of the marriage: it starts at 15% for marriages under five years, rises to 25% at five years and one-third at ten years, and reaches one-half (50%) for marriages of fifteen years or more (§ 30-3.1).",
+        "On top of the elective share, a surviving spouse is entitled to a year's allowance of $60,000 for support, taken ahead of most claims against the estate (§ 30-15). You cannot write around these protections by leaving the spouse out of the will. If part of your plan depends on leaving a spouse less than the statutory share, build the elective share into the plan rather than ignoring it.",
+      ],
+    },
+    {
+      heading: "The spouse or child you forgot — and the ex-spouse you didn't remove",
+      body: [
+        "Marriage, divorce, and new children can rewrite an old will by operation of law. If you marry after signing your will and never update it, the new spouse can petition for an elective share just as if the will had been made after the marriage (§ 31-5.3). A child born or adopted after the will who is left unprovided for takes the share they would have received had you died without a will, unless the will shows the omission was intentional or otherwise provided for them (§ 31-5.5).",
+        "Divorce cuts the other way. If your marriage ends by absolute divorce or annulment after you sign, your former spouse is \"deemed to have predeceased\" you for every gift, appointment, and fiduciary role in the will (§ 31-5.4) — so an ex-spouse named as executor or beneficiary is automatically written out. None of this is a substitute for redrafting: the safe move is to revisit the will after any marriage, divorce, or new child.",
+      ],
+    },
+    {
+      heading: "Handwritten wills are valid — and North Carolina just made them easier",
+      body: [
+        "A North Carolina holographic will needs no witnesses and no notary. What it needs is that the will is written entirely in the testator's own handwriting and signed by the testator, with the signature either subscribed or placed in or on the will in the testator's own hand (§ 31-3.4). Printed matter that does not affect the meaning can appear, but the dispositive terms must be handwritten.",
+        "Until 2021, North Carolina also required a holographic will to be found after death among the testator's valuable papers, in a safe-deposit box or safe place, or in the custody of a person the testator left it with for safekeeping. Session Laws 2021-85 repealed that location requirement effective July 8, 2021, so a valid handwritten will now stands no matter where it turns up. North Carolina also recognizes nuncupative (oral) wills, but only in a narrow deathbed situation — made in one's last sickness or imminent peril of death, before two witnesses specially asked to witness it (§ 31-3.5) — and they can pass only limited personal property.",
+      ],
+    },
+    {
+      heading: "North Carolina has no harmless-error rescue",
+      body: [
+        "Some states let a judge admit a will that was signed incorrectly if the intent is clear by clear and convincing evidence. North Carolina does not. Section 31-3.1 makes a will invalid unless it complies with the Chapter's requirements, and there is no dispensing-power provision to soften that. The formalities in § 31-3.3 — a writing, the testator's signature, and at least two competent witnesses who sign in the testator's presence — are the whole ballgame.",
+        "This is exactly why the interested-witness trap and the two-witness rule carry so much weight here. A missing witness or a beneficiary-witness cannot be argued away after the fact. Execute cleanly, in front of two disinterested witnesses, and — for probate ease — add the self-proving acknowledgment before a notary the same day.",
+      ],
+    },
+    {
+      heading: "Where a North Carolina will is proved: the Clerk of Superior Court",
+      body: [
+        "North Carolina probates wills before the Clerk of Superior Court, who serves as the judge of probate, in the county where the decedent was domiciled — the primary residence — at death (§ 28A-3-1). If the decedent lived outside North Carolina but owned property here, the case is filed in a North Carolina county where that property sits.",
+        "You make probate far smoother by having the will self-proved. Under § 31-11.6, the testator and the two witnesses acknowledge the will before a notary — at signing or later — and the notary's certificate lets the will be admitted without tracking the witnesses down to testify. Notarization is never required for the will to be valid; its only job is to make the will self-proving. There is no separate North Carolina statutory will form to fill in — a will is drafted to meet § 31-3.3 or handwritten to meet § 31-3.4.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in North Carolina?",
+      answer:
+        "No. A North Carolina will is valid when the testator signs it and at least two competent witnesses sign in the testator's presence (§ 31-3.3) — no notary is required. A notary's only role is to make the will \"self-proved\" so it can be admitted to probate without the witnesses testifying (§ 31-11.6). Notarizing adds nothing to a will's validity and never replaces the two witnesses. A handwritten (holographic) will needs neither witnesses nor a notary (§ 31-3.4).",
+    },
+    {
+      question: "Are handwritten wills legal in North Carolina?",
+      answer:
+        "Yes. North Carolina recognizes handwritten (holographic) wills with no witnesses and no notary, as long as the will is written entirely in your own handwriting and signed by you (§ 31-3.4). North Carolina used to require that the will also be found after death among your valuable papers or in a safe place, but Session Laws 2021-85 repealed that requirement effective July 8, 2021 — so a valid handwritten will now stands wherever it is found. If material terms are typed, it is not a valid holographic will.",
+    },
+    {
+      question: "How many witnesses does a will need in North Carolina?",
+      answer:
+        "Two. A typed or printed will must be signed by the testator and attested by at least two competent witnesses who sign in the testator's presence (§ 31-3.3); the witnesses need not sign in each other's presence. They should be disinterested — a gift to a witness is void unless two other disinterested witnesses also signed, and the interested witness then takes nothing under the will (§ 31-10). A handwritten holographic will is the only kind that needs no witnesses at all (§ 31-3.4).",
+    },
+    {
+      question: "Can my spouse be left out of a North Carolina will?",
+      answer:
+        "Not entirely. North Carolina is not a community-property state, but a surviving spouse can claim an \"elective share\" against the will — a percentage of Total Net Assets that rises with the length of the marriage, from 15% under five years to one-half (50%) at fifteen years or more (§ 30-3.1). A spouse is also entitled to a $60,000 year's allowance for support (§ 30-15). You cannot disinherit a spouse without a valid waiver.",
+    },
+    {
+      question: "Can I sign my will electronically in North Carolina?",
+      answer:
+        "Not as of 2026. North Carolina has not adopted electronic wills. The only electronic provision in the wills chapter lets a licensed attorney store an electronic copy of an already-signed paper will (Chapter 31, Article 11); it does not allow signing a will electronically. A valid will must be a physical document signed in wet ink with two witnesses physically present (§ 31-3.3), or a holographic will entirely in your own handwriting (§ 31-3.4). A scanned PDF or a will \"witnessed\" over video is not valid.",
+    },
+  ],
+  sources: [
+    { label: "N.C.G.S. § 31-1 — Who may make will", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-1.html" },
+    { label: "N.C.G.S. § 31-3.1 — Will invalid unless statutory requirements complied with", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-3.1.html" },
+    { label: "N.C.G.S. § 31-3.3 — Attested written will", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-3.3.html" },
+    { label: "N.C.G.S. § 31-3.4 — Holographic will", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-3.4.html" },
+    { label: "N.C.G.S. § 31-3.5 — Nuncupative will", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-3.5.html" },
+    { label: "N.C.G.S. § 31-5.1 — Revocation of written will", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-5.1.html" },
+    { label: "N.C.G.S. § 31-5.3 — Effect of subsequent marriage", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-5.3.html" },
+    { label: "N.C.G.S. § 31-5.4 — Revocation by divorce or annulment", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-5.4.html" },
+    { label: "N.C.G.S. § 31-5.5 — After-born or after-adopted child", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-5.5.html" },
+    { label: "N.C.G.S. § 31-10 — Competency of interested witness", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-10.html" },
+    { label: "N.C.G.S. § 31-11.6 — Self-proved wills", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-11.6.html" },
+    { label: "N.C.G.S. § 30-3.1 — Right of elective share", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_30/GS_30-3.1.html" },
+    { label: "N.C.G.S. § 30-15 — Year's allowance to surviving spouse", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_30/GS_30-15.html" },
+    { label: "N.C.G.S. § 28A-3-1 — Venue for probate of will", url: "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_28A/GS_28A-3-1.html" },
+    { label: "N.C. Courts — Estates and wills (self-help)", url: "https://www.nccourts.gov/help-topics/estates-and-wills/estates" },
+  ],
+};
+
+const TEXAS: StateDeepDive = {
+  seoDescription:
+    "Texas will requirements (2026): two credible witnesses at least 14 years old, notarization NOT required for validity, and handwritten (holographic) wills fully recognized. The Estates Code § 251.051 execution rules, why Texas has no harmless-error do-over, how community property (not an elective share) protects a spouse, the self-proving affidavit that actually needs a notary, the pretermitted-child and divorce rules, and county-court probate — in plain English.",
+  intro: [
+    "Texas is flexible in ways that surprise people: it fully recognizes handwritten wills, it lets 14-year-olds serve as witnesses, and it never requires a notary to make a will valid. But it is unforgiving where it counts. Texas has no harmless-error rule — no judge can rescue a will that was signed the wrong way — and because Texas is a community-property state, what you can actually leave a spouse is not what most people assume.",
+    "The statute facts above give you the rules. This section covers where Texas wills actually go wrong, and the protections built into Texas law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Texas will goes wrong",
+    intro:
+      "Most Texas wills that fail, fail on how they were signed — not on what they say. And unlike a growing number of states, Texas gives you no second chance to fix a botched signing. These are the recurring mistakes.",
+    items: [
+      {
+        title: "Notarizing the will instead of getting two witnesses",
+        body:
+          "A typed Texas will must be attested by two or more credible witnesses who are at least 14 years old and who sign the will in your presence (Estates Code § 251.051). Notarization is not required and is not a substitute — a carefully notarized will signed by only one witness, or none, is simply not executed. And because Texas has no harmless-error rule, there is no courtroom rescue for it. Get the two witnesses; the notary is optional.",
+      },
+      {
+        title: "Using a beneficiary as one of your witnesses",
+        body:
+          "A gift to someone who also signs as a witness is at risk only when the will cannot be proved without that witness — for example, if your other witness is also a beneficiary (Estates Code § 254.002). If the second witness is disinterested, or the will is self-proved, the gift stands. Even when the witness is a necessary one, the gift survives if a disinterested, credible person corroborates the testimony, and the witness may still take up to their intestate share. The clean fix is simpler than the exceptions: use two witnesses who inherit nothing.",
+      },
+      {
+        title: "A \"holographic\" will that is typed or filled in on a form",
+        body:
+          "Texas recognizes handwritten wills with no witnesses at all — but only if the will is written wholly in your own handwriting (Estates Code § 251.052). People buy a printed will form, fill in the blanks, and sign it without witnesses. Because the printed words are not in your hand and there are no two witnesses, it is neither a valid holographic will nor a valid attested one.",
+      },
+      {
+        title: "Skipping the self-proving affidavit",
+        body:
+          "A Texas will is valid without a self-proving affidavit, but skipping it makes probate harder. The affidavit — sworn by you and both witnesses before a notary, who affixes an official seal (Estates Code § 251.104) — lets the will be admitted without tracking down your witnesses to testify years later (§ 251.102). This is the one document in a Texas will where a notary belongs. Sign it the same day you sign the will.",
+      },
+      {
+        title: "Signing electronically or by video",
+        body:
+          "As of 2026, Texas has not adopted electronic wills. Section 251.051 still requires a written document with witnesses who sign in your presence, and Texas's online-notarization law does not turn a PDF into a valid will. A scanned signature or a will \"witnessed\" over a video call is not a valid Texas will — sign a paper original in wet ink with two witnesses physically present.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "Texas protects a spouse through community property, not an elective share",
+      body: [
+        "Texas is a community-property state. Almost everything either spouse earns or acquires during the marriage is community property (Family Code § 3.002), and one-half of it already belongs to the surviving spouse — you cannot give away your spouse's half in your will. Your will only controls your own half of the community property plus your separate property (property owned before marriage or received by gift, devise, or descent — Family Code § 3.001).",
+        "This is why Texas has no New York-style elective share: the spouse is protected by owning half the marital estate outright, not by a claim against the will. The flip side surprises people — Texas has no forced share, so you can leave a spouse nothing out of your own half and your separate property. A surviving spouse still keeps homestead and family-allowance rights in probate, but there is no statute forcing a minimum inheritance. If that is not your intent, say so in the will.",
+      ],
+    },
+    {
+      heading: "Handwritten (holographic) wills are valid — but the whole thing has to be in your hand",
+      body: [
+        "Texas is one of the states that still honors a purely handwritten will. A will written wholly in the testator's handwriting needs no witnesses and no notary (Estates Code § 251.052). That makes it a genuine emergency option — a valid will you can write alone at a kitchen table.",
+        "The catch is the word \"wholly.\" If any dispositive part is typed or printed — including the blanks on a store-bought form — it is not a holographic will, and without two witnesses it is not a valid attested will either. A handwritten will can also be made self-proved during your lifetime by attaching your own affidavit (Estates Code § 251.107), but a typed, witnessed will is far easier to prove and far harder to attack.",
+      ],
+    },
+    {
+      heading: "Texas gives you no do-over: there is no harmless-error rule",
+      body: [
+        "Some states — California since 2009, for example — let a court admit a will that was signed incorrectly if there is clear and convincing evidence the person meant it to be their will. Texas has no such dispensing power anywhere in its Estates Code. If the two-witness formalities of Section 251.051 are not met, the will fails — full stop.",
+        "That is exactly why the self-proving affidavit matters so much in Texas. Executed correctly before a notary at signing (Estates Code § 251.104), it lets the will into probate without your witnesses having to appear (§ 251.102). Because there is no safety valve for a defective signing, the discipline is simple: two credible witnesses at least 14 years old, everyone signing in your presence, and a self-proving affidavit attached the same day.",
+      ],
+    },
+    {
+      heading: "The child you had after signing — and the spouse you divorced",
+      body: [
+        "Texas automatically protects a child born or adopted after you sign your will — a \"pretermitted child\" — who is neither mentioned nor provided for in the will or outside it (Estates Code §§ 255.051–255.052). If you had no living children when you signed, that child takes the share they would have received had you died without a will (§ 255.054); if you did have children and provided for them, the omitted child shares equally in what those children received (§ 255.053). Note that Texas has no equivalent \"omitted spouse\" statute — marrying after you sign does not rewrite your will for the new spouse the way it does in California.",
+        "Divorce, by contrast, is handled for you. If your marriage is dissolved by divorce, annulment, or a void-marriage declaration after you sign, the will is read as if your former spouse — and each of their relatives who is not also your relative — had died before you, unless the will says otherwise (Estates Code § 123.001). You still cannot change a will any other way except by a later will, codicil, or writing executed with the same formalities, or by physically destroying it (§ 253.002). The safe move is to revisit the will after any marriage, divorce, or new child.",
+      ],
+    },
+    {
+      heading: "Where a Texas will is proved: county court or statutory probate court",
+      body: [
+        "Texas has no single \"probate court\" statewide. In counties with a statutory probate court, that court hears the case; in counties with a county court at law exercising probate jurisdiction, it shares jurisdiction with the constitutional county court; and in the many smaller counties with neither, the county court itself handles probate (Estates Code § 32.002).",
+        "You file in the county where the decedent lived — the county of the deceased's domicile or fixed place of residence at death (Estates Code § 33.001). This is the court that decides whether the will was validly executed, which is why the two-witness formalities and a self-proving affidavit carry so much weight. One last practical note: Texas has no statutory fill-in-the-blank will form in its Estates Code (unlike California's), but the Supreme Court of Texas published free approved will forms in 2023 for simple estates — an administrative resource, not a statute.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Texas?",
+      answer:
+        "No. A Texas will is valid when you sign it and two or more credible witnesses at least 14 years old also sign it in your presence (Estates Code § 251.051). Notarization is never required to make a Texas will valid. A notary matters only for the optional self-proving affidavit, which is sworn before a notary and lets the will be probated without your witnesses testifying later (Estates Code §§ 251.102, 251.104). Notarizing the will itself adds nothing to its validity and cannot replace the two witnesses.",
+    },
+    {
+      question: "Can I write my own will by hand in Texas?",
+      answer:
+        "Yes. Texas fully recognizes handwritten (holographic) wills with no witnesses and no notary, as long as the will is written wholly in your own handwriting (Estates Code § 251.052). If any part of the will that gives away property is typed or is the printed text of a store-bought form, it is not a valid holographic will — and without two witnesses it is not a valid attested will either. Date and sign it, and keep it somewhere it will be found.",
+    },
+    {
+      question: "How many witnesses does a will need in Texas?",
+      answer:
+        "Two. A typed or printed Texas will must be attested by two or more credible witnesses who are at least 14 years old and who sign the will in your presence (Estates Code § 251.051). The only exception is a holographic will written wholly in your own handwriting, which needs no witnesses at all (§ 251.052). Use witnesses who inherit nothing — a gift to a witness is at risk only if the will can't be proved without that witness's testimony (§ 254.002).",
+    },
+    {
+      question: "Can my spouse be left out of a Texas will?",
+      answer:
+        "Partly. Texas is a community-property state, so your spouse already owns half of everything you acquired together during the marriage, and your will only controls your half plus your separate property (Family Code §§ 3.001, 3.002). Unlike New York, Texas has no elective share, so you can leave a spouse nothing out of your own share — but they keep their own half of the community estate plus homestead and family-allowance rights in probate. Divorce is handled automatically: an ex-spouse is treated as having died before you (Estates Code § 123.001).",
+    },
+    {
+      question: "Can I sign my will electronically in Texas?",
+      answer:
+        "Not as of 2026. Texas has not adopted electronic or remote wills, so a valid will must be a written document signed with two witnesses physically present in your presence (Estates Code § 251.051). Texas's online-notarization law does not create a valid electronic will, and Texas has no harmless-error rule to rescue one. A scanned PDF, an e-signature, or a will \"witnessed\" over video is not valid — sign a paper original in wet ink.",
+    },
+  ],
+  sources: [
+    { label: "Estates Code § 251.001 — Who may execute a will (age, sound mind)", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm" },
+    { label: "Estates Code § 251.051 — Written, signed, and attested (two witnesses, age 14+)", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm" },
+    { label: "Estates Code § 251.052 — Exception for holographic wills", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm" },
+    { label: "Estates Code §§ 251.101–251.104 — Self-proved wills; self-proving affidavit", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm" },
+    { label: "Estates Code § 253.002 — Revocation of will", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.253.htm" },
+    { label: "Estates Code § 254.002 — Bequests to certain subscribing witnesses", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.254.htm" },
+    { label: "Estates Code §§ 255.051–255.054 — Pretermitted (omitted) child", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.255.htm" },
+    { label: "Estates Code § 123.001 — Will provisions made before dissolution of marriage", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.123.htm" },
+    { label: "Estates Code § 32.002 — Original jurisdiction for probate proceedings", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.32.htm" },
+    { label: "Estates Code § 33.001 — Venue for probate of wills", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.33.htm" },
+    { label: "Family Code §§ 3.001–3.002 — Separate and community property", url: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.3.htm" },
+    { label: "TexasLawHelp — Self-Proving Wills in Texas", url: "https://texaslawhelp.org/article/self-proving-wills-in-texas" },
+    { label: "TexasLawHelp — Will Forms Approved by the Supreme Court of Texas", url: "https://texaslawhelp.org/article/will-forms-approved-by-the-supreme-court-of-texas" },
+  ],
+};
+
+const FLORIDA: StateDeepDive = {
+  seoDescription:
+    "Florida will requirements (2026): sign at the very end, two witnesses present together, no handwritten (holographic) wills, electronic wills allowed since 2020, and the homestead devise trap — explained in plain English.",
+  intro: [
+    "Any Floridian who is 18 or older — or an emancipated minor — and of sound mind can make a will (§ 732.501), but Florida is strict about how that will is signed. It does not recognize handwritten (holographic) wills, it requires your signature at the very end in front of two witnesses, and it has no \"harmless error\" rule to rescue a will that misses those steps. At the same time, Florida was an early adopter of electronic wills, and its constitutional homestead rules can quietly override what your will says about your house.",
+    "The statute facts above give you the rules. This section covers where Florida wills actually go wrong, and the protections built into Florida law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Florida will goes wrong",
+    intro:
+      "Most Florida wills that fail, fail on how they were signed — or on the homestead — not on what they say. These are the recurring ones.",
+    items: [
+      {
+        title: "Signing anywhere but the very end",
+        body:
+          "Florida requires the testator to sign \"at the end\" of the will (§ 732.502(1)). Anything added below your signature is on shaky ground, and a signature in the wrong place can undermine the execution itself. Sign last, and sign at the bottom.",
+      },
+      {
+        title: "Assuming a handwritten note counts",
+        body:
+          "Florida does not recognize holographic (handwritten) wills at all. A will in your own handwriting has no special status — it must still be signed at the end and witnessed by two people like any other will (§ 732.502). Florida even refuses an out-of-state handwritten will that was valid where it was signed (§ 732.502(2)). A handwritten note in a drawer is not a valid Florida will.",
+      },
+      {
+        title: "Witnesses who don't all sign together",
+        body:
+          "You must sign (or acknowledge your signature) in front of at least two attesting witnesses, and each witness must sign in your presence and in the presence of the other witness (§ 732.502(1)). Collecting witness signatures separately, at different times, risks invalidating the will. The safe move is to get the testator and both witnesses in one room at one time.",
+      },
+      {
+        title: "Leaving your homestead to the wrong person",
+        body:
+          "If you are survived by a spouse or a minor child, you generally cannot freely devise your Florida homestead in your will (Art. X, § 4, Fla. Const.; § 732.4015). A devise that violates this — for example, leaving the house to one child when a spouse or minor child survives — is void, and the home passes by a constitutional formula instead. Plan the homestead separately from the rest of your will.",
+      },
+      {
+        title: "Skipping the self-proving affidavit",
+        body:
+          "A Florida will is valid without a notary, but a will that is not \"self-proved\" can force the court to track down your witnesses years later to testify. Adding a notarized self-proving affidavit at signing (§ 732.503) lets the will be admitted to probate without them. The notary is for that affidavit — not for the will's validity — so don't skip it.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't fully disinherit a spouse in Florida",
+      body: [
+        "Even if your will leaves your spouse nothing, Florida gives a surviving spouse an elective share equal to 30 percent of the \"elective estate\" (§ 732.2065) — a figure that reaches beyond the probate estate into assets like jointly held property, certain trusts, and pay-on-death accounts. A spouse can claim it regardless of what the will says, and you can only cut it off with a valid written waiver.",
+        "Florida is not a community-property state, so there is no automatic 50/50 split of marital assets — but the elective share, the homestead protections below, and other rules make a spouse very hard to disinherit. Two more surprises: if you marry after signing your will and never update it, the new spouse takes an intestate share as a \"pretermitted spouse\" (§ 732.301); and a gift to a spouse is automatically void if you later divorce (§ 732.507). Revisit the will after any marriage or divorce.",
+      ],
+    },
+    {
+      heading: "Florida's homestead trap: your will may not control your house",
+      body: [
+        "Florida's homestead is protected by the state constitution, and it carries a rule that catches people off guard: if you are survived by a spouse or a minor child, you generally cannot leave your homestead to whomever you want in your will (Art. X, § 4, Fla. Const.; § 732.4015). A devise that violates this restriction is void — the court disregards it entirely.",
+        "There is one narrow exception: you may devise the homestead to your spouse, but only if you have no minor child (§ 732.4015). Otherwise the home passes by a constitutional formula — typically a life estate to the surviving spouse with the remainder to your descendants, or the spouse may instead elect a one-half interest. If your home is your largest asset, do not assume your will governs it; plan the homestead as its own problem.",
+      ],
+    },
+    {
+      heading: "Florida does not recognize handwritten wills",
+      body: [
+        "Unlike about half the states, Florida gives no effect to holographic (handwritten) wills. A will entirely in your own handwriting must still be signed at the end and witnessed by two people, exactly like a typed one (§ 732.502). An unwitnessed handwritten note, however clear and heartfelt, is simply not a valid Florida will.",
+        "Florida goes further than most states here. It will honor an out-of-state will that was valid where it was signed — but expressly not if that will was holographic or oral (nuncupative) (§ 732.502(2)). So a handwritten will that is perfectly valid in a state that allows them can still be refused in Florida. If you moved here from such a state, have a properly witnessed will re-executed.",
+      ],
+    },
+    {
+      heading: "Electronic wills are legal in Florida — with strict guardrails",
+      body: [
+        "Florida was an early adopter of electronic wills. Since 2020, the Florida Electronic Wills Act (§§ 732.521–732.526) has let you sign a will with an electronic signature and have two witnesses attend by real-time audio-video technology instead of in person — but only inside a tightly controlled online-notarization session run by a Florida online notary (§ 732.522; § 117.285). It is not a matter of emailing a PDF around for signatures.",
+        "Two guardrails matter most. The signed electronic will generally must be held by a \"qualified custodian\" — a regulated company that keeps it in a secure system and later files it with the court (§ 732.524). And remote audio-video witnessing is flatly unavailable if the person signing is a \"vulnerable adult\" as defined in § 415.102 — those witnesses must be physically present (§ 117.285(5)(g)). Done outside these rules, an \"electronic will\" is not valid.",
+      ],
+    },
+    {
+      heading: "Where a Florida will is proved, and the affidavit that speeds it up",
+      body: [
+        "Florida wills are proved in the circuit court — the probate division — of the county where you were domiciled at death (§ 733.101). Whoever holds the original will must deposit it with the clerk of that court within 10 days of learning of the death. If you lived outside Florida but owned property here, venue is the Florida county where that property sits.",
+        "You can make probate far faster by making the will \"self-proved\" (§ 732.503): at signing, you and your two witnesses swear a short affidavit before a notary. Notarization is not required for the will to be valid — but a self-proved will can be admitted to probate without the court tracking down your witnesses years later to testify. Execute the affidavit the same day you sign; it is much harder to arrange after the fact.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Florida?",
+      answer:
+        "No. A Florida will is valid when you sign it at the end and two witnesses sign in your presence and in each other's presence (§ 732.502) — a notary is not required for validity. You should still add a notarized self-proving affidavit (§ 732.503), which lets the will be admitted to probate without locating your witnesses later. That affidavit speeds up probate; it does not make the will valid.",
+    },
+    {
+      question: "Are handwritten wills legal in Florida?",
+      answer:
+        "No. Florida does not recognize holographic (handwritten) wills — a will written entirely in your own hand must still be signed at the end and witnessed by two people (§ 732.502). Florida even refuses an out-of-state handwritten will that was valid where it was signed (§ 732.502(2)). An unwitnessed handwritten note is not a valid will in Florida.",
+    },
+    {
+      question: "How many witnesses does a will need in Florida?",
+      answer:
+        "Two. Florida requires at least two attesting witnesses: you must sign the will (or acknowledge your signature) in front of both of them, and each witness must sign in your presence and in the presence of the other witness (§ 732.502(1)). The safest practice is to have the testator and both witnesses together in one room. A witness who inherits under the will does not invalidate it (§ 732.504), but neutral witnesses are still better.",
+    },
+    {
+      question: "Can my spouse be left out of a Florida will?",
+      answer:
+        "Not entirely. A surviving spouse can claim an elective share equal to 30 percent of your \"elective estate\" no matter what the will says (§ 732.2065), and Florida's homestead rules can override a devise of your home if a spouse survives (Art. X, § 4, Fla. Const.). Florida is not a community-property state, but between the elective share, homestead protection, and the pretermitted-spouse rule (§ 732.301), a spouse is very hard to fully disinherit without a valid written waiver.",
+    },
+    {
+      question: "Can I make an electronic will in Florida?",
+      answer:
+        "Yes. Since 2020, Florida's Electronic Wills Act (§§ 732.521–732.526) allows a will signed with an electronic signature and witnessed remotely by audio-video technology — but only through a supervised online-notarization session with a Florida online notary, and usually with the signed will held by a \"qualified custodian\" (§ 732.522; § 732.524). Remote witnessing is not allowed if the signer is a \"vulnerable adult\" (§ 117.285(5)(g)). A casually e-signed PDF that skips these steps is not a valid electronic will.",
+    },
+  ],
+  sources: [
+    { label: "Fla. Stat. § 732.501 — Who may make a will", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.501" },
+    { label: "Fla. Stat. § 732.502 — Execution of wills", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.502" },
+    { label: "Fla. Stat. § 732.503 — Self-proof of will", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.503" },
+    { label: "Fla. Stat. § 732.504 — Who may witness", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.504" },
+    { label: "Fla. Stat. § 732.507 — Effect of subsequent marriage, birth, adoption, or dissolution", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.507" },
+    { label: "Fla. Stat. § 732.2065 — Amount of the elective share", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.2065" },
+    { label: "Fla. Stat. § 732.301 — Pretermitted spouse", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.301" },
+    { label: "Fla. Stat. § 732.4015 — Devise of homestead", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.4015" },
+    { label: "Art. X, § 4, Fla. Const. — Homestead; exemptions", url: "https://www.flsenate.gov/Laws/Constitution#A10S04" },
+    { label: "Fla. Stat. § 732.522 — Electronic wills: method and place of execution", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.522" },
+    { label: "Fla. Stat. § 732.524 — Qualified custodian of an electronic will", url: "https://www.flsenate.gov/Laws/Statutes/2024/0732.524" },
+    { label: "Fla. Stat. § 117.285 — Supervising the witnessing of electronic records", url: "https://www.flsenate.gov/Laws/Statutes/2024/0117.285" },
+    { label: "Fla. Stat. § 733.101 — Venue of probate proceedings", url: "https://www.flsenate.gov/Laws/Statutes/2024/0733.101" },
+    { label: "Florida Courts — self-help center (wills & probate)", url: "https://www.flcourts.gov/Courts-System/Florida-Courts-Help" },
+  ],
+};
+
+const PENNSYLVANIA: StateDeepDive = {
+  seoDescription:
+    "Pennsylvania will requirements (2026): sign at the very end, no witnesses required at signing — two witnesses instead prove the will at probate, and handwritten wills are valid. The 20 Pa.C.S. § 2502 execution rule, § 3132 proof requirement, the one-third spousal elective share, Register of Wills probate, and Pennsylvania's distinctive inheritance tax — explained in plain English.",
+  intro: [
+    "Pennsylvania is unusual: it is one of the few states that does not require any witnesses to be present when you sign your will. What the law requires is that you sign at the very end of the document (20 Pa.C.S. § 2502). Witnesses matter later — two of them are needed to prove your signature when the will is offered for probate (20 Pa.C.S. § 3132) — but they do not have to watch you sign.",
+    "That single distinction changes almost everything about how Pennsylvania wills succeed or fail. The statute facts above give you the rules. This section covers where Pennsylvania wills actually go wrong, the protections built into Pennsylvania law that you cannot draft around, and the state's distinctive inheritance tax that most people forget about.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Pennsylvania will goes wrong",
+    intro:
+      "Because Pennsylvania asks so little at the signing table, the mistakes cluster around the two things it does demand — a signature at the end and someone who can later prove it. These are the recurring ones.",
+    items: [
+      {
+        title: "Signing anywhere but the very end",
+        body:
+          "Section 2502 requires your will to be \"signed by the testator at the end thereof.\" This is Pennsylvania's one hard formality, and courts enforce it. Any writing placed after your signature is disregarded, so a gift or instruction sitting below the signature line can silently drop out of your plan. Pennsylvania has no harmless-error or \"dispensing power\" statute to rescue a misplaced signature — sign last, and sign at the bottom.",
+      },
+      {
+        title: "Signing with nobody who can ever prove the will",
+        body:
+          "Pennsylvania does not require witnesses at signing, but it does require two competent witnesses to prove the will at probate (20 Pa.C.S. § 3132). If you sign entirely alone and no one can later authenticate your signature or handwriting, your estate may have to prove the will by handwriting comparison or other evidence — slow and contestable. Having two people witness the signing anyway is the simplest insurance.",
+      },
+      {
+        title: "Skipping the self-proving affidavit",
+        body:
+          "A self-proved will lets your witnesses swear to the signing once, before a notary, so no one has to be tracked down years later to testify (20 Pa.C.S. § 3132.1). Without it, the Register of Wills may need live witness testimony to admit the will. Execute the § 3132.1 acknowledgment and affidavits at the same time you sign; it is far harder to arrange after the fact.",
+      },
+      {
+        title: "Trying to sign electronically or by video",
+        body:
+          "As of 2026 Pennsylvania has not adopted electronic wills, and its courts have refused to admit electronically signed wills, holding that the fix is the legislature's job. A scanned PDF, an e-signature, or a will \"witnessed\" over a video call is not a valid Pennsylvania will. The valid route is still a physical document signed in wet ink at the end (20 Pa.C.S. § 2502).",
+      },
+      {
+        title: "Ignoring the Pennsylvania inheritance tax",
+        body:
+          "Pennsylvania is one of the few states that taxes inheritances, and the rate depends on who inherits, not on the size of the estate: 0% to a spouse, 4.5% to lineal relatives (children, grandchildren, and parents), 12% to siblings, and 15% to everyone else (72 P.S. § 9116). A will that leaves property to a friend, a niece, or a sibling hands them a tax bill many people never see coming. Factor it into who you leave what.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "Pennsylvania's unusual rule: witnesses prove the will, they don't watch you sign",
+      body: [
+        "In most states, two witnesses must be physically present and watch you sign. Pennsylvania does not work that way. Under 20 Pa.C.S. § 2502, a will only needs to be in writing and signed by you at the end — no witnesses are required at execution. Witnesses come in at the other end of the process: to admit the will to probate, the Register of Wills requires proof by \"the oaths or affirmations of two competent witnesses\" (20 Pa.C.S. § 3132).",
+        "So the witnesses prove the will; they do not validate the signing. There are two narrow exceptions where witnesses are required at execution: if you sign by making a mark, or if someone signs your name for you at your direction, that must happen before two witnesses who also sign (20 Pa.C.S. § 2502). And because Pennsylvania has no harmless-error statute, the signature-at-the-end requirement is strict — there is no judicial safety valve for a will signed in the wrong place.",
+      ],
+    },
+    {
+      heading: "You can't fully disinherit a spouse in Pennsylvania",
+      body: [
+        "Even if your will leaves a surviving spouse nothing, Pennsylvania gives them a right of election: they can elect to take one-third of certain property against the will (20 Pa.C.S. § 2203). That reach is deliberately broad — it captures not just property passing under the will, but certain lifetime transfers where you kept control, joint property with survivorship, and gifts made within a year of death above a small per-recipient threshold, so you cannot easily route assets around it.",
+        "Pennsylvania is not a community-property state, so there is no automatic split of marital assets — the elective share is the mechanism instead. The election is personal to the surviving spouse and must be filed within a statutory deadline, and it can be waived by agreement before or after the marriage (20 Pa.C.S. §§ 2206–2207). If your plan depends on leaving a spouse less than a third, build the elective share into the math rather than ignoring it.",
+      ],
+    },
+    {
+      heading: "Handwritten wills are valid in Pennsylvania — but sign at the end",
+      body: [
+        "Because Pennsylvania imposes no witness requirement at execution, a will written entirely in your own hand and signed at the end is valid — a holographic will (20 Pa.C.S. § 2502). Unlike many states, Pennsylvania does not require the handwritten portions to meet any special \"material provisions\" test; the ordinary execution rule applies, so what matters is that it is in writing and signed at the end.",
+        "The catch is proof. A handwritten, unwitnessed will still has to be proved at probate by two competent witnesses — here, witnesses to your handwriting and signature rather than to the signing itself (20 Pa.C.S. § 3132). A handwritten will is a genuine option in Pennsylvania, but a typed will signed in front of two witnesses with a self-proving affidavit is far easier to admit and far harder to attack.",
+      ],
+    },
+    {
+      heading: "Marriage, divorce, and a new child can rewrite your will by law",
+      body: [
+        "Pennsylvania automatically adjusts a stale will in three situations (20 Pa.C.S. § 2507). If you marry after signing, your new spouse takes the share they would have received had you died intestate, unless the will gives them more or was made in contemplation of the marriage (§ 2507(3)). If a child is born or adopted after the will and you did not provide for them, that child takes an intestate share unless the will shows the omission was intentional (§ 2507(4)).",
+        "Divorce cuts the other way: any provision in favor of a former spouse becomes ineffective if you divorce after making the will, or die during divorce proceedings, unless the will says the gift was meant to survive divorce (§ 2507(2)). A will can also be revoked outright by a later will or codicil, or by physically burning, tearing, canceling, or destroying it with intent to revoke (20 Pa.C.S. § 2505). The safe move is simple: revisit the will after any marriage, divorce, or new child.",
+      ],
+    },
+    {
+      heading: "Where a Pennsylvania will is proved — and the inheritance tax that follows",
+      body: [
+        "Pennsylvania wills are proved before the Register of Wills of the county where the decedent had their principal residence at death (20 Pa.C.S. § 3131). The Register admits the will and issues letters; contested matters and the administration of the estate are handled by the Orphans' Court division of that county's Court of Common Pleas. This is the office that applies the signature-at-the-end and two-witness-proof rules, which is exactly why those formalities carry so much weight.",
+        "Pennsylvania also imposes an inheritance tax that a will cannot write around — and it is charged to the recipients by relationship, not on the estate as a whole: 0% to a surviving spouse (and to a parent inheriting from a child 21 or younger), 4.5% to lineal relatives (children, grandchildren, and parents), 12% to siblings, and 15% to other heirs (72 P.S. § 9116). Property owned jointly between spouses is exempt, and there is a discount for paying within three months of death. Because the rate turns on who inherits, whom you name in your will directly affects how much of the gift survives the tax.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Pennsylvania?",
+      answer:
+        "No. Notarization is not required for a Pennsylvania will to be valid — a will only needs to be in writing and signed by you at the end (20 Pa.C.S. § 2502). What a notary does is make the will \"self-proved\": if you and your witnesses sign a notarized acknowledgment and affidavit, the will can be admitted to probate without producing the witnesses later (20 Pa.C.S. § 3132.1). The notary adds convenience at probate, not validity to the will.",
+    },
+    {
+      question: "Does a will need to be witnessed in Pennsylvania?",
+      answer:
+        "Not at the moment of signing. Pennsylvania is unusual in that it does not require witnesses to be present when you sign your will (20 Pa.C.S. § 2502). Witnesses are needed later: to admit the will to probate, two competent witnesses must prove your signature (20 Pa.C.S. § 3132). So while the law doesn't require witnesses at execution, having two people witness the signing — and sign a self-proving affidavit — makes the will far easier to prove after you die.",
+    },
+    {
+      question: "Can I write my own will by hand in Pennsylvania?",
+      answer:
+        "Yes. Because Pennsylvania requires no witnesses at execution, a will written entirely in your own handwriting and signed at the end is valid — a holographic will (20 Pa.C.S. § 2502). It still has to be proved at probate by two competent witnesses to your handwriting and signature (20 Pa.C.S. § 3132), so a typed and formally witnessed will is easier to admit. But a handwritten, signed-at-the-end will is genuinely valid in Pennsylvania.",
+    },
+    {
+      question: "Can my spouse be left out of a Pennsylvania will?",
+      answer:
+        "Not entirely. A surviving spouse can elect to take one-third of certain property against the will, no matter what the will says (20 Pa.C.S. § 2203). Pennsylvania is not a community-property state, so this elective share is the main spousal protection, and it reaches beyond the probate estate to certain lifetime transfers and gifts. You cannot fully disinherit a spouse in Pennsylvania without a valid signed waiver (20 Pa.C.S. § 2207).",
+    },
+    {
+      question: "Does Pennsylvania have an inheritance tax on wills?",
+      answer:
+        "Yes. Pennsylvania is one of the few states with an inheritance tax, and the rate depends on who inherits, not the size of the estate: 0% to a surviving spouse, 4.5% to lineal relatives (children, grandchildren, and parents), 12% to siblings, and 15% to all other heirs (72 P.S. § 9116). There is no exemption threshold, though property owned jointly between spouses is exempt and paying within three months earns a discount. Whom you name in your will directly changes the tax bill your heirs face.",
+    },
+  ],
+  sources: [
+    { label: "20 Pa.C.S. Chapter 25 — Wills (full text)", url: "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/20/00.025..HTM" },
+    { label: "20 Pa.C.S. Chapter 22 — Elective share of surviving spouse", url: "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/20/00.022..HTM" },
+    { label: "20 Pa.C.S. Chapter 31 — Register of Wills; probate", url: "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/20/00.031..HTM" },
+    { label: "20 Pa.C.S. § 2502 — Form and execution of a will (signed at the end)", url: "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/20/00.025.002.000..HTM" },
+    { label: "20 Pa.C.S. § 3132.1 — Self-proved wills", url: "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/20/00.031.032.001..HTM" },
+    { label: "72 P.S. § 9116 — Inheritance tax rates", url: "https://codes.findlaw.com/pa/title-72-ps-taxation-and-fiscal-affairs/pa-st-sect-72-9116/" },
+    { label: "PA Department of Revenue — Inheritance Tax (rates by relationship)", url: "https://www.pa.gov/en/agencies/revenue/resources/tax-types-and-information/inheritance-tax.html" },
+    { label: "Pennsylvania Courts — Registers of Wills (by county)", url: "https://www.pacourts.us/courts/courts-of-common-pleas/registers-of-wills" },
+  ],
+};
+
+const ILLINOIS: StateDeepDive = {
+  seoDescription:
+    "Illinois will requirements (2026): two credible witnesses who sign in your presence, no notary needed, and handwritten (holographic) wills are NOT valid. The 755 ILCS 5/4-3 rules, the spouse's right to renounce and take 1/3–1/2, why Illinois has no harmless-error rescue, its electronic-will and remote-witnessing law, and Circuit Court probate — in plain English.",
+  intro: [
+    "Illinois is a strict-compliance state: its Probate Act of 1975 spells out exactly how a will must be signed and witnessed, and — unlike California — there is no harmless-error rule to rescue a will that was executed incorrectly. A signing that misses a formality is simply not a valid will, no matter how clear your intent.",
+    "The statute facts above give you the rules. This section covers where Illinois wills actually go wrong, the one area where Illinois is ahead of most states (electronic wills and remote witnessing), and the spousal protection you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways an Illinois will goes wrong",
+    intro:
+      "Most Illinois wills that fail, fail on how they were signed — not on what they say. Illinois gives no second chances on execution, so these mistakes are usually fatal.",
+    items: [
+      {
+        title: "Assuming a handwritten note counts as a will",
+        body:
+          "Illinois does not recognize holographic (handwritten, unwitnessed) wills at all. Every will must be in writing and \"attested in the presence of the testator by 2 or more credible witnesses\" (755 ILCS 5/4-3). A heartfelt letter in a drawer, however clearly it states your wishes, is not a valid Illinois will. There is no military or mariner exception here either — everyone needs the two witnesses.",
+      },
+      {
+        title: "Using a beneficiary as one of your witnesses",
+        body:
+          "A gift to someone who also witnesses your will is void as to that person unless the will is otherwise proved by enough other credible witnesses (755 ILCS 5/4-6). The will itself survives — but the interested witness is cut down to what they would have received if the will had never existed (their intestate share), and no more than the value of the gift. Keep your two witnesses neutral parties who inherit nothing.",
+      },
+      {
+        title: "Counting on a notary to make the will valid",
+        body:
+          "Notarization does not make an Illinois will valid — two credible witnesses do (755 ILCS 5/4-3). A carefully notarized will signed by fewer than two qualifying witnesses is not validly executed. The notary's real job comes later: notarizing the witnesses' affidavit so the will can be admitted to probate without tracking them down (755 ILCS 5/6-4). Get the two witnesses first; the notary supports the affidavit, not the signing.",
+      },
+      {
+        title: "Expecting a court to fix a botched signing",
+        body:
+          "Illinois has no harmless-error or \"dispensing power\" statute. Where California lets a judge admit a defectively witnessed will on clear-and-convincing proof of intent, Illinois does not. If the 755 ILCS 5/4-3 formalities are missed, the will fails and the estate passes by intestacy. There is no courtroom rescue — which is exactly why the signing has to be done right the first time.",
+      },
+      {
+        title: "Never updating the will after a divorce or new marriage",
+        body:
+          "A divorce (dissolution of marriage) automatically revokes every gift, interest, and fiduciary appointment to your former spouse — the law treats them as if they died before you (755 ILCS 5/4-7(b)). Marriage after signing does the opposite: it does not revoke the will, so a spouse you married later can be left with nothing on the will's face and must invoke the renunciation right to claim a share. Revisit the will after any marriage, divorce, or new child.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't fully disinherit a spouse in Illinois",
+      body: [
+        "Illinois is not a community-property state, and it has no New York-style fixed elective share. Instead, a surviving spouse who is left out or shortchanged can renounce the will and take a statutory share against it: one-third of the entire estate if you leave a descendant, or one-half if you leave no descendant (755 ILCS 5/2-8). The renunciation must be filed in writing with the probate court, generally within 7 months after the will is admitted.",
+        "On top of that, the surviving spouse is entitled to a spouse's award — a sum for nine months' support that is set at a statutory minimum of $20,000, plus $10,000 for each minor child living with the spouse (755 ILCS 5/15-1). If part of your plan depends on leaving a spouse less than these amounts, build the renunciation share into the plan rather than ignoring it; the court applies that math regardless of what the will says.",
+      ],
+    },
+    {
+      heading: "The child you had — or the spouse you married — after signing",
+      body: [
+        "If a child is born or adopted after you sign your will and you neither provide for them nor show an intent to disinherit them, that child takes the share they would have received if you had died with no will at all, and the other gifts abate proportionately to fund it (755 ILCS 5/4-10). It is an easy omission to make and an expensive one to litigate.",
+        "A spouse you marry after signing is protected differently. Marriage does not revoke an Illinois will, and Illinois has no separate \"omitted spouse\" statute — so a later spouse who is left out relies on the renunciation right (755 ILCS 5/2-8) to claim their one-third or one-half. The safe move is the same in both cases: update the will after any marriage, divorce, birth, or adoption.",
+      ],
+    },
+    {
+      heading: "Illinois is ahead on electronic wills and remote witnessing",
+      body: [
+        "Illinois is one of the states that has actually adopted electronic wills. The Electronic Wills, Electronic Estate Planning Documents, and Remote Witnesses Act (755 ILCS 6/) took effect July 26, 2021 and was broadened effective January 1, 2024. An electronic will can be signed with the testator's electronic signature (or by another at their direction) and attested by two or more credible witnesses who sign electronically in the testator's presence (755 ILCS 6/5-5).",
+        "Those witnesses can appear remotely. A remote witness attesting over audio-video technology satisfies the \"presence\" requirement if the statutory conditions are met — including that the witnesses are located in the United States at the time and verify the testator's identity, with signature pages assembled within the deadline the Act sets (755 ILCS 6/15-10). This is a genuine differentiator, but it is a formal legal process — not the same as emailing a signed PDF around, which on its own is not a valid will.",
+      ],
+    },
+    {
+      heading: "Making an Illinois will self-proving",
+      body: [
+        "Illinois does not require a notary for a will to be valid, but you should still make the will self-proving so it can be admitted to probate without producing your witnesses years later. A will is proved by the witnesses' statements, which may be a live court appearance, an attestation clause signed by the witness, or an affidavit signed by the witness at or after the time of attestation and attached to the will (755 ILCS 5/6-4).",
+        "The affidavit route is where the notary earns its place: the witnesses swear the affidavit before a notary, and the will can then be admitted without live testimony. Execute that affidavit the same day you sign the will — it is far harder to arrange after the fact, and without it the court may have to locate your witnesses to testify in person.",
+      ],
+    },
+    {
+      heading: "Where an Illinois will is proved: the Circuit Court",
+      body: [
+        "Illinois has no separate probate court. Wills are admitted to probate in the Circuit Court of the county where the decedent had a known place of residence at death (755 ILCS 5/5-1); in Cook County that work is handled by the Circuit Court's Probate Division. If the decedent lived outside Illinois but owned property here, venue falls to the county holding the bulk of the real or personal estate.",
+        "This is the court that decides whether your will was validly executed — which is exactly why the two-witness formalities and the self-proving affidavit carry so much weight. A clean signing, with a 755 ILCS 5/6-4 affidavit attached, is what keeps an Illinois probate uncontested and moving.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Illinois?",
+      answer:
+        "No. An Illinois will is valid when you sign it (or direct someone to sign in your presence) and two or more credible witnesses attest it in your presence (755 ILCS 5/4-3). Notarization is not required for validity. A notary matters only for the optional self-proving affidavit your witnesses can swear, which lets the will be admitted to probate without their live testimony (755 ILCS 5/6-4). Notarizing the will itself adds nothing and never replaces the two witnesses.",
+    },
+    {
+      question: "Can I write my own will by hand in Illinois?",
+      answer:
+        "Not validly, unless it is witnessed. Illinois does not recognize holographic (handwritten, unwitnessed) wills — every will must be in writing and attested by two or more credible witnesses in your presence (755 ILCS 5/4-3). You can absolutely write your own will, but two qualifying witnesses must sign it. A handwritten note with no witnesses is not a valid Illinois will, and there is no harmless-error rule to save it.",
+    },
+    {
+      question: "How many witnesses does a will need in Illinois?",
+      answer:
+        "Two. An Illinois will must be attested in the testator's presence by two or more credible witnesses, each of whom signs in your presence (755 ILCS 5/4-3). Those witnesses should be disinterested — people who inherit nothing under the will — because a gift to a witness is void as to that witness unless the will is otherwise proved by enough other credible witnesses (755 ILCS 5/4-6).",
+    },
+    {
+      question: "Can my spouse be left out of an Illinois will?",
+      answer:
+        "Not entirely. Illinois is not a community-property state and has no fixed elective share, but a surviving spouse can renounce the will and take one-third of the estate if you leave a descendant, or one-half if you leave no descendant (755 ILCS 5/2-8). The spouse is also entitled to a support award with a $20,000 statutory minimum, plus $10,000 per minor child (755 ILCS 5/15-1). You cannot write around these without a valid waiver.",
+    },
+    {
+      question: "Can I sign my will electronically in Illinois?",
+      answer:
+        "Yes — Illinois is one of the states that allows it. Under the Electronic Wills, Electronic Estate Planning Documents, and Remote Witnesses Act (755 ILCS 6/, effective July 26, 2021 and expanded January 1, 2024), a will can be signed with an electronic signature and attested by two credible witnesses who sign electronically, and those witnesses may appear remotely over audio-video technology if the statutory conditions are met (755 ILCS 6/5-5; 755 ILCS 6/15-10). It is a formal legal process, though — simply emailing a signed PDF is not a valid will.",
+    },
+  ],
+  sources: [
+    { label: "755 ILCS 5/4-1 — Capacity of testator (age 18, sound mind)", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K4-1.htm" },
+    { label: "755 ILCS 5/4-3 — Signing and attestation of wills", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K4-3.htm" },
+    { label: "755 ILCS 5/4-6 — Interested witness", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K4-6.htm" },
+    { label: "755 ILCS 5/4-7 — Revocation and effect of dissolution of marriage", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K4-7.htm" },
+    { label: "755 ILCS 5/4-10 — Child born after will (after-born child's share)", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K4-10.htm" },
+    { label: "755 ILCS 5/2-8 — Renunciation of will by spouse (1/3 or 1/2 share)", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K2-8.htm" },
+    { label: "755 ILCS 5/15-1 — Surviving spouse's award", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K15-1.htm" },
+    { label: "755 ILCS 5/6-4 — Proof of will by attestation clause or affidavit", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K6-4.htm" },
+    { label: "755 ILCS 5/5-1 — Place of probate (Circuit Court, county of residence)", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500050K5-1.htm" },
+    { label: "755 ILCS 6/5-5 — Execution of an electronic will", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500060K5-5.htm" },
+    { label: "755 ILCS 6/15-10 — Remote attestation for a will (audio-video)", url: "https://www.ilga.gov/documents/legislation/ilcs/documents/075500060K15-10.htm" },
+    { label: "Illinois Legal Aid Online — Wills for estate planning (FAQ)", url: "https://www.illinoislegalaid.org/legal-information/wills-estate-planning" },
+    { label: "Illinois Courts — Self-Help", url: "https://www.illinoiscourts.gov/self-help/" },
+  ],
+};
+
+const OHIO: StateDeepDive = {
+  seoDescription:
+    "Ohio will requirements (2026): two competent witnesses, NO holographic (handwritten unwitnessed) wills, and no self-proving affidavit — so witnesses must still be locatable. The strict ORC § 2107.03 execution rules, why notarizing does nothing, the spousal election to take against the will (one-third to one-half), the $40,000 support allowance and mansion-house right, and county Probate Court — in plain English.",
+  intro: [
+    "Ohio is a strict-compliance state: its Probate Courts enforce the execution formalities in Ohio Revised Code § 2107.03 to the letter, and Ohio has no \"harmless error\" or dispensing statute that lets a judge rescue a will that was signed or witnessed incorrectly. A will that would survive in a more forgiving state can be refused here over a single defect.",
+    "The statute facts above give you the rules. This section covers where Ohio wills actually go wrong — no handwritten-and-unwitnessed wills, no self-proving shortcut, a beneficiary-witness who voids their own gift — and the protections built into Ohio law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways an Ohio will gets thrown out",
+    intro:
+      "Most invalid Ohio wills fail on how they were signed and witnessed, not on what they say. These are the recurring ones.",
+    items: [
+      {
+        title: "Assuming a handwritten note counts as a will",
+        body:
+          "Ohio lets a will be handwritten instead of typed, but it still must be attested and subscribed by two or more competent witnesses (ORC § 2107.03). Ohio does not recognize holographic wills — a handwritten, signed page with no witnesses is not a valid Ohio will. A heartfelt letter in a drawer, however clear, does nothing.",
+      },
+      {
+        title: "Signing anywhere but the end of the document",
+        body:
+          "ORC § 2107.03 requires the will to be \"signed at the end by the testator.\" Signing in the margin, on an early page, or above later dispositive text invites a challenge to whether the document was properly executed. Sign last, and sign at the very bottom.",
+      },
+      {
+        title: "Using a beneficiary as one of only two witnesses",
+        body:
+          "If a gift goes to a person who is one of only two witnesses, that gift is void (ORC § 2107.15). The will itself survives, and the witness can still take what they would have inherited without a will — but never more than the value of the voided gift. The fix is simple: use witnesses who inherit nothing, or add a third disinterested witness so the gift is not voided.",
+      },
+      {
+        title: "Relying on a notary to make the will \"self-proving\"",
+        body:
+          "Ohio has no self-proving affidavit statute. Notarizing your will does not let your witnesses skip proving it after you die — Ohio still proves a will through the testimony of the attesting witnesses (ORC § 2107.18). A notary stamp adds nothing to validity and cannot stand in for a witness. Keep a record of who your witnesses are and how to reach them.",
+      },
+      {
+        title: "Signing electronically or by video",
+        body:
+          "As of 2026, Ohio has not adopted electronic wills. ORC § 2107.03 requires a written will witnessed in the testator's \"conscious presence,\" which the statute expressly defines to exclude anything \"sensed by telephonic, electronic, or other distant communication.\" A scanned PDF, an e-signature, or a will \"witnessed\" over a video call is not valid in Ohio.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't fully disinherit a spouse in Ohio",
+      body: [
+        "Ohio is not a community-property state, but a surviving spouse who is left out or left too little can elect to take against the will (ORC § 2106.01). Instead of what the will provides, the spouse takes an intestate share under ORC § 2105.06 — not to exceed one-half of the net estate when there are fewer than two of the decedent's children surviving, and not to exceed one-third when two or more survive.",
+        "The election is not the only protection. The spouse is entitled to a $40,000 allowance for support (ORC § 2106.13) and may elect to take the decedent's entire interest in the mansion house — the family home — as part of that share (ORC § 2106.10). If your plan depends on leaving a spouse less than these amounts, build them into the plan; the Probate Court applies this math regardless of what the will says.",
+      ],
+    },
+    {
+      heading: "Ohio has no self-proving affidavit — witnesses still get proved",
+      body: [
+        "Many states let you notarize a will with a self-proving affidavit so the witnesses never have to be found again. Ohio does not. There is no self-proving affidavit statute in Ohio, so when a will is offered for probate the court looks to the document and, where required, the testimony of the attesting witnesses to confirm it was executed under ORC § 2107.03 (see ORC § 2107.18).",
+        "The practical consequence is that your witnesses matter for years after signing. If they cannot be located or have died, proving the will becomes harder and slower. Choose witnesses who are younger than you, disinterested, and easy to track down, and keep a note of their contact information with your estate records.",
+      ],
+    },
+    {
+      heading: "Strict compliance: no harmless-error rescue in Ohio",
+      body: [
+        "Ohio requires strict compliance with its execution statute and has not enacted a harmless-error or dispensing power. Where a state like California can admit a defectively witnessed will on clear-and-convincing proof of intent, an Ohio Probate Court generally cannot — if the two-witness, signed-at-the-end, conscious-presence requirements of ORC § 2107.03 are not met, the will fails.",
+        "Ohio's only narrow escape hatch is the oral (nuncupative) will, and it is not a general safety valve. An oral will is valid only for personal property, only if made in the testator's last sickness, only if reduced to writing and subscribed by two competent disinterested witnesses within ten days, and only if offered for probate within three months of death (ORC § 2107.60). For everyone in an ordinary situation, the written-and-witnessed rules are the only route.",
+      ],
+    },
+    {
+      heading: "The child you forgot, and the ex-spouse you didn't remove",
+      body: [
+        "If a child is born after the will (or a child is simply omitted and not provided for), Ohio does not revoke the will — instead the pretermitted child takes a share equal to what they would have received had the testator died intestate with no surviving spouse, funded by proportionate abatement of the other gifts (ORC § 2107.34). This is a floor the law inserts for an overlooked child.",
+        "Divorce works automatically the other way. A divorce, dissolution, or annulment revokes every disposition of property to the former spouse and any nomination of them as executor, trustee, or guardian; the property passes as though the ex-spouse had died first (ORC § 2107.33). Those provisions can be revived only by remarrying the same person. Still, the safe move is to redo the will after any marriage, divorce, or new child rather than rely on these defaults.",
+      ],
+    },
+    {
+      heading: "Where an Ohio will is proved: county Probate Court",
+      body: [
+        "Ohio probates wills in the Probate Court of the county where the testator was domiciled — their primary residence — at death (ORC § 2107.11). Every Ohio county has a Probate Court, and it is the court that decides whether your will was validly executed, which is exactly why the § 2107.03 formalities carry so much weight.",
+        "Ohio also provides no official statutory fill-in-the-blank will form the way some states do — there is no Ohio equivalent of a state-issued statutory will. A clean, typed will, signed at the end before two disinterested witnesses in your conscious presence, with those witnesses reachable later, is what keeps an Ohio probate uncontested and moving.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Ohio?",
+      answer:
+        "No. An Ohio will is valid when you sign it at the end and two or more competent witnesses, who saw you sign or heard you acknowledge your signature, also sign in your conscious presence (ORC § 2107.03). Notarization is not required — and because Ohio has no self-proving affidavit statute, a notary stamp does not let your witnesses skip proving the will after you die (ORC § 2107.18). Notarizing adds nothing to an Ohio will's validity and never replaces the two witnesses.",
+    },
+    {
+      question: "Can I write my own will by hand in Ohio?",
+      answer:
+        "You can handwrite the document, but it still needs two witnesses. Ohio allows a will to be handwritten instead of typed, yet it must be signed at the end and attested by two or more competent witnesses (ORC § 2107.03). Ohio does not recognize holographic wills — a handwritten, signed page with no witnesses is not valid. The one narrow exception is an oral will made in a last illness, which covers only personal property and must be written down and witnessed within ten days (ORC § 2107.60).",
+    },
+    {
+      question: "How many witnesses does a will need in Ohio?",
+      answer:
+        "Two. Ohio requires a will to be attested and subscribed by two or more competent witnesses, in the testator's conscious presence, who either saw the testator sign or heard the testator acknowledge the signature (ORC § 2107.03). Witnesses must be at least eighteen (ORC § 2107.06) and should be disinterested — if a gift goes to one of only two witnesses, that gift is void (ORC § 2107.15).",
+    },
+    {
+      question: "Can my spouse be left out of an Ohio will?",
+      answer:
+        "Not entirely. A surviving spouse can elect to take against the will and instead receive an intestate share under ORC § 2105.06 — up to one-half of the net estate when fewer than two children survive, and up to one-third when two or more survive (ORC § 2106.01). Ohio is not a community-property state, but the spouse is also entitled to a $40,000 support allowance (ORC § 2106.13) and may elect to take the mansion house (ORC § 2106.10). You cannot draft around these without a valid waiver.",
+    },
+    {
+      question: "Can I sign my will electronically in Ohio?",
+      answer:
+        "Not as of 2026. Ohio has not adopted electronic wills, and ORC § 2107.03 requires a written will witnessed in your \"conscious presence\" — a term the statute defines to exclude anything sensed by \"telephonic, electronic, or other distant communication.\" A scanned PDF, an e-signature, or a will \"witnessed\" over video is not valid in Ohio. The valid route is still a physical document signed in wet ink with two witnesses physically present.",
+    },
+  ],
+  sources: [
+    { label: "ORC § 2105.06 — Statute of descent and distribution (intestate shares)", url: "https://codes.ohio.gov/ohio-revised-code/section-2105.06" },
+    { label: "ORC § 2106.01 — Election by surviving spouse to take under or against the will", url: "https://codes.ohio.gov/ohio-revised-code/section-2106.01" },
+    { label: "ORC § 2106.10 — Election to receive the mansion house", url: "https://codes.ohio.gov/ohio-revised-code/section-2106.10" },
+    { label: "ORC § 2106.13 — Allowance for support", url: "https://codes.ohio.gov/ohio-revised-code/section-2106.13" },
+    { label: "ORC § 2107.02 — Who may make a will", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.02" },
+    { label: "ORC § 2107.03 — Method of making a will", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.03" },
+    { label: "ORC § 2107.06 — Minimum age to witness a will", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.06" },
+    { label: "ORC § 2107.11 — Jurisdiction to probate a will", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.11" },
+    { label: "ORC § 2107.15 — Devise or bequest to a witness (interested witness)", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.15" },
+    { label: "ORC § 2107.18 — Admission of will to probate", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.18" },
+    { label: "ORC § 2107.33 — Revocation of a will; effect of divorce", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.33" },
+    { label: "ORC § 2107.34 — Pretermitted / after-born heirs", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.34" },
+    { label: "ORC § 2107.60 — Oral (nuncupative) will", url: "https://codes.ohio.gov/ohio-revised-code/section-2107.60" },
+    { label: "Ohio Revised Code Chapter 2107 — Wills (index)", url: "https://codes.ohio.gov/ohio-revised-code/chapter-2107" },
+  ],
+};
+
+const MICHIGAN: StateDeepDive = {
+  seoDescription:
+    "Michigan will requirements (2026): two witnesses who sign within a reasonable time, notarization NOT required for validity, and handwritten (holographic) wills are valid if dated. The EPIC § 700.2502 rules, Michigan's harmless-error rescue, the self-proving affidavit, the spouse's elective share you can't write around, the fill-in-the-blank statutory will, and Probate Court venue — in plain English.",
+  intro: [
+    "Michigan is one of the more forgiving states about how a will is made: it recognizes handwritten wills, it does not require a notary for validity, and a court can even rescue a document that was never executed as a will at all if the intent is clear enough. A widely-cited Michigan case even admitted a will typed on a phone through that rule. But that flexibility breeds its own traps — people write an undated \"holographic\" will that fails, or count on the harmless-error rescue as if it were a plan.",
+    "The statute facts above give you the rules. This section covers where Michigan wills actually go wrong, and the protections built into Michigan's Estates and Protected Individuals Code (EPIC) that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Michigan will goes wrong",
+    intro:
+      "Most Michigan wills that fail, fail on how they were made — not on what they say. These are the recurring ones.",
+    items: [
+      {
+        title: "A handwritten will that isn't dated",
+        body:
+          "Michigan recognizes holographic (handwritten) wills, but only if the document is dated and the testator's signature and material portions are in the testator's own handwriting (MCL 700.2502(2)). The date is a hard requirement, not a nicety — leave it off and the document is not a valid holographic will. If it also has no two witnesses, it is not a valid attested will either. Write the date in your own hand, every time.",
+      },
+      {
+        title: "Treating the harmless-error rule as a plan",
+        body:
+          "Michigan's harmless-error statute lets a court honor a document that wasn't executed correctly if the proponent proves by clear and convincing evidence that the decedent intended it as a will (MCL 700.2503). It is a genuine safety valve — it is how a Michigan court admitted a will typed on a phone. But it is an expensive courtroom fight argued after you are gone, with no guarantee. Sign a proper witnessed will; don't build your plan on a rescue.",
+      },
+      {
+        title: "Assuming a notary makes the will valid — or self-proving by itself",
+        body:
+          "Notarization is not required to make a Michigan will valid; two witnesses are what matter (MCL 700.2502(1)). A notary's separate job is to turn a properly witnessed will into a self-proved will, so the witnesses never have to testify later (MCL 700.2504). Notarizing a will that lacks two valid witnesses does not save it. Get the two witnesses first; add the notarized self-proving affidavit second.",
+      },
+      {
+        title: "Witnesses who don't sign within a reasonable time",
+        body:
+          "Each of your two witnesses must sign within a reasonable time after witnessing either your signing of the will or your acknowledgment of your signature (MCL 700.2502(1)). Mailing the will around to collect signatures long after the fact invites a challenge. The safe move is to get the testator and both witnesses in one room and have everyone sign together.",
+      },
+      {
+        title: "Signing electronically and assuming it counts",
+        body:
+          "Michigan has not enacted a dedicated electronic-wills statute as of 2026. Electronic documents have been admitted only through the harmless-error rule (MCL 700.2503), after a contested court fight — not because e-signatures are formally valid. A scanned PDF or an e-signed file is not a reliably valid Michigan will. The valid route remains a physical document signed in wet ink before two witnesses.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't fully disinherit a spouse in Michigan",
+      body: [
+        "Even if your will leaves a surviving spouse nothing, Michigan gives them a right to elect against the will. A spouse who elects takes one-half of the share they would have received had you died intestate, reduced by one-half of the value of property they received from you by other means such as joint accounts or beneficiary designations (MCL 700.2202). Michigan is not a community-property state, so this elective share — not automatic ownership of half the marital estate — is the spouse's core protection.",
+        "On top of the elective share, a surviving spouse is entitled to a homestead allowance of $15,000 (MCL 700.2402) and exempt property up to $10,000 (MCL 700.2404), both adjusted for inflation, plus a reasonable family allowance during administration (MCL 700.2403). These come off the top before general devises. If your plan depends on leaving a spouse less than these amounts, build them into the plan — the court applies them regardless of what the will says.",
+      ],
+    },
+    {
+      heading: "The spouse or child you forgot: Michigan's omitted-heir rules",
+      body: [
+        "If you marry after signing your will and never update it, your new spouse is entitled to an intestate share — what they would have received had you died without a will — unless the will was made in contemplation of the marriage, says it survives a later marriage, or you provided for the spouse outside the will intending to substitute for a testamentary gift (MCL 700.2301).",
+        "The same idea protects a child born or adopted after the will who is left unprovided for: they generally take what they would have received had you died intestate (MCL 700.2302). Both rules fall away if the omission was clearly intentional or you provided for the person outside the will. The safe move is simple — revisit the will after any marriage, divorce, or new child.",
+      ],
+    },
+    {
+      heading: "Handwritten wills are valid — but date them and write the key terms yourself",
+      body: [
+        "A Michigan holographic will needs no witnesses and no notary. What it needs is a date, plus your signature and the material portions — who gets what — in your own handwriting (MCL 700.2502(2)). A printed or store-bought form with the key terms typed in is not a valid holographic will, and without two witnesses it is not a valid attested will either.",
+        "The most common way a Michigan handwritten will fails is the missing date. It is a hard statutory requirement here. A handwritten will is a genuine emergency option in Michigan, but a witnessed, typed will is far easier to prove and far harder to attack.",
+      ],
+    },
+    {
+      heading: "Interested witnesses don't void the will — and Michigan doesn't purge the gift",
+      body: [
+        "In many states, a gift to someone who also served as a witness is automatically cut down or voided. Michigan takes the opposite approach: an individual generally competent to be a witness may witness a will, and the signing of a will by an interested witness does not invalidate the will or any provision of it (MCL 700.2505). There is no purging statute that strips the witness-beneficiary's gift.",
+        "That is more forgiving than New York or California, but it is not a license to be careless. A beneficiary who serves as a witness still hands a will contestant an argument about undue influence. The cleanest practice is still to use two disinterested witnesses who inherit nothing.",
+      ],
+    },
+    {
+      heading: "Michigan gives you a fill-in-the-blank statutory will",
+      body: [
+        "Michigan is one of a handful of states that publishes a statutory will — a standardized, fill-in-the-blank form written into the code itself (MCL 700.2519). A will executed on that form and otherwise in compliance with it is a valid will, and anyone who prints and distributes the form must reproduce it verbatim, with the notice provisions in 10-point boldface type.",
+        "The statutory will lets you name beneficiaries, leave specific cash gifts, give everything else to your spouse or children, and nominate a personal representative and a guardian for minor children — but it is deliberately basic and cannot be customized beyond its blanks. It still must be signed and witnessed by two people like any other attested will. For a simple estate it is a legitimate option; for anything with trusts, blended families, or tax planning, it will not be enough.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Michigan?",
+      answer:
+        "No. A Michigan will is valid when you sign it and at least two witnesses sign within a reasonable time after witnessing your signing or your acknowledgment of it (MCL 700.2502(1)). Notarization is not required for validity. A notary's separate role is to make the will \"self-proved\" through a self-proving affidavit (MCL 700.2504), so your witnesses never have to testify in probate. Notarizing adds convenience later but never replaces the two witnesses.",
+    },
+    {
+      question: "Are handwritten wills legal in Michigan?",
+      answer:
+        "Yes. Michigan recognizes holographic (handwritten) wills with no witnesses and no notary, but only if the document is dated and your signature and its material provisions are in your own handwriting (MCL 700.2502(2)). The date is a strict requirement — an undated handwritten will is not a valid holographic will. If you use a printed form with the key terms typed, it is not a valid holographic will and, without two witnesses, not a valid attested will either.",
+    },
+    {
+      question: "How many witnesses does a will need in Michigan?",
+      answer:
+        "Two. A standard Michigan will must be in writing, signed by you (or by someone else at your direction in your conscious presence), and signed by at least two witnesses, each of whom signs within a reasonable time after witnessing you sign the will or acknowledge your signature (MCL 700.2502(1)). The one exception is a holographic will, which needs no witnesses if it is dated and handwritten (MCL 700.2502(2)).",
+    },
+    {
+      question: "Can my spouse be left out of a Michigan will?",
+      answer:
+        "Not entirely. A surviving spouse can elect against the will and take one-half of the share they would have received had you died intestate, reduced by one-half of property they received from you by other means (MCL 700.2202). Michigan is not a community-property state, so this elective share is the spouse's main protection, along with a $15,000 homestead allowance (MCL 700.2402) and exempt property up to $10,000 (MCL 700.2404). A spouse you marry after signing the will can also claim an intestate share (MCL 700.2301).",
+    },
+    {
+      question: "Does Michigan have a statutory will form?",
+      answer:
+        "Yes. Michigan publishes a fill-in-the-blank statutory will directly in the code (MCL 700.2519). A will executed on that form and otherwise in compliance with it is valid, and printers must reproduce it verbatim with the notice in 10-point boldface type. It lets you make cash gifts, leave the residue to your spouse or children, and name a personal representative and guardian — but it is deliberately basic, cannot be customized beyond its blanks, and still must be signed before two witnesses.",
+    },
+  ],
+  sources: [
+    { label: "MCL 700.2501 — Who may make a will; mental capacity", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2501" },
+    { label: "MCL 700.2502 — Execution of wills; holographic wills", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2502" },
+    { label: "MCL 700.2503 — Writings intended as wills (harmless error)", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2503" },
+    { label: "MCL 700.2504 — Self-proved will; acknowledgment before notary", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2504" },
+    { label: "MCL 700.2505 — Who may witness; interested witness", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2505" },
+    { label: "MCL 700.2202 — Surviving spouse's election against will", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2202" },
+    { label: "MCL 700.2301 — Premarital will; share of spouse married after will", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2301" },
+    { label: "MCL 700.2302 — Omitted after-born or after-adopted children", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2302" },
+    { label: "MCL 700.2402 — Homestead allowance", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2402" },
+    { label: "MCL 700.2404 — Exempt property", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2404" },
+    { label: "MCL 700.2519 — Michigan statutory will form", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2519" },
+    { label: "MCL 700.3201 — Venue for probate proceedings", url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3201" },
+    { label: "Michigan Legal Help — Wills & life planning", url: "https://michiganlegalhelp.org/self-help-tools/wills-and-life-planning" },
+  ],
+};
+
 export const STATE_DEEP_DIVES: Record<string, StateDeepDive> = {
   NY: NEW_YORK,
   CA: CALIFORNIA,
+  TX: TEXAS,
+  FL: FLORIDA,
+  PA: PENNSYLVANIA,
+  IL: ILLINOIS,
+  OH: OHIO,
+  GA: GEORGIA,
+  NC: NORTH_CAROLINA,
+  MI: MICHIGAN,
 };
 
 export function getStateDeepDive(abbr: string): StateDeepDive | undefined {

@@ -119,18 +119,19 @@ export default async function StatePage({ params }: Props) {
   const allStates = getAllStates();
   const deepDive = getStateDeepDive(state.abbreviation);
 
-  // Featured-states "Related states" surface. GSC shows California, Florida,
-  // Texas, and New York all collect dense impressions on state-law queries
-  // but rank too deep to earn clicks. Surfacing them as the curated "Other
-  // states" row from every state page (51 inbound links) builds the internal
-  // link equity needed to lift those rankings. Illinois and Pennsylvania
-  // round out the row so it doesn't read as four-state spam.
-  const FEATURED_STATE_ABBRS = ["CA", "TX", "FL", "NY", "IL", "PA"];
+  // Featured-states "Related states" surface = the states that have an editorial
+  // deep dive in stateDeepDives.ts (unique, non-templated content we are actively
+  // ranking), ordered by search demand. GSC shows these collect dense impressions
+  // on state-law queries but rank too deep to earn clicks; surfacing them from
+  // every one of the 51 state pages builds the internal-link equity that lifts
+  // those rankings (the rank-depth lever). Keep this list in sync with
+  // STATE_DEEP_DIVES — a state with no deep dive shouldn't hoard the equity.
+  const FEATURED_STATE_ABBRS = ["CA", "NY", "TX", "FL", "PA", "IL", "OH", "GA", "NC", "MI"];
   const relatedStates = FEATURED_STATE_ABBRS
     .filter((abbr) => abbr !== state.abbreviation)
     .map((abbr) => allStates.find((s) => s.abbreviation === abbr))
     .filter((s): s is NonNullable<typeof s> => Boolean(s))
-    .slice(0, 6);
+    .slice(0, 8);
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -192,6 +193,29 @@ export default async function StatePage({ params }: Props) {
     ],
   };
 
+  // Article schema — freshness (dateModified) + publisher/author give Google and
+  // AI answer engines the E-E-A-T signals a YMYL legal page needs. LAST_REVIEWED
+  // is a real "last reviewed" date, bumped when the statute content is re-checked,
+  // not an every-build timestamp (honest freshness, not fake).
+  const LAST_REVIEWED = "2026-07-03";
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${state.state} Will Requirements (2026)`,
+    about: { "@type": "Thing", name: `Will and estate law in ${state.state}` },
+    inLanguage: "en-US",
+    datePublished: "2026-01-01",
+    dateModified: LAST_REVIEWED,
+    author: { "@type": "Organization", name: "I Don't Have a Will", url: "https://idonthaveawill.com" },
+    publisher: {
+      "@type": "Organization",
+      name: "I Don't Have a Will",
+      url: "https://idonthaveawill.com",
+      logo: { "@type": "ImageObject", url: "https://idonthaveawill.com/logo.svg" },
+    },
+    mainEntityOfPage: `https://idonthaveawill.com/will-requirements/${slug}`,
+  };
+
   return (
     <>
       <script
@@ -201,6 +225,10 @@ export default async function StatePage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
       />
 
       {/* Invisible cross-link for SEO — links will-requirements to estate-planning */}
