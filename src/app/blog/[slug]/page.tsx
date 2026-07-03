@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { BLOG_POSTS, getBlogPost, getRelatedPosts } from "@/lib/blog-posts";
 
 export function generateStaticParams() {
@@ -48,6 +50,22 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const related = getRelatedPosts(slug, 3);
+
+  // MDX posts compile their body at render time; hand-written/state posts keep
+  // their pre-rendered HTML string. Strip a leading H1 from MDX since the page
+  // already renders post.title as the <h1>.
+  let mdxBody: React.ReactNode = null;
+  if (post.isMdx && post.rawMdx) {
+    const source = post.rawMdx.replace(/^\s*#\s+.+\n+/, "");
+    const compiled = await compileMDX({
+      source,
+      options: {
+        parseFrontmatter: false,
+        mdxOptions: { remarkPlugins: [remarkGfm] },
+      },
+    });
+    mdxBody = compiled.content;
+  }
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -126,10 +144,32 @@ export default async function BlogPostPage({
         </h1>
       </header>
 
-      <div
-        className="blog-content text-gray-700 leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+      {post.isMdx ? (
+        <div className="blog-content text-gray-700 leading-relaxed">{mdxBody}</div>
+      ) : (
+        <div
+          className="blog-content text-gray-700 leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      )}
+
+      {/* Contextual link to the complementary state requirements page.
+          Keeps the blog explainer and the /will-requirements page from
+          competing — the blog links to the deeper statutory reference. */}
+      {post.relatedState && (
+        <div className="mt-8 p-5 rounded-xl border border-gray-200 bg-gray-50">
+          <p className="text-gray-700">
+            For the full statutory breakdown, see the{" "}
+            <Link
+              href={`/will-requirements/${post.relatedState}`}
+              className="text-[var(--color-accent)] underline underline-offset-2 hover:text-[var(--color-accent-hover)] font-semibold"
+            >
+              {post.relatedStateLabel ?? post.relatedState} will requirements
+            </Link>
+            .
+          </p>
+        </div>
+      )}
 
       {/* CTA */}
       <div className="mt-12 p-8 bg-gray-50 rounded-2xl border border-gray-200 text-center">

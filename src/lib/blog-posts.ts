@@ -1,6 +1,14 @@
 import { getAllStates } from "@/lib/stateData";
 import { stateToSlug } from "@/lib/stateSlugs";
 import type { StateRequirements } from "@/lib/types";
+import { getMdxPosts } from "@/lib/blog-mdx";
+
+export type BlogCategory =
+  | "Basics"
+  | "Process"
+  | "Mistakes"
+  | "State Law"
+  | "Estate Planning";
 
 export interface BlogPost {
   slug: string;
@@ -9,10 +17,19 @@ export interface BlogPost {
   date: string; // YYYY-MM-DD
   author: string;
   readTime: string;
-  category: "Basics" | "Process" | "Mistakes" | "State Law" | "Estate Planning";
+  category: BlogCategory;
+  /** Pre-rendered HTML body for hand-written/generated posts. Empty for MDX posts. */
   content: string;
   /** Optional answer-first Q&A pairs, restating facts already in the post. Powers FAQPage JSON-LD. */
   faqs?: { q: string; a: string }[];
+  /** True when the body is authored in MDX (content/blog/*.mdx) and must be compiled at render time. */
+  isMdx?: boolean;
+  /** Raw MDX body (frontmatter stripped) — only set on MDX posts. Rendered via compileMDX. */
+  rawMdx?: string;
+  /** Slug of a complementary /will-requirements/<state> page to cross-link (MDX posts). */
+  relatedState?: string;
+  /** Display label for relatedState, e.g. "California". */
+  relatedStateLabel?: string;
 }
 
 const HAND_WRITTEN_POSTS: BlogPost[] = [
@@ -832,7 +849,29 @@ function generateStatePost(s: StateRequirements): BlogPost {
 
 const STATE_POSTS: BlogPost[] = getAllStates().map(generateStatePost);
 
-export const BLOG_POSTS: BlogPost[] = [...HAND_WRITTEN_POSTS, ...STATE_POSTS];
+/**
+ * MDX-authored posts (content/blog/*.mdx), incl. anything the autonomous engine
+ * writes. Dedupe by slug: hand-written and generated state posts win over MDX so
+ * an accidental slug collision never overrides a curated post.
+ */
+const CODE_POST_SLUGS = new Set(
+  [...HAND_WRITTEN_POSTS, ...STATE_POSTS].map((p) => p.slug)
+);
+const MDX_POSTS: BlogPost[] = getMdxPosts().filter((p) => {
+  if (CODE_POST_SLUGS.has(p.slug)) {
+    console.warn(
+      `[blog] MDX post "${p.slug}" collides with an existing code post — hand-written/state post wins; MDX skipped.`
+    );
+    return false;
+  }
+  return true;
+});
+
+export const BLOG_POSTS: BlogPost[] = [
+  ...HAND_WRITTEN_POSTS,
+  ...STATE_POSTS,
+  ...MDX_POSTS,
+];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
