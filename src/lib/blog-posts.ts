@@ -11,6 +11,8 @@ export interface BlogPost {
   readTime: string;
   category: "Basics" | "Process" | "Mistakes" | "State Law" | "Estate Planning";
   content: string;
+  /** Optional answer-first Q&A pairs, restating facts already in the post. Powers FAQPage JSON-LD. */
+  faqs?: { q: string; a: string }[];
 }
 
 const HAND_WRITTEN_POSTS: BlogPost[] = [
@@ -109,6 +111,28 @@ const HAND_WRITTEN_POSTS: BlogPost[] = [
 
 <p>The single best thing you can do for the people you love — even if you don't own much — is leave them a plan instead of a problem.</p>
 `,
+    faqs: [
+      {
+        q: "Do I need a will if I don't own much?",
+        a: "This is general legal information, not legal advice. Even a modest estate is still something, and it will go somewhere when you die. A will is the difference between you deciding where it goes and your state deciding for you through intestate succession.",
+      },
+      {
+        q: "What counts as part of my estate if I don't think I own much?",
+        a: "\"Not much\" usually includes more than people expect: checking and savings accounts, your car and its title, furniture, electronics and clothes, sentimental items like photos and heirlooms, digital assets such as your phone, laptop, cloud photos, email, crypto and PayPal balance, any debts, and even your pets, which are legally property. Added up, it often totals somewhere between $5,000 and $50,000 plus things money can't measure.",
+      },
+      {
+        q: "What happens to my property if I die without a will?",
+        a: "If you die without a will, your state's intestate succession laws assign your property to specific relatives in a specific order — typically spouse, then children, parents, siblings, grandparents, and more distant relatives, and finally the state itself if no heirs are found. The formula ignores your actual relationships and specific wishes.",
+      },
+      {
+        q: "Does my unmarried partner inherit if I don't have a will?",
+        a: "In most states, an unmarried partner inherits nothing under intestate law, no matter how long you lived together. Without a will, your property typically goes to your parents or siblings instead. This is one of the most common intestate-succession problems.",
+      },
+      {
+        q: "Who decides who raises my minor children if I have no will?",
+        a: "If you have young kids and no will, and both parents die, the court decides who raises your children — a judge who has never met your family. Naming a guardian in a will is the single most important reason for a will if you're a parent, and it has nothing to do with how much money you have.",
+      },
+    ],
   },
   {
     slug: "what-happens-if-you-die-without-a-will",
@@ -204,6 +228,28 @@ const HAND_WRITTEN_POSTS: BlogPost[] = [
 
 <p>The fix is a simple will. It does not have to be complicated, and it does not have to cost money. Use our <a href="/create">free will drafting tool</a> to write one in about ten minutes. State-specific, no account required, nothing stored on our servers. Whatever you decide, make it a decision — not a default.</p>
 `,
+    faqs: [
+      {
+        q: "What does it mean to die intestate?",
+        a: "This is general legal information, not legal advice. To die \"intestate\" means dying without a will. Your property is then distributed according to your state's intestate succession laws — a default legal template that assigns your estate to specific relatives in a specific order. The state is not guessing what you would have wanted; it is applying a formula.",
+      },
+      {
+        q: "Who inherits if I die without a will?",
+        a: "Every state has its own specifics, but most follow a similar priority order: spouse first, then children, then parents, then siblings, then grandparents, aunts, uncles, nieces and nephews, then more distant relatives. If no heirs can be located, the property \"escheats\" and becomes property of the state.",
+      },
+      {
+        q: "Do unmarried partners, stepchildren, or friends inherit under intestate succession?",
+        a: "Generally no. In most states an unmarried partner has no intestate claim no matter how long you were together. Stepchildren do not inherit unless you legally adopted them. Close friends and charities have zero standing under intestate succession. Only a will can direct property to any of them.",
+      },
+      {
+        q: "Does a small estate avoid intestate succession?",
+        a: "No. Many states have \"small estate\" procedures that simplify probate when the estate is below a certain value, usually somewhere between $50,000 and $200,000 depending on the state. These are faster and cheaper, but they still follow the intestate formula for distribution — a small estate goes through intestate succession more quickly, it does not escape it.",
+      },
+      {
+        q: "What is the difference between an executor and an administrator?",
+        a: "When you write a will you name an executor to handle your estate. When you die intestate there is no executor, so the court appoints an administrator — usually the closest available relative willing to serve. The administrator has the same responsibilities but was not chosen by you.",
+      },
+    ],
   },
   {
     slug: "how-to-write-a-will-for-free",
@@ -369,6 +415,28 @@ const HAND_WRITTEN_POSTS: BlogPost[] = [
 
 <p>That's the whole process. A simple will does not have to be hard, expensive, or overwhelming — and having one is a meaningful gift to the people you'd leave behind.</p>
 `,
+    faqs: [
+      {
+        q: "Can I write a will for free without a lawyer?",
+        a: "This is general legal information, not legal advice. For a simple estate, you can write a legally valid simple will for free in about ten minutes. It does not require a lawyer, a notary in most states, or an online service fee. For complex estates, blended families, or anything unusual, consult a licensed attorney.",
+      },
+      {
+        q: "What do I need for a valid simple will?",
+        a: "At a minimum you need a clear statement of who gets what, a named executor, your signature, and the signatures of two adult witnesses who are not beneficiaries. That is the core; everything else is detail.",
+      },
+      {
+        q: "How many witnesses does a will need and can they be beneficiaries?",
+        a: "Most states require two witnesses who watch you sign and then sign themselves, and witnesses generally cannot be beneficiaries. The safest approach is to gather two adult witnesses who are not named in the will, sign in front of them in the same room at the same time, with you signing first.",
+      },
+      {
+        q: "Where should I store my will?",
+        a: "A will that nobody can find is the same as no will at all. Store the original somewhere your executor knows to look — a fireproof home safe is the most common choice — and tell your executor where it is. Safe deposit boxes are secure but can create access delays after death in some states.",
+      },
+      {
+        q: "When should I update my will?",
+        a: "Review your will every 3–5 years or after any major life event: marriage, divorce or remarriage, new children or grandchildren, the death of a beneficiary, executor or guardian, major changes in assets, or moving to a different state. When you update, either draft a new will that revokes the previous one or add a codicil; a new will is usually simpler.",
+      },
+    ],
   },
   {
     slug: "do-i-need-a-lawyer-to-make-a-will",
@@ -479,6 +547,24 @@ const HAND_WRITTEN_POSTS: BlogPost[] = [
 
 <p>If you answered "yes" to any of them, find a local estate planning attorney. A $500 consultation will save your family far more than that in probate friction and family conflict.</p>
 `,
+    faqs: [
+      {
+        q: "Do I need a lawyer to make a will?",
+        a: "This is general legal information, not legal advice. Most people do not need a lawyer to write a simple will. If your situation is straightforward — one spouse, clear heirs, a modest estate, no business, no tax concerns — a self-drafted will using a legitimate tool is usually sufficient and holds up in probate. Some situations do call for a lawyer.",
+      },
+      {
+        q: "When can I safely write my own will?",
+        a: "You can almost certainly write a valid simple will yourself if your estate is modest, your wishes are straightforward, you don't own a business, you don't have unusual family dynamics, you don't expect estate tax issues, you don't have beneficiaries with special needs, and you're not trying to exclude a spouse.",
+      },
+      {
+        q: "When should I see a lawyer for a will?",
+        a: "Consider a lawyer for blended families with inheritance conflicts, business ownership, real estate in multiple states, estate tax concerns, special-needs beneficiaries on means-tested benefits, disinheriting a close relative, concerns about mental-capacity challenges, or when you need a trust or other advanced planning.",
+      },
+      {
+        q: "Is there a middle option between doing it myself and hiring a lawyer?",
+        a: "Yes. You can draft your will yourself with a free tool and then pay a lawyer roughly $150–$300 for a one-hour review. This combines the efficiency of self-drafting with a professional sanity check, which is a reasonable path if you're in a gray-area category.",
+      },
+    ],
   },
   {
     slug: "common-mistakes-that-invalidate-a-will",
@@ -582,6 +668,28 @@ const HAND_WRITTEN_POSTS: BlogPost[] = [
 
 <p>A valid will does not have to be complicated. It just has to get the basics right — and the basics are easier than most people assume, once you know where the trapdoors are.</p>
 `,
+    faqs: [
+      {
+        q: "What are the most common mistakes that invalidate a will?",
+        a: "This is general legal information, not legal advice. Common mistakes include signing without enough witnesses, using beneficiaries as witnesses, not signing in front of the witnesses, ambiguous or contradictory language, forgetting a residuary clause, naming only one executor with no backup, not naming a guardian for minor children, trying to disinherit a spouse, updating without revoking the previous will, not updating after major life events, storing the will where nobody can find it, and handwriting a will in a state that doesn't allow it.",
+      },
+      {
+        q: "Can a beneficiary be a witness to my will?",
+        a: "In most states a witness cannot be a beneficiary. If they are, the witness is still valid but may lose their inheritance under the will (sometimes called \"purging\"), and in a small number of states it can invalidate the whole will. The fix is to use witnesses who are not named in the will at all.",
+      },
+      {
+        q: "Do I need to sign my will in front of the witnesses?",
+        a: "Yes. In most states the witnesses must physically watch you sign, and then sign themselves in your presence. Signing alone and handing the document to witnesses later does not satisfy the requirement. Do the signing as a single ceremony with everyone in the same room at the same time.",
+      },
+      {
+        q: "What is a residuary clause and why does it matter?",
+        a: "The residuary clause is the catch-all that says where everything goes that isn't specifically mentioned elsewhere. Without one, anything you forgot to list — a forgotten account, a tax refund, a newly purchased item — passes by intestate succession. Always include a residuary clause such as \"I leave all the rest, residue, and remainder of my estate to ____.\"",
+      },
+      {
+        q: "Can I disinherit my spouse in a will?",
+        a: "Most states protect spouses from being fully disinherited. A surviving spouse has an \"elective share\" — usually a third to half of the estate — that they can claim no matter what the will says. If you're genuinely trying to cut out a spouse, you need a prenup or postnup rather than a will, and should talk to a lawyer.",
+      },
+    ],
   },
 ];
 
