@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     google: "aSAROWRm5tmjvMJ71KHMPTVNVZCIcIyBpY0o7WbHN10",
   },
   title: {
-    default: "Free Will Maker — Draft a Legal Will (50 States, 10 Min)",
+    default: "Free Will Maker — Draft a Simple Will (51 Jurisdictions)",
     template: "%s | idonthaveawill.com",
   },
   description:
-    "A free self-help tool to draft a valid will in about 10 minutes. All 50 states + DC. No account, no cost — your data never leaves your browser.",
+    "A free tool to draft a simple will in about 10 minutes. All 51 jurisdictions. No account — your answers never leave the browser.",
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "You Don't Have a Will. Let's Fix That.",
     description:
-      "A free self-help tool to draft a simple will in about 10 minutes. All 50 states + DC. No account, no cost, no data stored.",
+      "A free tool to draft a simple will in about 10 minutes. All 51 jurisdictions. No account — your answers never leave the browser.",
     type: "website",
     url: "https://idonthaveawill.com",
     siteName: "idonthaveawill.com",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "You Don't Have a Will. Let's Fix That.",
     description:
-      "A free self-help tool to draft a simple will in about 10 minutes. All 50 states + DC. No account needed.",
+      "A free tool to draft a simple will in about 10 minutes. All 51 jurisdictions. No account — your answers never leave the browser.",
   },
   robots: {
     index: true,
