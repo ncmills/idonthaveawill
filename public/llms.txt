@@ -16,6 +16,14 @@ These states have in-depth, primary-source-cited analysis of their specific will
 - [Georgia](https://idonthaveawill.com/will-requirements/georgia) — no elective share (spouse can be disinherited, protected only by 12-month Year's Support); age 14 to make a will; no holographic wills
 - [North Carolina](https://idonthaveawill.com/will-requirements/north-carolina) — holographic wills valid; sliding-scale elective share (15%–50% by marriage length); Clerk of Superior Court probate
 - [Michigan](https://idonthaveawill.com/will-requirements/michigan) — holographic wills valid if dated; harmless-error rescue; fill-in-the-blank statutory will form
+- [New Jersey](https://idonthaveawill.com/will-requirements/new-jersey) — broad harmless-error rule (even unsigned documents); no purging of interested witnesses; estate tax repealed but inheritance tax survives
+- [Indiana](https://idonthaveawill.com/will-requirements/indiana) — no holographic wills; childless-second-spouse trap (25% of real property); electronic wills need attorney supervision
+- [Virginia](https://idonthaveawill.com/will-requirements/virginia) — holographic wills valid; harmless-error "writings intended as wills" (1-year filing); no purging statute; no death tax
+- [Washington](https://idonthaveawill.com/will-requirements/washington) — community-property spousal protection; no holographic wills; state estate tax ($3M exclusion); remote witnessing
+- [Arizona](https://idonthaveawill.com/will-requirements/arizona) — community property; holographic wills valid; electronic wills since 2019; stricter interested-witness rule on non-self-proved wills
+- [Tennessee](https://idonthaveawill.com/will-requirements/tennessee) — both holographic AND nuncupative (oral) wills recognized; sliding-scale elective share; no harmless-error rule
+- [Massachusetts](https://idonthaveawill.com/will-requirements/massachusetts) — kept interested-witness purging; no harmless-error; c.191 §15 forced share; state estate tax ($2M)
+- [Missouri](https://idonthaveawill.com/will-requirements/missouri) — no holographic wills; $500 oral-will cap; 2025 electronic-wills act; elective share of 1/2 or 1/3
 
 ## Key pages
 - [Will Requirements by State](https://idonthaveawill.com/will-requirements) — all 50 states

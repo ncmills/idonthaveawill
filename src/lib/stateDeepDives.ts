@@ -1245,6 +1245,964 @@ const MICHIGAN: StateDeepDive = {
   ],
 };
 
+const NEW_JERSEY: StateDeepDive = {
+  seoDescription:
+    "New Jersey will requirements (2026): two witnesses, no notary required, handwritten wills valid, and a broad harmless-error rule that can save a defective — even unsigned — document (N.J.S. 3B:3-3). The spousal elective share, county Surrogate's Court probate, and the inheritance tax that still exists — in plain English.",
+  intro: [
+    "New Jersey is one of the more forgiving states in the country about how a will is signed. It recognizes handwritten wills, it never requires a notary, and it has a broad \"harmless error\" rule — one so generous that New Jersey courts have admitted documents the person never even signed. A will that would be refused outright in New York can survive in New Jersey.",
+    "The statute facts above give you the rules. This section covers where New Jersey wills actually go wrong, the harmless-error safety valve that sets New Jersey apart, and the protections built into New Jersey law that you cannot draft around — plus the one tax most people assume New Jersey repealed but didn't.",
+  ],
+  pitfalls: {
+    heading: "Five ways a New Jersey will gets thrown out",
+    intro:
+      "New Jersey forgives more signing mistakes than almost any state, so the wills that actually fail here usually fail on a wrong assumption — about what's protected, what's taxed, or what a document has to be. These are the recurring ones.",
+    items: [
+      {
+        title: "Skipping the second witness",
+        body:
+          "A typed New Jersey will must be signed by two witnesses, each of whom signs within a reasonable time after watching you sign or after you acknowledge your signature (N.J.S. 3B:3-2). The witnesses do not have to be in the room at the same time — but there still have to be two of them. Notarization is not a substitute, and while the harmless-error rule can sometimes rescue a defective will, that is an expensive courtroom fight, not a plan. Get two witnesses.",
+      },
+      {
+        title: "Assuming a notary makes a New Jersey will valid",
+        body:
+          "Notarization is not required for a New Jersey will, and it does nothing for validity. What a notary is for is the optional self-proving affidavit (N.J.S. 3B:3-4 at signing, or 3B:3-5 later), which lets the will be admitted to probate without producing the witnesses. A notarized will signed by only one witness is not validly executed; a notarized affidavit does not fix a missing witness.",
+      },
+      {
+        title: "A \"holographic\" will that is typed or filled in on a form",
+        body:
+          "New Jersey recognizes handwritten wills with no witnesses at all — but only if the signature and the material portions of the document are in your own handwriting (N.J.S. 3B:3-2(b)). People buy a printed will form, fill in the blanks by hand, and sign it without witnesses. If the dispositive terms are printed rather than handwritten and there are no two witnesses, it is neither a valid holographic will nor a valid attested one.",
+      },
+      {
+        title: "Assuming New Jersey has no death tax anymore",
+        body:
+          "New Jersey repealed its estate tax for deaths on or after January 1, 2018 — but it kept its inheritance tax, which still applies. The inheritance tax is charged by the beneficiary's relationship to you, not by the size of the estate. Close family (Class A — spouse, children, grandchildren, parents) is exempt, but leaving money to a sibling, an in-law, a friend, or a more distant relative can trigger tax the beneficiary owes. Plan for who inherits, not just how much.",
+      },
+      {
+        title: "Trying to leave a spouse out entirely",
+        body:
+          "A surviving spouse who is left too little can elect to take one-third of the \"augmented estate\" against the will (N.J.S. 3B:8-1). You cannot simply write a living-together spouse out of the plan. The election is not available if the couple was living separate and apart, or had ceased to cohabit as spouses, at the time of death — but for an intact marriage, the elective share is a floor you have to plan around.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "New Jersey's signature feature: a broad harmless-error rule",
+      body: [
+        "This is what sets New Jersey apart. Most states demand strict or near-strict compliance with the signing formalities, and a defect is fatal. New Jersey instead has a broad harmless-error (or \"dispensing power\") rule: a document that was not executed in compliance with the statute can still be treated as a valid will if the proponent establishes by clear and convincing evidence that the decedent intended it to be their will (N.J.S. 3B:3-3).",
+        "New Jersey courts have taken this remarkably far — admitting documents that were unsigned, so long as the clear-and-convincing standard for testamentary intent was met. That makes New Jersey one of the most forgiving states in the country for a botched or unfinished will. But do not treat it as a shortcut: it is a fact-intensive, expensive fight argued in court after you are gone, and it turns entirely on proof of your intent. Signing properly in front of two witnesses is still the only route that keeps your estate out of that fight.",
+      ],
+    },
+    {
+      heading: "You can't fully disinherit a spouse in New Jersey",
+      body: [
+        "New Jersey is not a community-property state, but it protects a surviving spouse through an elective share. A spouse who is left too little can elect to take one-third of the \"augmented estate\" — a figure that reaches beyond the probate estate to capture certain transfers — regardless of what the will says (N.J.S. 3B:8-1).",
+        "There is an important limit: the elective share is not available if, at the time of death, the couple was living separate and apart in different habitations, or had otherwise ceased to cohabit as spouses. For an intact marriage, though, you cannot write around the one-third share by leaving the spouse out. If part of your plan depends on leaving a spouse less than that, build the elective share into the plan rather than ignoring it.",
+      ],
+    },
+    {
+      heading: "The spouse or child you forgot — and the ex-spouse you didn't remove",
+      body: [
+        "Marriage, a new child, and divorce can all rewrite an old New Jersey will by operation of law. If you marry after signing your will and the will made no provision for your new spouse, that spouse is a \"pretermitted\" spouse and can claim the share they would have received had you died without a will, unless the omission was intentional or you provided for them outside the will (N.J.S. 3B:5-15). A child born or adopted after the will who is left unprovided for is similarly protected (N.J.S. 3B:5-16).",
+        "Divorce cuts the other way. A divorce or annulment after you sign automatically revokes every gift, appointment, and fiduciary role in the will that ran to your former spouse — the ex is written out by operation of law (N.J.S. 3B:3-14). None of this is a substitute for redrafting: the safe move is to revisit the will after any marriage, divorce, birth, or adoption.",
+      ],
+    },
+    {
+      heading: "Interested witnesses don't cost anyone their inheritance in New Jersey",
+      body: [
+        "This is another place New Jersey is unusually permissive. In many states, using a beneficiary as one of your witnesses \"purges\" — voids or reduces — the gift to that witness. New Jersey does not purge at all: the signing of a will by an interested witness does not invalidate the will and does not forfeit any part of the gift to that witness (N.J.S. 3B:3-8). The beneficiary-witness keeps the full inheritance, and the will stands.",
+        "That is genuinely more forgiving than New York, California, or North Carolina, where a witness who inherits can lose the gift unless enough disinterested witnesses also signed. Even so, the cautious practice is the same everywhere: use two witnesses who inherit nothing. A disinterested witness is one less thing for a disappointed heir to attack, even in a state that would let the gift stand.",
+      ],
+    },
+    {
+      heading: "Where a New Jersey will is proved — and the tax that survives it",
+      body: [
+        "New Jersey probates wills through the county Surrogate's Court, and the case is filed in the county where you were domiciled — your primary residence — at death. There is a built-in waiting period: a will cannot be admitted to probate until 10 days have passed after the death (N.J.S. 3B:3-22). Very small estates can sometimes pass through a simplified process instead of full probate, but the dollar cutoffs for that are modest limits set by statute and have been subject to change, so confirm the current figure before relying on it.",
+        "New Jersey's death-tax picture is a two-part story people routinely get wrong. The state estate tax was repealed for deaths on or after January 1, 2018 — but the New Jersey inheritance tax still exists, and it is charged according to the beneficiary's class. Class A (spouse, children, grandchildren, parents) and Class E (qualified charities) are exempt; Class C (siblings and certain in-laws) and Class D (everyone else) are taxable. Because the tax follows who inherits rather than the size of the estate, a modest gift to a friend or a niece can be taxed while a large gift to a child is not.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in New Jersey?",
+      answer:
+        "No. A New Jersey will is valid when you sign it and two witnesses sign it, each within a reasonable time after witnessing your signature or your acknowledgment of it (N.J.S. 3B:3-2). Notarization is not required for validity. A notary is used only for the optional self-proving affidavit (N.J.S. 3B:3-4 or 3B:3-5), which lets the will be admitted to probate without producing the witnesses. Notarizing adds nothing to whether the will is legally valid, and it never replaces the two witnesses.",
+    },
+    {
+      question: "Are handwritten wills legal in New Jersey?",
+      answer:
+        "Yes. New Jersey recognizes holographic (handwritten) wills with no witnesses and no notary, as long as your signature and the material portions of the document are in your own handwriting (N.J.S. 3B:3-2(b)). If you use a printed or store-bought form and the key terms are typed, it is not a valid holographic will — and without two witnesses it is not a valid attested will either. Oral (nuncupative) wills are not recognized in New Jersey.",
+    },
+    {
+      question: "Can a defective or unsigned will still be valid in New Jersey?",
+      answer:
+        "It can. New Jersey has a broad harmless-error rule: a document that doesn't meet the normal signing formalities can still be treated as a will if someone proves by clear and convincing evidence that the decedent intended it to be their will (N.J.S. 3B:3-3). New Jersey courts have gone as far as admitting unsigned documents under this rule. It is a powerful safety valve, but it is an expensive court fight decided after death — not a reason to skip signing properly with two witnesses.",
+    },
+    {
+      question: "Can my spouse be left out of my New Jersey will?",
+      answer:
+        "Not entirely, in most cases. New Jersey is not a community-property state, but a surviving spouse can elect to take one-third of the \"augmented estate\" against the will (N.J.S. 3B:8-1). The one exception is a couple who were living separate and apart, or had ceased to cohabit as spouses, at the time of death — then the election is not available. For an intact marriage, you cannot disinherit a spouse below the one-third elective share.",
+    },
+    {
+      question: "Did New Jersey get rid of its death tax?",
+      answer:
+        "Only half of it. New Jersey repealed its estate tax for deaths on or after January 1, 2018, but it kept its inheritance tax, which still applies. The inheritance tax depends on who inherits: close family — spouse, children, grandchildren, parents (Class A) — and qualified charities (Class E) are exempt, while siblings and certain in-laws (Class C) and everyone else (Class D) are taxable. Because it follows the beneficiary's relationship rather than the estate's size, a gift to a friend or distant relative can be taxed even when a larger gift to a child is not.",
+    },
+  ],
+  sources: [
+    { label: "N.J.S. 3B:3-1 — Who may make a will", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-3-1/" },
+    { label: "N.J.S. 3B:3-2 — Execution of wills; witnesses; holographic wills", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-3-2/" },
+    { label: "N.J.S. 3B:3-3 — Harmless error; writings intended as wills", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-3-3/" },
+    { label: "N.J.S. 3B:3-8 — Interested witness does not invalidate will or forfeit gift", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-3-8/" },
+    { label: "N.J.S. 3B:3-14 — Revocation of provisions to former spouse by divorce", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-3-14/" },
+    { label: "N.J.S. 3B:5-3 — Intestate share of surviving spouse", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-5-3/" },
+    { label: "N.J.S. 3B:8-1 — Elective share of surviving spouse", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-8-1/" },
+    { label: "N.J.S. 3B:3-17 — Probate before the Surrogate's Court", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-3-17/" },
+    { label: "N.J.S. 3B:3-22 — Ten-day waiting period before probate", url: "https://law.justia.com/codes/new-jersey/title-3b/section-3b-3-22/" },
+    { label: "New Jersey Division of Taxation — Inheritance and Estate Tax", url: "https://www.nj.gov/treasury/taxation/inheritance-estate/inheritance.shtml" },
+  ],
+};
+
+const INDIANA: StateDeepDive = {
+  seoDescription:
+    "Indiana will requirements (2026): two witnesses who sign in your presence and each other's, no handwritten (holographic) wills, and Indiana's distinctive childless-second-spouse property trap — explained in plain English.",
+  intro: [
+    "Indiana is strict about how a will is signed — no handwritten wills, and both witnesses must sign in front of you and in front of each other — but it modernized early on the electronic side, recognizing electronic wills since 2018. What trips people up most is not the signing, though. It's a quiet inheritance rule aimed at second marriages that can hand a childless surviving spouse far less than they expect.",
+    "The statute facts above give you the rules. This section covers where Indiana wills actually go wrong, and the protections built into Indiana law — including one that surprises almost every remarried couple — that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways an Indiana will gets thrown out",
+    intro:
+      "Most Indiana wills that fail, fail on how they were signed — not on what they say. And because Indiana requires strict compliance with its execution statute, a defect is usually fatal. These are the recurring ones.",
+    items: [
+      {
+        title: "Assuming a handwritten note counts as a will",
+        body:
+          "Indiana does not recognize handwritten (holographic) wills at all — there is no exception, and two witnesses are always required (IC 29-1-5-3). A heartfelt letter in your own hand, however clear and however clearly signed, is not a valid will in Indiana. The only route for almost everyone is a written will signed before two witnesses.",
+      },
+      {
+        title: "Witnesses who don't sign in front of each other",
+        body:
+          "Indiana asks for more than a signature from two people. You must signify to them that the document is your will, and both witnesses must sign in the presence of the testator and in the presence of each other (IC 29-1-5-3). Collecting the two signatures separately — one witness today, the other next week — can invalidate the will. Get the testator and both witnesses in one room at one time.",
+      },
+      {
+        title: "Using a beneficiary as one of your witnesses",
+        body:
+          "A gift to someone who also served as a witness can be purged — void as to that witness — where the will can't be proved without them (IC 29-1-5-2). The will itself survives; the witness's inheritance may not, and even then they take only the lesser of their intestate share or the devise. Keep your witnesses neutral parties who inherit nothing, and the problem never arises.",
+      },
+      {
+        title: "Relying on a notary instead of two witnesses",
+        body:
+          "Notarization does not make an Indiana will valid — two witnesses do (IC 29-1-5-3). A notary matters only for the optional self-proving clause, which speeds probate but adds nothing to the will's underlying validity (IC 29-1-5-3.1). And because Indiana requires strict compliance with the execution statute — it has not adopted a harmless-error rule — a court cannot rescue a will signed with only one witness by finding you \"intended\" it. Get the two witnesses; the notary is optional.",
+      },
+      {
+        title: "Signing an electronic will without an attorney",
+        body:
+          "Indiana does recognize electronic wills (IC 29-1-21). But an electronic will executed without attorney supervision is voidable at the court's discretion — meaning a judge can refuse to admit it. If you go the electronic route, do it under an attorney's supervision. For most people, a wet-ink will signed before two witnesses is still the safer path.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "Indiana's spouse protection — and the childless-second-spouse trap",
+      body: [
+        "Indiana is not a community-property state; it protects a surviving spouse through an elective share. A spouse who is left too little can elect to take against the will and claim one-half of the net personal and real estate (IC 29-1-3-1). You cannot write around this by leaving the spouse out — if part of your plan depends on leaving a spouse less than that share, build the elective share into the plan rather than ignoring it.",
+        "But Indiana carves out a distinctive and much smaller share for one situation, and it catches remarried couples off guard. Where the decedent left children from a prior relationship and the surviving spouse is a childless second (or subsequent) spouse, that spouse's elective share drops to one-third of the net personal estate plus only 25% of the fair market value of the real property, less any liens (IC 29-1-3-1). The same 25%-of-real-property cap appears in Indiana's intestacy rules for a childless second spouse in that situation (IC 29-1-2-1). If you are remarried with children from an earlier relationship, this is the single most important Indiana rule to plan around.",
+      ],
+    },
+    {
+      heading: "The child you forgot, and the ex-spouse you didn't remove",
+      body: [
+        "A child born or adopted after you sign your will, and left unprovided for, takes the share they would have received had you died without a will — unless the omission was intentional (IC 29-1-3-8). Indiana has no separate pretermitted-spouse statute: a spouse you marry after signing the will is protected instead through the elective share, not a stand-alone omitted-spouse claim.",
+        "Divorce cuts the other way, and it happens automatically. A dissolution of your marriage after you sign revokes the gifts your will made to your former spouse (IC 29-1-5-8) — the ex is written out by operation of law. None of this is a substitute for redrafting: the safe move is to revisit the will after any marriage, divorce, or new child.",
+      ],
+    },
+    {
+      heading: "No handwritten wills — and only a razor-thin oral exception",
+      body: [
+        "Indiana requires every ordinary will to be in writing and signed before two witnesses (IC 29-1-5-3). It flatly does not recognize handwritten (holographic) wills, with no carve-out — unlike California, Texas, or North Carolina, a will written entirely in your own hand but unwitnessed has no legal effect in Indiana.",
+        "There is one narrow exception, and it is a genuine deathbed rule. A nuncupative (oral) will is valid only if you were in imminent peril of death and actually died from it, declared it before two disinterested witnesses, had it reduced to writing within 30 days, and had it offered for probate within six months (IC 29-1-5-4). Even then it can pass personal property only, capped at $1,000 — raised to $10,000 for a member of the armed forces in wartime. It is an emergency last resort, not a will-drafting shortcut. Note too that Indiana lets someone under 18 make a will only if they are in the armed forces or merchant marine (IC 29-1-5-1); everyone else must be at least 18 and of sound mind.",
+      ],
+    },
+    {
+      heading: "The beneficiary-witness trap: the will stands, the gift is purged",
+      body: [
+        "Using someone who inherits under the will as one of your witnesses is a classic Indiana mistake, but it works differently than people fear. It does not void the will. Instead, the gift to that attesting witness is purged — void only as to that witness, and only where the will cannot be proved without their testimony (IC 29-1-5-2). Even then, the witness is not simply cut out: they still take the lesser of their intestate share or the devise.",
+        "One point of relief: serving as your will's executor, trustee, or counsel does not make a witness \"interested\" for this purpose (IC 29-1-5-2). Naming your lawyer as executor and having them witness the will is fine. The clean fix is still simpler than the exceptions — use two witnesses who take nothing under the will, and no gift is ever at risk.",
+      ],
+    },
+    {
+      heading: "Strict compliance, the self-proving affidavit, and electronic wills",
+      body: [
+        "Indiana requires strict compliance with its execution statute. Some states let a judge admit a will that was signed incorrectly if the intent is clear by clear and convincing evidence; Indiana has not adopted that harmless-error rule, so a defective will cannot be saved on proof of intent (IC 29-1-5-3). The formalities — a writing, your signature (or a proxy's at your direction and in your presence), and two witnesses who sign in your presence and each other's — are the whole ballgame.",
+        "You make probate far smoother by having the will self-proved. Indiana allows a self-proving clause, sworn before a notary, either at the time of execution or added later (IC 29-1-5-3.1); it lets the will be admitted without tracking down the witnesses to testify. Notarization is never required for the will to be valid — its only job is to make the will self-proving. Indiana has also recognized electronic wills since 2018 (IC 29-1-21), and remote witnessing by real-time audiovisual technology is permitted; but an electronic will executed without attorney supervision is voidable at the court's discretion, so supervision matters if you sign electronically.",
+      ],
+    },
+    {
+      heading: "Where an Indiana will is proved — plus small estates and no death tax",
+      body: [
+        "Indiana probates wills in the circuit court — or the superior or probate court — of the county where the decedent was domiciled, meaning their primary residence, at death (IC 29-1-7-1). This is the court that decides whether your will was validly executed, which is exactly why the two-witness formalities carry so much weight.",
+        "Not every estate needs full probate. Indiana lets successors collect a modest estate by small-estate affidavit when the estate falls under the statutory threshold — $100,000, raised from $50,000 effective July 1, 2022 (IC 29-1-8-1). And there is no death tax to plan around: Indiana repealed its inheritance tax for deaths after December 31, 2012, and has had no estate tax for deaths after December 31, 2004.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Indiana?",
+      answer:
+        "No. An Indiana will is valid when you sign it and two witnesses sign in your presence and in each other's presence, after you signify that the document is your will (IC 29-1-5-3). Notarization is not required for validity. A notary is used only for the optional self-proving clause (IC 29-1-5-3.1), which lets the will be admitted to probate without producing the witnesses — but that clause speeds probate and adds nothing to whether the will is legally valid. The two witnesses are what matter.",
+    },
+    {
+      question: "Can I write my own will by hand in Indiana?",
+      answer:
+        "You can write it by hand, but it is not valid unless two witnesses also sign it in your presence and in each other's presence (IC 29-1-5-3). Indiana does not recognize holographic wills — a handwritten, unwitnessed will has no legal effect here, unlike in California or Texas. The only exception is a narrow deathbed oral (nuncupative) will, valid solely for limited personal property when you are in imminent peril of death (IC 29-1-5-4). Handwriting the document is fine; skipping the two witnesses is fatal.",
+    },
+    {
+      question: "Can my spouse be left out of an Indiana will?",
+      answer:
+        "Not entirely. Indiana is not a community-property state, but a surviving spouse can elect to take against the will and claim one-half of the net personal and real estate (IC 29-1-3-1). One major exception surprises remarried couples: if you left children from a prior relationship and your surviving spouse is a childless second (or later) spouse, that spouse's elective share is only one-third of the net personal estate plus 25% of the fair market value of the real property (IC 29-1-3-1). You cannot disinherit a spouse below these shares without a valid waiver.",
+    },
+    {
+      question: "Can I sign my will electronically in Indiana?",
+      answer:
+        "Yes — Indiana has recognized electronic wills since 2018 (IC 29-1-21), and remote witnessing by real-time audiovisual technology is permitted. But there is an important catch: an electronic will executed without attorney supervision is voidable at the court's discretion, meaning a judge can refuse to admit it. If you sign electronically, do it under an attorney's supervision. For most people, a wet-ink will signed before two witnesses remains the safer route.",
+    },
+    {
+      question: "Where is a will probated in Indiana, and is there a small-estate option?",
+      answer:
+        "An Indiana will is probated in the circuit court — or the superior or probate court — of the county where the person was domiciled at death (IC 29-1-7-1). Smaller estates can skip full probate: successors may use a small-estate affidavit when the estate is under $100,000, a threshold raised from $50,000 effective July 1, 2022 (IC 29-1-8-1). Indiana also has no inheritance or estate tax to worry about.",
+    },
+  ],
+  sources: [
+    { label: "IC 29-1-5-1 — Who may make a will", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-5-1/" },
+    { label: "IC 29-1-5-2 — Interested (attesting) witness", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-5-2/" },
+    { label: "IC 29-1-5-3 — Execution and attestation of wills", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-5-3/" },
+    { label: "IC 29-1-5-4 — Nuncupative (oral) wills", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-5-4/" },
+    { label: "IC 29-1-2-1 — Intestate succession", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-2-1/" },
+    { label: "IC 29-1-3-1 — Right of election by surviving spouse", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-3-1/" },
+    { label: "IC 29-1-3-8 — Omitted (after-born or adopted) child", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-3-8/" },
+    { label: "IC 29-1-8-1 — Small-estate affidavit", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-8-1/" },
+    { label: "IC 29-1-21 — Electronic wills", url: "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-21-3/" },
+    { label: "Indiana DOR — Inheritance tax information", url: "https://www.in.gov/dor/tax-forms/individual/inheritance-tax-information/" },
+  ],
+};
+
+const VIRGINIA: StateDeepDive = {
+  seoDescription:
+    "Virginia will requirements (2026): two witnesses present at the same time, no notary required, and handwritten (holographic) wills valid. The Va. Code § 64.2-403 rules, the harmless-error \"writings intended as wills\" safety valve, the sliding-scale elective share, no estate or inheritance tax, and Circuit Court probate — in plain English.",
+  intro: [
+    "Virginia is more forgiving than most strict states, and more careful than most loose ones. It recognizes handwritten wills, it doesn't require a notary, it disqualifies no one for being a beneficiary-witness, and since 2007 a court can even rescue a document that wasn't executed correctly. But each of those flexibilities has an edge people cut themselves on — a \"holographic\" will that isn't entirely in their hand, or a harmless-error rule that can't fix a missing signature.",
+    "The statute facts above give you the rules. This section covers where Virginia wills actually go wrong, the safety valve that can save a botched one, and the protections built into Virginia law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Virginia will gets thrown out",
+    intro:
+      "Most Virginia wills that fail, fail on how they were signed — not on what they say. These are the recurring ones.",
+    items: [
+      {
+        title: "Only one witness — or witnesses who signed at different times",
+        body:
+          "A Virginia will (that isn't wholly handwritten) needs two competent witnesses who are present at the same time and who either watch you sign or hear you acknowledge your signature, then sign in your presence (Va. Code § 64.2-403(C)). Collecting the two signatures separately, or on different days, breaks the \"same time\" requirement. Get the testator and both witnesses in one room at one time.",
+      },
+      {
+        title: "A \"holographic\" will that isn't entirely in your handwriting",
+        body:
+          "Virginia recognizes handwritten wills, but only if the will is wholly in your own handwriting and signed by you (Va. Code § 64.2-403(B)). People fill in a typed or store-bought form in their own hand and assume it counts. If material words are printed rather than handwritten, and there are no two witnesses, it is neither a valid holographic will nor a valid attested one — and a holographic will still has to be proved later by two disinterested people who can identify your handwriting.",
+      },
+      {
+        title: "Assuming a spoken wish counts as a will",
+        body:
+          "Virginia does not recognize nuncupative (oral) wills. The old carve-out for soldiers and sailors was eliminated in the 2007 recodification, so § 64.2-403 now requires a writing in every case. A deathbed instruction to family, however clear and however many people heard it, is not a valid will in Virginia.",
+      },
+      {
+        title: "Leaning on the harmless-error rule to fix a missing signature",
+        body:
+          "Virginia's \"writings intended as wills\" statute lets a court treat a non-compliant document as a will if it's proved by clear and convincing evidence that you intended it as your will (Va. Code § 64.2-404). But it cannot excuse your missing signature — except in two narrow cases (spouses who accidentally sign each other's wills, or a testator who signs the self-proving certificate instead of the will). And the clock is short: the proceeding to establish such a writing as a will must be filed within one year of the decedent's death (Va. Code § 64.2-404). Treat harmless error as an expensive courtroom rescue, not a shortcut. Sign the will yourself.",
+      },
+      {
+        title: "Signing electronically or by video",
+        body:
+          "As of 2026, Virginia has not authorized electronic wills — it has not adopted the Uniform Electronic Wills Act, and its Uniform Electronic Estate Planning Documents Act expressly excludes wills. A scanned PDF, an e-signature, or a will \"witnessed\" over a video call is not a valid Virginia will. The valid route is still a paper document signed in wet ink with two witnesses physically present (Va. Code § 64.2-403).",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't fully disinherit a spouse in Virginia",
+      body: [
+        "Virginia is not a community-property state, but it still protects a surviving spouse through an elective share. A spouse who is left too little can claim 50% of the value of the \"marital-property portion\" of the augmented estate (Va. Code §§ 64.2-308.3, 64.2-308.4). The augmented estate is a broad pool designed to capture assets that pass outside the will, so this is not something you can defeat simply by leaving the spouse out of the document.",
+        "The one moving part is the marital-property portion itself, which is set by a sliding scale that rises with the length of the marriage — a short marriage exposes a small fraction of the estate to the claim, a long one a much larger fraction, with the flat 50% multiplier applied on top. If part of your plan depends on leaving a spouse less than the statutory share, build the elective share into the plan rather than ignoring it; the court applies its own math regardless of what the will says.",
+      ],
+    },
+    {
+      heading: "The spouse or child you forgot — and the ex-spouse you didn't remove",
+      body: [
+        "If you marry after signing your will and never update it, your new spouse is an \"omitted spouse\" and can claim the share they would have received had you died with no will at all — unless the will shows the omission was intentional or you provided for the spouse outside the will (Va. Code § 64.2-422). A child born or adopted after the will is signed is likewise protected and takes an intestate share (Va. Code § 64.2-419).",
+        "One gap surprises people: Virginia has no general pretermitted-child protection for a child merely left out. The after-born and after-adopted rule protects only children who arrived after the will — a living child you simply omit has no automatic statutory claim. Divorce cuts the other way and works automatically: a final divorce or annulment revokes any gift to the former spouse, who is treated as having predeceased you (Va. Code § 64.2-412). The safe move is the same in every case — revisit the will after any marriage, divorce, birth, or adoption.",
+      ],
+    },
+    {
+      heading: "Handwritten wills are valid — but the whole will has to be in your hand",
+      body: [
+        "A Virginia holographic will needs no witnesses at the time you sign it. What it needs is to be wholly in your own handwriting and signed by you (Va. Code § 64.2-403(B)). A typed or printed form with handwritten blanks does not qualify; the will itself must be handwritten from start to finish.",
+        "There is a catch at the other end. A holographic will has to be proved after death by at least two disinterested witnesses who can identify your handwriting — and \"disinterested\" here matters, even though Virginia otherwise lets beneficiaries witness a will. A handwritten will is a genuine emergency option in Virginia, but a typed will signed in front of two witnesses is far easier to prove and far harder to attack.",
+      ],
+    },
+    {
+      heading: "Virginia's friendly rules: no purging statute, and a self-proving affidavit",
+      body: [
+        "Virginia does something many strict states don't: it lets a beneficiary serve as a witness with no penalty at all. There is no \"purging\" statute — a witness's interest in the will does not disqualify the witness, void the gift, or void the will (Va. Code § 64.2-405). (The exception is a holographic will, where the two witnesses proving your handwriting must be disinterested.) That said, using neutral witnesses is still the cleaner practice and avoids handing a will-contest lawyer an argument.",
+        "Virginia also offers a true self-proving affidavit. You and your two witnesses can swear before a notary — either when you sign the will or at any later time — that the will was properly executed (Va. Code §§ 64.2-452, 64.2-453). A self-proved will can be admitted to probate without tracking your witnesses down to testify years later. Execute the affidavit the same day you sign; it is far harder to arrange after the fact.",
+      ],
+    },
+    {
+      heading: "Where a Virginia will is proved — and why there's no death tax to plan around",
+      body: [
+        "Virginia probates wills in the Circuit Court, or before its clerk, of the locality where you were domiciled — your primary residence — at death (Va. Code § 64.2-443). This is the court that decides whether your will was validly executed, which is exactly why the two-witness formalities carry so much weight; a self-proving affidavit is what keeps that probate uncontested and quick. For small estates, Virginia also provides a simplified transfer procedure that lets modest estates skip full administration — a practical shortcut worth asking the clerk about.",
+        "On taxes, Virginia is simple: there is no state estate tax (it was repealed for deaths on or after July 1, 2007) and no inheritance tax. Your estate plan does not need to solve for a Virginia death tax — only the federal estate tax, which affects very large estates. That keeps most Virginia planning focused on getting the will executed correctly, not on tax engineering.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Virginia?",
+      answer:
+        "No. A Virginia will is valid when you sign it and two competent witnesses, present at the same time, sign it after watching you sign or hearing you acknowledge your signature (Va. Code § 64.2-403). Notarization is not required for validity. A notary is used only for the optional self-proving affidavit (Va. Code § 64.2-452), which lets the will be admitted to probate without producing the witnesses later — it speeds probate but adds nothing to whether the will is legally valid.",
+    },
+    {
+      question: "Can I write my own will by hand in Virginia?",
+      answer:
+        "Yes. Virginia recognizes holographic (handwritten) wills with no witnesses at signing, as long as the will is wholly in your own handwriting and signed by you (Va. Code § 64.2-403(B)). If you use a typed or printed form and only fill in the blanks, it is not a valid holographic will — and without two witnesses it is not a valid attested will either. A handwritten will must also be proved after death by two disinterested people who can identify your handwriting.",
+    },
+    {
+      question: "Can a beneficiary be a witness to my Virginia will?",
+      answer:
+        "Yes, for an ordinary witnessed will. Virginia has no purging statute, so a witness who also inherits does not lose the gift and does not invalidate the will (Va. Code § 64.2-405) — unlike New York or California, where a beneficiary-witness can lose the gift. Using neutral witnesses who inherit nothing is still the cleaner practice. The one exception is a handwritten will, where the two witnesses who prove your handwriting must be disinterested.",
+    },
+    {
+      question: "Can my spouse be left out of my Virginia will?",
+      answer:
+        "Not entirely. Virginia is not a community-property state, but a surviving spouse can claim an elective share — 50% of the value of the marital-property portion of your augmented estate (Va. Code § 64.2-308.3). The marital-property portion is set by a sliding scale that rises with the length of the marriage, so a longer marriage exposes more of the estate to the claim. You cannot fully disinherit a spouse in Virginia without a valid waiver.",
+    },
+    {
+      question: "Does Virginia have an estate or inheritance tax?",
+      answer:
+        "No. Virginia repealed its estate tax for deaths on or after July 1, 2007, and it has no inheritance tax. Only the federal estate tax can apply, and it affects very large estates. For most people, Virginia estate planning is about executing the will correctly, not about state death taxes.",
+    },
+  ],
+  sources: [
+    { label: "Va. Code § 64.2-401 — Who may make a will; capacity", url: "https://law.lis.virginia.gov/vacode/64.2-401/" },
+    { label: "Va. Code § 64.2-403 — Execution of wills; holographic wills", url: "https://law.lis.virginia.gov/vacode/64.2-403/" },
+    { label: "Va. Code § 64.2-404 — Writings intended as wills (harmless error)", url: "https://law.lis.virginia.gov/vacode/64.2-404/" },
+    { label: "Va. Code § 64.2-405 — Interested persons as witnesses", url: "https://law.lis.virginia.gov/vacode/64.2-405/" },
+    { label: "Va. Code § 64.2-452 — Self-proved wills; affidavits", url: "https://law.lis.virginia.gov/vacode/64.2-452/" },
+    { label: "Va. Code § 64.2-200 — Course of descents; intestate share of spouse", url: "https://law.lis.virginia.gov/vacode/64.2-200/" },
+    { label: "Va. Code § 64.2-308.3 — Right of surviving spouse to elective share", url: "https://law.lis.virginia.gov/vacode/64.2-308.3/" },
+    { label: "Va. Code § 64.2-412 — Revocation of gift to former spouse on divorce", url: "https://law.lis.virginia.gov/vacode/64.2-412/" },
+    { label: "Va. Code § 64.2-443 — Jurisdiction and venue for probate (Circuit Court)", url: "https://law.lis.virginia.gov/vacode/64.2-443/" },
+    { label: "Virginia Department of Taxation — Estate and Inheritance Taxes", url: "https://www.tax.virginia.gov/estate-and-inheritance-taxes" },
+  ],
+};
+
+const WASHINGTON: StateDeepDive = {
+  seoDescription:
+    "Washington will requirements (2026): two competent witnesses, no notary required, and no handwritten (holographic) wills. The strict RCW 11.12.020 rules, why Washington honors your community-property spouse instead of an elective share, the interested-witness purge, remote witnessing since 2022, Superior Court probate, and the state estate tax — in plain English.",
+  intro: [
+    "Washington is a strict-compliance state with a community-property twist. It refuses to recognize a handwritten will signed in-state without witnesses, and its courts have no general power to forgive a signing that went wrong — but it also protects a married spouse automatically through community property rather than through any elective share you have to claim. And unlike most states, Washington levies its own estate tax, which changes the math for larger estates.",
+    "The statute facts above give you the rules. This section covers where Washington wills actually go wrong, the protections built into Washington law that you cannot draft around, and the state-level estate tax almost no one plans for.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Washington will gets thrown out",
+    intro:
+      "Most Washington wills that fail, fail on how they were signed — not on what they say. And because Washington has no general harmless-error rule, a defect is usually fatal. These are the recurring ones.",
+    items: [
+      {
+        title: "Assuming a handwritten note counts as a will",
+        body:
+          "An unwitnessed handwritten (holographic) will made in Washington fails — the state requires two competent witnesses for every will executed here (RCW 11.12.020). A heartfelt letter in your own hand, however clear, is not a valid Washington will. The one narrow exception runs the other way: a will that was valid where it was signed, or where you were domiciled, will still be honored in Washington even if it was handwritten there.",
+      },
+      {
+        title: "Relying on a notary instead of two witnesses",
+        body:
+          "Notarization does not make a Washington will valid — two competent witnesses do (RCW 11.12.020). A notary matters only for the optional witness affidavit that proves the will after death (RCW 11.20.020); it never substitutes for a witness. A carefully notarized will signed by fewer than two witnesses is not validly executed, and Washington has no harmless-error rule to rescue it.",
+      },
+      {
+        title: "Using a beneficiary as one of your two witnesses",
+        body:
+          "An interested witness does not void a Washington will. But if there are not two other disinterested witnesses, a gift to a witness triggers a rebuttable presumption of duress or undue influence (RCW 11.12.160). Unless that witness can rebut it, the gift is purged down to what they would have inherited had you died with no will at all. Use two witnesses who inherit nothing.",
+      },
+      {
+        title: "Assuming a spoken wish will stand",
+        body:
+          "Washington recognizes oral (nuncupative) wills only in a razor-thin set of circumstances: they can pass personal property up to $1,000 (armed-forces members and merchant mariners may dispose of their wages), must be made in the testator's last sickness before two witnesses, be committed to writing, and be offered within six months (RCW 11.12.025). An oral will can never pass real estate. For everyone else, the witnessed-and-signed rules are the only route.",
+      },
+      {
+        title: "Signing a paper will electronically or by video",
+        body:
+          "Washington does allow electronic wills — but only under its Electronic Wills Act effective January 1, 2022, and only with a qualified custodian and the statute's own formalities (RCW 11.12.400). A scanned PDF of a paper will, a casual e-signature, or a paper will \"witnessed\" over an ad-hoc video call is not automatically a valid electronic will. If you are signing a paper will, use wet ink with two witnesses in your presence or electronic presence.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "Washington protects a spouse through community property, not an elective share",
+      body: [
+        "Washington is a community-property state, and that is why it has no New York-style elective share. Each spouse already owns one-half of the community property, and you cannot will away your spouse's half — so when you die, your surviving spouse keeps their own half and takes your half of the community property too, ending up with 100% of it (RCW 11.04.015; RCW 11.02.070).",
+        "Because that protection is automatic, there is no post-death \"claim one-third against the will.\" A spouse can still claim a basic homestead or family-support award from the estate (RCW 11.54.010), but the core safeguard is the community-property half the decedent never controlled in the first place. If your plan depends on how community versus separate property is divided, sort that out while drafting — the court applies the community-property math regardless of what the will says.",
+      ],
+    },
+    {
+      heading: "How Washington splits an estate when there's no will",
+      body: [
+        "If you die without a will, Washington's community-property rule still governs the community half: your surviving spouse takes all of your one-half of the community property, so they end up owning the whole of it (RCW 11.04.015).",
+        "Your separate property is divided differently. A surviving spouse takes one-half of it if you leave descendants (the descendants share the other half); three-quarters if you leave no descendants but a parent or a parent's issue survive; and all of it if none of those relatives survive (RCW 11.04.015). A will is how you change that default division — but you can never redirect your spouse's own community-property half.",
+      ],
+    },
+    {
+      heading: "The spouse or child you forgot, and the ex-spouse you didn't remove",
+      body: [
+        "If you marry after signing your will and the will makes no provision for the new spouse, that omitted spouse takes the share they would have received had you died without a will — unless the omission was intentional (RCW 11.12.095). The same protection runs to a child born or adopted after the will who is left unprovided for: that omitted child takes an intestate-equivalent share unless the omission was intentional (RCW 11.12.091).",
+        "Divorce cuts the other way. A dissolution or invalidation of your marriage automatically revokes every provision of your will in favor of the former spouse, as if the ex had predeceased you (RCW 11.12.051) — you don't have to redraft to write them out. The safe move is the same in every case: revisit the will after any marriage, divorce, birth, or adoption.",
+      ],
+    },
+    {
+      heading: "Proving a Washington will: Superior Court and the witness affidavit",
+      body: [
+        "Washington probates wills in the Superior Court, and a probate may be commenced in any county of the state, subject to a motion to change venue to the proper county (RCW 11.96A.050). This is the court that decides whether your will was validly executed, which is exactly why the two-witness formality carries so much weight.",
+        "Washington does not use a single embedded \"self-proving affidavit\" the way many states do. Instead, its witnesses can make an affidavit before an authorized officer, and that affidavit is accepted by the court as if the testimony had been taken before it (RCW 11.20.020). Getting that witness affidavit signed keeps the will admissible without hauling the witnesses back years later. If the probate estate's personal property is $100,000 or less, heirs may skip formal probate entirely and collect it with a small-estate affidavit after a 40-day wait (RCW 11.62.010).",
+      ],
+    },
+    {
+      heading: "Washington has its own estate tax — and the rate just changed",
+      body: [
+        "Unlike most states, Washington imposes a state-level estate tax on top of any federal tax (Chapter 83.100 RCW). For deaths on or after July 1, 2025, the applicable exclusion amount is $3,000,000 — well below the federal exemption, so an estate that owes nothing federally can still owe Washington estate tax. There is no separate inheritance tax.",
+        "The rate structure recently moved. For deaths between July 1, 2025 and June 30, 2026, the schedule ran up to a temporary top rate of 35%; for deaths on or after July 1, 2026, it reverted under 2026 legislation (ESB 6347) to a graduated schedule topping out at 20%. Because the middle brackets are technical and can lag in the published tables, treat the tax as graduated up to that 20% top rate and confirm the current schedule with the Department of Revenue or an estate attorney before relying on a specific number.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Washington?",
+      answer:
+        "No. A Washington will is valid when you sign it and two competent witnesses attest it — by subscribing their names or by later signing an affidavit or giving testimony (RCW 11.12.020). Notarization is not required for validity. A notary is used only for the witness affidavit that proves the will after death (RCW 11.20.020), which speeds probate but adds nothing to whether the will is legally valid. The two witnesses are what matter.",
+    },
+    {
+      question: "Can I write my own will by hand in Washington?",
+      answer:
+        "Not without witnesses. A handwritten (holographic) will signed in Washington with no witnesses is invalid, because the state requires two competent witnesses for every will executed here (RCW 11.12.020). The one exception is a will that was valid where it was signed or where you were domiciled — Washington will honor that even if it was handwritten. Handwriting the document is fine; skipping the two witnesses is fatal.",
+    },
+    {
+      question: "Can my spouse be left out of my Washington will?",
+      answer:
+        "Not entirely. Washington is a community-property state: your spouse already owns half of what you acquired together during the marriage, and you cannot will away their half (RCW 11.02.070; RCW 11.04.015). There is no New York-style elective share because that community-property half already protects the spouse. A spouse you marry after signing the will can also claim an omitted-spouse share unless the omission was intentional (RCW 11.12.095).",
+    },
+    {
+      question: "Does Washington have an estate tax?",
+      answer:
+        "Yes. Washington imposes its own estate tax with an applicable exclusion of $3,000,000 for deaths on or after July 1, 2025 — far below the federal exemption, so an estate can owe Washington tax while owing nothing federally (Chapter 83.100 RCW). The top rate is graduated up to 20% for deaths on or after July 1, 2026 (ESB 6347). Washington has no separate inheritance tax. Confirm the current bracket schedule with the Department of Revenue before relying on a specific figure.",
+    },
+    {
+      question: "Can witnesses sign my Washington will remotely?",
+      answer:
+        "Yes, since 2022. Washington's execution statute lets witnesses act in the testator's \"presence or electronic presence,\" which permits remote audio-video witnessing (RCW 11.12.020, amended effective January 1, 2022). Washington has also adopted an Electronic Wills Act effective January 1, 2022, which requires a qualified custodian and its own formalities (RCW 11.12.400). For an ordinary paper will, wet ink with two witnesses present remains the simplest, safest route.",
+    },
+  ],
+  sources: [
+    { label: "RCW 11.12.010 — Who may make a will", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.010" },
+    { label: "RCW 11.12.020 — Execution and attestation of wills", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.020" },
+    { label: "RCW 11.12.025 — Nuncupative (oral) wills", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.025" },
+    { label: "RCW 11.12.051 — Effect of divorce or dissolution", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.051" },
+    { label: "RCW 11.12.091 — Omitted child", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.091" },
+    { label: "RCW 11.12.095 — Omitted spouse", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.095" },
+    { label: "RCW 11.12.160 — Interested witness; rebuttable presumption", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.160" },
+    { label: "RCW 11.12.400 — Electronic Wills Act", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.400" },
+    { label: "RCW 11.20.020 — Proof of will by witness affidavit", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.020" },
+    { label: "RCW 11.04.015 — Descent and distribution (intestacy)", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.04.015" },
+    { label: "RCW 11.02.070 — Community property on death", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.02.070" },
+    { label: "RCW 11.54.010 — Basic homestead/family-support award", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.54.010" },
+    { label: "RCW 11.62.010 — Small-estate affidavit", url: "https://app.leg.wa.gov/rcw/default.aspx?cite=11.62.010" },
+    { label: "RCW 11.96A.050 — Venue for probate proceedings", url: "https://app.leg.wa.gov/RCW/default.aspx?cite=11.96A.050" },
+    { label: "Chapter 83.100 RCW — Estate and transfer tax", url: "https://app.leg.wa.gov/rcw/default.aspx?cite=83.100" },
+    { label: "ESB 6347 (2026) — Estate-tax rate schedule", url: "https://app.leg.wa.gov/billsummary/?BillNumber=6347&Year=2026" },
+  ],
+};
+
+const ARIZONA: StateDeepDive = {
+  seoDescription:
+    "Arizona will requirements (2026): two witnesses, notarization NOT required, and handwritten (holographic) wills fully valid. The A.R.S. § 14-2502 rules, the interested-witness trap on non-self-proved wills, why Arizona has no harmless-error rescue, community-property protection instead of an elective share, the raised small-estate limits, and Superior Court probate — in plain English.",
+  intro: [
+    "Arizona is flexible in ways that surprise people: it fully recognizes handwritten wills, it never requires a notary to make a will valid, and its Uniform Probate Code framework is meant to admit wills, not defeat them. But it is unforgiving where it counts. Arizona has no harmless-error rule — no judge can rescue a will that missed the signing formalities unless it happens to qualify as a handwritten will — and because Arizona is a community-property state, what you can actually leave a spouse is not what most people assume.",
+    "The statute facts above give you the rules. This section covers where Arizona wills actually go wrong, an interested-witness rule that is stricter than the standard Uniform Probate Code, and the protections built into Arizona law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways an Arizona will gets thrown out",
+    intro:
+      "Most Arizona wills that fail, fail on how they were signed — not on what they say. And unlike a growing number of states, Arizona gives you no general second chance to fix a botched signing. These are the recurring ones.",
+    items: [
+      {
+        title: "Notarizing the will instead of getting two witnesses",
+        body:
+          "A typed Arizona will must be signed by at least two witnesses, each of whom signed within a reasonable time after witnessing you sign the will or acknowledge your signature (A.R.S. § 14-2502). Notarization is not required and is not a substitute — a carefully notarized will signed by fewer than two qualifying witnesses is simply not executed. And because Arizona has no harmless-error rule, there is no courtroom rescue for it unless the will happens to be entirely in your own handwriting. Get the two witnesses; the notary is optional.",
+      },
+      {
+        title: "Using an interested witness on a will you didn't self-prove",
+        body:
+          "This is an Arizona-specific trap that is stricter than the standard Uniform Probate Code. Arizona does not purge or void a gift to a witness — but for a will executed on or after October 1, 2019 that is NOT self-proved, an interested person (a devisee, or someone related to a devisee by blood, marriage, or adoption) may not act as a witness, and using one can invalidate the attestation (A.R.S. § 14-2505). A self-proved will (§ 14-2504) is exempt. The clean fix works both ways: use disinterested witnesses, and self-prove the will to neutralize the rule entirely.",
+      },
+      {
+        title: "A \"holographic\" will that is typed or filled in on a form",
+        body:
+          "Arizona recognizes handwritten wills with no witnesses at all — but only if the signature and the material provisions are in your own handwriting (A.R.S. § 14-2503). People buy a printed will form, fill in the blanks, and sign it without witnesses. Because the material provisions are not in your hand and there are no two witnesses, it is neither a valid holographic will nor a valid attested one.",
+      },
+      {
+        title: "Assuming a spoken wish or deathbed statement counts",
+        body:
+          "Arizona does not recognize nuncupative (oral) wills at all. Title 14 authorizes only paper wills, handwritten (holographic) wills, and — since 2019 — electronic wills. A spoken instruction to family, however clear and however many people heard it, has no effect as a will in Arizona. Put it in writing and sign it in front of two witnesses.",
+      },
+      {
+        title: "Signing electronically without meeting the e-will rules",
+        body:
+          "Arizona does recognize electronic wills (A.R.S. § 14-2518, since 2019), but they have their own strict requirements — an electronic record readable as text, and two witnesses who are physically or electronically present (any electronically-present witness must be physically located in the United States). A self-proved electronic will further requires a notary and a qualified custodian (§ 14-2519). A casual e-signed PDF or a will \"witnessed\" over an ordinary video call does not meet these rules. If in doubt, sign a paper original in wet ink with two witnesses physically present.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "Arizona protects a spouse through community property, not an elective share",
+      body: [
+        "Arizona is a community-property state, and this changes the whole picture. Property a married couple acquires during the marriage is generally community property, and one-half of it already belongs to the surviving spouse by operation of law — the decedent cannot devise that half away. Your will controls your one-half of the community property plus your own separate property; it does not reach your spouse's half.",
+        "This is why Arizona has no New York-style elective or forced share: there is no statute letting a spouse \"claim one-third against the will,\" because the spouse is already protected by owning half of the marital estate. There is no elective-share provision anywhere in Title 14. If your plan depends on how community versus separate property is divided, sort that out while drafting — the court applies the community-property math regardless of what the will says.",
+      ],
+    },
+    {
+      heading: "The spouse or child you forgot, and the ex-spouse you didn't remove",
+      body: [
+        "Marriage, a new child, and divorce can all rewrite an Arizona will by operation of law. If you marry after signing your will and never update it, the new spouse is an \"omitted spouse\" and can claim the share they would have received had you died without a will — unless the will was made in contemplation of the marriage, or you provided for the spouse outside the will, or the omission was intentional (A.R.S. § 14-2301). A child born or adopted after the will who is left unprovided for takes an intestate share on the same logic, unless the omission was intentional (§ 14-2302).",
+        "Divorce cuts the other way. A final divorce or annulment automatically revokes every gift and every fiduciary appointment in favor of your former spouse, and it severs the right of survivorship in property the two of you held as joint tenants (§ 14-2804) — the ex is written out by operation of law. None of this is a substitute for redrafting: the safe move is to revisit the will after any marriage, divorce, or new child.",
+      ],
+    },
+    {
+      heading: "Handwritten wills are valid — but the whole plan has to be in your hand",
+      body: [
+        "An Arizona holographic will needs no witnesses and no notary. What it needs is that your signature and all of the material provisions — who gets what — are in your own handwriting (A.R.S. § 14-2503). Pre-printed matter can appear on the page, but the dispositive terms cannot be typed or filled into a form. This is the one route that can save a will that failed the ordinary two-witness formalities.",
+        "It is a genuine emergency option, not a preference. A handwritten will is far easier to attack than a witnessed, self-proved typed will, and because Arizona has no harmless-error safety valve, the holographic form is the only fallback when a signing goes wrong. Arizona will also let extrinsic evidence show that you intended a document to be your will (§ 14-2502(B)), but that is about proving intent — it is not a power to forgive missing signatures.",
+      ],
+    },
+    {
+      heading: "Arizona has no harmless-error rescue",
+      body: [
+        "A number of states let a judge admit a will that was signed incorrectly if the person offering it proves by clear and convincing evidence that you intended it to be your will. Arizona does not. There is no dispensing-power provision in Title 14, so a will that fails the § 14-2502 formalities has exactly one lifeline: qualifying as a handwritten (holographic) will under § 14-2503. If it is typed and under-witnessed, and not entirely in your hand, no clear-and-convincing showing will save it.",
+        "This is exactly why the two-witness rule and the interested-witness trap carry so much weight in Arizona. A missing witness or a disqualified interested witness on a non-self-proved will cannot be argued away after death. Execute cleanly in front of two disinterested witnesses, and — for probate ease and to neutralize the interested-witness rule — add the self-proving affidavit before a notary the same day.",
+      ],
+    },
+    {
+      heading: "The self-proving affidavit, small estates, and where an Arizona will is proved",
+      body: [
+        "Arizona does not require notarization for a will to be valid, but it offers a self-proving affidavit that does real work here. You and both witnesses swear before a notary — either at the same time the will is signed or added later — that the will was properly executed (A.R.S. § 14-2504). A self-proved will can be admitted without tracking your witnesses down to testify, and — uniquely in Arizona — it also exempts the will from the interested-witness disqualification (§ 14-2505). A signature on the self-proving affidavit even counts as a signature on the will itself if one is needed to prove execution.",
+        "Arizona probates wills in the Superior Court, in the county where you were domiciled at death (§ 14-3201). Many estates skip formal probate entirely: as of HB2116, effective September 26, 2025, an heir can collect personal property by affidavit when the net estate's personal property is $200,000 or less (usable 30 days after death), and can transfer real property by affidavit when the real property is worth $300,000 or less net of liens (usable 6 months after death) (§ 14-3971) — both limits raised sharply from the old $75,000 and $100,000 figures. And Arizona imposes no state estate tax and no inheritance tax, so what passes under the will is not reduced by a state death tax.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Arizona?",
+      answer:
+        "No. An Arizona will is valid when you sign it and at least two witnesses sign within a reasonable time after witnessing your signing or your acknowledgment (A.R.S. § 14-2502) — no notary is required. A notary's role is separate: it makes the will \"self-proved\" so it can be admitted to probate without the witnesses testifying, and it also exempts the will from Arizona's interested-witness rule (§ 14-2504; § 14-2505). Notarizing never replaces the two witnesses. A handwritten (holographic) will needs neither witnesses nor a notary (§ 14-2503).",
+    },
+    {
+      question: "Are handwritten wills legal in Arizona?",
+      answer:
+        "Yes. Arizona recognizes handwritten (holographic) wills with no witnesses and no notary, as long as your signature and all of the material provisions are in your own handwriting (A.R.S. § 14-2503). If you use a printed or store-bought form and the key terms are typed rather than handwritten, it is not a valid holographic will — and without two witnesses it is not a valid witnessed will either. Arizona does not recognize oral (nuncupative) wills at all.",
+    },
+    {
+      question: "Can a beneficiary be a witness to my Arizona will?",
+      answer:
+        "It is risky unless you self-prove the will. Arizona does not void the gift to a witness the way some states do, but for a will signed on or after October 1, 2019 that is NOT self-proved, an interested person — a devisee, or someone related to a devisee by blood, marriage, or adoption — may not act as a witness, and using one can invalidate the attestation (A.R.S. § 14-2505). A self-proved will (§ 14-2504) is exempt from this rule. The safe practice is to use two disinterested witnesses and self-prove the will.",
+    },
+    {
+      question: "Can my spouse be left out of my Arizona will?",
+      answer:
+        "Not entirely. Arizona is a community-property state: your spouse already owns half of what you acquired together during the marriage, and your will only controls your half plus your separate property. There is no New York-style elective share to claim against the will, but a spouse you marry after signing the will can claim an \"omitted spouse\" intestate share unless the will was made in contemplation of the marriage or otherwise provided for them (A.R.S. § 14-2301). If all of your descendants are also your spouse's, an intestate estate passes entirely to the spouse (§ 14-2102).",
+    },
+    {
+      question: "Do all Arizona estates have to go through probate?",
+      answer:
+        "No. Arizona probates wills in the Superior Court of the county where you were domiciled at death (A.R.S. § 14-3201), but many estates avoid formal probate through small-estate affidavits. As of HB2116, effective September 26, 2025, an heir can collect personal property by affidavit when it totals $200,000 or less (30 days after death) and transfer real property by affidavit when it is worth $300,000 or less net of liens (6 months after death) (§ 14-3971). Arizona also has no state estate tax and no inheritance tax.",
+    },
+  ],
+  sources: [
+    { label: "A.R.S. § 14-2501 — Who may make a will", url: "https://www.azleg.gov/ars/14/02501.htm" },
+    { label: "A.R.S. § 14-2502 — Execution; witnessed wills", url: "https://www.azleg.gov/ars/14/02502.htm" },
+    { label: "A.R.S. § 14-2503 — Holographic wills", url: "https://www.azleg.gov/ars/14/02503.htm" },
+    { label: "A.R.S. § 14-2504 — Self-proved wills", url: "https://www.azleg.gov/ars/14/02504.htm" },
+    { label: "A.R.S. § 14-2505 — Who may witness; interested witness", url: "https://www.azleg.gov/ars/14/02505.htm" },
+    { label: "A.R.S. § 14-2102 — Intestate share of surviving spouse", url: "https://www.azleg.gov/ars/14/02102.htm" },
+    { label: "A.R.S. § 14-2804 — Revocation of probate and nonprobate transfers by divorce", url: "https://www.azleg.gov/ars/14/02804.htm" },
+    { label: "A.R.S. § 14-3971 — Small-estate affidavit collection of property", url: "https://www.azleg.gov/ars/14/03971.htm" },
+    { label: "A.R.S. § 14-2518 — Electronic wills", url: "https://www.azleg.gov/ars/14/02518.htm" },
+    { label: "A.R.S. § 14-2519 — Self-proved electronic wills", url: "https://www.azleg.gov/ars/14/02519.htm" },
+  ],
+};
+
+const TENNESSEE: StateDeepDive = {
+  seoDescription:
+    "Tennessee will requirements (2026): sign before two witnesses who each sign in your presence and each other's, no notary required, and BOTH handwritten and oral wills recognized. The strict T.C.A. § 32-1-104 rules, why Tennessee gives no harmless-error do-over, the sliding-scale spousal elective share, the narrow deathbed oral-will exception, and Chancery Court probate — in plain English.",
+  intro: [
+    "Tennessee is unusual in one direction and strict in another. It is one of the few states that recognizes both handwritten (holographic) and oral (nuncupative) wills — so a will can be valid with no witnesses at the signing, or even spoken aloud on a deathbed. But when it comes to the ordinary typed-and-witnessed will, Tennessee demands strict compliance: it has never adopted a harmless-error rule, so a signing that misses a formality is simply invalid, no matter how clear your intent was.",
+    "The statute facts above give you the rules. This section covers where Tennessee wills actually go wrong, the two backup routes Tennessee keeps that most states don't, and the protections built into Tennessee law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Tennessee will gets thrown out",
+    intro:
+      "Most Tennessee wills that fail, fail on how they were signed — not on what they say. And because Tennessee requires strict compliance with no harmless-error rescue, a defect is usually fatal. These are the recurring ones.",
+    items: [
+      {
+        title: "Witnesses who don't sign in front of each other and you",
+        body:
+          "An attested Tennessee will requires two witnesses, and each must sign in the presence of the testator and of each other (T.C.A. § 32-1-104(a)). Collecting witness signatures separately — one this week, one next week, each unaware of the other — breaks the rule. Because Tennessee has no harmless-error safety valve, that defect can't be argued away later. Get the testator and both witnesses in one room at one time.",
+      },
+      {
+        title: "Forgetting to \"signify\" that the document is your will",
+        body:
+          "Tennessee doesn't require a formal publication speech, but the testator must signify to the witnesses that the instrument is his will (T.C.A. § 32-1-104(a)). A silent signing — where witnesses watch you sign but are never told what they're signing — invites a challenge. Say plainly that it is your will before everyone signs.",
+      },
+      {
+        title: "Using a beneficiary as one of your two witnesses",
+        body:
+          "An interested witness does not void a Tennessee will, but it costs that witness. Unless the will is also attested by two disinterested witnesses, an interested witness forfeits so much of the gift as exceeds what they would have inherited with no will at all (T.C.A. § 32-1-103). The will survives; the witness's extra inheritance may not. Keep your witnesses neutral parties who take nothing.",
+      },
+      {
+        title: "Assuming a signed self-proving affidavit is the same as signing the will",
+        body:
+          "It isn't. Tennessee courts require strict compliance, and the Tennessee Supreme Court has held that a testator's signature on the self-proving affidavit does not satisfy the separate requirement to sign the will itself (In re Estate of Chastain, 2012; T.C.A. § 32-1-104). Sign the will, then sign the affidavit — signing only the affidavit can leave you with no valid will at all.",
+      },
+      {
+        title: "Signing electronically or by video",
+        body:
+          "As of 2026, Tennessee has not enacted an electronic wills act, and § 32-1-104 requires witnesses to sign in the physical presence of the testator and each other. The COVID-era remote-notarization allowances were temporary and have expired. A scanned PDF, an e-signature, or a will \"witnessed\" over a video call is not a valid Tennessee will. Sign a paper original in wet ink with two witnesses physically present.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "Tennessee recognizes both handwritten and oral wills",
+      body: [
+        "This is Tennessee's distinctive feature. A holographic will needs no witnesses at the signing, but the signature and all the material provisions must be in the testator's own handwriting, and that handwriting must later be proved by two witnesses who can identify it (T.C.A. § 32-1-105). If the dispositive terms are typed or filled in on a printed form, it is neither a valid holographic will nor a valid attested one.",
+        "Tennessee also keeps a nuncupative (oral) will — but only in a true emergency. It works only for a testator in imminent peril of death who actually dies from that peril; the words must be declared before two disinterested witnesses, reduced to writing within 30 days, and offered for probate within six months (T.C.A. § 32-1-106). It can pass personal property worth up to $1,000 — up to $10,000 for someone in active military service in wartime — and it cannot change an existing written will. Treat it as a last resort, not a plan.",
+      ],
+    },
+    {
+      heading: "You can't fully disinherit a spouse in Tennessee",
+      body: [
+        "Tennessee is not a community-property state, but it protects a surviving spouse through an elective share that scales with the length of the marriage. A spouse left too little can claim a percentage of the decedent's net estate: 10% for a marriage of less than three years, 20% at three to under six years, 30% at six to under nine years, and 40% at nine years or more (T.C.A. § 31-4-101).",
+        "The elective share is reduced by property already passing to the spouse, but homestead, exempt property, and the year's support allowance are not counted against it — the spouse keeps those on top. You cannot write around this by leaving the spouse out of the will. Tennessee does offer an opt-in community-property trust, but that is a deliberate choice, not the default. If part of your plan depends on leaving a spouse less than the statutory share, build the elective share into the plan rather than ignoring it.",
+      ],
+    },
+    {
+      heading: "The child you forgot, and the ex-spouse you didn't remove",
+      body: [
+        "A child born after you sign your will — a pretermitted child — takes the share they would have received had you died without a will, unless the will shows the omission was intentional or you otherwise provided for that child (T.C.A. § 32-3-103). Naming your existing children is not, by itself, enough to cut out a later-born one; the intent to omit has to be clear.",
+        "Tennessee has no separate omitted-spouse statute. A spouse you marry after signing the will is protected instead through the elective share, the year's support allowance, and homestead — the same tools that stop a spouse from being disinherited. Divorce cuts the other way: a final divorce or annulment revokes every gift and fiduciary appointment to the former spouse by operation of law (T.C.A. § 32-1-202). None of this is a substitute for redrafting — revisit the will after any marriage, divorce, or new child.",
+      ],
+    },
+    {
+      heading: "The self-proving affidavit — a shortcut, not the signature",
+      body: [
+        "Notarization is never required to make a Tennessee will valid; two witnesses are. What a notary adds is the self-proving affidavit: the testator and witnesses swear before an authorized officer that the will was properly executed, and that sworn affidavit is later accepted as if the witnesses had testified in court (T.C.A. § 32-2-110). A self-proved will can be admitted to probate without tracking the witnesses down years later.",
+        "But treat the affidavit as a separate step from signing the will — never a replacement for it. This is the exact trap Tennessee's Supreme Court flagged in Chastain: a testator who signs only the affidavit has not signed the will, and strict compliance means there is no rescuing it. Sign the will first, in front of two witnesses; then, ideally the same day, complete the self-proving affidavit before the notary.",
+      ],
+    },
+    {
+      heading: "Where a Tennessee will is proved — and the 2022 small-estate change",
+      body: [
+        "Tennessee probates wills in the Chancery Court of the county where the decedent was a resident at death — except in the counties that have a dedicated Probate Court, such as Shelby (Memphis) and Davidson (Nashville), where that court handles it (T.C.A. §§ 16-16-201, 32-2-101). This is the court that decides whether your will was validly executed, which is exactly why the two-witness formalities carry so much weight.",
+        "Tennessee overhauled its small-estate process in a 2022 rewrite (amended effective April 28, 2023), replacing the old one-page small-estate affidavit. Modest estates — personal property of $50,000 or less, with no real property — are now handled through a petition for limited letters: limited letters of administration if the person died intestate, or limited letters testamentary of a small estate if there is a will, with a muniment-of-title filing available under T.C.A. § 32-2-111 (T.C.A. §§ 30-4-102, 30-4-103). Having a will does not force a full probate — it changes the filing, not the availability of the simplified route. The limited-letters petition is a more formal step than the old affidavit, but it still avoids full administration, and the $50,000 cap and roughly 45-day wait remain. Tennessee also imposes no state inheritance tax (fully phased out for deaths on or after January 1, 2016) and no estate or gift tax.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Does a will need to be notarized in Tennessee?",
+      answer:
+        "No. A Tennessee will is valid when you sign it and two witnesses each sign in your presence and in each other's presence (T.C.A. § 32-1-104). Notarization is not required for validity. A notary is used only for the optional self-proving affidavit, which lets the will be admitted to probate without the witnesses testifying (T.C.A. § 32-2-110). Be careful: signing only the affidavit does not count as signing the will — the two are separate documents.",
+    },
+    {
+      question: "Can I write my own will by hand in Tennessee?",
+      answer:
+        "Yes. Tennessee recognizes handwritten (holographic) wills with no witnesses at the signing, as long as your signature and all the material provisions are in your own handwriting (T.C.A. § 32-1-105). After death, the handwriting has to be proved by two witnesses who can identify it. If the key terms are typed or filled in on a printed form, it is not a valid holographic will — and without two witnesses it is not a valid attested will either.",
+    },
+    {
+      question: "Does Tennessee recognize oral (deathbed) wills?",
+      answer:
+        "Yes, but only in a narrow emergency. A nuncupative (oral) will works only for a person in imminent peril of death who then dies from it; the words must be spoken before two disinterested witnesses, written down within 30 days, and offered for probate within six months (T.C.A. § 32-1-106). It can pass personal property worth up to $1,000 — up to $10,000 for someone in active military service in wartime — and it cannot change an existing written will. It is a last resort, not a substitute for a real will.",
+    },
+    {
+      question: "Can my spouse be left out of a Tennessee will?",
+      answer:
+        "Not entirely. Tennessee is not a community-property state, but a surviving spouse can claim an elective share against the will — a percentage of the net estate that rises with the length of the marriage, from 10% under three years to 40% at nine years or more (T.C.A. § 31-4-101). On top of that, the spouse keeps homestead, exempt property, and a year's support allowance, which are not counted against the elective share. You cannot disinherit a spouse without a valid waiver.",
+    },
+    {
+      question: "Does a will avoid probate in Tennessee?",
+      answer:
+        "Not by itself, but Tennessee keeps a simplified route for small estates that having a will does not close off. Since a 2022 rewrite (amended effective April 28, 2023), modest estates — personal property of $50,000 or less, with no real property — are handled through a petition for limited letters: limited letters of administration if the person died intestate, or limited letters testamentary of a small estate if there is a will, with a muniment-of-title option under T.C.A. § 32-2-111 (T.C.A. §§ 30-4-102, 30-4-103). Having a will does not force a full probate — it changes the filing, not the availability of the simplified route, which is more formal than the old affidavit but still avoids full administration (the $50,000 cap and roughly 45-day wait remain). Wills are proved in the Chancery Court of the decedent's county — or the county's Probate Court in places like Shelby and Davidson (T.C.A. §§ 16-16-201, 32-2-101).",
+    },
+  ],
+  sources: [
+    { label: "T.C.A. § 32-1-102 — Who may make a will", url: "https://law.justia.com/codes/tennessee/title-32/chapter-1/part-1/section-32-1-102/" },
+    { label: "T.C.A. § 32-1-103 — Interested (beneficiary) witness", url: "https://law.justia.com/codes/tennessee/title-32/chapter-1/part-1/section-32-1-103/" },
+    { label: "T.C.A. § 32-1-104 — Execution and attestation of wills", url: "https://codes.findlaw.com/tn/title-32-wills/tn-code-sect-32-1-104/" },
+    { label: "T.C.A. § 32-1-105 — Holographic will", url: "https://law.justia.com/codes/tennessee/title-32/chapter-1/part-1/section-32-1-105/" },
+    { label: "T.C.A. § 32-1-106 — Nuncupative (oral) will", url: "https://codes.findlaw.com/tn/title-32-wills/tn-code-sect-32-1-106/" },
+    { label: "T.C.A. § 32-1-202 — Revocation by divorce or annulment", url: "https://codes.findlaw.com/tn/title-32-wills/tn-code-sect-32-1-202/" },
+    { label: "T.C.A. § 32-2-110 — Self-proving affidavit", url: "https://law.justia.com/codes/tennessee/title-32/chapter-2/section-32-2-110/" },
+    { label: "T.C.A. § 31-2-104 — Intestate share of surviving spouse and heirs", url: "https://law.justia.com/codes/tennessee/title-31/chapter-2/section-31-2-104/" },
+    { label: "T.C.A. § 31-4-101 — Elective share of surviving spouse", url: "https://law.justia.com/codes/tennessee/title-31/chapter-4/section-31-4-101/" },
+    { label: "T.C.A. § 32-2-111 — Muniment of title (small estate)", url: "https://law.justia.com/codes/tennessee/title-32/chapter-2/section-32-2-111/" },
+    { label: "Tennessee Department of Revenue — Inheritance Tax (phased out)", url: "https://www.tn.gov/revenue/taxes/inheritance-tax.html" },
+  ],
+};
+
+const MASSACHUSETTS: StateDeepDive = {
+  seoDescription:
+    "Massachusetts will requirements (2026): 18+, in writing, signed with two witnesses — no notary required. The MUPC (c.190B) rules, the three ways Massachusetts broke from the Uniform Probate Code — it kept an interested-witness purging rule, refused the harmless-error safety valve, and protects a spouse through the old c.191 § 15 forced share — in plain English.",
+  intro: [
+    "Massachusetts adopted the Uniform Probate Code in 2012 (the Massachusetts Uniform Probate Code, MGL c.190B), so on paper its will rules look like the modern, forgiving version used in many states. In practice, Massachusetts deliberately declined three of the UPC's most important liberalizing moves — and each one is a trap for anyone who assumes the standard code applies here.",
+    "The statute facts above give you the rules. This section covers where Massachusetts wills actually go wrong, the three places Massachusetts broke from the Uniform Probate Code, and the spousal protection built into Massachusetts law that you cannot simply draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Massachusetts will gets thrown out",
+    intro:
+      "Most Massachusetts wills that fail, fail on how they were signed — or on the assumption that Massachusetts follows the standard Uniform Probate Code when, in three key spots, it does not. These are the recurring ones.",
+    items: [
+      {
+        title: "Assuming a handwritten note counts as a will",
+        body:
+          "When Massachusetts adopted the MUPC it left out the holographic-will provision entirely. A handwritten, unwitnessed will has no legal effect here (MGL c.190B § 2-502 governs execution, and there is no holographic exception). A heartfelt letter in your own hand, however clear, is not a valid Massachusetts will. The one narrow path is a holograph that was valid where it was signed or where you were domiciled, which Massachusetts can honor under § 2-506 — not a note written at your Massachusetts kitchen table.",
+      },
+      {
+        title: "Using a beneficiary — or a beneficiary's spouse — as a witness",
+        body:
+          "This is the first place Massachusetts broke from the modern code. Most UPC states abolished the old \"interested witness\" penalty; Massachusetts kept a purging rule. Under MGL c.190B § 2-505, a gift to a witness (or to that witness's spouse) is void unless either two other witnesses signed who take nothing under the will, or the interested witness can prove the bequest was not the product of that witness's fraud or undue influence. Keep your witnesses neutral parties who inherit nothing, and their spouses out of the will, and the gift is never at risk.",
+      },
+      {
+        title: "Counting on a court to forgive a botched signing",
+        body:
+          "This is the second break from the standard code, and the most dangerous to rely on. The Uniform Probate Code includes a \"harmless error\" rule (§ 2-503) that lets a court admit a will with a signing defect if there is clear and convincing evidence you intended it as your will. Massachusetts left § 2-503 reserved — it deliberately declined that dispensing power. Massachusetts is a strict-compliance state: if the two-witness formalities in § 2-502 are not met, there is no safety valve to save the document. Get the execution right the first time.",
+      },
+      {
+        title: "Speaking your wishes instead of writing them",
+        body:
+          "Massachusetts requires a will to be in writing and signed with two witnesses (MGL c.190B § 2-502). An oral (nuncupative) will effectively does not work here — do not count on spoken wishes carrying legal force. A narrow historical carve-out for soldiers and mariners may survive from the pre-MUPC statute, but its status is uncertain and it should never be relied on. For everyone, in every ordinary situation, only a written, witnessed will is valid.",
+      },
+      {
+        title: "Signing electronically or by video",
+        body:
+          "As of 2026, Massachusetts has not enacted the Uniform Electronic Wills Act, and § 2-502 requires a written will signed with two witnesses. A scanned PDF, an e-signature, or a will \"witnessed\" over a video call is not a valid Massachusetts will. The valid route is still a physical document signed in wet ink with two witnesses.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't simply disinherit a spouse — the old c.191 § 15 forced share",
+      body: [
+        "This is the third and biggest place Massachusetts broke from the Uniform Probate Code. The UPC replaced older forced shares with an \"augmented estate\" elective share; Massachusetts declined it and kept the pre-code forced share under MGL c.191 § 15. A surviving spouse can \"waive\" the will within six months of the will being allowed by the Probate Court and take a statutory share instead.",
+        "What that share is depends on who else survives. If you leave issue (descendants), the spouse can waive and take one-third of your personal property and one-third of your real property. If you leave kindred but no issue, the spouse takes $25,000 plus one-half of the remaining personal and real property. If you leave no issue and no kindred, the spouse takes $25,000 plus one-half of the rest.",
+        "The distinctive Massachusetts mechanic is what happens above $25,000. To the extent the spouse's share exceeds $25,000, the excess is not handed over outright. The spouse takes $25,000 absolutely, and beyond that takes only a life estate in the excess real property and a life income interest in the excess personal property — not full ownership. Massachusetts is not a community-property state, so this forced share, not a community-property split, is the spouse's protection. If your plan depends on leaving a spouse less than this, build the § 15 share into the plan rather than ignoring it.",
+      ],
+    },
+    {
+      heading: "The interested-witness trap Massachusetts kept",
+      body: [
+        "Under the standard Uniform Probate Code a witness who also inherits creates no problem at all — the code abolished the penalty. Massachusetts did not follow. MGL c.190B § 2-505 keeps a purging rule: a devise to a witness, or to that witness's spouse, is void unless one of two things is true. Either at least two other subscribing witnesses signed who are not benefited under the will, or the interested witness proves the gift was not the product of that witness's own fraud or undue influence.",
+        "The will itself survives an interested witness — only the gift to that witness is at risk, and only if the safe-harbor conditions aren't met. But the simplest practice avoids the fight entirely: use two witnesses who take nothing under the will, and make sure neither witness's spouse is a beneficiary either. Then no bequest ever has to be defended.",
+      ],
+    },
+    {
+      heading: "No safety valve: Massachusetts is a strict-compliance state",
+      body: [
+        "In many Uniform Probate Code states, a will with a signing defect is not automatically dead — a court can use the \"harmless error\" or dispensing power (UPC § 2-503) to admit it if the person offering it proves by clear and convincing evidence that you intended the document to be your will. That rule can rescue a will witnessed by only one person, or signed but never formally attested.",
+        "Massachusetts left § 2-503 reserved. It considered the dispensing power and declined it, which makes Massachusetts a strict-compliance state: the execution requirements of § 2-502 must actually be satisfied, and a court cannot cure a shortfall by finding that you \"meant\" the document to be your will. This is exactly why the two-witness formalities carry so much weight here. There is no courtroom rescue after the fact — get the signing right while you can.",
+      ],
+    },
+    {
+      heading: "The self-proving affidavit, and where a Massachusetts will is proved",
+      body: [
+        "Massachusetts does not require notarization for a will to be valid — two witnesses do that (MGL c.190B § 2-502). But it offers a self-proving affidavit (§ 2-504): the testator and the two witnesses can swear before a notary, either at the time of signing or at any later date, that the will was properly executed. A self-proved will can be admitted to probate without producing the witnesses to testify years later. It changes nothing about the will's underlying validity; it just makes proving the will easier.",
+        "Massachusetts wills are proved in the Probate and Family Court, in the county where you were domiciled — your primary residence — at death (§ 3-201). For a very small estate there is a simpler route: voluntary administration (§ 3-1201) is available when the estate is entirely personal property worth no more than $25,000 (one motor vehicle is excluded from that cap), starting 30 days after death. Most estates, though, go through ordinary probate, which is exactly why a clean, self-proved execution keeps the case uncontested and moving.",
+      ],
+    },
+    {
+      heading: "Massachusetts has its own estate tax",
+      body: [
+        "Massachusetts is one of a minority of states with a state estate tax, and it is separate from the federal estate tax. For deaths on or after January 1, 2023, the exemption is $2,000,000 (delivered through a $99,600 credit), up from $1,000,000 before. Rates are graduated and top out at 16%. There is no separate Massachusetts inheritance tax.",
+        "The practical point is that the Massachusetts threshold is far lower than the federal one, so estates that owe nothing federally can still owe Massachusetts estate tax once the estate exceeds the $2,000,000 threshold. If your estate is anywhere near that line — counting the house, retirement accounts, and life insurance — this is worth planning for with a Massachusetts estate-tax professional rather than assuming the federal exemption covers you.",
+      ],
+    },
+    {
+      heading: "Marriage, a new child, and divorce all rewrite a Massachusetts will",
+      body: [
+        "If you marry after signing your will and never update it, your new spouse is an \"omitted spouse\" and takes at least the share they would have received had you died without a will (MGL c.190B § 2-301). A child born or adopted after the will who is left unprovided for is similarly protected and takes a statutory share (§ 2-302); a claim reaching real property must be filed within one year.",
+        "Divorce cuts the other way. A final divorce or annulment automatically revokes any disposition in your will to the former spouse and severs survivorship rights in property you held jointly with them, as if the former spouse had disclaimed or died first (§ 2-804). The safe move is the same in every case: revisit the will after any marriage, divorce, birth, or adoption.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Can I write my own will by hand in Massachusetts?",
+      answer:
+        "For a will made in Massachusetts, no. When Massachusetts adopted the Uniform Probate Code it left out the holographic-will provision, so a handwritten, unwitnessed will has no legal effect here — unlike in California. A valid Massachusetts will must be in writing and signed with two witnesses (MGL c.190B § 2-502). A handwritten will that was valid where it was signed or where you were domiciled can be honored under § 2-506, but a note written at home in Massachusetts without witnesses is not a will.",
+    },
+    {
+      question: "Can my spouse be left out of my Massachusetts will?",
+      answer:
+        "Not entirely. Massachusetts did not adopt the Uniform Probate Code's augmented-estate elective share — it kept the older forced share under MGL c.191 § 15. Within six months of the will being allowed, a surviving spouse can waive the will and take a statutory share: if you leave issue, one-third of your personal and one-third of your real property, taken outright; if kindred but no issue, $25,000 plus half the rest; if no issue and no kindred, $25,000 plus half the rest. In those two no-issue branches only, the spouse takes just the first $25,000 absolutely — above that, only a life estate in the excess real property and a life income interest in the excess personal property, not full ownership. The one-third share in the issue branch is not subject to that life-estate limit.",
+    },
+    {
+      question: "Does a will need to be notarized in Massachusetts?",
+      answer:
+        "No. A Massachusetts will is valid when you sign it and two witnesses sign it (MGL c.190B § 2-502). Notarization is not required for validity. A notary is used only for the optional self-proving affidavit (§ 2-504), which lets the will be admitted to probate without producing the witnesses to testify later. That affidavit speeds probate but adds nothing to whether the will is legally valid.",
+    },
+    {
+      question: "Can a Massachusetts court save a will that wasn't signed correctly?",
+      answer:
+        "No — this is a key way Massachusetts differs from the standard Uniform Probate Code. Many UPC states have a \"harmless error\" rule (§ 2-503) that lets a court admit a will with a signing defect if there is clear and convincing evidence you intended it as your will. Massachusetts left § 2-503 reserved and declined that power, so it is a strict-compliance state. If the two-witness formalities of § 2-502 are not met, there is no safety valve to rescue the document.",
+    },
+    {
+      question: "Does Massachusetts have an estate tax?",
+      answer:
+        "Yes. Massachusetts has its own estate tax, separate from the federal one. For deaths on or after January 1, 2023, the exemption is $2,000,000 (via a $99,600 credit), with graduated rates topping out at 16% and no separate inheritance tax. Because that threshold is far below the federal exemption, an estate that owes no federal tax can still owe Massachusetts estate tax once it exceeds $2,000,000. If your estate is near that line, plan for it with a Massachusetts estate-tax professional.",
+    },
+  ],
+  sources: [
+    { label: "MGL c.190B § 2-501 & § 2-502 — Who may make a will; execution", url: "https://www.mass.gov/info-details/mass-general-laws-c190b-ss-2-502" },
+    { label: "MGL c.190B § 2-503 — Harmless error (reserved in Massachusetts)", url: "https://www.mass.gov/lists/mgl-190b-article-ii-intestacy-wills-and-donative-transfers" },
+    { label: "MGL c.190B § 2-504 — Self-proved will", url: "https://www.mass.gov/info-details/mass-general-laws-c190b-ss-2-504" },
+    { label: "MGL c.190B § 2-505 — Interested (beneficiary) witness", url: "https://www.mass.gov/info-details/mass-general-laws-c190b-ss-2-505" },
+    { label: "MGL c.190B § 2-102 — Intestate share of surviving spouse", url: "https://www.mass.gov/info-details/mass-general-laws-c190b-ss-2-102" },
+    { label: "MGL c.191 § 15 — Waiver of will; surviving spouse's forced share", url: "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter191/Section15" },
+    { label: "MGL c.190B § 2-804 — Revocation on divorce or annulment", url: "https://www.mass.gov/info-details/mass-general-laws-c190b-ss-2-804" },
+    { label: "MGL c.190B § 3-1201 — Voluntary administration (small estate)", url: "https://www.mass.gov/info-details/mass-general-laws-c190b-ss-3-1201" },
+    { label: "Massachusetts Estate Tax Guide", url: "https://www.mass.gov/info-details/massachusetts-estate-tax-guide" },
+  ],
+};
+
+const MISSOURI: StateDeepDive = {
+  seoDescription:
+    "Missouri will requirements (2026): sign before two witnesses, no notary needed, and no handwritten wills at all. The § 474.320 rules, the spousal elective share of one-half or one-third, the narrow $500 oral will, small-estate limits, and Probate Division probate — in plain English.",
+  intro: [
+    "Missouri asks for a familiar core — a written will, signed and witnessed by two people — and then enforces it strictly. It flatly refuses handwritten (holographic) wills, gives judges no power to forgive a signing that went wrong, and keeps only one narrow escape hatch: a deathbed oral will that can pass no more than $500 of personal property. As of August 2025 it also recognizes electronic wills, a change so new that few Missouri wills have been made under it yet.",
+    "The statute facts above give you the rules. This section covers where Missouri wills actually go wrong, and the protections built into Missouri law that you cannot draft around.",
+  ],
+  pitfalls: {
+    heading: "Five ways a Missouri will gets thrown out",
+    intro:
+      "Most Missouri wills that fail, fail on how they were signed — not on what they say. And because Missouri has no harmless-error rule, a defect is usually fatal. These are the recurring ones.",
+    items: [
+      {
+        title: "Assuming a handwritten note counts as a will",
+        body:
+          "Missouri does not recognize holographic (handwritten, unwitnessed) wills at all. Section 474.320 requires every will to be in writing, signed by you, and attested by two or more competent witnesses who subscribe in your presence — with no exception for a document written entirely in your own hand. A heartfelt letter in a drawer, however clear and however clearly signed, is not a valid Missouri will without those two witnesses.",
+      },
+      {
+        title: "Using a beneficiary as one of your witnesses",
+        body:
+          "An interested witness does not void a Missouri will — but it can quietly shrink that witness's inheritance. Under § 474.330, a witness who also inherits forfeits any gift that exceeds what they would have received in intestacy, unless the will was also attested by two disinterested witnesses. Being a creditor of the estate or the named executor does not make a witness \"interested.\" The clean fix is to use two witnesses who inherit nothing.",
+      },
+      {
+        title: "Relying on a notary instead of two witnesses",
+        body:
+          "Notarization does not make a Missouri will valid — two witnesses do (§ 474.320). A notary matters only for the optional self-proving affidavit (§ 474.337), which speeds probate but adds nothing to whether the will is legally valid. A carefully notarized will signed by fewer than two competent witnesses is not validly executed.",
+      },
+      {
+        title: "Counting on a deathbed oral will to carry the estate",
+        body:
+          "Missouri does recognize nuncupative (oral) wills, but the exception is tiny and easy to misjudge. It works only for a person in imminent peril of death who actually dies from it, who declares the will before two disinterested witnesses, whose words are reduced to writing within 30 days and probated within six months — and even then it can pass personal property only, up to an aggregate value of $500 (§ 474.340). It cannot transfer real estate and cannot move a real estate's worth of assets. Treat it as a last resort, never a plan.",
+      },
+      {
+        title: "Assuming a botched signing can be fixed later",
+        body:
+          "Some states let a court admit a defective will if it's convinced you intended it — a \"harmless error\" or dispensing rule. Missouri has not adopted one. Strict compliance with § 474.320 is required, so a will signed with only one witness cannot be rescued by proving your intent after you're gone. Get two competent, disinterested witnesses in the room, or the document is not a will.",
+      },
+    ],
+  },
+  sections: [
+    {
+      heading: "You can't fully disinherit a spouse in Missouri",
+      body: [
+        "Missouri is not a community-property state, but it protects a surviving spouse through an elective share. A spouse who elects to take against the will can claim one-half of the estate if you left no lineal descendants, or one-third if you did (§ 474.160), plus exempt property and the statutory allowance on top of that share.",
+        "You cannot write around this by simply leaving your spouse out. If part of your plan depends on giving a spouse less than the elective share, build that share into the plan — through a valid waiver or other planning — rather than ignoring it, because the court will apply the elective-share math regardless of what the will says.",
+      ],
+    },
+    {
+      heading: "What happens if you die without a valid Missouri will",
+      body: [
+        "If your will is thrown out — or you never made one — Missouri's intestacy statute decides who inherits, and a surviving spouse's share depends entirely on the children (§ 474.010). With no descendants, the spouse takes the entire estate. Where all of your descendants are also the surviving spouse's, the spouse takes the first $20,000 plus one-half of the balance, and the descendants split the rest. But if you leave a descendant who is not your spouse's child, the spouse takes one-half with no $20,000 set-aside, and the descendants take the other half.",
+        "After the spouse and descendants, the estate passes to parents and siblings, then to more distant relatives. The point of a valid will is to override this default entirely — a blended family in particular can end up with a division no one intended once the $20,000 set-aside drops away.",
+      ],
+    },
+    {
+      heading: "The self-proving affidavit, and where a Missouri will is proved",
+      body: [
+        "Missouri does not require notarization for a will to be valid, but it does offer a self-proving affidavit: at signing or any later date, you and your two witnesses can swear before a notary, using the statutory form, that the will was properly executed (§ 474.337). A self-proved will can usually be admitted without tracking down the witnesses to testify years later. Execute the affidavit the same day you sign; it is far harder to arrange after the fact.",
+        "Missouri probates wills in the Probate Division of the Circuit Court, in the county where you were domiciled — your primary residence — at death (§ 473.010). Small estates can skip formal probate: where the estate, less debts and liens, does not exceed $40,000, an heir can use a small-estate affidavit beginning 30 days after death, though creditor notice is required once the listed property exceeds $15,000 (§ 473.097). This is the court that decides whether your will was validly executed, which is exactly why the two-witness formality carries so much weight.",
+      ],
+    },
+    {
+      heading: "Marriage, divorce, and a new child rewrite a Missouri will",
+      body: [
+        "If you marry after signing your will and make no provision for the new spouse, that spouse is treated as omitted and takes an intestate share of your estate — unless the omission was intentional and shown in the will, or you provided for them outside it (§ 474.235). Missouri gives similar protection to an after-born or otherwise omitted child, who may take a share as if you had not accounted for them; the safe move is to revisit the will after any birth or adoption rather than rely on the statute to patch the gap.",
+        "Divorce cuts the other way and does it automatically. Once your marriage is dissolved, every provision of the will in favor of your former spouse is revoked, and the will takes effect as if the former spouse had died at the time of the divorce (§ 474.420). You do not need to redo the will for the ex to be written out — but you should, so that the gifts and roles that were theirs pass where you actually want them to go.",
+      ],
+    },
+    {
+      heading: "No handwritten wills, a very narrow oral will, and — new in 2025 — electronic wills",
+      body: [
+        "Missouri's baseline is strict: a will must be typed or printed, signed by you (or by someone else at your direction and in your presence), and attested by two competent witnesses who subscribe in your presence, with no publication requirement (§ 474.320). There is no holographic-will exception. The only non-electronic carve-out is the nuncupative (oral) will, and its $500 personal-property ceiling and deathbed conditions make it useless for ordinary planning (§ 474.340).",
+        "As of August 28, 2025, Missouri recognizes electronic wills under the Uniform Electronic Wills and Electronic Estate Planning Documents Act (§§ 474.540–474.564). A valid e-will must be readable as text, signed by the maker (or by another in the maker's physical presence), and witnessed by two people in the maker's physical or electronic presence, and it can be made self-proving through a remote online notary (§ 474.550). Because the law is brand new, the cautious route for any will signed today is still a wet-ink signature with two witnesses physically present — the path courts have decades of experience admitting.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Can I write my own will by hand in Missouri?",
+      answer:
+        "You can write it by hand, but it is not valid unless two competent witnesses also subscribe it in your presence (§ 474.320). Missouri does not recognize holographic wills — a handwritten, unwitnessed will has no legal effect here, unlike in California or Texas. Handwriting the document is fine; skipping the two witnesses is fatal.",
+    },
+    {
+      question: "Does a will need to be notarized in Missouri?",
+      answer:
+        "No. A Missouri will is valid when you sign it and two competent witnesses subscribe it in your presence (§ 474.320). Notarization is not required for validity. A notary is used only for the optional self-proving affidavit (§ 474.337), which lets the will be admitted to probate without producing the witnesses — but that affidavit speeds probate and adds nothing to whether the will is legally valid.",
+    },
+    {
+      question: "Can my spouse be left out of my Missouri will?",
+      answer:
+        "Not entirely. A surviving spouse can elect to take against the will and claim one-half of the estate if you left no lineal descendants, or one-third if you did (§ 474.160), plus exempt property and a statutory allowance. Missouri is not a community-property state, but this elective share means you cannot fully disinherit a spouse without a valid waiver.",
+    },
+    {
+      question: "Does Missouri have an estate or inheritance tax?",
+      answer:
+        "No. Missouri has no inheritance tax and no separate estate tax. Its estate tax is a \"pick-up\" tax tied to a federal credit that has been zero for deaths on or after January 1, 2005, so no Missouri estate tax is owed. A very large estate may still owe federal estate tax, but that is a separate federal matter.",
+    },
+    {
+      question: "Can I sign my will electronically in Missouri?",
+      answer:
+        "Yes, as of August 28, 2025. Missouri adopted the Uniform Electronic Wills Act (§§ 474.540–474.564), so an electronic will is valid if it is readable as text, signed by the maker (or by another in the maker's physical presence), and witnessed by two people in the maker's physical or electronic presence, with optional self-proving through a remote online notary (§ 474.550). Because the law is brand new, a traditional wet-ink will with two witnesses physically present remains the safest route today.",
+    },
+  ],
+  sources: [
+    { label: "Mo. Rev. Stat. § 474.310 — Who may make a will", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.310" },
+    { label: "Mo. Rev. Stat. § 474.320 — Execution and attestation of wills", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.320" },
+    { label: "Mo. Rev. Stat. § 474.330 — Interested witnesses", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.330" },
+    { label: "Mo. Rev. Stat. § 474.337 — Self-proving affidavit", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.337" },
+    { label: "Mo. Rev. Stat. § 474.340 — Nuncupative (oral) wills", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.340" },
+    { label: "Mo. Rev. Stat. § 474.010 — Intestate succession", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.010" },
+    { label: "Mo. Rev. Stat. § 474.160 — Elective share of surviving spouse", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.160" },
+    { label: "Mo. Rev. Stat. § 474.420 — Effect of dissolution of marriage", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.420" },
+    { label: "Mo. Rev. Stat. § 473.097 — Small-estate affidavit", url: "https://revisor.mo.gov/main/OneSection.aspx?section=473.097" },
+    { label: "Mo. Rev. Stat. § 474.550 — Electronic wills; execution and self-proving", url: "https://revisor.mo.gov/main/OneSection.aspx?section=474.550" },
+    { label: "Missouri Department of Revenue — Estate tax", url: "https://dor.mo.gov/taxation/individual/tax-types/estate.html" },
+  ],
+};
+
 export const STATE_DEEP_DIVES: Record<string, StateDeepDive> = {
   NY: NEW_YORK,
   CA: CALIFORNIA,
@@ -1256,6 +2214,14 @@ export const STATE_DEEP_DIVES: Record<string, StateDeepDive> = {
   GA: GEORGIA,
   NC: NORTH_CAROLINA,
   MI: MICHIGAN,
+  NJ: NEW_JERSEY,
+  IN: INDIANA,
+  VA: VIRGINIA,
+  WA: WASHINGTON,
+  AZ: ARIZONA,
+  TN: TENNESSEE,
+  MA: MASSACHUSETTS,
+  MO: MISSOURI,
 };
 
 export function getStateDeepDive(abbr: string): StateDeepDive | undefined {
