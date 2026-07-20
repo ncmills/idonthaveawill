@@ -8,8 +8,6 @@ import { BLOG_POSTS } from "@/lib/blog-posts";
 // Google's recrawl signal and stalling indexing at 11 / 108 (10%).
 export const revalidate = 3600;
 
-const SITE_LAUNCH = new Date("2026-04-08");
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://idonthaveawill.com";
   const now = new Date();
@@ -81,17 +79,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     ...blogPages,
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: SITE_LAUNCH,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: SITE_LAUNCH,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+    // NOTE: /terms and /privacy are intentionally OMITTED from the sitemap.
+    // Both pages set `robots: { index: false }` (see src/app/terms/page.tsx and
+    // src/app/privacy/page.tsx). Listing a noindexed URL in the sitemap is a
+    // self-contradiction that Google reports as "Excluded by 'noindex' tag …
+    // in a sitemap." If you ever flip either page back to indexable, re-add its
+    // entry here so the two stay in sync.
   ];
 }

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://idonthaveawill.com/terms",
   },
+  // NOTE: index:false — this page is deliberately kept out of the index.
+  // It is therefore also OMITTED from src/app/sitemap.ts. Keep the two in sync:
+  // if you make this page indexable, re-add its /terms entry to sitemap.ts.
   robots: {
     index: false,
     follow: true,
