@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
+import { isReservedTestEmail } from "@/lib/testEmailGuard";
 import { Resend } from "resend";
 
 const resend = process.env.RESEND_API_KEY
@@ -27,6 +28,13 @@ export async function POST(request: Request) {
     const email = rawEmail.trim().toLowerCase();
 
     if (email.length > 254 || !EMAIL_REGEX.test(email)) {
+      return NextResponse.json({ error: "Valid email required" }, { status: 400 });
+    }
+
+    // Reject RFC-2606 reserved / test / throwaway domains so junk like
+    // foo@example.com or foo@mailinator.com never pollutes email_subscribers
+    // or the Resend audience.
+    if (isReservedTestEmail(email)) {
       return NextResponse.json({ error: "Valid email required" }, { status: 400 });
     }
 
