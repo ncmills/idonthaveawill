@@ -4,6 +4,7 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import Features from "@/components/landing/Features";
 import TrustSignals from "@/components/landing/TrustSignals";
 import PreviewWill from "@/components/landing/PreviewWill";
+import OfferingLibrary from "@/components/landing/OfferingLibrary";
 import HomepageEmailCapture from "@/components/landing/HomepageEmailCapture";
 import Disclaimer from "@/components/landing/Disclaimer";
 
@@ -174,6 +175,7 @@ export default function Home() {
       <WhyYouNeed />
       <HowItWorks />
       <PreviewWill />
+      <OfferingLibrary />
       <Features />
       <HomepageEmailCapture />
       <Disclaimer />

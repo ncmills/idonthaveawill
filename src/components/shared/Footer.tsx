@@ -38,6 +38,9 @@ export default function Footer() {
             <Link href="/blog" className="hover:text-[var(--color-ink)] transition-colors">
               Blog
             </Link>
+            <Link href="/data" className="hover:text-[var(--color-ink)] transition-colors">
+              Will Laws Report
+            </Link>
             <Link href="/terms" className="hover:text-[var(--color-ink)] transition-colors">
               Terms
             </Link>
