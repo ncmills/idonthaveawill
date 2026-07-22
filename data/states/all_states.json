@@ -6,7 +6,7 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind, understanding the nature of the testamentary act, the nature and extent of their property, and the persons who are the natural objects of their bounty",
+    "testamentary_capacity": "Any person 18 or more years of age who is of sound mind may make a will. (Ala. Code \u00a7 43-8-130.) Alabama courts construe 'sound mind' as requiring the testator to understand: (1) the nature of the testamentary act, (2) the nature and extent of their property, and (3) the natural objects of their bounty.",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -15,9 +15,9 @@
     },
     "witness_requirements": {
       "count": 2,
-      "qualifications": "Must be competent witnesses",
-      "presence_rules": "Each witness must sign within a reasonable time after witnessing the signing or the testator's acknowledgment of the signature or the will",
-      "interested_witness_rules": "An interested witness does not invalidate the will (Ala. Code \u00a7 43-8-134)"
+      "qualifications": "Any person generally competent to be a witness may act as a witness to a will (Ala. Code \u00a7 43-8-134(a))",
+      "presence_rules": "Each witness must sign the will, having witnessed either the signing or the testator's acknowledgment of the signature or of the will; Alabama Code \u00a7 43-8-131 imposes no 'within a reasonable time' requirement for witness signatures \u2014 that language appears in the 2008 UPC revision which Alabama has not adopted",
+      "interested_witness_rules": "A will or any provision thereof is not invalid because the will is signed by an interested witness (Ala. Code \u00a7 43-8-134(b))"
     },
     "notarization": {
       "required": false,
@@ -25,7 +25,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Ala. Code \u00a7 43-8-132)"
+      "requirements": "Testator and witnesses sign acknowledgments and affidavits before an officer authorized to administer oaths under the laws of the state where execution (or subsequent acknowledgment) occurs, evidenced by the officer's certificate under official seal attached or annexed to the will; may be accomplished simultaneously with execution or at any time after execution of an attested will (Ala. Code \u00a7 43-8-132)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -41,8 +41,8 @@
     },
     "revocation": {
       "methods": [
-        "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
-        "Performing a revocatory act (burning, tearing, canceling, obliterating, or destroying) by the testator or by another at the testator's direction and in their presence"
+        "Executing a subsequent will that revokes the prior will or any part thereof expressly or by inconsistency",
+        "Performing a revocatory act (burning, tearing, canceling, obliterating, or destroying) with the intent and for the purpose of revoking it, by the testator or by another person in the testator's presence by the testator's consent and direction; if the physical act is by someone other than the testator, the testator's consent and direction must be proved by at least two witnesses"
       ],
       "notes": "Ala. Code \u00a7 43-8-136"
     },
@@ -54,7 +54,7 @@
       "Ala. Code \u00a7 43-8-134 (Interested witnesses)",
       "Ala. Code \u00a7 43-8-136 (Revocation)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-07-01"
   },
   {
     "state": "Alaska",
