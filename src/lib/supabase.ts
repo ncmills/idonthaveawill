@@ -16,9 +16,18 @@ import { createClient } from "@supabase/supabase-js";
  *   to this client so a compromised serverless function cannot exfiltrate
  *   unrelated data.
  */
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!.trim();
-const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY!.trim();
-const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!.trim();
+// These clients are constructed at module load, which Next.js runs during the
+// production build while collecting page data for API routes (e.g. /api/stats).
+// A bare `process.env.X!.trim()` throws `undefined.trim()` at build time whenever
+// the var is absent — which is exactly the case for PR *preview* deployments (the
+// Supabase keys are scoped to Production, and the service-role key deliberately is
+// NOT exposed to previews). Prod always has the vars, so the placeholders below are
+// only ever hit in preview: they keep the build from crashing without shipping the
+// admin key to preview. A missing var in prod still surfaces loudly at request time
+// (the client 401s against the placeholder host).
+const supabaseUrl = (process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://placeholder.supabase.co").trim();
+const serviceRoleKey = (process.env.SUPABASE_SERVICE_ROLE_KEY ?? "placeholder-service-role-key").trim();
+const anonKey = (process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "placeholder-anon-key").trim();
 
 export const supabaseAdmin = createClient(supabaseUrl, serviceRoleKey);
 export const supabaseAnon = createClient(supabaseUrl, anonKey);
