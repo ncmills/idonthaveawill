@@ -15,7 +15,7 @@ const libraries = [
     kicker: "All 50 states + DC",
     title: "Will Requirements by State",
     description:
-      "Witness counts, notarization, holographic and electronic wills, and the exact signing checklist for your state — eighteen written up in an in-depth guide.",
+      "Witness counts, notarization, holographic and electronic wills, and the exact signing checklist for every state — eighteen states covered in an in-depth guide.",
     href: "/will-requirements",
     cta: "Browse state requirements",
   },
