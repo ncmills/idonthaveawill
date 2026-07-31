@@ -44,7 +44,7 @@ export default function WillRequirementsHub() {
         name: "How many witnesses does a will need?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: `${witness2} states require 2 witnesses; ${witness3} state${witness3 === 1 ? "s require" : "s require"} 3. Witnesses generally must be at least 18, mentally competent, and disinterested (not named as beneficiaries). Most states also require witnesses to sign in the testator's presence and, in some, in each other's presence.`,
+          text: `${witness2} jurisdictions (states and D.C.) require 2 witnesses; ${witness3} state${witness3 === 1 ? "s require" : "s require"} 3. Pennsylvania is the notable exception — it requires no witnesses at execution. Witnesses generally must be at least 18, mentally competent, and disinterested (not named as beneficiaries). Most states also require witnesses to sign in the testator's presence and, in some, in each other's presence.`,
         },
       },
       {
@@ -279,12 +279,13 @@ export default function WillRequirementsHub() {
             How many witnesses does a will need?
           </h3>
           <p className="mt-2 text-[var(--color-ink-soft)] leading-relaxed">
-            {witness2} states require 2 witnesses;{" "}
+            {witness2} jurisdictions (states and D.C.) require 2 witnesses;{" "}
             {witness3 === 1 ? "1 state requires" : `${witness3} states require`} 3.
-            Witnesses generally must be at least 18, mentally competent, and
-            disinterested (not named as beneficiaries). Most states also require
-            witnesses to sign in the testator&apos;s presence and, in some, in
-            each other&apos;s presence.
+            Pennsylvania is the notable exception — it requires no witnesses at
+            execution. Witnesses generally must be at least 18, mentally
+            competent, and disinterested (not named as beneficiaries). Most
+            states also require witnesses to sign in the testator&apos;s
+            presence and, in some, in each other&apos;s presence.
           </p>
         </div>
 
