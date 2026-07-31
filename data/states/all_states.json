@@ -85,8 +85,8 @@
       "requirements": "A will may be simultaneously executed, attested, and made self-proved by acknowledgment of the testator and affidavits of the witnesses, each made before an officer authorized to administer oaths under the laws of the state in which execution occurs, evidenced by the officer's certificate under official seal (AS 13.12.504(a)). Alternatively, an attested will may be made self-proved at any time after its execution by the same acknowledgment-and-affidavit procedure before an officer authorized to administer oaths where the acknowledgment occurs, with the officer's certificate under official seal attached or annexed to the will (AS 13.12.504(b)). A signature affixed to a self-proving affidavit attached to a will is considered a signature affixed to the will, if necessary to prove the will's due execution (AS 13.12.504(c))."
     },
     "electronic_wills": {
-      "recognized": true,
-      "notes": "Alaska SB 90 (32nd Legislature) introduced provisions for electronic wills. An electronic will must be in an electronic record readable as text, signed electronically by the testator, and witnessed. Electronic presence of witnesses is permitted"
+      "recognized": false,
+      "notes": "Alaska SB 90 (32nd Legislature, 2021–2022) would have authorized electronic wills — requiring an electronic record readable as text, signed electronically by the testator, and witnessed, with electronic presence of witnesses permitted — but the bill stalled in committee and did not pass. Electronic wills are not currently authorized under AS 13.12"
     },
     "holographic_wills": {
       "recognized": true,
