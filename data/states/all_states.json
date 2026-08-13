@@ -6,18 +6,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "Any person 18 or more years of age who is of sound mind may make a will. (Ala. Code § 43-8-130.) Alabama courts construe 'sound mind' as requiring the testator to understand: (1) the nature of the testamentary act, (2) the nature and extent of their property, and (3) the natural objects of their bounty.",
+    "testamentary_capacity": "Any person 18 or more years of age who is of sound mind may make a will. (Ala. Code \u00a7 43-8-130.) Alabama courts construe 'sound mind' as requiring the testator to understand: (1) the nature of the testamentary act, (2) the nature and extent of their property, and (3) the natural objects of their bounty.",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's direction (Ala. Code § 43-8-131)"
+      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's direction (Ala. Code \u00a7 43-8-131)"
     },
     "witness_requirements": {
       "count": 2,
-      "qualifications": "Any person generally competent to be a witness may act as a witness to a will (Ala. Code § 43-8-134(a))",
-      "presence_rules": "Each witness must sign the will, having witnessed either the signing or the testator's acknowledgment of the signature or of the will; Alabama Code § 43-8-131 imposes no 'within a reasonable time' requirement for witness signatures — that language appears in the 2008 UPC revision which Alabama has not adopted",
-      "interested_witness_rules": "A will or any provision thereof is not invalid because the will is signed by an interested witness (Ala. Code § 43-8-134(b))"
+      "qualifications": "Any person generally competent to be a witness may act as a witness to a will (Ala. Code \u00a7 43-8-134(a))",
+      "presence_rules": "Each witness must sign the will, having witnessed either the signing or the testator's acknowledgment of the signature or of the will; Alabama Code \u00a7 43-8-131 imposes no 'within a reasonable time' requirement for witness signatures \u2014 that language appears in the 2008 UPC revision which Alabama has not adopted",
+      "interested_witness_rules": "A will or any provision thereof is not invalid because the will is signed by an interested witness (Ala. Code \u00a7 43-8-134(b))"
     },
     "notarization": {
       "required": false,
@@ -25,7 +25,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign acknowledgments and affidavits before an officer authorized to administer oaths under the laws of the state where execution (or subsequent acknowledgment) occurs, evidenced by the officer's certificate under official seal attached or annexed to the will; may be accomplished simultaneously with execution or at any time after execution of an attested will (Ala. Code § 43-8-132)"
+      "requirements": "Testator and witnesses sign acknowledgments and affidavits before an officer authorized to administer oaths under the laws of the state where execution (or subsequent acknowledgment) occurs, evidenced by the officer's certificate under official seal attached or annexed to the will; may be accomplished simultaneously with execution or at any time after execution of an attested will (Ala. Code \u00a7 43-8-132)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -44,15 +44,15 @@
         "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
         "Performing a revocatory act (burning, tearing, canceling, obliterating, or destroying) by the testator or by another person in the testator's presence by the testator's consent and direction; if the physical act is performed by someone other than the testator, the testator's consent and direction must be proved by at least two witnesses"
       ],
-      "notes": "Ala. Code § 43-8-136"
+      "notes": "Ala. Code \u00a7 43-8-136"
     },
     "special_provisions": "Alabama is a separate property/common law state. Surviving spouse has an elective share. Alabama adopted provisions based on the Uniform Probate Code",
     "statute_citations": [
-      "Ala. Code § 43-8-130 (Who may make a will)",
-      "Ala. Code § 43-8-131 (Execution of wills)",
-      "Ala. Code § 43-8-132 (Self-proved wills)",
-      "Ala. Code § 43-8-134 (Interested witnesses)",
-      "Ala. Code § 43-8-136 (Revocation)"
+      "Ala. Code \u00a7 43-8-130 (Who may make a will)",
+      "Ala. Code \u00a7 43-8-131 (Execution of wills)",
+      "Ala. Code \u00a7 43-8-132 (Self-proved wills)",
+      "Ala. Code \u00a7 43-8-134 (Interested witnesses)",
+      "Ala. Code \u00a7 43-8-136 (Revocation)"
     ],
     "last_researched": "2026-07-01"
   },
@@ -61,10 +61,10 @@
     "abbreviation": "AK",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Emancipated minors may make a will under Alaska's UPC framework"
+      "exceptions": null
     },
-    "testamentary_capacity": "The testator must be of sound mind, meaning they understand the nature and extent of their property, know the natural objects of their bounty, and understand the disposition they are making",
-    "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten. Alaska SB 90 (32nd Legislature, 2021–2022) proposed electronic will provisions but stalled in committee and did not pass; electronic wills are not currently authorized under AS 13.12.",
+    "testamentary_capacity": "An individual must be 18 or more years of age and of sound mind (AS 13.12.501). The statute does not further define 'sound mind'; courts apply the common-law elements: the testator must understand the nature and extent of their property, know the natural objects of their bounty, and understand the nature and effect of the disposition they are making.",
+    "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten. Alaska SB 90 (32nd Legislature, 2021\u20132022) proposed electronic will provisions but stalled in committee and did not pass; electronic wills are not currently authorized under AS 13.12.",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
@@ -78,7 +78,7 @@
     },
     "notarization": {
       "required": false,
-      "notes": "Not required for will validity under AS 13.12.502, which requires only (1) writing, (2) testator signature, and (3) two witnesses. However, notarization is required — not merely recommended — to create a self-proved will under AS 13.12.504: the testator and witnesses must each acknowledge before an officer authorized to administer oaths under the laws of the state in which execution occurs, evidenced by the officer's certificate under official seal."
+      "notes": "Not required for will validity under AS 13.12.502, which requires only (1) writing, (2) testator signature, and (3) two witnesses. However, notarization is required \u2014 not merely recommended \u2014 to create a self-proved will under AS 13.12.504: the testator and witnesses must each acknowledge before an officer authorized to administer oaths under the laws of the state in which execution occurs, evidenced by the officer's certificate under official seal."
     },
     "self_proving_affidavit": {
       "available": true,
@@ -86,11 +86,11 @@
     },
     "electronic_wills": {
       "recognized": false,
-      "notes": "Alaska SB 90 (32nd Legislature, 2021–2022) would have authorized electronic wills — requiring an electronic record readable as text, signed electronically by the testator, and witnessed, with electronic presence of witnesses permitted — but the bill stalled in committee and did not pass. Electronic wills are not currently authorized under AS 13.12"
+      "notes": "Alaska SB 90 (32nd Legislature, 2021\u20132022) would have authorized electronic wills \u2014 requiring an electronic record readable as text, signed electronically by the testator, and witnessed, with electronic presence of witnesses permitted \u2014 but the bill stalled in committee and did not pass. Electronic wills are not currently authorized under AS 13.12"
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid whether or not witnessed if the signature and material portions of the document are in the testator's handwriting. The signature may appear anywhere on the document. Intent may be established by extrinsic evidence (AS 13.12.502(b))"
+      "notes": "Valid whether or not witnessed if the signature and material portions of the document are in the testator's handwriting (AS 13.12.502(b)). AS 13.12.502(b) does not specify where the signature must appear and does not contain any extrinsic evidence provision for establishing testamentary intent; the Alaska Supreme Court confirmed in In re Estate of Baker (2016) that the statute itself does not address either point. Signature placement flexibility and any extrinsic evidence rule derive from case law, not from the statute text."
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -122,7 +122,7 @@
       "standard": 18,
       "exceptions": null
     },
-    "testamentary_capacity": "The testator must be eighteen years of age or older and of sound mind (ARS § 14-2501). The statute states in full: 'A person who is eighteen years of age or older and who is of sound mind may make a will.'",
+    "testamentary_capacity": "The testator must be eighteen years of age or older and of sound mind (ARS \u00a7 14-2501). The statute states in full: 'A person who is eighteen years of age or older and who is of sound mind may make a will.'",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten. Electronic wills are also permitted under ARS 14-2518",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -145,7 +145,7 @@
     },
     "electronic_wills": {
       "recognized": true,
-      "notes": "Arizona recognizes electronic wills under ARS 14-2518. Requirements (ARS 14-2518(A)): (1) created and maintained in an electronic record readable as text at time of signing; (2) electronic signature of testator, or of another individual in the testator's conscious presence and by the testator's direction; (3) electronic signatures of at least two witnesses, each of whom was physically present or electronically present with the testator when the testator signed or acknowledged the will, and who electronically signed within a reasonable time after witnessing — if a witness was electronically present, they must have been physically located within the United States at the time of serving as a witness (ARS 14-2518(A)(3)(c)); (4) must state the date the testator and each witness electronically signed; (5) must contain a copy of a government-issued identification card of the testator that was current at the time of execution. NOTE: a qualified custodian is required only for a self-proved electronic will under ARS 14-2519 (not a requirement for basic electronic will validity under ARS 14-2518). ARS 14-2520 governs custodian eligibility: custodian may not be related to the testator by blood, marriage, or adoption, and may not be a devisee under the will or related by blood, marriage, or adoption to a devisee."
+      "notes": "Arizona recognizes electronic wills under ARS 14-2518. Requirements (ARS 14-2518(A)): (1) created and maintained in an electronic record readable as text at time of signing; (2) electronic signature of testator, or of another individual in the testator's conscious presence and by the testator's direction; (3) electronic signatures of at least two witnesses, each of whom was physically present or electronically present with the testator when the testator signed or acknowledged the will, and who electronically signed within a reasonable time after witnessing \u2014 if a witness was electronically present, they must have been physically located within the United States at the time of serving as a witness (ARS 14-2518(A)(3)(c)); (4) must state the date the testator and each witness electronically signed; (5) must contain a copy of a government-issued identification card of the testator that was current at the time of execution. NOTE: a qualified custodian is required only for a self-proved electronic will under ARS 14-2519 (not a requirement for basic electronic will validity under ARS 14-2518). ARS 14-2520 governs custodian eligibility: custodian may not be related to the testator by blood, marriage, or adoption, and may not be a devisee under the will or related by blood, marriage, or adoption to a devisee."
     },
     "holographic_wills": {
       "recognized": true,
@@ -157,11 +157,11 @@
     },
     "revocation": {
       "methods": [
-        "Executing a subsequent will or electronic will that revokes the previous will expressly or by inconsistency",
-        "Performing a revocatory act on the will (burning, tearing, canceling, obliterating, rendering unreadable, or destroying)",
-        "Another person may perform the act in the testator's conscious presence and by the testator's direction"
+        "Executing a subsequent will that revokes the previous will or part expressly or by inconsistency",
+        "Performing a revocatory act on the will if the testator performs the act with this intent \u2014 'revocatory act on the will' includes burning, tearing, canceling, obliterating, rendering unreadable or destroying the will or any part of it",
+        "Another person may perform the revocatory act in the testator's conscious presence and by the testator's direction"
       ],
-      "notes": "ARS 14-2507. 'Rendering unreadable' is an expressly enumerated revocatory act. ARS 14-2507 (subsections A–D only) contains no language addressing electronic will revocation; the words 'electronic will', 'electronic record', and 'deleting' do not appear in this section."
+      "notes": "ARS 14-2507. 'Rendering unreadable' is an expressly enumerated revocatory act. ARS 14-2507 (subsections A\u2013D only) contains no language addressing electronic will revocation; the words 'electronic will', 'electronic record', and 'deleting' do not appear in this section. [Note: HB2471 (53rd Leg. 2nd Reg.), which would have added 'electronic will' throughout 14-2507 including an A.3 subsection covering deletion/obliteration of electronic wills, was vetoed by the Governor on April 20, 2018. HB2656 (Chapter 328), the bill that actually became law effective 2019, amended 14-2507 without adding any electronic will language.]"
     },
     "special_provisions": "Arizona is a community property state. Surviving spouse is entitled to their half of community property. Separate property may be disposed of freely by will. Arizona has no elective share statute because community property protections serve that function",
     "statute_citations": [
@@ -183,8 +183,8 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind",
-    "writing_requirement": "Must be in writing. Attested wills may be typed, printed, or handwritten (Ark. Code § 28-25-103). Holographic wills must be written entirely in the testator's own handwriting — typed or printed does not qualify (Ark. Code § 28-25-104).",
+    "testamentary_capacity": "The testator must be of sound mind and at least 18 years of age (Ark. Code \u00a7 28-25-101: 'Any person of sound mind eighteen (18) years of age or older may make a will.')",
+    "writing_requirement": "Must be in writing. Attested wills may be typed, printed, or handwritten (Ark. Code \u00a7 28-25-103). Holographic wills must be written entirely in the testator's own handwriting \u2014 typed or printed does not qualify (Ark. Code \u00a7 28-25-104).",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
@@ -192,9 +192,9 @@
     },
     "witness_requirements": {
       "count": 2,
-      "qualifications": "Must be at least 18 years of age and competent to be a witness generally in Arkansas (Ark. Code § 28-25-102(a))",
-      "presence_rules": "The testator must declare to the attesting witnesses that the instrument is his or her will, and must sign, acknowledge a prior signature, sign by mark, or have another person sign at their direction — all in the presence of two or more attesting witnesses; the signature must be at the end of the instrument; the attesting witnesses must sign at the request and in the presence of the testator (Ark. Code § 28-25-103(b)(1), (b)(2), (c))",
-      "interested_witness_rules": "An interested witness does not invalidate the will, but unless the will is also attested by two qualified disinterested witnesses, the interested witness shall forfeit so much of the provision made for them as in the aggregate exceeds in value what they would have received had the testator died intestate; no witness is 'interested' unless the will gives them a beneficial interest by way of devise; an interested witness may still be compelled to testify (Ark. Code § 28-25-102(b)-(d))"
+      "qualifications": "Must be at least 18 years of age and competent to be a witness generally in Arkansas (Ark. Code \u00a7 28-25-102(a))",
+      "presence_rules": "The testator must declare to the attesting witnesses that the instrument is his or her will, and must sign, acknowledge a prior signature, sign by mark, or have another person sign at their direction \u2014 all in the presence of two or more attesting witnesses; the signature must be at the end of the instrument; the attesting witnesses must sign at the request and in the presence of the testator (Ark. Code \u00a7 28-25-103(b)(1), (b)(2), (c))",
+      "interested_witness_rules": "An interested witness does not invalidate the will, but unless the will is also attested by two qualified disinterested witnesses, the interested witness shall forfeit so much of the provision made for them as in the aggregate exceeds in value what they would have received had the testator died intestate; no witness is 'interested' unless the will gives them a beneficial interest by way of devise; an interested witness may still be compelled to testify (Ark. Code \u00a7 28-25-102(b)-(d))"
     },
     "notarization": {
       "required": false,
@@ -202,7 +202,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Attesting witnesses only (not the testator) sign an affidavit before any officer authorized to administer oaths in Arkansas or any other state; the testator does not sign; affidavit may be made at any time (on the witness's own initiative, at the testator's request, or after death at the executor's or interested party's request); effective only in uncontested probate proceedings (Ark. Code § 28-25-106)"
+      "requirements": "Attesting witnesses only (not the testator) sign an affidavit before any officer authorized to administer oaths in Arkansas or any other state; the testator does not sign; affidavit may be made at any time (on the witness's own initiative, at the testator's request, or after the testator's death at the request of the executor or of any other person interested); the affidavit shall be written on the will or, if that is impracticable, securely affixed to the will or to a true copy of the will by the officer administering the oath; if probate is uncontested, the affidavit may be accepted by the circuit court with the same effect as if the testimony of the witness had been taken before the court (Ark. Code \u00a7 28-25-106)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -210,7 +210,7 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid if the entire body of the will and the signature are written in the proper handwriting of the testator. No attesting witnesses required at execution; however, the will must be established by the evidence of at least three (3) credible disinterested witnesses to the handwriting and signature of the testator (Ark. Code § 28-25-104)"
+      "notes": "Valid if the entire body of the will and the signature are written in the proper handwriting of the testator. No attesting witnesses required at execution; however, the will must be established by the evidence of at least three (3) credible disinterested witnesses to the handwriting and signature of the testator (Ark. Code \u00a7 28-25-104)"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -222,15 +222,15 @@
         "Physical destruction (burning, tearing, canceling, obliterating, or destroying) with the intent and for the purpose of revoking, by the testator or by another person in the testator's presence and by the testator's direction",
         "Divorce or annulment of the testator's marriage revokes all provisions in the will in favor of the divorced spouse"
       ],
-      "notes": "Ark. Code § 28-25-109. No other change in circumstances, condition, or marital status revokes a will (subject to § 28-39-401 on pretermitted heirs). Partial revocation does not require reattestation of the remainder (§ 28-25-109(c))."
+      "notes": "Ark. Code \u00a7 28-25-109. No other change in circumstances, condition, or marital status revokes a will (subject to \u00a7 28-39-401 on pretermitted heirs). Partial revocation does not require reattestation of the remainder (\u00a7 28-25-109(c))."
     },
     "special_provisions": "Arkansas is a separate property/common law state. Surviving spouse has dower and curtesy rights: life estate in one-third of real property. Arkansas also provides a statutory allowance and homestead rights to the surviving spouse",
     "statute_citations": [
-      "Ark. Code § 28-25-101 (Who may make wills)",
-      "Ark. Code § 28-25-103 (Execution generally)",
-      "Ark. Code § 28-25-104 (Holographic wills generally)",
-      "Ark. Code § 28-25-106 (Affidavit of attesting witness)",
-      "Ark. Code § 28-25-109 (Revocation of wills)"
+      "Ark. Code \u00a7 28-25-101 (Who may make wills)",
+      "Ark. Code \u00a7 28-25-103 (Execution generally)",
+      "Ark. Code \u00a7 28-25-104 (Holographic wills generally)",
+      "Ark. Code \u00a7 28-25-106 (Affidavit of attesting witness)",
+      "Ark. Code \u00a7 28-25-109 (Revocation of wills)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -239,9 +239,9 @@
     "abbreviation": "CA",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "A conservator may make a will on behalf of the conservatee if the conservator has been authorized by a court order pursuant to Prob. Code § 2580 (Prob. Code § 6100(b)). Cal. Prob. Code § 6100 does not provide exceptions for emancipated minors or members of the armed forces; the minimum age of 18 applies without such exceptions in the Probate Code."
+      "exceptions": "A conservator may make a will on behalf of the conservatee if the conservator has been authorized by a court order pursuant to Prob. Code \u00a7 2580 (Prob. Code \u00a7 6100(b)). Cal. Prob. Code \u00a7 6100 does not provide exceptions for emancipated minors or members of the armed forces; the minimum age of 18 applies without such exceptions in the Probate Code."
     },
-    "testamentary_capacity": "An individual lacks testamentary capacity if, at the time of making the will, either: (1) the individual does not have sufficient mental capacity to (A) understand the nature of the testamentary act, (B) understand and recollect the nature and situation of the individual's property, or (C) remember and understand the individual's relations to living descendants, spouse, and parents, and those whose interests are affected by the will; OR (2) the individual suffers from a mental health disorder with symptoms including delusions or hallucinations, which delusions or hallucinations result in the individual's devising property in a way that, except for the existence of the delusions or hallucinations, the individual would not have done (Cal. Prob. Code 6100.5, as amended by Stats. 2019, Ch. 9, Sec. 18, effective Jan. 1, 2020)",
+    "testamentary_capacity": "An individual is not mentally competent to make a will if, at the time of making the will, either of the following is true: (1) the individual does not have sufficient mental capacity to be able to do any of the following: (A) understand the nature of the testamentary act; (B) understand and recollect the nature and situation of the individual's property; or (C) remember and understand the individual's relations to living descendants, spouse, and parents, and those whose interests are affected by the will; OR (2) the individual suffers from a mental health disorder with symptoms including delusions or hallucinations, which delusions or hallucinations result in the individual's devising property in a way that, except for the existence of the delusions or hallucinations, the individual would not have done. This section does not supersede existing law relating to the admissibility of evidence to prove the existence of mental incompetence or mental health disorders. Notwithstanding the foregoing, a conservator may make a will on behalf of a conservatee if the conservator has been authorized to do so by a court order pursuant to Section 2580. (Cal. Prob. Code 6100.5, as amended by Stats. 2019, Ch. 9, Sec. 18 (AB 46), effective Jan. 1, 2020)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten (holographic). Electronic-only wills are not currently recognized",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -250,9 +250,9 @@
     },
     "witness_requirements": {
       "count": 2,
-      "qualifications": "Any generally competent person may serve as a witness. Interested witnesses do not invalidate the will but create a presumption (affecting the burden of proof) of duress, menace, fraud, or undue influence for devises to them",
+      "qualifications": "Any generally competent person may serve as a witness. Interested witnesses do not invalidate the will but create a presumption (affecting the burden of proof) of duress, menace, fraud, or undue influence for devises to them, except where the devise is made to the witness solely in a fiduciary capacity (Prob. Code 6112(a)-(c))",
       "presence_rules": "Both witnesses must be present at the same time and must witness either the signing of the will or the testator's acknowledgment of the signature or of the will. Witnesses must understand the instrument is the testator's will. Witnesses must sign during the testator's lifetime",
-      "interested_witness_rules": "Interested witnesses create a presumption of duress, menace, fraud, or undue influence for the devise to that witness, unless rebutted or unless at least two other disinterested witnesses signed (Prob. Code 6112)"
+      "interested_witness_rules": "Interested witnesses create a presumption of duress, menace, fraud, or undue influence for the devise to that witness, unless rebutted or unless at least two other disinterested witnesses signed (Prob. Code 6112(c)). This presumption does not apply where the witness is a person to whom the devise is made solely in a fiduciary capacity. If the presumption applies and the interested witness fails to rebut it, the witness takes only such proportion of the devise as does not exceed the share of the estate that would be distributed to the witness if the will were not established (Prob. Code 6112(d))"
     },
     "notarization": {
       "required": false,
@@ -260,7 +260,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "California uses a statement under penalty of perjury rather than a traditional notarized self-proving affidavit. The witnesses state under penalty of perjury that the testator was of legal age, appeared of sound mind, and was not under undue influence. A separate notarized affidavit is not required but can be used"
+      "requirements": "California uses a penalty-of-perjury attestation clause embedded within the will itself (Cal. Prob. Code \u00a7 6240, California Statutory Will) rather than a traditional separate notarized self-proving affidavit. Two witnesses must each declare under penalty of perjury under the laws of the State of California: (a) on the date written below the maker declared to us that this instrument was the maker's Will and requested us to act as witnesses to it; (b) we understand this is the maker's Will; (c) the maker signed this Will in our presence, all of us being present at the same time; (d) we now, at the maker's request, and in the maker's and each other's presence, sign below as witnesses; (e) we believe the maker is of sound mind and memory; (f) we believe that this Will was not procured by duress, menace, fraud or undue influence; (g) the maker is age 18 or older; and (h) each of us is now age 18 or older, is a competent witness, and resides at the address set forth after his or her name. The statutory will form explicitly states 'NOTARIZATION ALONE IS NOT SUFFICIENT' \u2014 notarization does not substitute for and cannot supplement the two-witness penalty-of-perjury mechanism. Cal. Prob. Code \u00a7 6222 confirms that execution of this attestation clause by two or more witnesses satisfies \u00a7 8220 (proof of will at probate)."
     },
     "electronic_wills": {
       "recognized": false,
@@ -268,7 +268,7 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid without witnesses if the signature and the material provisions are in the testator's handwriting. Any statement of testamentary intent may be set forth either in the testator's own handwriting or as part of a commercially printed form will. An undated holographic will is invalid to the extent it is inconsistent with another will unless the time of its execution is established to be after the date of execution of the other will; or, if testamentary capacity is in doubt during the period it might have been executed, the will is invalid unless it is established that it was executed at a time when the testator had testamentary capacity (Prob. Code 6111(a)–(c))"
+      "notes": "Valid without witnesses if the signature and the material provisions are in the testator's handwriting. Any statement of testamentary intent may be set forth either in the testator's own handwriting or as part of a commercially printed form will. An undated holographic will is invalid to the extent it is inconsistent with another will unless the time of its execution is established to be after the date of execution of the other will; or, if testamentary capacity is in doubt during the period it might have been executed, the will is invalid unless it is established that it was executed at a time when the testator had testamentary capacity (Prob. Code 6111(a)\u2013(c))"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -276,12 +276,12 @@
     },
     "revocation": {
       "methods": [
-        "Executing a subsequent will that revokes the prior will or part expressly or by inconsistency (§ 6120(a))",
-        "Physical act of burning, tearing, canceling, obliterating, or destroying the will with intent and for the purpose of revoking it, by either the testator or another person in the testator's presence and by the testator's direction (§ 6120(b))",
-        "Destruction of one duplicate of a will executed in duplicate, with intent and for the purpose of revoking it, by either the testator or another person in the testator's presence and by the testator's direction (§ 6121)",
-        "By operation of law upon dissolution or annulment of marriage (not legal separation), which revokes: (1) any disposition or appointment of property to the former spouse, (2) any provision conferring a general or special power of appointment on the former spouse, and (3) any nomination of the former spouse as executor, trustee, conservator, or guardian; revoked provisions are revived by remarriage to the former spouse (§ 6122)"
+        "Executing a subsequent will that revokes the prior will or part expressly or by inconsistency (\u00a7 6120(a))",
+        "Physical act of burning, tearing, canceling, obliterating, or destroying the will with intent and for the purpose of revoking it, by either the testator or another person in the testator's presence and by the testator's direction (\u00a7 6120(b))",
+        "Destruction of one duplicate of a will executed in duplicate, with intent and for the purpose of revoking it, by either the testator or another person in the testator's presence and by the testator's direction (\u00a7 6121)",
+        "By operation of law upon dissolution or annulment of marriage (not legal separation), unless the will expressly provides otherwise, which revokes: (1) any disposition or appointment of property to the former spouse, (2) any provision conferring a general or special power of appointment on the former spouse, and (3) any nomination of the former spouse as executor, trustee, conservator, or guardian; revoked provisions are revived by remarriage to the former spouse (\u00a7 6122)"
       ],
-      "notes": "Prob. Code 6120-6122. § 6121 is a separate provision for wills executed in duplicate: destruction of one duplicate with intent to revoke revokes the will. § 6122 revokes three legally distinct categories upon dissolution or annulment (a decree of legal separation does not trigger § 6122): (1) property dispositions to the former spouse, (2) powers of appointment granted to the former spouse, and (3) fiduciary nominations of the former spouse as executor, trustee, conservator, or guardian. Revoked provisions are revived upon remarriage to the former spouse. Per § 6122(e), no change of circumstances other than those described in § 6122 revokes a will (except as provided in § 6122.1)."
+      "notes": "Prob. Code 6120-6122. \u00a7 6121 is a separate provision for wills executed in duplicate: destruction of one duplicate with intent to revoke revokes the will. \u00a7 6122(a) provides that unless the will expressly provides otherwise, dissolution or annulment revokes three legally distinct categories (a decree of legal separation does not trigger \u00a7 6122): (1) property dispositions to the former spouse, (2) powers of appointment granted to the former spouse, and (3) fiduciary nominations of the former spouse as executor, trustee, conservator, or guardian. A testator may override this default revocation by express provision in the will. Revoked provisions are revived upon remarriage to the former spouse. Per \u00a7 6122(e), no change of circumstances other than those described in \u00a7 6122 revokes a will (except as provided in \u00a7 6122.1)."
     },
     "special_provisions": "California is a community property state. Each spouse owns an undivided one-half interest in community property. A testator may dispose of their half of community property and all separate property by will. No elective share statute because community property law protects the surviving spouse. California has the harmless error doctrine allowing probate of technically deficient wills upon clear and convincing evidence of testamentary intent (Prob. Code 6110(c)(2))",
     "statute_citations": [
@@ -291,10 +291,10 @@
       "Cal. Prob. Code 6111 (Holographic wills)",
       "Cal. Prob. Code 6112 (Witnesses; interested witnesses)",
       "Cal. Prob. Code 6113 (Choice of law)",
-      "Cal. Prob. Code 6120 (Methods of revocation — subsequent will or physical act)",
+      "Cal. Prob. Code 6120 (Methods of revocation \u2014 subsequent will or physical act)",
       "Cal. Prob. Code 6121 (Revocation of wills executed in duplicate)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-08-07"
   },
   {
     "state": "Colorado",
@@ -303,7 +303,7 @@
       "standard": 18,
       "exceptions": null
     },
-    "testamentary_capacity": "An individual eighteen or more years of age who is of sound mind may make a will (CRS 15-11-501). Colorado courts interpret 'sound mind' to require a positive showing, at the time of execution, that the testator: (1) understood the nature and extent of their property; (2) understood the effect of the proposed testamentary disposition; (3) knew the natural objects of their bounty; and (4) that the proposed will represented their wishes. (Cunningham v. Stender, 127 Colo. 293, 255 P.2d 977 (1953).)",
+    "testamentary_capacity": "An individual eighteen or more years of age who is of sound mind may make a will (CRS 15-11-501). Colorado courts interpret 'sound mind' to require a positive showing, at the time of execution, that the testator: (1) understands the nature of the act; (2) knows the extent of their property; (3) understands the proposed testamentary disposition; (4) knows the natural objects of their bounty; and (5) that the proposed will represents their wishes. (Breeden v. Stone, 992 P.2d 1167 (Colo. 2000), applying Cunningham v. Stender, 127 Colo. 293, 255 P.2d 977 (1953).)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten. Colorado also recognizes electronic wills under the Colorado Uniform Electronic Wills Act (CUEWA)",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -312,9 +312,9 @@
     },
     "witness_requirements": {
       "count": 2,
-      "qualifications": "An individual generally competent to be a witness may act as a witness to a will (CRS 15-11-505(1)). Note: Colorado uniquely allows a notarized-only will — acknowledged by the testator before a notary public or other individual authorized by law to take acknowledgments — as an alternative to a witnessed will (CRS 15-11-502(1)(c)(II))",
+      "qualifications": "An individual generally competent to be a witness may act as a witness to a will (CRS 15-11-505(1)). Note: Colorado uniquely allows a notarized-only will \u2014 acknowledged by the testator before a notary public or other individual authorized by law to take acknowledgments \u2014 as an alternative to a witnessed will (CRS 15-11-502(1)(c)(II))",
       "presence_rules": "Each witness must sign either prior to or after the testator's death, within a reasonable time after witnessing either the testator's signing of the will or the testator's acknowledgment of that signature or acknowledgment of the will (CRS 15-11-502(1)(c)(I))",
-      "interested_witness_rules": "The signing of a will by an interested witness does not invalidate the will or any provision of it (CRS 15-11-505(2)). Colorado has no purging statute — bequests to an interested witness survive intact."
+      "interested_witness_rules": "The signing of a will by an interested witness does not invalidate the will or any provision of it (CRS 15-11-505(2)). Colorado has no purging statute \u2014 bequests to an interested witness survive intact."
     },
     "notarization": {
       "required": false,
@@ -326,7 +326,7 @@
     },
     "electronic_wills": {
       "recognized": true,
-      "notes": "Colorado adopted the Uniform Electronic Wills Act (CUEWA), effective January 21, 2021 (CRS 15-11-1301 et seq.). An electronic will must be: (1) a record readable as text at the time of signing; (2) signed by the testator (or by another individual in the testator's name, in the testator's physical presence, and by the testator's direction); and (3) EITHER (a) signed in the physical or electronic presence of the testator by at least two individuals, each of whom is a resident of a state and physically located in a state at the time of signing, OR (b) acknowledged by the testator before and in the physical or electronic presence of a notary public or other individual authorized by Colorado law to notarize records, who is located in Colorado at the time of the notarial act (CRS 15-11-1305(1)). 'Electronic presence' means two or more individuals in different locations communicating in real time to the same extent as if physically present in the same location (CRS 15-11-1302). Electronic holographic wills are not recognized under the CUEWA — Part 13 requires witnesses or notarization and provides no holographic path."
+      "notes": "Colorado adopted the Uniform Electronic Wills Act (CUEWA), effective January 21, 2021 (CRS 15-11-1301 et seq.). An electronic will must be: (1) a record readable as text at the time of signing; (2) signed by the testator (or by another individual in the testator's name, in the testator's physical presence, and by the testator's direction); and (3) EITHER (a) signed in the physical or electronic presence of the testator by at least two individuals, each of whom is a resident of a state and physically located in a state at the time of signing, OR (b) acknowledged by the testator before and in the physical or electronic presence of a notary public or other individual authorized by Colorado law to notarize records, who is located in Colorado at the time of the notarial act (CRS 15-11-1305(1)). Colorado-specific signature restriction: any electronic symbol used to 'sign' an electronic will \u2014 by the testator or any witness \u2014 must be an electronic image of that person's signature in their own handwriting affixed to the electronic will; a typed name or other non-handwritten electronic mark is not sufficient (CRS 15-11-1302(5)(b)). This is a Colorado departure from the model Uniform Act, which permits any electronic symbol or process. 'Electronic presence' means the relationship of two or more individuals in different locations communicating in real time to the same extent as if the individuals were physically present in the same location (CRS 15-11-1302). Electronic holographic wills are not recognized under the CUEWA \u2014 Part 13 requires witnesses or notarization and provides no holographic path."
     },
     "holographic_wills": {
       "recognized": true,
@@ -343,7 +343,7 @@
         "Another individual may perform a revocatory act in the testator's conscious presence and by the testator's direction",
         "If a subsequent will does not expressly revoke a previous will, execution of the subsequent will wholly revokes the previous will by inconsistency if the testator intended the subsequent will to replace rather than supplement the previous will; testator is presumed to intend replacement if the subsequent will makes a complete disposition of the estate (CRS 15-11-507(3)); presumed to intend supplementation if it does not make a complete disposition (CRS 15-11-507(4))"
       ],
-      "notes": "CRS 15-11-507. For electronic wills, revocation by physical act is governed by CRS 15-11-1307(2)(b) — not 15-11-507 — and requires clear and convincing evidence that the testator, with the intent of revoking all or part of the will, performed the act or directed another individual who performed the act in the testator's physical presence. Distinction: electronic wills require 'physical presence' for third-party-directed acts; paper wills under CRS 15-11-507(1)(b) require only 'conscious presence'"
+      "notes": "CRS 15-11-507. For electronic wills, revocation by physical act is governed by CRS 15-11-1307(2)(b) \u2014 not 15-11-507 \u2014 and requires clear and convincing evidence that the testator, with the intent of revoking all or part of the will, performed the act or directed another individual who performed the act in the testator's physical presence. Distinction: electronic wills require 'physical presence' for third-party-directed acts; paper wills under CRS 15-11-507(1)(b) require only 'conscious presence'"
     },
     "special_provisions": "Colorado is a separate property (equitable distribution) state. Provides an elective share for the surviving spouse under CRS 15-11-201 et seq. Colorado is one of the few states that allows a notarized-only will (without witnesses) as an alternative to a witnessed will",
     "statute_citations": [
@@ -353,7 +353,7 @@
       "CRS 15-11-507 (Revocation by writing or by act)",
       "CRS 15-11-1301 et seq. (Colorado Uniform Electronic Wills Act)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-08-07"
   },
   {
     "state": "Connecticut",
@@ -366,8 +366,8 @@
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
-      "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's presence and at the testator's direction"
+      "proxy_signing_allowed": false,
+      "proxy_signing_rules": "Connecticut does not statutorily authorize another person to sign a will on behalf of a testator, even if at the direction and request of the testator; any mark of the testator satisfies the subscription requirement"
     },
     "witness_requirements": {
       "count": 2,
@@ -381,7 +381,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public or other authorized officer (Conn. Gen. Stat. § 45a-285)"
+      "requirements": "Attesting witnesses only (not the testator) make and sign an affidavit before any officer authorized to administer oaths in or out of the state (including a judge, clerk, notary public, or commissioner of the Superior Court), stating facts they would be required to testify to in court to prove the will; the affidavit is written on the will or attached to it, and the sworn statement is accepted by the Court of Probate as if taken before the court. The affidavit may be made at the testator's request or, after death, at the request of the executor or any interested person. (Conn. Gen. Stat. \u00a7 45a-285)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -397,18 +397,19 @@
     },
     "revocation": {
       "methods": [
-        "Executing a subsequent will or codicil that revokes the prior will expressly or by inconsistency",
-        "Physical act of burning, canceling, tearing, or obliterating the will by the testator or someone in the testator's presence and at their direction"
+        "Physical act of burning, cancelling, tearing, or obliterating the will by the testator or by some person in the testator's presence by the testator's direction",
+        "By a later will or codicil",
+        "By dissolution, divorce, or annulment of the testator's marriage after execution of the will, which revokes by operation of law any disposition or appointment of property to the former spouse, any provision conferring a general or special power of appointment on the former spouse, and any nomination of the former spouse as executor, trustee, conservator, guardian, or other fiduciary, unless the will expressly provides otherwise (Conn. Gen. Stat. \u00a7 45a-257c)"
       ],
-      "notes": "Conn. Gen. Stat. § 45a-257"
+      "notes": "Conn. Gen. Stat. \u00a7\u00a7 45a-257 and 45a-257c. Section 45a-257 also cross-references \u00a7\u00a7 45a-257a through 45a-257d as governing additional circumstances (omitted spouse, omitted children, divorce revocation). Revocation by dissolution under \u00a7 45a-257c is revival-capable: provisions revoked solely by \u00a7 45a-257c are revived if the testator remarries the former spouse."
     },
     "special_provisions": "Connecticut is a separate property state. Surviving spouse has a statutory right to elect against the will, receiving a life estate in one-third of the decedent's real and personal property. Connecticut has no forced heirship for children",
     "statute_citations": [
-      "Conn. Gen. Stat. § 45a-250 (Who may make a will)",
-      "Conn. Gen. Stat. § 45a-251 (Execution of wills)",
-      "Conn. Gen. Stat. § 45a-257 (Revocation of wills)",
-      "Conn. Gen. Stat. § 45a-285 (Self-proved wills)",
-      "Conn. Gen. Stat. § 45a-436 (Elective share)"
+      "Conn. Gen. Stat. \u00a7 45a-250 (Who may make a will)",
+      "Conn. Gen. Stat. \u00a7 45a-251 (Execution of wills)",
+      "Conn. Gen. Stat. \u00a7 45a-257 (Revocation of wills)",
+      "Conn. Gen. Stat. \u00a7 45a-285 (Self-proved wills)",
+      "Conn. Gen. Stat. \u00a7 45a-436 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -424,7 +425,7 @@
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may subscribe the testator's name at the testator's express direction and in the testator's presence (12 Del. C. § 202)"
+      "proxy_signing_rules": "Another person may subscribe the testator's name at the testator's express direction and in the testator's presence (12 Del. C. \u00a7 202)"
     },
     "witness_requirements": {
       "count": 2,
@@ -438,7 +439,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public or other authorized officer (12 Del. C. § 1305)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public or other authorized officer (12 Del. C. \u00a7 1305)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -457,15 +458,15 @@
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction"
       ],
-      "notes": "12 Del. C. § 208"
+      "notes": "12 Del. C. \u00a7 208"
     },
-    "special_provisions": "Delaware is a separate property/common law state. Surviving spouse has an elective share right of one-third of the elective estate (12 Del. C. § 901). Delaware has no state estate tax for deaths after 2017",
+    "special_provisions": "Delaware is a separate property/common law state. Surviving spouse has an elective share right of one-third of the elective estate (12 Del. C. \u00a7 901). Delaware has no state estate tax for deaths after 2017",
     "statute_citations": [
-      "12 Del. C. § 201 (Who may make a will)",
-      "12 Del. C. § 202 (Execution of wills)",
-      "12 Del. C. § 208 (Revocation)",
-      "12 Del. C. § 901 (Elective share)",
-      "12 Del. C. § 1305 (Self-proved wills)"
+      "12 Del. C. \u00a7 201 (Who may make a will)",
+      "12 Del. C. \u00a7 202 (Execution of wills)",
+      "12 Del. C. \u00a7 208 (Revocation)",
+      "12 Del. C. \u00a7 901 (Elective share)",
+      "12 Del. C. \u00a7 1305 (Self-proved wills)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -534,20 +535,20 @@
     "abbreviation": "FL",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Emancipated minors may make a will (Fla. Stat. § 732.501)"
+      "exceptions": "Emancipated minors may make a will (Fla. Stat. \u00a7 732.501)"
     },
     "testamentary_capacity": "The testator must be of sound mind, understanding the nature and extent of the property to be disposed of, the relationship to those who would naturally claim a benefit, and the practical effect of the will",
     "writing_requirement": "Must be in writing. Can be typed or printed. Florida is strict about formalities",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign the testator's name in the testator's presence and by the testator's direction. The signature must be at the end of the will (Fla. Stat. § 732.502)"
+      "proxy_signing_rules": "Another person may sign the testator's name in the testator's presence and by the testator's direction. The signature must be at the end of the will (Fla. Stat. \u00a7 732.502)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of both witnesses. Both witnesses must sign in the presence of the testator and in the presence of each other (Fla. Stat. § 732.502)",
-      "interested_witness_rules": "An interested witness does not invalidate the will. Florida repealed the interested witness penalty (Fla. Stat. § 732.504)"
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of both witnesses. Both witnesses must sign in the presence of the testator and in the presence of each other (Fla. Stat. \u00a7 732.502)",
+      "interested_witness_rules": "An interested witness does not invalidate the will. Florida repealed the interested witness penalty (Fla. Stat. \u00a7 732.504)"
     },
     "notarization": {
       "required": false,
@@ -555,11 +556,11 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public or other authorized officer (Fla. Stat. § 732.503)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public or other authorized officer (Fla. Stat. \u00a7 732.503)"
     },
     "electronic_wills": {
       "recognized": true,
-      "notes": "Florida adopted the Electronic Wills Act effective January 1, 2020 (Fla. Stat. § 732.521-732.528). Electronic wills must be in an electronic record, electronically signed by the testator, and witnessed by two persons who may be present by audio-video communication if a supervised by a notary"
+      "notes": "Florida adopted the Electronic Wills Act effective January 1, 2020 (Fla. Stat. \u00a7 732.521-732.528). Electronic wills must be in an electronic record, electronically signed by the testator, and witnessed by two persons who may be present by audio-video communication if a supervised by a notary"
     },
     "holographic_wills": {
       "recognized": false,
@@ -575,17 +576,17 @@
         "Physical act of burning, tearing, canceling, defacing, obliterating, or destroying the will by the testator or by another at the testator's direction and in the testator's presence",
         "A writing executed with will formalities"
       ],
-      "notes": "Fla. Stat. § 732.505"
+      "notes": "Fla. Stat. \u00a7 732.505"
     },
-    "special_provisions": "Florida is a separate property/common law state. Surviving spouse has an elective share of 30% of the elective estate (Fla. Stat. § 732.2065). Florida has strong homestead protections: the homestead cannot be devised away from a surviving spouse or minor children. Florida has no state income tax or estate tax",
+    "special_provisions": "Florida is a separate property/common law state. Surviving spouse has an elective share of 30% of the elective estate (Fla. Stat. \u00a7 732.2065). Florida has strong homestead protections: the homestead cannot be devised away from a surviving spouse or minor children. Florida has no state income tax or estate tax",
     "statute_citations": [
-      "Fla. Stat. § 732.501 (Who may make a will)",
-      "Fla. Stat. § 732.502 (Execution of wills)",
-      "Fla. Stat. § 732.503 (Self-proved wills)",
-      "Fla. Stat. § 732.504 (Interested witnesses)",
-      "Fla. Stat. § 732.505 (Revocation)",
-      "Fla. Stat. § 732.521-528 (Electronic Wills Act)",
-      "Fla. Stat. § 732.2065 (Elective share)"
+      "Fla. Stat. \u00a7 732.501 (Who may make a will)",
+      "Fla. Stat. \u00a7 732.502 (Execution of wills)",
+      "Fla. Stat. \u00a7 732.503 (Self-proved wills)",
+      "Fla. Stat. \u00a7 732.504 (Interested witnesses)",
+      "Fla. Stat. \u00a7 732.505 (Revocation)",
+      "Fla. Stat. \u00a7 732.521-528 (Electronic Wills Act)",
+      "Fla. Stat. \u00a7 732.2065 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -594,20 +595,20 @@
     "abbreviation": "GA",
     "minimum_age": {
       "standard": 14,
-      "exceptions": "Georgia has one of the lowest minimum ages to make a will in the nation (O.C.G.A. § 53-4-10)"
+      "exceptions": "Georgia has one of the lowest minimum ages to make a will in the nation (O.C.G.A. \u00a7 53-4-10)"
     },
     "testamentary_capacity": "The testator must have sufficient intellect to enable them to have a decided and rational desire as to the disposition of property and to understand the nature of the testamentary act",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's express direction (O.C.G.A. § 53-4-20)"
+      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's express direction (O.C.G.A. \u00a7 53-4-20)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of the witnesses, and the witnesses must sign in the presence of the testator (O.C.G.A. § 53-4-20)",
-      "interested_witness_rules": "An interested witness does not invalidate the will (O.C.G.A. § 53-4-23)"
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of the witnesses, and the witnesses must sign in the presence of the testator (O.C.G.A. \u00a7 53-4-20)",
+      "interested_witness_rules": "An interested witness does not invalidate the will (O.C.G.A. \u00a7 53-4-23)"
     },
     "notarization": {
       "required": false,
@@ -615,7 +616,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (O.C.G.A. § 53-4-24)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (O.C.G.A. \u00a7 53-4-24)"
     },
     "electronic_wills": {
       "recognized": true,
@@ -627,7 +628,7 @@
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made during last illness, in the testator's dwelling or where they resided for 10+ days (except sudden illness), before two competent witnesses, and limited to $100 unless reduced to writing within 30 days (O.C.G.A. § 53-4-27)"
+      "notes": "Recognized in limited circumstances: must be made during last illness, in the testator's dwelling or where they resided for 10+ days (except sudden illness), before two competent witnesses, and limited to $100 unless reduced to writing within 30 days (O.C.G.A. \u00a7 53-4-27)"
     },
     "revocation": {
       "methods": [
@@ -635,17 +636,17 @@
         "Physical destruction by the testator or at the testator's direction",
         "Any writing executed with the same formalities as a will"
       ],
-      "notes": "O.C.G.A. § 53-4-40"
+      "notes": "O.C.G.A. \u00a7 53-4-40"
     },
-    "special_provisions": "Georgia is a separate property/common law state. Georgia has NO elective share statute — a surviving spouse can be disinherited. However, a surviving spouse can petition for a year's support from the estate (O.C.G.A. § 53-3-1). Georgia's minimum age of 14 is the lowest in the nation. Georgia is one of the few states without elective share protections",
+    "special_provisions": "Georgia is a separate property/common law state. Georgia has NO elective share statute \u2014 a surviving spouse can be disinherited. However, a surviving spouse can petition for a year's support from the estate (O.C.G.A. \u00a7 53-3-1). Georgia's minimum age of 14 is the lowest in the nation. Georgia is one of the few states without elective share protections",
     "statute_citations": [
-      "O.C.G.A. § 53-4-10 (Who may make a will)",
-      "O.C.G.A. § 53-4-20 (Execution of wills)",
-      "O.C.G.A. § 53-4-23 (Interested witnesses)",
-      "O.C.G.A. § 53-4-24 (Self-proved wills)",
-      "O.C.G.A. § 53-4-27 (Nuncupative wills)",
-      "O.C.G.A. § 53-4-40 (Revocation)",
-      "O.C.G.A. § 53-3-1 (Year's support)"
+      "O.C.G.A. \u00a7 53-4-10 (Who may make a will)",
+      "O.C.G.A. \u00a7 53-4-20 (Execution of wills)",
+      "O.C.G.A. \u00a7 53-4-23 (Interested witnesses)",
+      "O.C.G.A. \u00a7 53-4-24 (Self-proved wills)",
+      "O.C.G.A. \u00a7 53-4-27 (Nuncupative wills)",
+      "O.C.G.A. \u00a7 53-4-40 (Revocation)",
+      "O.C.G.A. \u00a7 53-3-1 (Year's support)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -889,9 +890,9 @@
     "abbreviation": "IA",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Married minors may make a will (Iowa Code § 633.264)"
+      "exceptions": "Married minors may make a will (Iowa Code \u00a7 633.264)"
     },
-    "testamentary_capacity": "The testator must be of full age and sound mind (Iowa Code § 633.264)",
+    "testamentary_capacity": "The testator must be of full age and sound mind (Iowa Code \u00a7 633.264)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -901,7 +902,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The will must be signed by the testator or by some person in the testator's presence and by the testator's express direction, and attested by two competent witnesses (Iowa Code § 633.279)",
+      "presence_rules": "The will must be signed by the testator or by some person in the testator's presence and by the testator's express direction, and attested by two competent witnesses (Iowa Code \u00a7 633.279)",
       "interested_witness_rules": "An interested witness does not invalidate the will"
     },
     "notarization": {
@@ -910,7 +911,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Iowa Code § 633.279)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Iowa Code \u00a7 633.279)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -929,14 +930,14 @@
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction"
       ],
-      "notes": "Iowa Code § 633.284"
+      "notes": "Iowa Code \u00a7 633.284"
     },
-    "special_provisions": "Iowa is a separate property/common law state. Surviving spouse has an elective share of one-third of all property that passed to others at the decedent's death (Iowa Code § 633.238). Iowa has a state inheritance tax (rates vary by relationship)",
+    "special_provisions": "Iowa is a separate property/common law state. Surviving spouse has an elective share of one-third of all property that passed to others at the decedent's death (Iowa Code \u00a7 633.238). Iowa has a state inheritance tax (rates vary by relationship)",
     "statute_citations": [
-      "Iowa Code § 633.264 (Who may make a will)",
-      "Iowa Code § 633.279 (Execution of wills; self-proving)",
-      "Iowa Code § 633.284 (Revocation)",
-      "Iowa Code § 633.238 (Elective share)"
+      "Iowa Code \u00a7 633.264 (Who may make a will)",
+      "Iowa Code \u00a7 633.279 (Execution of wills; self-proving)",
+      "Iowa Code \u00a7 633.284 (Revocation)",
+      "Iowa Code \u00a7 633.238 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -947,7 +948,7 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (K.S.A. § 59-601)",
+    "testamentary_capacity": "The testator must be of sound mind (K.S.A. \u00a7 59-601)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -957,7 +958,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of two or more competent witnesses who shall attest and sign the will in the testator's presence (K.S.A. § 59-606)",
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of two or more competent witnesses who shall attest and sign the will in the testator's presence (K.S.A. \u00a7 59-606)",
       "interested_witness_rules": "An interested witness does not invalidate the will"
     },
     "notarization": {
@@ -966,7 +967,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (K.S.A. § 59-606)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (K.S.A. \u00a7 59-606)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -978,22 +979,22 @@
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made during last sickness or in imminent peril of death, before two disinterested witnesses. For personal property only. Must be reduced to writing within 30 days and proved within 6 months (K.S.A. § 59-608)"
+      "notes": "Recognized in limited circumstances: must be made during last sickness or in imminent peril of death, before two disinterested witnesses. For personal property only. Must be reduced to writing within 30 days and proved within 6 months (K.S.A. \u00a7 59-608)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction and in the testator's presence"
       ],
-      "notes": "K.S.A. § 59-611"
+      "notes": "K.S.A. \u00a7 59-611"
     },
-    "special_provisions": "Kansas is a separate property/common law state. Surviving spouse has an elective share: may elect to take one-half of the augmented estate (K.S.A. § 59-6a202). Kansas has no state estate or inheritance tax",
+    "special_provisions": "Kansas is a separate property/common law state. Surviving spouse has an elective share: may elect to take one-half of the augmented estate (K.S.A. \u00a7 59-6a202). Kansas has no state estate or inheritance tax",
     "statute_citations": [
-      "K.S.A. § 59-601 (Who may make a will)",
-      "K.S.A. § 59-606 (Execution of wills; self-proving)",
-      "K.S.A. § 59-608 (Nuncupative wills)",
-      "K.S.A. § 59-611 (Revocation)",
-      "K.S.A. § 59-6a202 (Elective share)"
+      "K.S.A. \u00a7 59-601 (Who may make a will)",
+      "K.S.A. \u00a7 59-606 (Execution of wills; self-proving)",
+      "K.S.A. \u00a7 59-608 (Nuncupative wills)",
+      "K.S.A. \u00a7 59-611 (Revocation)",
+      "K.S.A. \u00a7 59-6a202 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1077,11 +1078,11 @@
     },
     "notarization": {
       "required": true,
-      "notes": "Required for notarial testament — must be executed before a notary and two witnesses. Not required for olographic testament (La. C.C. art. 1577)"
+      "notes": "Required for notarial testament \u2014 must be executed before a notary and two witnesses. Not required for olographic testament (La. C.C. art. 1577)"
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "A notarial testament is self-proving by its nature — the notary's attestation serves this function. No separate affidavit needed (La. C.C. art. 1577)"
+      "requirements": "A notarial testament is self-proving by its nature \u2014 the notary's attestation serves this function. No separate affidavit needed (La. C.C. art. 1577)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -1118,7 +1119,7 @@
     "abbreviation": "ME",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Emancipated minors may make a will under Maine's UPC framework (18-C MRS § 2-501)"
+      "exceptions": "Emancipated minors may make a will under Maine's UPC framework (18-C MRS \u00a7 2-501)"
     },
     "testamentary_capacity": "The testator must be of sound mind, understanding the nature and extent of their property, the natural objects of their bounty, and the disposition being made",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
@@ -1139,7 +1140,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign an affidavit before an officer authorized to administer oaths (18-C MRS § 2-504)"
+      "requirements": "Testator and witnesses sign an affidavit before an officer authorized to administer oaths (18-C MRS \u00a7 2-504)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -1147,7 +1148,7 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (18-C MRS § 2-502(b))"
+      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (18-C MRS \u00a7 2-502(b))"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -1158,15 +1159,15 @@
         "Executing a subsequent will that revokes the previous will expressly or by inconsistency",
         "Performing a revocatory act on the will (burning, tearing, canceling, obliterating, or destroying) by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "18-C MRS § 2-507"
+      "notes": "18-C MRS \u00a7 2-507"
     },
-    "special_provisions": "Maine is a separate property/common law state. Surviving spouse has an elective share right under 18-C MRS § 2-202. Maine adopted the Uniform Probate Code",
+    "special_provisions": "Maine is a separate property/common law state. Surviving spouse has an elective share right under 18-C MRS \u00a7 2-202. Maine adopted the Uniform Probate Code",
     "statute_citations": [
-      "18-C MRS § 2-501 (Who may make a will)",
-      "18-C MRS § 2-502 (Execution; witnessed or holographic wills)",
-      "18-C MRS § 2-504 (Self-proved will)",
-      "18-C MRS § 2-507 (Revocation by writing or by act)",
-      "18-C MRS § 2-202 (Elective share)"
+      "18-C MRS \u00a7 2-501 (Who may make a will)",
+      "18-C MRS \u00a7 2-502 (Execution; witnessed or holographic wills)",
+      "18-C MRS \u00a7 2-504 (Self-proved will)",
+      "18-C MRS \u00a7 2-507 (Revocation by writing or by act)",
+      "18-C MRS \u00a7 2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1187,7 +1188,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be credible witnesses",
-      "presence_rules": "Witnesses must sign in the testator's presence (Md. Code, Est. & Trusts § 4-102)",
+      "presence_rules": "Witnesses must sign in the testator's presence (Md. Code, Est. & Trusts \u00a7 4-102)",
       "interested_witness_rules": "An interested witness may serve as a witness but any bequest to that witness is void to the extent it exceeds the intestate share, unless there are two other disinterested witnesses"
     },
     "notarization": {
@@ -1200,11 +1201,11 @@
     },
     "electronic_wills": {
       "recognized": true,
-      "notes": "Maryland recognizes electronic wills with a supervising attorney requirement (Md. Code, Est. & Trusts § 4-104.2)"
+      "notes": "Maryland recognizes electronic wills with a supervising attorney requirement (Md. Code, Est. & Trusts \u00a7 4-104.2)"
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Only for members of the armed forces in actual military service or mariners at sea. Valid for one year after discharge (Md. Code, Est. & Trusts § 4-103)"
+      "notes": "Only for members of the armed forces in actual military service or mariners at sea. Valid for one year after discharge (Md. Code, Est. & Trusts \u00a7 4-103)"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -1216,16 +1217,16 @@
         "Physical act of burning, canceling, tearing, or obliterating by the testator or at the testator's direction and in the testator's presence",
         "Operation of law (divorce revokes dispositions to former spouse)"
       ],
-      "notes": "Md. Code, Est. & Trusts § 4-105"
+      "notes": "Md. Code, Est. & Trusts \u00a7 4-105"
     },
     "special_provisions": "Maryland is a separate property/common law state. Surviving spouse has a statutory share: if surviving minor children, one-third; otherwise one-half up to a statutory maximum. Maryland has a state estate tax with a $5 million exemption. Maryland does not use the standard self-proving affidavit format",
     "statute_citations": [
-      "Md. Code, Est. & Trusts § 4-101 (Who may make a will)",
-      "Md. Code, Est. & Trusts § 4-102 (Execution of wills)",
-      "Md. Code, Est. & Trusts § 4-103 (Holographic wills — military)",
-      "Md. Code, Est. & Trusts § 4-104.2 (Electronic wills)",
-      "Md. Code, Est. & Trusts § 4-105 (Revocation)",
-      "Md. Code, Est. & Trusts § 3-203 (Elective share)"
+      "Md. Code, Est. & Trusts \u00a7 4-101 (Who may make a will)",
+      "Md. Code, Est. & Trusts \u00a7 4-102 (Execution of wills)",
+      "Md. Code, Est. & Trusts \u00a7 4-103 (Holographic wills \u2014 military)",
+      "Md. Code, Est. & Trusts \u00a7 4-104.2 (Electronic wills)",
+      "Md. Code, Est. & Trusts \u00a7 4-105 (Revocation)",
+      "Md. Code, Est. & Trusts \u00a7 3-203 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1241,13 +1242,13 @@
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's conscious presence and by the testator's direction (MGL c. 190B § 2-502)"
+      "proxy_signing_rules": "Another person may sign in the testator's conscious presence and by the testator's direction (MGL c. 190B \u00a7 2-502)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent individuals",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing either the signing of the will or the testator's acknowledgment of the signature or the will",
-      "interested_witness_rules": "An interested witness does not invalidate the will under Massachusetts UPC approach (MGL c. 190B § 2-505)"
+      "interested_witness_rules": "An interested witness does not invalidate the will under Massachusetts UPC approach (MGL c. 190B \u00a7 2-505)"
     },
     "notarization": {
       "required": false,
@@ -1255,7 +1256,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign an affidavit before a notary public (MGL c. 190B § 2-504)"
+      "requirements": "Testator and witnesses sign an affidavit before a notary public (MGL c. 190B \u00a7 2-504)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -1274,15 +1275,15 @@
         "Executing a subsequent will that revokes the previous will expressly or by inconsistency",
         "Performing a revocatory act on the will by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "MGL c. 190B § 2-507"
+      "notes": "MGL c. 190B \u00a7 2-507"
     },
-    "special_provisions": "Massachusetts is a separate property/common law state. Surviving spouse has an elective share. Massachusetts adopted the Uniform Probate Code in 2012. Divorce automatically revokes dispositions to the former spouse (MGL c. 190B § 2-804)",
+    "special_provisions": "Massachusetts is a separate property/common law state. Surviving spouse has an elective share. Massachusetts adopted the Uniform Probate Code in 2012. Divorce automatically revokes dispositions to the former spouse (MGL c. 190B \u00a7 2-804)",
     "statute_citations": [
-      "MGL c. 190B § 2-501 (Who may make a will)",
-      "MGL c. 190B § 2-502 (Execution; witnessed wills)",
-      "MGL c. 190B § 2-504 (Self-proved will)",
-      "MGL c. 190B § 2-507 (Revocation)",
-      "MGL c. 190B § 2-202 (Elective share)"
+      "MGL c. 190B \u00a7 2-501 (Who may make a will)",
+      "MGL c. 190B \u00a7 2-502 (Execution; witnessed wills)",
+      "MGL c. 190B \u00a7 2-504 (Self-proved will)",
+      "MGL c. 190B \u00a7 2-507 (Revocation)",
+      "MGL c. 190B \u00a7 2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1351,18 +1352,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (Minn. Stat. § 524.2-501)",
+    "testamentary_capacity": "The testator must be of sound mind (Minn. Stat. \u00a7 524.2-501)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (Minn. Stat. § 524.2-502)"
+      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (Minn. Stat. \u00a7 524.2-502)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent individuals",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing the signing or the testator's acknowledgment of the signature or the will",
-      "interested_witness_rules": "An interested witness does not invalidate the will (Minn. Stat. § 524.2-505)"
+      "interested_witness_rules": "An interested witness does not invalidate the will (Minn. Stat. \u00a7 524.2-505)"
     },
     "notarization": {
       "required": false,
@@ -1370,7 +1371,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public. Alternatively, a will may be made self-proving by acknowledgment before a notary (Minn. Stat. § 524.2-504)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public. Alternatively, a will may be made self-proving by acknowledgment before a notary (Minn. Stat. \u00a7 524.2-504)"
     },
     "electronic_wills": {
       "recognized": true,
@@ -1389,16 +1390,16 @@
         "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
         "Performing a revocatory act by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "Minn. Stat. § 524.2-507"
+      "notes": "Minn. Stat. \u00a7 524.2-507"
     },
-    "special_provisions": "Minnesota is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (Minn. Stat. § 524.2-202). Minnesota adopted the Uniform Probate Code. Minnesota has a state estate tax with a $3 million exemption",
+    "special_provisions": "Minnesota is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (Minn. Stat. \u00a7 524.2-202). Minnesota adopted the Uniform Probate Code. Minnesota has a state estate tax with a $3 million exemption",
     "statute_citations": [
-      "Minn. Stat. § 524.2-501 (Who may make a will)",
-      "Minn. Stat. § 524.2-502 (Execution of wills)",
-      "Minn. Stat. § 524.2-504 (Self-proved wills)",
-      "Minn. Stat. § 524.2-505 (Interested witnesses)",
-      "Minn. Stat. § 524.2-507 (Revocation)",
-      "Minn. Stat. § 524.2-202 (Elective share)"
+      "Minn. Stat. \u00a7 524.2-501 (Who may make a will)",
+      "Minn. Stat. \u00a7 524.2-502 (Execution of wills)",
+      "Minn. Stat. \u00a7 524.2-504 (Self-proved wills)",
+      "Minn. Stat. \u00a7 524.2-505 (Interested witnesses)",
+      "Minn. Stat. \u00a7 524.2-507 (Revocation)",
+      "Minn. Stat. \u00a7 524.2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1419,7 +1420,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be credible witnesses at least 18 years old",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of two or more credible witnesses who shall subscribe their names in the testator's presence (Miss. Code § 91-5-1)",
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of two or more credible witnesses who shall subscribe their names in the testator's presence (Miss. Code \u00a7 91-5-1)",
       "interested_witness_rules": "A devise to an attesting witness is void unless the will is otherwise properly witnessed by two disinterested witnesses"
     },
     "notarization": {
@@ -1428,7 +1429,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary or other authorized officer (Miss. Code § 91-5-1)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary or other authorized officer (Miss. Code \u00a7 91-5-1)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -1436,25 +1437,25 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid if wholly written and signed by the testator in the testator's own handwriting. No witnesses required. Must be proven by at least two credible witnesses to the handwriting (Miss. Code § 91-5-1)"
+      "notes": "Valid if wholly written and signed by the testator in the testator's own handwriting. No witnesses required. Must be proven by at least two credible witnesses to the handwriting (Miss. Code \u00a7 91-5-1)"
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made during last sickness, at the testator's habitual residence or where they fell sick, before two competent witnesses. Value limited to $100 for personal property unless proved by two witnesses that the testator called on someone to take notice (Miss. Code § 91-5-15)"
+      "notes": "Recognized in limited circumstances: must be made during last sickness, at the testator's habitual residence or where they fell sick, before two competent witnesses. Value limited to $100 for personal property unless proved by two witnesses that the testator called on someone to take notice (Miss. Code \u00a7 91-5-15)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction and in their presence"
       ],
-      "notes": "Miss. Code § 91-5-3"
+      "notes": "Miss. Code \u00a7 91-5-3"
     },
     "special_provisions": "Mississippi is a separate property/common law state. Surviving spouse has an elective share. Mississippi's nuncupative will limit of $100 for personal property is extremely restrictive. Mississippi also has a homestead exemption for the surviving spouse",
     "statute_citations": [
-      "Miss. Code § 91-5-1 (Execution of wills; holographic wills; self-proving)",
-      "Miss. Code § 91-5-3 (Revocation)",
-      "Miss. Code § 91-5-15 (Nuncupative wills)",
-      "Miss. Code § 91-1-7 (Elective share)"
+      "Miss. Code \u00a7 91-5-1 (Execution of wills; holographic wills; self-proving)",
+      "Miss. Code \u00a7 91-5-3 (Revocation)",
+      "Miss. Code \u00a7 91-5-15 (Nuncupative wills)",
+      "Miss. Code \u00a7 91-1-7 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1465,17 +1466,17 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind and over 18 years of age (Mo. Rev. Stat. § 474.310)",
+    "testamentary_capacity": "The testator must be of sound mind and over 18 years of age (Mo. Rev. Stat. \u00a7 474.310)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's express direction (Mo. Rev. Stat. § 474.320)"
+      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's express direction (Mo. Rev. Stat. \u00a7 474.320)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses at least 18 years old",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of two or more competent witnesses who shall attest and sign in the testator's presence (Mo. Rev. Stat. § 474.320)",
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of two or more competent witnesses who shall attest and sign in the testator's presence (Mo. Rev. Stat. \u00a7 474.320)",
       "interested_witness_rules": "An interested witness does not invalidate the will but the bequest may be limited to the intestate share"
     },
     "notarization": {
@@ -1484,7 +1485,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Mo. Rev. Stat. § 474.337)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Mo. Rev. Stat. \u00a7 474.337)"
     },
     "electronic_wills": {
       "recognized": true,
@@ -1496,23 +1497,23 @@
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made during last sickness or in imminent peril of death, before two competent witnesses. For personal property only, not exceeding $500. Must be reduced to writing within 30 days and proved within 6 months (Mo. Rev. Stat. § 474.340)"
+      "notes": "Recognized in limited circumstances: must be made during last sickness or in imminent peril of death, before two competent witnesses. For personal property only, not exceeding $500. Must be reduced to writing within 30 days and proved within 6 months (Mo. Rev. Stat. \u00a7 474.340)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction and in the testator's presence"
       ],
-      "notes": "Mo. Rev. Stat. § 474.400"
+      "notes": "Mo. Rev. Stat. \u00a7 474.400"
     },
-    "special_provisions": "Missouri is a separate property/common law state. Surviving spouse has an elective share: one-third of the estate if surviving descendants, one-half if no surviving descendants (Mo. Rev. Stat. § 474.160). Missouri has no state estate or inheritance tax",
+    "special_provisions": "Missouri is a separate property/common law state. Surviving spouse has an elective share: one-third of the estate if surviving descendants, one-half if no surviving descendants (Mo. Rev. Stat. \u00a7 474.160). Missouri has no state estate or inheritance tax",
     "statute_citations": [
-      "Mo. Rev. Stat. § 474.310 (Who may make a will)",
-      "Mo. Rev. Stat. § 474.320 (Execution of wills)",
-      "Mo. Rev. Stat. § 474.337 (Self-proved wills)",
-      "Mo. Rev. Stat. § 474.340 (Nuncupative wills)",
-      "Mo. Rev. Stat. § 474.400 (Revocation)",
-      "Mo. Rev. Stat. § 474.160 (Elective share)"
+      "Mo. Rev. Stat. \u00a7 474.310 (Who may make a will)",
+      "Mo. Rev. Stat. \u00a7 474.320 (Execution of wills)",
+      "Mo. Rev. Stat. \u00a7 474.337 (Self-proved wills)",
+      "Mo. Rev. Stat. \u00a7 474.340 (Nuncupative wills)",
+      "Mo. Rev. Stat. \u00a7 474.400 (Revocation)",
+      "Mo. Rev. Stat. \u00a7 474.160 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1579,20 +1580,20 @@
     "abbreviation": "NE",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Nebraska's age of majority is 19, but the will statute specifically allows those 18 or older to make a will (Neb. Rev. Stat. § 30-2326)"
+      "exceptions": "Nebraska's age of majority is 19, but the will statute specifically allows those 18 or older to make a will (Neb. Rev. Stat. \u00a7 30-2326)"
     },
-    "testamentary_capacity": "The testator must be of sound mind (Neb. Rev. Stat. § 30-2326)",
+    "testamentary_capacity": "The testator must be of sound mind (Neb. Rev. Stat. \u00a7 30-2326)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (Neb. Rev. Stat. § 30-2327)"
+      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (Neb. Rev. Stat. \u00a7 30-2327)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent individuals",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing the signing or the testator's acknowledgment of the signature or the will",
-      "interested_witness_rules": "An interested witness does not invalidate the will (Neb. Rev. Stat. § 30-2330)"
+      "interested_witness_rules": "An interested witness does not invalidate the will (Neb. Rev. Stat. \u00a7 30-2330)"
     },
     "notarization": {
       "required": false,
@@ -1600,7 +1601,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Neb. Rev. Stat. § 30-2329)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Neb. Rev. Stat. \u00a7 30-2329)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -1608,7 +1609,7 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (Neb. Rev. Stat. § 30-2328)"
+      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (Neb. Rev. Stat. \u00a7 30-2328)"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -1619,17 +1620,17 @@
         "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
         "Performing a revocatory act by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "Neb. Rev. Stat. § 30-2331"
+      "notes": "Neb. Rev. Stat. \u00a7 30-2331"
     },
-    "special_provisions": "Nebraska is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (Neb. Rev. Stat. § 30-2313). Nebraska adopted the Uniform Probate Code. Nebraska's age of majority is 19, but the will statute specifically allows those 18+ to make a will",
+    "special_provisions": "Nebraska is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (Neb. Rev. Stat. \u00a7 30-2313). Nebraska adopted the Uniform Probate Code. Nebraska's age of majority is 19, but the will statute specifically allows those 18+ to make a will",
     "statute_citations": [
-      "Neb. Rev. Stat. § 30-2326 (Who may make a will)",
-      "Neb. Rev. Stat. § 30-2327 (Execution of wills)",
-      "Neb. Rev. Stat. § 30-2328 (Holographic wills)",
-      "Neb. Rev. Stat. § 30-2329 (Self-proved wills)",
-      "Neb. Rev. Stat. § 30-2330 (Interested witnesses)",
-      "Neb. Rev. Stat. § 30-2331 (Revocation)",
-      "Neb. Rev. Stat. § 30-2313 (Elective share)"
+      "Neb. Rev. Stat. \u00a7 30-2326 (Who may make a will)",
+      "Neb. Rev. Stat. \u00a7 30-2327 (Execution of wills)",
+      "Neb. Rev. Stat. \u00a7 30-2328 (Holographic wills)",
+      "Neb. Rev. Stat. \u00a7 30-2329 (Self-proved wills)",
+      "Neb. Rev. Stat. \u00a7 30-2330 (Interested witnesses)",
+      "Neb. Rev. Stat. \u00a7 30-2331 (Revocation)",
+      "Neb. Rev. Stat. \u00a7 30-2313 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1885,13 +1886,13 @@
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign the testator's name in the testator's presence and at the testator's direction. The testator must sign or acknowledge at the end of the will (EPTL § 3-2.1)"
+      "proxy_signing_rules": "Another person may sign the testator's name in the testator's presence and at the testator's direction. The testator must sign or acknowledge at the end of the will (EPTL \u00a7 3-2.1)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent persons at least 18 years old",
       "presence_rules": "The testator must declare to each witness that the instrument is their will. Each witness must sign within 30 days of attestation. Witnesses must sign at the testator's request",
-      "interested_witness_rules": "A bequest to an attesting witness is void unless there are two other disinterested witnesses. The interested witness may still serve as a witness, and the rest of the will remains valid (EPTL § 3-3.2)"
+      "interested_witness_rules": "A bequest to an attesting witness is void unless there are two other disinterested witnesses. The interested witness may still serve as a witness, and the rest of the will remains valid (EPTL \u00a7 3-3.2)"
     },
     "notarization": {
       "required": false,
@@ -1899,7 +1900,7 @@
     },
     "self_proving_affidavit": {
       "available": false,
-      "requirements": "New York does not use a traditional self-proving affidavit. A properly drafted attestation clause creates a presumption of due execution (EPTL § 3-2.1). SCPA § 1406 allows witnesses to submit affidavits in lieu of testimony"
+      "requirements": "New York does not use a traditional self-proving affidavit. A properly drafted attestation clause creates a presumption of due execution (EPTL \u00a7 3-2.1). SCPA \u00a7 1406 allows witnesses to submit affidavits in lieu of testimony"
     },
     "electronic_wills": {
       "recognized": true,
@@ -1908,11 +1909,11 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Only for: (1) members of the armed forces during a conflict, (2) persons serving with or accompanying armed forces, or (3) mariners at sea. Such wills expire after specific time periods (EPTL § 3-2.2)"
+      "notes": "Only for: (1) members of the armed forces during a conflict, (2) persons serving with or accompanying armed forces, or (3) mariners at sea. Such wills expire after specific time periods (EPTL \u00a7 3-2.2)"
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Only for the same limited classes as holographic wills: armed forces members and mariners at sea. Must be made during last sickness or in fear of imminent death (EPTL § 3-2.2)"
+      "notes": "Only for the same limited classes as holographic wills: armed forces members and mariners at sea. Must be made during last sickness or in fear of imminent death (EPTL \u00a7 3-2.2)"
     },
     "revocation": {
       "methods": [
@@ -1920,17 +1921,17 @@
         "Physical act of burning, tearing, cutting, canceling, obliterating by the testator or by another at the testator's direction and in their presence",
         "A later will revokes a prior will to the extent of inconsistency"
       ],
-      "notes": "EPTL § 3-4.1. Marriage does not revoke a pre-existing will, but divorce revokes provisions for the former spouse"
+      "notes": "EPTL \u00a7 3-4.1. Marriage does not revoke a pre-existing will, but divorce revokes provisions for the former spouse"
     },
-    "special_provisions": "New York is a separate property/common law state. Surviving spouse has a right of election of the greater of $50,000 or one-third of the net estate (EPTL § 5-1.1-A). New York requires the testator's signature at the end of the will — provisions after the signature are invalid. Publication requirement: testator must declare to witnesses that the instrument is their will",
+    "special_provisions": "New York is a separate property/common law state. Surviving spouse has a right of election of the greater of $50,000 or one-third of the net estate (EPTL \u00a7 5-1.1-A). New York requires the testator's signature at the end of the will \u2014 provisions after the signature are invalid. Publication requirement: testator must declare to witnesses that the instrument is their will",
     "statute_citations": [
-      "EPTL § 3-1.1 (Who may make a will)",
-      "EPTL § 3-2.1 (Execution and attestation of wills)",
-      "EPTL § 3-2.2 (Nuncupative and holographic wills)",
-      "EPTL § 3-3.2 (Interested witnesses)",
-      "EPTL § 3-4.1 (Revocation)",
-      "EPTL § 5-1.1-A (Right of election by surviving spouse)",
-      "SCPA § 1406 (Proof of wills)"
+      "EPTL \u00a7 3-1.1 (Who may make a will)",
+      "EPTL \u00a7 3-2.1 (Execution and attestation of wills)",
+      "EPTL \u00a7 3-2.2 (Nuncupative and holographic wills)",
+      "EPTL \u00a7 3-3.2 (Interested witnesses)",
+      "EPTL \u00a7 3-4.1 (Revocation)",
+      "EPTL \u00a7 5-1.1-A (Right of election by surviving spouse)",
+      "SCPA \u00a7 1406 (Proof of wills)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -1941,18 +1942,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (N.C.G.S. § 31-1)",
+    "testamentary_capacity": "The testator must be of sound mind (N.C.G.S. \u00a7 31-1)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may subscribe the testator's name in the testator's presence and at the testator's direction (N.C.G.S. § 31-3.3)"
+      "proxy_signing_rules": "Another person may subscribe the testator's name in the testator's presence and at the testator's direction (N.C.G.S. \u00a7 31-3.3)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of two witnesses, and both witnesses must sign in the presence of the testator (N.C.G.S. § 31-3.3)",
-      "interested_witness_rules": "An interested witness does not invalidate the will (N.C.G.S. § 31-10)"
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of two witnesses, and both witnesses must sign in the presence of the testator (N.C.G.S. \u00a7 31-3.3)",
+      "interested_witness_rules": "An interested witness does not invalidate the will (N.C.G.S. \u00a7 31-10)"
     },
     "notarization": {
       "required": false,
@@ -1960,7 +1961,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (N.C.G.S. § 31-11.6)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (N.C.G.S. \u00a7 31-11.6)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -1968,29 +1969,29 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid if written entirely in the testator's handwriting, signed by the testator, and found after death among the testator's valuable papers or effects, or in a safe-deposit box, or in the custody of some person with whom it was deposited for safekeeping (N.C.G.S. § 31-3.4)"
+      "notes": "Valid if written entirely in the testator's handwriting, signed by the testator, and found after death among the testator's valuable papers or effects, or in a safe-deposit box, or in the custody of some person with whom it was deposited for safekeeping (N.C.G.S. \u00a7 31-3.4)"
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made during last sickness or in imminent peril of death, before two competent witnesses. Only valid for personal property up to a limited value. Must be proved within 6 months after the speaking of the alleged testamentary words (N.C.G.S. § 31-3.5)"
+      "notes": "Recognized in limited circumstances: must be made during last sickness or in imminent peril of death, before two competent witnesses. Only valid for personal property up to a limited value. Must be proved within 6 months after the speaking of the alleged testamentary words (N.C.G.S. \u00a7 31-3.5)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction and in the testator's presence"
       ],
-      "notes": "N.C.G.S. § 31-5.1"
+      "notes": "N.C.G.S. \u00a7 31-5.1"
     },
-    "special_provisions": "North Carolina is a separate property/common law state. Surviving spouse has an elective share ranging from a life estate in one-third to an outright share depending on the number of surviving descendants (N.C.G.S. § 30-3.1). North Carolina's holographic will must be found among valuable papers — unique requirement. North Carolina has no state estate tax",
+    "special_provisions": "North Carolina is a separate property/common law state. Surviving spouse has an elective share ranging from a life estate in one-third to an outright share depending on the number of surviving descendants (N.C.G.S. \u00a7 30-3.1). North Carolina's holographic will must be found among valuable papers \u2014 unique requirement. North Carolina has no state estate tax",
     "statute_citations": [
-      "N.C.G.S. § 31-1 (Who may make a will)",
-      "N.C.G.S. § 31-3.3 (Attested written will)",
-      "N.C.G.S. § 31-3.4 (Holographic will)",
-      "N.C.G.S. § 31-3.5 (Nuncupative will)",
-      "N.C.G.S. § 31-5.1 (Revocation)",
-      "N.C.G.S. § 31-10 (Interested witnesses)",
-      "N.C.G.S. § 31-11.6 (Self-proved wills)",
-      "N.C.G.S. § 30-3.1 (Elective share)"
+      "N.C.G.S. \u00a7 31-1 (Who may make a will)",
+      "N.C.G.S. \u00a7 31-3.3 (Attested written will)",
+      "N.C.G.S. \u00a7 31-3.4 (Holographic will)",
+      "N.C.G.S. \u00a7 31-3.5 (Nuncupative will)",
+      "N.C.G.S. \u00a7 31-5.1 (Revocation)",
+      "N.C.G.S. \u00a7 31-10 (Interested witnesses)",
+      "N.C.G.S. \u00a7 31-11.6 (Self-proved wills)",
+      "N.C.G.S. \u00a7 30-3.1 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2001,18 +2002,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (NDCC § 30.1-08-01)",
+    "testamentary_capacity": "The testator must be of sound mind (NDCC \u00a7 30.1-08-01)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (NDCC § 30.1-08-02)"
+      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (NDCC \u00a7 30.1-08-02)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent individuals",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing the signing or the testator's acknowledgment",
-      "interested_witness_rules": "An interested witness does not invalidate the will (NDCC § 30.1-08-05)"
+      "interested_witness_rules": "An interested witness does not invalidate the will (NDCC \u00a7 30.1-08-05)"
     },
     "notarization": {
       "required": false,
@@ -2020,7 +2021,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (NDCC § 30.1-08-04)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (NDCC \u00a7 30.1-08-04)"
     },
     "electronic_wills": {
       "recognized": true,
@@ -2028,7 +2029,7 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (NDCC § 30.1-08-02(2))"
+      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (NDCC \u00a7 30.1-08-02(2))"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -2039,17 +2040,17 @@
         "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
         "Performing a revocatory act by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "NDCC § 30.1-08-07"
+      "notes": "NDCC \u00a7 30.1-08-07"
     },
-    "special_provisions": "North Dakota is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (NDCC § 30.1-05-02). North Dakota adopted the Uniform Probate Code. North Dakota has no state estate tax",
+    "special_provisions": "North Dakota is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (NDCC \u00a7 30.1-05-02). North Dakota adopted the Uniform Probate Code. North Dakota has no state estate tax",
     "statute_citations": [
-      "NDCC § 30.1-08-01 (Who may make a will)",
-      "NDCC § 30.1-08-02 (Execution; holographic wills)",
-      "NDCC § 30.1-08-04 (Self-proved wills)",
-      "NDCC § 30.1-08-05 (Interested witnesses)",
-      "NDCC § 30.1-08-07 (Revocation)",
+      "NDCC \u00a7 30.1-08-01 (Who may make a will)",
+      "NDCC \u00a7 30.1-08-02 (Execution; holographic wills)",
+      "NDCC \u00a7 30.1-08-04 (Self-proved wills)",
+      "NDCC \u00a7 30.1-08-05 (Interested witnesses)",
+      "NDCC \u00a7 30.1-08-07 (Revocation)",
       "NDCC Ch. 30.1-37 (Electronic wills)",
-      "NDCC § 30.1-05-02 (Elective share)"
+      "NDCC \u00a7 30.1-05-02 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2060,18 +2061,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind and memory and not under restraint (ORC § 2107.02)",
+    "testamentary_capacity": "The testator must be of sound mind and memory and not under restraint (ORC \u00a7 2107.02)",
     "writing_requirement": "Must be in writing. Can be typed or printed. Ohio does not recognize holographic wills",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's conscious presence and at the testator's express direction. The signature must be at the end of the will (ORC § 2107.03)"
+      "proxy_signing_rules": "Another person may sign in the testator's conscious presence and at the testator's express direction. The signature must be at the end of the will (ORC \u00a7 2107.03)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The will must be attested and subscribed by two or more competent witnesses in the presence of the testator (ORC § 2107.03)",
-      "interested_witness_rules": "An interested witness may serve but the bequest to that witness is void unless there are two other disinterested witnesses (ORC § 2107.15)"
+      "presence_rules": "The will must be attested and subscribed by two or more competent witnesses in the presence of the testator (ORC \u00a7 2107.03)",
+      "interested_witness_rules": "An interested witness may serve but the bequest to that witness is void unless there are two other disinterested witnesses (ORC \u00a7 2107.15)"
     },
     "notarization": {
       "required": false,
@@ -2091,23 +2092,23 @@
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made during last sickness, at the testator's habitual dwelling (or where they became sick), before two disinterested witnesses. Only for personal property. Must be reduced to writing within 10 days and proved within 6 months (ORC § 2107.60)"
+      "notes": "Recognized in limited circumstances: must be made during last sickness, at the testator's habitual dwelling (or where they became sick), before two disinterested witnesses. Only for personal property. Must be reduced to writing within 10 days and proved within 6 months (ORC \u00a7 2107.60)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction"
       ],
-      "notes": "ORC § 2107.33"
+      "notes": "ORC \u00a7 2107.33"
     },
-    "special_provisions": "Ohio is a separate property/common law state. Surviving spouse has an elective share: if one or two children or their representatives survive, one-third; if no children or their representatives survive, one-half (ORC § 2106.01). Ohio is one of the few states without a self-proving affidavit statute. Ohio requires the testator's signature at the end of the will. Ohio has a state estate tax for deaths before January 1, 2013 only",
+    "special_provisions": "Ohio is a separate property/common law state. Surviving spouse has an elective share: if one or two children or their representatives survive, one-third; if no children or their representatives survive, one-half (ORC \u00a7 2106.01). Ohio is one of the few states without a self-proving affidavit statute. Ohio requires the testator's signature at the end of the will. Ohio has a state estate tax for deaths before January 1, 2013 only",
     "statute_citations": [
-      "ORC § 2107.02 (Who may make a will)",
-      "ORC § 2107.03 (Execution of wills)",
-      "ORC § 2107.15 (Interested witnesses)",
-      "ORC § 2107.33 (Revocation)",
-      "ORC § 2107.60 (Nuncupative wills)",
-      "ORC § 2106.01 (Elective share)"
+      "ORC \u00a7 2107.02 (Who may make a will)",
+      "ORC \u00a7 2107.03 (Execution of wills)",
+      "ORC \u00a7 2107.15 (Interested witnesses)",
+      "ORC \u00a7 2107.33 (Revocation)",
+      "ORC \u00a7 2107.60 (Nuncupative wills)",
+      "ORC \u00a7 2106.01 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2118,7 +2119,7 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind and over 18 years of age (84 Okla. Stat. § 41)",
+    "testamentary_capacity": "The testator must be of sound mind and over 18 years of age (84 Okla. Stat. \u00a7 41)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -2128,7 +2129,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The will must be subscribed in the presence of the testator by two or more competent witnesses who saw the testator subscribe or heard the testator acknowledge the will (84 Okla. Stat. § 55)",
+      "presence_rules": "The will must be subscribed in the presence of the testator by two or more competent witnesses who saw the testator subscribe or heard the testator acknowledge the will (84 Okla. Stat. \u00a7 55)",
       "interested_witness_rules": "A bequest to a subscribing witness is void unless there are two other disinterested subscribing witnesses"
     },
     "notarization": {
@@ -2137,7 +2138,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (58 Okla. Stat. § 71)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (58 Okla. Stat. \u00a7 71)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2145,28 +2146,28 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid if entirely in the testator's own handwriting and signed by the testator. No witnesses required (84 Okla. Stat. § 54)"
+      "notes": "Valid if entirely in the testator's own handwriting and signed by the testator. No witnesses required (84 Okla. Stat. \u00a7 54)"
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made in the testator's last sickness or in imminent peril of death. Must be proved by two witnesses. For personal property only up to $1,000 (84 Okla. Stat. § 46)"
+      "notes": "Recognized in limited circumstances: must be made in the testator's last sickness or in imminent peril of death. Must be proved by two witnesses. For personal property only up to $1,000 (84 Okla. Stat. \u00a7 46)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction and in the testator's presence"
       ],
-      "notes": "84 Okla. Stat. § 101"
+      "notes": "84 Okla. Stat. \u00a7 101"
     },
-    "special_provisions": "Oklahoma is a separate property/common law state. Surviving spouse has an elective share: forced share of one-half of property acquired during the marriage by joint industry (84 Okla. Stat. § 44). Oklahoma has no state estate or inheritance tax",
+    "special_provisions": "Oklahoma is a separate property/common law state. Surviving spouse has an elective share: forced share of one-half of property acquired during the marriage by joint industry (84 Okla. Stat. \u00a7 44). Oklahoma has no state estate or inheritance tax",
     "statute_citations": [
-      "84 Okla. Stat. § 41 (Who may make a will)",
-      "84 Okla. Stat. § 54 (Holographic wills)",
-      "84 Okla. Stat. § 55 (Execution of attested wills)",
-      "84 Okla. Stat. § 46 (Nuncupative wills)",
-      "84 Okla. Stat. § 101 (Revocation)",
-      "58 Okla. Stat. § 71 (Self-proved wills)",
-      "84 Okla. Stat. § 44 (Elective share)"
+      "84 Okla. Stat. \u00a7 41 (Who may make a will)",
+      "84 Okla. Stat. \u00a7 54 (Holographic wills)",
+      "84 Okla. Stat. \u00a7 55 (Execution of attested wills)",
+      "84 Okla. Stat. \u00a7 46 (Nuncupative wills)",
+      "84 Okla. Stat. \u00a7 101 (Revocation)",
+      "58 Okla. Stat. \u00a7 71 (Self-proved wills)",
+      "84 Okla. Stat. \u00a7 44 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2238,14 +2239,14 @@
     "abbreviation": "PA",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Married minors may make a will regardless of age (20 Pa.C.S. § 2501)"
+      "exceptions": "Married minors may make a will regardless of age (20 Pa.C.S. \u00a7 2501)"
     },
     "testamentary_capacity": "The testator must be of sound mind: able to understand the nature of the act, know the nature and extent of their property, and know the natural objects of their bounty",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign the testator's name at the testator's direction and in the testator's presence. The signature must be at the end of the will (20 Pa.C.S. § 2502)"
+      "proxy_signing_rules": "Another person may sign the testator's name at the testator's direction and in the testator's presence. The signature must be at the end of the will (20 Pa.C.S. \u00a7 2502)"
     },
     "witness_requirements": {
       "count": 0,
@@ -2259,7 +2260,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "A will is self-proving if the testator's signature is notarized or if it includes an attestation clause with witnesses' signatures before a notary (20 Pa.C.S. § 3132.1)"
+      "requirements": "A will is self-proving if the testator's signature is notarized or if it includes an attestation clause with witnesses' signatures before a notary (20 Pa.C.S. \u00a7 3132.1)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2278,15 +2279,15 @@
         "Executing a later will or codicil that expressly or impliedly revokes the prior will",
         "Physical act (burning, tearing, canceling, obliterating, or destroying) by the testator or by another at the testator's direction"
       ],
-      "notes": "20 Pa.C.S. § 2505"
+      "notes": "20 Pa.C.S. \u00a7 2505"
     },
-    "special_provisions": "Pennsylvania is a separate property/common law state. Surviving spouse has an elective share of one-third of certain property (20 Pa.C.S. § 2203). Pennsylvania is unique in not requiring witnesses at the time of will execution — only a signature is needed. Pennsylvania has an inheritance tax (rates vary by relationship to decedent)",
+    "special_provisions": "Pennsylvania is a separate property/common law state. Surviving spouse has an elective share of one-third of certain property (20 Pa.C.S. \u00a7 2203). Pennsylvania is unique in not requiring witnesses at the time of will execution \u2014 only a signature is needed. Pennsylvania has an inheritance tax (rates vary by relationship to decedent)",
     "statute_citations": [
-      "20 Pa.C.S. § 2501 (Who may make a will)",
-      "20 Pa.C.S. § 2502 (Form and execution of wills)",
-      "20 Pa.C.S. § 2505 (Revocation)",
-      "20 Pa.C.S. § 2203 (Elective share)",
-      "20 Pa.C.S. § 3132.1 (Self-proved wills)"
+      "20 Pa.C.S. \u00a7 2501 (Who may make a will)",
+      "20 Pa.C.S. \u00a7 2502 (Form and execution of wills)",
+      "20 Pa.C.S. \u00a7 2505 (Revocation)",
+      "20 Pa.C.S. \u00a7 2203 (Elective share)",
+      "20 Pa.C.S. \u00a7 3132.1 (Self-proved wills)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2307,7 +2308,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "Witnesses must sign in the presence of the testator (R.I. Gen. Laws § 33-5-5)",
+      "presence_rules": "Witnesses must sign in the presence of the testator (R.I. Gen. Laws \u00a7 33-5-5)",
       "interested_witness_rules": "A bequest to an attesting witness is not automatically void, but may raise questions about undue influence"
     },
     "notarization": {
@@ -2316,7 +2317,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (R.I. Gen. Laws § 33-7-26)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (R.I. Gen. Laws \u00a7 33-7-26)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2328,23 +2329,23 @@
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: soldiers in actual military service and mariners at sea for personal property only (R.I. Gen. Laws § 33-5-10)"
+      "notes": "Recognized in limited circumstances: soldiers in actual military service and mariners at sea for personal property only (R.I. Gen. Laws \u00a7 33-5-10)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or someone in the testator's presence and at their direction"
       ],
-      "notes": "R.I. Gen. Laws § 33-5-11"
+      "notes": "R.I. Gen. Laws \u00a7 33-5-11"
     },
     "special_provisions": "Rhode Island is a separate property/common law state. Surviving spouse has an elective share right: life estate in all real property and an outright share of personal property. Rhode Island uses dower and curtesy rights which are largely outdated in most other states",
     "statute_citations": [
-      "R.I. Gen. Laws § 33-5-2 (Who may make a will)",
-      "R.I. Gen. Laws § 33-5-5 (Execution of wills)",
-      "R.I. Gen. Laws § 33-5-10 (Nuncupative wills)",
-      "R.I. Gen. Laws § 33-5-11 (Revocation)",
-      "R.I. Gen. Laws § 33-7-26 (Self-proved wills)",
-      "R.I. Gen. Laws § 33-25 (Elective share)"
+      "R.I. Gen. Laws \u00a7 33-5-2 (Who may make a will)",
+      "R.I. Gen. Laws \u00a7 33-5-5 (Execution of wills)",
+      "R.I. Gen. Laws \u00a7 33-5-10 (Nuncupative wills)",
+      "R.I. Gen. Laws \u00a7 33-5-11 (Revocation)",
+      "R.I. Gen. Laws \u00a7 33-7-26 (Self-proved wills)",
+      "R.I. Gen. Laws \u00a7 33-25 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2355,18 +2356,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (S.C. Code § 62-2-501)",
+    "testamentary_capacity": "The testator must be of sound mind (S.C. Code \u00a7 62-2-501)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's conscious presence and by the testator's direction (S.C. Code § 62-2-502)"
+      "proxy_signing_rules": "Another person may sign in the testator's conscious presence and by the testator's direction (S.C. Code \u00a7 62-2-502)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing the signing or the testator's acknowledgment of the signature or the will",
-      "interested_witness_rules": "An interested witness does not invalidate the will (S.C. Code § 62-2-505)"
+      "interested_witness_rules": "An interested witness does not invalidate the will (S.C. Code \u00a7 62-2-505)"
     },
     "notarization": {
       "required": false,
@@ -2374,7 +2375,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (S.C. Code § 62-2-504)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (S.C. Code \u00a7 62-2-504)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2393,16 +2394,16 @@
         "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
         "Performing a revocatory act (burning, tearing, canceling, obliterating, or destroying) by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "S.C. Code § 62-2-507"
+      "notes": "S.C. Code \u00a7 62-2-507"
     },
-    "special_provisions": "South Carolina is a separate property/common law state. Surviving spouse has an elective share of one-third of the probate estate (S.C. Code § 62-2-201). South Carolina adopted the Uniform Probate Code",
+    "special_provisions": "South Carolina is a separate property/common law state. Surviving spouse has an elective share of one-third of the probate estate (S.C. Code \u00a7 62-2-201). South Carolina adopted the Uniform Probate Code",
     "statute_citations": [
-      "S.C. Code § 62-2-501 (Who may make a will)",
-      "S.C. Code § 62-2-502 (Execution of wills)",
-      "S.C. Code § 62-2-504 (Self-proved wills)",
-      "S.C. Code § 62-2-505 (Interested witnesses)",
-      "S.C. Code § 62-2-507 (Revocation)",
-      "S.C. Code § 62-2-201 (Elective share)"
+      "S.C. Code \u00a7 62-2-501 (Who may make a will)",
+      "S.C. Code \u00a7 62-2-502 (Execution of wills)",
+      "S.C. Code \u00a7 62-2-504 (Self-proved wills)",
+      "S.C. Code \u00a7 62-2-505 (Interested witnesses)",
+      "S.C. Code \u00a7 62-2-507 (Revocation)",
+      "S.C. Code \u00a7 62-2-201 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2413,18 +2414,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (SDCL § 29A-2-501)",
+    "testamentary_capacity": "The testator must be of sound mind (SDCL \u00a7 29A-2-501)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (SDCL § 29A-2-502)"
+      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (SDCL \u00a7 29A-2-502)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent individuals",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing the signing or the testator's acknowledgment",
-      "interested_witness_rules": "An interested witness does not invalidate the will (SDCL § 29A-2-505)"
+      "interested_witness_rules": "An interested witness does not invalidate the will (SDCL \u00a7 29A-2-505)"
     },
     "notarization": {
       "required": false,
@@ -2432,7 +2433,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (SDCL § 29A-2-504)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (SDCL \u00a7 29A-2-504)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2440,7 +2441,7 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (SDCL § 29A-2-502(2))"
+      "notes": "Valid whether or not witnessed if the signature and material portions are in the testator's handwriting (SDCL \u00a7 29A-2-502(2))"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -2451,16 +2452,16 @@
         "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
         "Performing a revocatory act by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "SDCL § 29A-2-507"
+      "notes": "SDCL \u00a7 29A-2-507"
     },
-    "special_provisions": "South Dakota is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (SDCL § 29A-2-202). South Dakota adopted the Uniform Probate Code. South Dakota has no state income tax, estate tax, or inheritance tax. South Dakota is known for its favorable trust laws",
+    "special_provisions": "South Dakota is a separate property/common law state. Surviving spouse has an elective share under the augmented estate system (SDCL \u00a7 29A-2-202). South Dakota adopted the Uniform Probate Code. South Dakota has no state income tax, estate tax, or inheritance tax. South Dakota is known for its favorable trust laws",
     "statute_citations": [
-      "SDCL § 29A-2-501 (Who may make a will)",
-      "SDCL § 29A-2-502 (Execution; holographic wills)",
-      "SDCL § 29A-2-504 (Self-proved wills)",
-      "SDCL § 29A-2-505 (Interested witnesses)",
-      "SDCL § 29A-2-507 (Revocation)",
-      "SDCL § 29A-2-202 (Elective share)"
+      "SDCL \u00a7 29A-2-501 (Who may make a will)",
+      "SDCL \u00a7 29A-2-502 (Execution; holographic wills)",
+      "SDCL \u00a7 29A-2-504 (Self-proved wills)",
+      "SDCL \u00a7 29A-2-505 (Interested witnesses)",
+      "SDCL \u00a7 29A-2-507 (Revocation)",
+      "SDCL \u00a7 29A-2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2471,17 +2472,17 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (Tenn. Code § 32-1-102)",
+    "testamentary_capacity": "The testator must be of sound mind (Tenn. Code \u00a7 32-1-102)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's direction (Tenn. Code § 32-1-104)"
+      "proxy_signing_rules": "Another person may sign in the testator's presence and by the testator's direction (Tenn. Code \u00a7 32-1-104)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be credible witnesses",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of two witnesses, and the witnesses must sign in the presence of the testator (Tenn. Code § 32-1-104)",
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of two witnesses, and the witnesses must sign in the presence of the testator (Tenn. Code \u00a7 32-1-104)",
       "interested_witness_rules": "An interested witness does not invalidate the will but may create an inference of undue influence"
     },
     "notarization": {
@@ -2490,7 +2491,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Tenn. Code § 32-2-110)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Tenn. Code \u00a7 32-2-110)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2498,28 +2499,28 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid if wholly in the testator's handwriting and signed by the testator. No witnesses required at execution but must be proven by two witnesses to the handwriting (Tenn. Code § 32-1-105)"
+      "notes": "Valid if wholly in the testator's handwriting and signed by the testator. No witnesses required at execution but must be proven by two witnesses to the handwriting (Tenn. Code \u00a7 32-1-105)"
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: must be made in imminent peril of death, before two disinterested witnesses, and only for personal property not exceeding $1,000 in value. Must be reduced to writing within 20 days and submitted for probate within 6 months (Tenn. Code § 32-1-106)"
+      "notes": "Recognized in limited circumstances: must be made in imminent peril of death, before two disinterested witnesses, and only for personal property not exceeding $1,000 in value. Must be reduced to writing within 20 days and submitted for probate within 6 months (Tenn. Code \u00a7 32-1-106)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction and in the testator's presence"
       ],
-      "notes": "Tenn. Code § 32-1-201"
+      "notes": "Tenn. Code \u00a7 32-1-201"
     },
-    "special_provisions": "Tennessee is a separate property/common law state. Surviving spouse has an elective share (Tenn. Code § 31-4-101). Tennessee has no state income tax (Hall Tax repealed 2021) and no state estate tax. Tennessee allows a real property disposition separate from the will via a recorded deed",
+    "special_provisions": "Tennessee is a separate property/common law state. Surviving spouse has an elective share (Tenn. Code \u00a7 31-4-101). Tennessee has no state income tax (Hall Tax repealed 2021) and no state estate tax. Tennessee allows a real property disposition separate from the will via a recorded deed",
     "statute_citations": [
-      "Tenn. Code § 32-1-102 (Who may make a will)",
-      "Tenn. Code § 32-1-104 (Execution of attested wills)",
-      "Tenn. Code § 32-1-105 (Holographic wills)",
-      "Tenn. Code § 32-1-106 (Nuncupative wills)",
-      "Tenn. Code § 32-1-201 (Revocation)",
-      "Tenn. Code § 32-2-110 (Self-proved wills)",
-      "Tenn. Code § 31-4-101 (Elective share)"
+      "Tenn. Code \u00a7 32-1-102 (Who may make a will)",
+      "Tenn. Code \u00a7 32-1-104 (Execution of attested wills)",
+      "Tenn. Code \u00a7 32-1-105 (Holographic wills)",
+      "Tenn. Code \u00a7 32-1-106 (Nuncupative wills)",
+      "Tenn. Code \u00a7 32-1-201 (Revocation)",
+      "Tenn. Code \u00a7 32-2-110 (Self-proved wills)",
+      "Tenn. Code \u00a7 31-4-101 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2647,7 +2648,7 @@
     "abbreviation": "VT",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Emancipated minors may make a will (14 V.S.A. § 1)"
+      "exceptions": "Emancipated minors may make a will (14 V.S.A. \u00a7 1)"
     },
     "testamentary_capacity": "The testator must be of sound mind, understanding the nature and extent of their property, the natural objects of their bounty, and the disposition being made",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
@@ -2659,7 +2660,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be credible witnesses",
-      "presence_rules": "Witnesses must sign in the presence of the testator AND in the presence of each other — Vermont is one of the few states requiring witnesses to sign in each other's presence",
+      "presence_rules": "Witnesses must sign in the presence of the testator AND in the presence of each other \u2014 Vermont is one of the few states requiring witnesses to sign in each other's presence",
       "interested_witness_rules": "A bequest to an attesting witness is void unless there are two other disinterested witnesses to the will"
     },
     "notarization": {
@@ -2668,7 +2669,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (14 V.S.A. § 5)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (14 V.S.A. \u00a7 5)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2687,14 +2688,14 @@
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or someone in the testator's presence and at their direction"
       ],
-      "notes": "14 V.S.A. § 11"
+      "notes": "14 V.S.A. \u00a7 11"
     },
     "special_provisions": "Vermont is a separate property/common law state. Surviving spouse has an elective share. Vermont requires witnesses to sign in each other's presence, which is stricter than most states. Vermont also recognizes civil unions and extends spousal rights to civil union partners",
     "statute_citations": [
-      "14 V.S.A. § 1 (Who may make a will)",
-      "14 V.S.A. § 5 (Self-proved wills)",
-      "14 V.S.A. § 11 (Revocation)",
-      "14 V.S.A. § 319 (Waiver of will)"
+      "14 V.S.A. \u00a7 1 (Who may make a will)",
+      "14 V.S.A. \u00a7 5 (Self-proved wills)",
+      "14 V.S.A. \u00a7 11 (Revocation)",
+      "14 V.S.A. \u00a7 319 (Waiver of will)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2703,9 +2704,9 @@
     "abbreviation": "VA",
     "minimum_age": {
       "standard": 18,
-      "exceptions": "Emancipated minors may make a will (Va. Code § 64.2-401)"
+      "exceptions": "Emancipated minors may make a will (Va. Code \u00a7 64.2-401)"
     },
-    "testamentary_capacity": "The testator must be of sound mind (Va. Code § 64.2-401)",
+    "testamentary_capacity": "The testator must be of sound mind (Va. Code \u00a7 64.2-401)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -2715,8 +2716,8 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of two competent witnesses who are present at the same time. Witnesses must sign in the testator's presence (Va. Code § 64.2-403)",
-      "interested_witness_rules": "An interested witness does not invalidate the will (Va. Code § 64.2-404)"
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of two competent witnesses who are present at the same time. Witnesses must sign in the testator's presence (Va. Code \u00a7 64.2-403)",
+      "interested_witness_rules": "An interested witness does not invalidate the will (Va. Code \u00a7 64.2-404)"
     },
     "notarization": {
       "required": false,
@@ -2724,7 +2725,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Va. Code § 64.2-405)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Va. Code \u00a7 64.2-405)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2732,7 +2733,7 @@
     },
     "holographic_wills": {
       "recognized": true,
-      "notes": "Valid if wholly in the testator's handwriting and signed by the testator. No witnesses required at execution. Must be proved by two disinterested witnesses to the handwriting (Va. Code § 64.2-403)"
+      "notes": "Valid if wholly in the testator's handwriting and signed by the testator. No witnesses required at execution. Must be proved by two disinterested witnesses to the handwriting (Va. Code \u00a7 64.2-403)"
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -2743,16 +2744,16 @@
         "Executing a subsequent will or codicil",
         "Physical act (cutting, tearing, burning, obliterating, canceling, or destroying) by the testator or by another at the testator's direction and in the testator's presence"
       ],
-      "notes": "Va. Code § 64.2-410"
+      "notes": "Va. Code \u00a7 64.2-410"
     },
-    "special_provisions": "Virginia is a separate property/common law state. Surviving spouse has an elective share: if no surviving descendants, one-half of the augmented estate; if surviving descendants, one-third of the augmented estate (Va. Code § 64.2-302). Virginia requires witnesses to be present at the same time, which is stricter than some states",
+    "special_provisions": "Virginia is a separate property/common law state. Surviving spouse has an elective share: if no surviving descendants, one-half of the augmented estate; if surviving descendants, one-third of the augmented estate (Va. Code \u00a7 64.2-302). Virginia requires witnesses to be present at the same time, which is stricter than some states",
     "statute_citations": [
-      "Va. Code § 64.2-401 (Who may make a will)",
-      "Va. Code § 64.2-403 (Execution of wills)",
-      "Va. Code § 64.2-404 (Interested witnesses)",
-      "Va. Code § 64.2-405 (Self-proved wills)",
-      "Va. Code § 64.2-410 (Revocation)",
-      "Va. Code § 64.2-302 (Elective share)"
+      "Va. Code \u00a7 64.2-401 (Who may make a will)",
+      "Va. Code \u00a7 64.2-403 (Execution of wills)",
+      "Va. Code \u00a7 64.2-404 (Interested witnesses)",
+      "Va. Code \u00a7 64.2-405 (Self-proved wills)",
+      "Va. Code \u00a7 64.2-410 (Revocation)",
+      "Va. Code \u00a7 64.2-302 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2822,7 +2823,7 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind and not under undue influence (W. Va. Code § 41-1-1)",
+    "testamentary_capacity": "The testator must be of sound mind and not under undue influence (W. Va. Code \u00a7 41-1-1)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
@@ -2832,7 +2833,7 @@
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent witnesses",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of two competent witnesses who are present at the same time. Witnesses must sign in the testator's presence (W. Va. Code § 41-1-3)",
+      "presence_rules": "The testator must sign or acknowledge the will in the presence of two competent witnesses who are present at the same time. Witnesses must sign in the testator's presence (W. Va. Code \u00a7 41-1-3)",
       "interested_witness_rules": "A devise to an attesting witness is void unless there are two other disinterested witnesses"
     },
     "notarization": {
@@ -2841,11 +2842,11 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (W. Va. Code § 41-5-15)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (W. Va. Code \u00a7 41-5-15)"
     },
     "electronic_wills": {
       "recognized": true,
-      "notes": "West Virginia enacted electronic will provisions (W. Va. Code § 41-1-4a). Electronic wills must be in an electronic record, signed electronically by the testator, and witnessed"
+      "notes": "West Virginia enacted electronic will provisions (W. Va. Code \u00a7 41-1-4a). Electronic wills must be in an electronic record, signed electronically by the testator, and witnessed"
     },
     "holographic_wills": {
       "recognized": true,
@@ -2853,24 +2854,24 @@
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Recognized in limited circumstances: only for military personnel in actual military service and mariners at sea (W. Va. Code § 41-1-5)"
+      "notes": "Recognized in limited circumstances: only for military personnel in actual military service and mariners at sea (W. Va. Code \u00a7 41-1-5)"
     },
     "revocation": {
       "methods": [
         "Executing a subsequent will or codicil",
         "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction and in the testator's presence"
       ],
-      "notes": "W. Va. Code § 41-1-7"
+      "notes": "W. Va. Code \u00a7 41-1-7"
     },
     "special_provisions": "West Virginia is a separate property/common law state. Surviving spouse has an elective share. West Virginia requires witnesses to be present at the same time",
     "statute_citations": [
-      "W. Va. Code § 41-1-1 (Who may make a will)",
-      "W. Va. Code § 41-1-3 (Execution of wills)",
-      "W. Va. Code § 41-1-4a (Electronic wills)",
-      "W. Va. Code § 41-1-5 (Nuncupative wills)",
-      "W. Va. Code § 41-1-7 (Revocation)",
-      "W. Va. Code § 41-5-15 (Self-proved wills)",
-      "W. Va. Code § 42-3-1 (Elective share)"
+      "W. Va. Code \u00a7 41-1-1 (Who may make a will)",
+      "W. Va. Code \u00a7 41-1-3 (Execution of wills)",
+      "W. Va. Code \u00a7 41-1-4a (Electronic wills)",
+      "W. Va. Code \u00a7 41-1-5 (Nuncupative wills)",
+      "W. Va. Code \u00a7 41-1-7 (Revocation)",
+      "W. Va. Code \u00a7 41-5-15 (Self-proved wills)",
+      "W. Va. Code \u00a7 42-3-1 (Elective share)"
     ],
     "last_researched": "2026-03-24"
   },
@@ -2881,18 +2882,18 @@
       "standard": 18,
       "exceptions": "No statutory exceptions for minors"
     },
-    "testamentary_capacity": "The testator must be of sound mind (Wis. Stat. § 853.01)",
+    "testamentary_capacity": "The testator must be of sound mind (Wis. Stat. \u00a7 853.01)",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (Wis. Stat. § 853.03)"
+      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction (Wis. Stat. \u00a7 853.03)"
     },
     "witness_requirements": {
       "count": 2,
       "qualifications": "Must be competent individuals",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing the signing or the testator's acknowledgment. Wisconsin enacted remote witnessing via attorney-supervised audiovisual communication in 2024 (2023 Act 130)",
-      "interested_witness_rules": "An interested witness does not invalidate the will (Wis. Stat. § 853.07)"
+      "interested_witness_rules": "An interested witness does not invalidate the will (Wis. Stat. \u00a7 853.07)"
     },
     "notarization": {
       "required": false,
@@ -2900,7 +2901,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Wis. Stat. § 853.04)"
+      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public (Wis. Stat. \u00a7 853.04)"
     },
     "electronic_wills": {
       "recognized": false,
@@ -2919,16 +2920,16 @@
         "Executing a subsequent will that revokes the prior will expressly or by inconsistency",
         "Performing a revocatory act by the testator or by another in the testator's conscious presence and at their direction"
       ],
-      "notes": "Wis. Stat. § 853.11"
+      "notes": "Wis. Stat. \u00a7 853.11"
     },
-    "special_provisions": "Wisconsin is a COMMUNITY PROPERTY state — the only one in the Midwest. It adopted the Uniform Marital Property Act (Wis. Stat. Ch. 766). Surviving spouse has an elective share of the augmented deferred marital property estate (Wis. Stat. § 861.02). Wisconsin enacted remote audiovisual witnessing supervised by an attorney in 2024 (2023 Act 130)",
+    "special_provisions": "Wisconsin is a COMMUNITY PROPERTY state \u2014 the only one in the Midwest. It adopted the Uniform Marital Property Act (Wis. Stat. Ch. 766). Surviving spouse has an elective share of the augmented deferred marital property estate (Wis. Stat. \u00a7 861.02). Wisconsin enacted remote audiovisual witnessing supervised by an attorney in 2024 (2023 Act 130)",
     "statute_citations": [
-      "Wis. Stat. § 853.01 (Who may make a will)",
-      "Wis. Stat. § 853.03 (Execution of wills)",
-      "Wis. Stat. § 853.04 (Self-proved wills)",
-      "Wis. Stat. § 853.07 (Interested witnesses)",
-      "Wis. Stat. § 853.11 (Revocation)",
-      "Wis. Stat. § 861.02 (Elective share)",
+      "Wis. Stat. \u00a7 853.01 (Who may make a will)",
+      "Wis. Stat. \u00a7 853.03 (Execution of wills)",
+      "Wis. Stat. \u00a7 853.04 (Self-proved wills)",
+      "Wis. Stat. \u00a7 853.07 (Interested witnesses)",
+      "Wis. Stat. \u00a7 853.11 (Revocation)",
+      "Wis. Stat. \u00a7 861.02 (Elective share)",
       "Wis. Stat. Ch. 766 (Marital Property Act)"
     ],
     "last_researched": "2026-03-24"
