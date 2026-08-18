@@ -23,7 +23,7 @@ export default function BlogIndex() {
   );
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
       <p className="iha-caps">Folio</p>
       <h1 className="mt-3 font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
         Notes on wills and estate planning.

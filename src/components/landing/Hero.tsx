@@ -16,7 +16,7 @@ export default function Hero() {
       />
 
       {/* Top editorial rule + section marker */}
-      <div className="relative max-w-5xl mx-auto px-6 pt-10">
+      <div className="relative max-w-6xl mx-auto px-6 pt-10">
         <div className="flex items-center gap-4">
           <span className="iha-caps">Est. a quiet afternoon</span>
           <hr className="iha-rule flex-1" />
@@ -89,7 +89,7 @@ export default function Hero() {
       </div>
 
       {/* Closing rule into next section */}
-      <div className="relative max-w-5xl mx-auto px-6 pb-8">
+      <div className="relative max-w-6xl mx-auto px-6 pb-8">
         <hr className="iha-rule" />
       </div>
     </section>

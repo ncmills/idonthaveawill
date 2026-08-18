@@ -23,7 +23,7 @@ export default function EstatePlanningHub() {
   const states = getAllStates();
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-16">
+    <div className="max-w-6xl mx-auto px-4 py-16">
       <h1 className="font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
         Estate Planning by State
       </h1>
