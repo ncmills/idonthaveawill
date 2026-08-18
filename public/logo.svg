@@ -1,22 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 60" fill="none" role="img" aria-label="idonthaveawill.com">
-  <!-- Wordmark set in Lora-equivalent serif with oversized sage period -->
-  <!-- Fallback-friendly: uses system serif stack if Lora unavailable -->
-  <text x="0" y="42"
-    font-family="Lora, 'Iowan Old Style', 'Hoefler Text', Georgia, 'Times New Roman', serif"
-    font-weight="500"
-    font-size="38"
-    letter-spacing="-0.5"
-    fill="#1a1815">idonthaveawill</text>
-  <!-- Oversized sage period (1.3x size, sage color) -->
-  <text x="256" y="46"
-    font-family="Lora, 'Iowan Old Style', 'Hoefler Text', Georgia, 'Times New Roman', serif"
-    font-weight="600"
-    font-size="50"
-    fill="#7a8a6f">.</text>
-  <text x="268" y="42"
-    font-family="Lora, 'Iowan Old Style', 'Hoefler Text', Georgia, 'Times New Roman', serif"
-    font-weight="500"
-    font-size="38"
-    letter-spacing="-0.5"
-    fill="#1a1815">com</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="idonthaveawill.com">
+  <title>idonthaveawill.com</title>
+  <rect width="512" height="512" rx="120" fill="#7a8a6f"/>
+  <g fill="#f8f3ea">
+    <rect x="131.2" y="136" width="172.8" height="44.8" rx="11.2"/>
+    <rect x="193.6" y="136" width="48" height="240"/>
+    <rect x="131.2" y="331.2" width="172.8" height="44.8" rx="11.2"/>
+    <circle cx="376" cy="345.6" r="37.6"/>
+  </g>
 </svg>

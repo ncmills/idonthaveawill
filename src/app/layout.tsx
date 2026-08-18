@@ -40,9 +40,17 @@ export const metadata: Metadata = {
   },
   description:
     "A free self-help tool to draft a valid will in about 10 minutes. All 50 states + DC. No account, no cost — your data never leaves your browser.",
+  // Icons come from the app-dir metadata files (icon.svg, favicon.ico,
+  // apple-icon.png) so every surface renders the same "I." mark. An explicit
+  // `icons` block here would override them — and the one it replaces pointed
+  // `apple` at an SVG, which iOS does not support, so the home-screen icon
+  // silently fell back to a screenshot of the page.
   icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
   },
   alternates: {
     canonical: "https://idonthaveawill.com",
