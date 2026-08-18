@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildOpenGraph } from "@/lib/og";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllStates } from "@/lib/stateData";
@@ -59,10 +60,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://idonthaveawill.com/will-requirements/${slug}`,
     },
-    openGraph: {
+    openGraph: buildOpenGraph({
       title: `${state.state} Will Requirements`,
       description,
-    },
+      path: `/will-requirements/${slug}`,
+    }),
   };
 }
 

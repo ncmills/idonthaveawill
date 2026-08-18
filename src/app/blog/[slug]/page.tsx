@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildOpenGraph } from "@/lib/og";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
@@ -21,14 +22,14 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     alternates: { canonical: `https://idonthaveawill.com/blog/${post.slug}` },
-    openGraph: {
+    openGraph: buildOpenGraph({
       title: post.title,
       description: post.description,
-      url: `https://idonthaveawill.com/blog/${post.slug}`,
+      path: `/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
-    },
+    }),
   };
 }
 
