@@ -51,6 +51,12 @@ export const metadata: Metadata = {
       { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
       { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
     ],
+    // Declaring `icon` here stops Next auto-detecting the app-dir icon files,
+    // and that suppression is not scoped to `icon` — it drops `apple` too. So
+    // src/app/apple-icon.png shipped and then went unlinked, and iOS, which
+    // falls back to looking for /apple-touch-icon.png at the root, found
+    // nothing and used a screenshot of the page instead.
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
   },
   alternates: {
     canonical: "https://idonthaveawill.com",
