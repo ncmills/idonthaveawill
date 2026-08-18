@@ -1,3 +1,6 @@
 {
-  "ignoreCommand": "git diff HEAD^ HEAD --quiet -- ':(exclude)*.md' ':(exclude)docs/' ':(exclude)*.txt' && exit 0 || exit 1"
+  "ignoreCommand": "git diff HEAD^ HEAD --quiet -- ':(exclude)*.md' ':(exclude)docs/' ':(exclude)*.txt' && exit 0 || exit 1",
+  "github": {
+    "silent": true
+  }
 }
