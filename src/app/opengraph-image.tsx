@@ -6,6 +6,22 @@ export const alt = "idonthaveawill.com — A free tool to help you draft a simpl
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+// The "I." mark, byte-identical in geometry to src/app/icon.svg and
+// src/components/shared/Brand.tsx. Inlined because Satori renders this card on
+// the edge with no filesystem and no stylesheet.
+const MARK =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="44" height="44">' +
+      '<rect width="32" height="32" rx="7.5" fill="#7a8a6f"/>' +
+      '<g fill="#f8f3ea">' +
+      '<rect x="8.2" y="8.5" width="10.8" height="2.8" rx="0.7"/>' +
+      '<rect x="12.1" y="8.5" width="3" height="15"/>' +
+      '<rect x="8.2" y="20.7" width="10.8" height="2.8" rx="0.7"/>' +
+      '<circle cx="23.5" cy="21.6" r="2.35"/>' +
+      "</g></svg>",
+  );
+
 export default async function Image() {
   return new ImageResponse(
     (
@@ -35,7 +51,12 @@ export default async function Image() {
             fontWeight: 500,
           }}
         >
-          <span>idonthaveawill<span style={{ color: "#7a8a6f", fontFamily: "Georgia, serif", fontSize: "26px", fontWeight: 700 }}>.</span>com</span>
+          <img width={44} height={44} src={MARK} alt="" />
+          {/* One size, one baseline. The oversized Georgia period the header
+              uses does not survive Satori — it dropped below the baseline and
+              opened a gap mid-word. The mark beside it already carries the
+              full stop. */}
+          <span>idonthaveawill<span style={{ color: "#7a8a6f" }}>.</span>com</span>
           <div style={{ flex: 1, height: "1px", background: "#d9d1be" }} />
           <span>Vol. I · Plain Language</span>
         </div>
@@ -47,15 +68,15 @@ export default async function Image() {
             flexDirection: "column",
             justifyContent: "center",
             flex: 1,
-            marginTop: "48px",
+            marginTop: "40px",
           }}
         >
           <div
             style={{
-              fontSize: "108px",
+              fontSize: "84px",
               color: "#1a1815",
-              lineHeight: 1.04,
-              letterSpacing: "-2px",
+              lineHeight: 1.12,
+              letterSpacing: "-1.5px",
               fontWeight: 600,
             }}
           >
@@ -63,13 +84,13 @@ export default async function Image() {
           </div>
           <div
             style={{
-              fontSize: "108px",
+              fontSize: "84px",
               color: "#1a1815",
-              lineHeight: 1.04,
-              letterSpacing: "-2px",
+              lineHeight: 1.12,
+              letterSpacing: "-1.5px",
               fontStyle: "italic",
               fontWeight: 500,
-              marginTop: "4px",
+              marginTop: "2px",
             }}
           >
             Let&apos;s Fix That.

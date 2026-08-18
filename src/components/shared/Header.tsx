@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { Wordmark } from "./Brand";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,18 +23,7 @@ export default function Header() {
     <header className="no-print bg-[var(--color-cream)] border-b border-[var(--color-rule)]">
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link href="/" className="group" aria-label="idonthaveawill.com — home">
-          <span className="font-[family-name:var(--font-display)] text-[21px] md:text-[22px] font-medium text-[var(--color-ink)] tracking-[-0.01em] leading-none">
-            idonthaveawill
-            <span
-              className="inline-block text-[var(--color-sage)] font-semibold"
-              style={{ fontSize: "1.3em", lineHeight: 0, verticalAlign: "baseline" }}
-              aria-hidden="true"
-            >
-              .
-            </span>
-            <span className="sr-only">.</span>
-            com
-          </span>
+          <Wordmark className="text-[21px] md:text-[22px]" size={22} markSize={27} />
         </Link>
 
         <div className="flex items-center gap-7">

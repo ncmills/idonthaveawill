@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="idonthaveawill.com">
+  <!--
+    The "I." mark (src/components/shared/Brand.tsx is the source of truth).
+    The first word of the sentence the brand is named after, and its full stop.
+    Hexes are literal: a favicon is served standalone with no stylesheet, so it
+    cannot read the palette's custom properties. Cream on the sage plate, so it
+    holds on a light AND a dark browser tab — the outlined page it replaces was
+    a near-black stroke on transparent and vanished on dark.
+  -->
+  <rect width="32" height="32" rx="7.5" fill="#7a8a6f"/>
+  <g fill="#f8f3ea">
+    <rect x="8.2" y="8.5" width="10.8" height="2.8" rx="0.7"/>
+    <rect x="12.1" y="8.5" width="3" height="15"/>
+    <rect x="8.2" y="20.7" width="10.8" height="2.8" rx="0.7"/>
+    <circle cx="23.5" cy="21.6" r="2.35"/>
+  </g>
+</svg>
