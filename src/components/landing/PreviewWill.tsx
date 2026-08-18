@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function PreviewWill() {
   return (
     <section className="py-24 md:py-32 bg-[var(--color-cream)]">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-[1fr_1.35fr] gap-12 md:gap-16 items-start">
           {/* Editorial caption */}
           <div className="md:sticky md:top-24">

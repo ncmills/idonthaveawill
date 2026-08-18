@@ -34,7 +34,7 @@ const features = [
 export default function Features() {
   return (
     <section className="py-24 md:py-32 bg-[var(--color-cream)]">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center">
           <p className="iha-caps">On the imprint</p>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">

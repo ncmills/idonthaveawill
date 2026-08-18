@@ -8,7 +8,7 @@ const stats = [
 export default function TrustSignals() {
   return (
     <section className="bg-[var(--color-cream)] py-10 md:py-14">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {stats.map((s, i) => (
             <div
