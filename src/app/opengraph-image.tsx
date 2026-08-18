@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { loadOgFonts } from "@/lib/og-fonts";
 
 export const runtime = "edge";
 
@@ -23,6 +24,8 @@ const MARK =
   );
 
 export default async function Image() {
+  const fonts = await loadOgFonts();
+
   return new ImageResponse(
     (
       <div
@@ -33,7 +36,7 @@ export default async function Image() {
           display: "flex",
           flexDirection: "column",
           padding: "80px 96px",
-          fontFamily: "Georgia, 'Iowan Old Style', serif",
+          fontFamily: "Lora",
           position: "relative",
         }}
       >
@@ -47,7 +50,7 @@ export default async function Image() {
             textTransform: "uppercase",
             letterSpacing: "0.22em",
             color: "#5a544d",
-            fontFamily: "system-ui, sans-serif",
+            fontFamily: "Inter",
             fontWeight: 500,
           }}
         >
@@ -80,7 +83,7 @@ export default async function Image() {
               fontWeight: 600,
             }}
           >
-            You Don&apos;t Have a Will.
+            You Don’t Have a Will.
           </div>
           <div
             style={{
@@ -93,7 +96,7 @@ export default async function Image() {
               marginTop: "2px",
             }}
           >
-            Let&apos;s Fix That.
+            Let’s Fix That.
           </div>
 
           <div
@@ -102,7 +105,7 @@ export default async function Image() {
               color: "#5a544d",
               marginTop: "48px",
               fontStyle: "italic",
-              fontFamily: "Georgia, serif",
+              fontFamily: "Lora",
             }}
           >
             A free tool. Drafts prepared for all fifty states.
@@ -119,7 +122,7 @@ export default async function Image() {
             textTransform: "uppercase",
             letterSpacing: "0.22em",
             color: "#5a544d",
-            fontFamily: "system-ui, sans-serif",
+            fontFamily: "Inter",
             fontWeight: 500,
             marginTop: "32px",
           }}
@@ -133,6 +136,6 @@ export default async function Image() {
         </div>
       </div>
     ),
-    { ...size }
+    { ...size, fonts }
   );
 }
