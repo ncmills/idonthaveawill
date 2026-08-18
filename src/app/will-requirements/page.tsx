@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildOpenGraph } from "@/lib/og";
 import Link from "next/link";
 import { getAllStates } from "@/lib/stateData";
 import { getStateUrl } from "@/lib/stateSlugs";
@@ -10,11 +11,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://idonthaveawill.com/will-requirements",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Will Requirements by State (50 States + DC)",
     description:
       "Which states require a will to be notarized? Only Louisiana. Full breakdown of witness counts, holographic wills, and electronic wills for every state.",
-  },
+    path: "/will-requirements",
+  }),
 };
 
 export default function WillRequirementsHub() {

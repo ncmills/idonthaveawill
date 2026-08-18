@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildOpenGraph } from "@/lib/og";
 import Link from "next/link";
 import { getAllStates } from "@/lib/stateData";
 import { getStateUrl } from "@/lib/stateSlugs";
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Open dataset on U.S. will requirements: witnesses, notarization, holographic wills, electronic wills, self-proving affidavits — every state ranked side-by-side, with statute citations. Free to cite or embed.",
   alternates: { canonical: PAGE_URL },
-  openGraph: {
+  openGraph: buildOpenGraph({
     type: "article",
     url: PAGE_URL,
     title: "2026 State-by-State Will Laws Report",
     description:
       "Open dataset on U.S. will requirements — every state, every rule, with statute citations.",
-  },
+  }),
 };
 
 export default function StateWillLawsReportPage() {

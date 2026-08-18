@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildOpenGraph } from "@/lib/og";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/lib/blog-posts";
 
@@ -7,11 +8,12 @@ export const metadata: Metadata = {
   description:
     "Plain-English guides to writing a will, intestate succession, probate, and state-specific requirements. Free will drafting tool included.",
   alternates: { canonical: "https://idonthaveawill.com/blog" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Blog — I Don't Have a Will",
     description:
       "Plain-English guides to writing a will, intestate succession, probate, and state-specific requirements.",
-  },
+    path: "/blog",
+  }),
 };
 
 export default function BlogIndex() {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildOpenGraph } from "@/lib/og";
 import Link from "next/link";
 import { getAllStates } from "@/lib/stateData";
 import { stateToSlug } from "@/lib/stateSlugs";
@@ -10,11 +11,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://idonthaveawill.com/estate-planning",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Estate Planning by State — All 50 States + DC",
     description:
       "Everything you need to know about estate planning in your state. Start with a free will.",
-  },
+    path: "/estate-planning",
+  }),
 };
 
 export default function EstatePlanningHub() {
