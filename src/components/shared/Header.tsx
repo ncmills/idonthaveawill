@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className="no-print bg-[var(--color-cream)] border-b border-[var(--color-rule)]">
-      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div className="px-6 sm:px-10 lg:px-20 py-5 flex items-center justify-between">
         <Link href="/" className="group" aria-label="idonthaveawill.com — home">
           <Wordmark className="text-[21px] md:text-[22px]" size={22} markSize={27} />
         </Link>
