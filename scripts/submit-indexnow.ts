@@ -1,5 +1,7 @@
 // Post-deploy IndexNow bulk submit.
 
+import { shouldSubmit } from "./indexnow-gate";
+
 const INDEXNOW_KEY = "f38d87e351594c1caabf0ef7452a4e74";
 const INDEXNOW_HOST = "idonthaveawill.com";
 const INDEXNOW_KEY_LOCATION = `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`;
@@ -47,6 +49,12 @@ async function submit(urlList: string[]): Promise<void> {
 }
 
 async function main(): Promise<void> {
+  const gate = shouldSubmit(process.env, process.argv.slice(2));
+  if (!gate.run) {
+    console.log(`[indexnow] skipped — ${gate.reason}`);
+    return;
+  }
+
   console.log(`[indexnow] fetching ${SITEMAP_URL}`);
   const urls = await fetchUrls(SITEMAP_URL);
   console.log(`[indexnow] parsed ${urls.length} URLs`);
