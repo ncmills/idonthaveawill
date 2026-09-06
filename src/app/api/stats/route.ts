@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
 import type { AnonymizedStats } from "@/lib/statsSchema";
 import { validateNoPI } from "@/lib/statsSchema";
+import { isTestRequest } from "@/lib/test-request";
 
 export async function POST(request: Request) {
   try {
@@ -16,6 +17,12 @@ export async function POST(request: Request) {
     }
 
     const { error } = await supabaseAdmin.from("will_stats").insert({
+      // Stamped, never skipped. will_stats is an anonymized RESEARCH dataset —
+      // harness rows do not merely add noise, they bias the distribution the table
+      // exists to describe, and nothing downstream could tell them apart.
+      // The header is the only available signal: this payload carries no email by
+      // design (validateNoPI above rejects anything that looks like PII).
+      is_test: isTestRequest(request),
       state: stats.state,
       marital_status: stats.marital_status,
       has_children: stats.has_children,
