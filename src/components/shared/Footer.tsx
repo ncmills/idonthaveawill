@@ -21,6 +21,7 @@ import { NetworkFooter } from "@/components/NetworkFooter";
    session, so a visitor arriving from the footer would land on an empty page. */
 const START: { href: string; label: string }[] = [
   { href: "/will-requirements", label: "Will requirements by state" },
+  { href: "/will-rules", label: "Will rules by topic" },
   { href: "/estate-planning", label: "Estate planning guides" },
 ];
 

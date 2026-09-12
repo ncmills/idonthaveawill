@@ -219,7 +219,12 @@ export default function WillRequirementsHub() {
         Quick Comparison
       </h2>
       <p className="mt-2 text-[var(--color-ink-soft)] text-sm">
-        Key requirements at a glance across all jurisdictions.
+        Key requirements at a glance across all jurisdictions. Reading down one
+        column rather than across a row?{" "}
+        <Link href="/will-rules" className="text-[var(--color-accent)] hover:underline">
+          Will rules by topic
+        </Link>{" "}
+        takes each rule in turn and lists the jurisdictions on either side of it.
       </p>
       <div className="mt-4 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
         <p className="text-xs text-[var(--color-ink-soft)] mb-2 sm:hidden">Swipe to see all columns &rarr;</p>
