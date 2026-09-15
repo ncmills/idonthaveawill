@@ -63,7 +63,7 @@
       "standard": 18,
       "exceptions": null
     },
-    "testamentary_capacity": "An individual must be 18 or more years of age and of sound mind (AS 13.12.501). The statute does not further define 'sound mind'; courts apply the common-law elements: the testator must understand the nature and extent of their property, know the natural objects of their bounty, and understand the nature and effect of the disposition they are making.",
+    "testamentary_capacity": "An individual 18 or more years of age who is of sound mind may make a will (AS 13.12.501). The statute does not further define 'sound mind'. The Alaska Supreme Court applies a three-element test: whether the testator understood the nature and extent of his or her property, the natural or proper objects of his or her bounty, and the nature of his or her testamentary act. A deficiency on any one of the three elements invalidates the will (In re Estate of Kottke, No. S-8932 (Alaska 2000), citing Paskvan v. Mesich, 455 P.2d 229 (Alaska 1969); Crittell v. Bingo, No. S-9468 (Alaska 2001), quoting In re Estate of Kraft, 374 P.2d 413, 416 (Alaska 1962)).",
     "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten. Alaska SB 90 (32nd Legislature, 2021\u20132022) proposed electronic will provisions but stalled in committee and did not pass; electronic wills are not currently authorized under AS 13.12.",
     "signature_requirement": {
       "testator_must_sign": true,
