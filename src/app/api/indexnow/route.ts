@@ -36,21 +36,30 @@ export async function POST(req: NextRequest) {
     batches.push(urls.slice(i, i + 500));
   }
 
-  const results = [];
-  for (const endpoint of ENDPOINTS) {
-    for (const batch of batches) {
-      const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json; charset=utf-8" },
-        body: JSON.stringify({
-          host: "idonthaveawill.com",
-          key: INDEXNOW_KEY,
-          keyLocation: `${SITE_HOST}/${INDEXNOW_KEY}.txt`,
-          urlList: batch,
-        }),
-      });
-      results.push({ endpoint, status: res.status, count: batch.length });
-    }
+  const settled = await Promise.allSettled(
+    ENDPOINTS.flatMap((endpoint) =>
+      batches.map(async (batch) => {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json; charset=utf-8" },
+          body: JSON.stringify({
+            host: "idonthaveawill.com",
+            key: INDEXNOW_KEY,
+            keyLocation: `${SITE_HOST}/${INDEXNOW_KEY}.txt`,
+            urlList: batch,
+          }),
+        });
+        return { endpoint, status: res.status, count: batch.length };
+      })
+    )
+  );
+
+  // Same order as the sequential fan-out, and the same failure: the first
+  // submission that would have thrown still throws.
+  const results: { endpoint: string; status: number; count: number }[] = [];
+  for (const outcome of settled) {
+    if (outcome.status === "rejected") throw outcome.reason;
+    results.push(outcome.value);
   }
 
   return NextResponse.json({
