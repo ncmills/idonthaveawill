@@ -68,7 +68,7 @@
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
-      "proxy_signing_rules": "Another individual may sign in the testator's conscious presence and by the testator's direction"
+      "proxy_signing_rules": "Another individual may sign in the testator's name, in the testator's conscious presence and by the testator's direction (AS 13.12.502(a)(2))"
     },
     "witness_requirements": {
       "count": 2,
@@ -133,15 +133,15 @@
       "count": 2,
       "qualifications": "Must be generally competent to be a witness (ARS 14-2505(A)). No minimum age is stated in the witness statute; the 18-year-old and sound-mind requirements in ARS 14-2501 apply to the testator, not witnesses. For wills executed on or after October 1, 2019, interested witnesses (devisees or persons related by blood, marriage, or adoption to a devisee) are disqualified unless the will is self-proved under ARS 14-2504 or 14-2519 (ARS 14-2505(B))",
       "presence_rules": "Each witness must sign within a reasonable time after witnessing either the signing of the will or the testator's acknowledgment of that signature or acknowledgment of the will (ARS 14-2502(A)(3))",
-      "interested_witness_rules": "For wills executed on or after October 1, 2019, interested witnesses are DISQUALIFIED: a person may not act as a witness if that person is a devisee under the will or is related by blood, marriage, or adoption to a devisee, unless the will is made self-proved as prescribed in ARS 14-2504 or 14-2519. The pre-2019 rule permitting interested witnesses was repealed by HB2054 (54th Legislature, 1st Regular Session, Chapter 46, effective October 1, 2019)"
+      "interested_witness_rules": "For any will executed on or after October 1, 2019, interested witnesses are DISQUALIFIED: unless the will is made self-proved as prescribed in ARS 14-2504 or 14-2519, a person may not act as a witness to a will if that person is a devisee under that will or is related by blood, marriage or adoption to a devisee under that will (ARS 14-2505(B)). 'Devisee' means a person designated in the will to receive a devise or a beneficiary of a trust designated in the will to receive a devise (ARS 14-2505(C)). The prior ARS 14-2505(B) ('The signing of a will by an interested witness does not invalidate the will or any provision of it.') was struck when Laws 2019, Ch. 46 (HB2054, 54th Legislature, 1st Regular Session), Sec. 3 amended ARS 14-2505; the act by its terms 'applies retroactively to from and after June 30, 2019' (Sec. 11), and October 1, 2019 is the will-execution cutoff stated in ARS 14-2505(B)."
     },
     "notarization": {
       "required": false,
-      "notes": "Not required for validity. Required for self-proving affidavit"
+      "notes": "Not required for validity: ARS 14-2502(A) requires a paper will to be in writing, signed by the testator (or by another person in the testator's conscious presence and at the testator's direction), and signed by at least two witnesses. No notary or officer is required. Making a will self-proved (optional) under ARS 14-2504(A)/(B) requires the testator's acknowledgment and the witnesses' affidavits to be made before an officer authorized to administer oaths under the laws of the state where execution (or acknowledgment) occurs, evidenced by the officer's certificate under official seal. ARS 14-2504(C): a signature on a self-proving affidavit attached to a will is considered a signature on the will, if necessary to prove the will's due execution."
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "The testator and witnesses must sign an affidavit before an officer authorized to administer oaths under the laws of the state in which execution occurs, evidenced by the officer's certificate under official seal. A will may be made self-proved simultaneously with execution (ARS 14-2504(A)) or at any time after execution (ARS 14-2504(B)). A signature affixed to the self-proving affidavit attached to the will is considered a signature affixed to the will if necessary to prove due execution (ARS 14-2504(C)). The statute does not limit the qualifying officer to a notary public."
+      "requirements": "Simultaneous self-proving (ARS 14-2504(A)): a will may be simultaneously executed, attested and made self-proved by the testator's acknowledgment and the witnesses' affidavits, made before an officer authorized to administer oaths under the laws of the state in which execution occurs and evidenced by the officer's certificate, under official seal, in substantially the statutory form. Later self-proving (ARS 14-2504(B)): an attested will may be made self-proved at any time after its execution by the testator's acknowledgment and the witnesses' affidavits, each made before an officer authorized to administer oaths under the laws of the state in which the acknowledgment occurs, evidenced by the officer's certificate, under the official seal, attached or annexed to the will in substantially the statutory form. A signature affixed to a self-proving affidavit attached to a will is considered a signature affixed to the will, if necessary to prove the will's due execution (ARS 14-2504(C)). The statute does not limit the qualifying officer to a notary public."
     },
     "electronic_wills": {
       "recognized": true,
@@ -174,7 +174,7 @@
       "ARS 14-2519 (Self-proved electronic will)",
       "ARS 14-2520 (Qualified custodian)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-09-18"
   },
   {
     "state": "Arkansas",
@@ -220,9 +220,9 @@
       "methods": [
         "Executing a subsequent will that revokes the prior will or part expressly or by inconsistency",
         "Physical destruction (burning, tearing, canceling, obliterating, or destroying) with the intent and for the purpose of revoking, by the testator or by another person in the testator's presence and by the testator's direction",
-        "Divorce or annulment of the testator's marriage revokes all provisions in the will in favor of the divorced spouse"
+        "If, after making a will, the testator is divorced or the marriage of the testator is annulled, all provisions in the will in favor of the testator's spouse so divorced are revoked"
       ],
-      "notes": "Ark. Code \u00a7 28-25-109. No other change in circumstances, condition, or marital status revokes a will (subject to \u00a7 28-39-401 on pretermitted heirs). Partial revocation does not require reattestation of the remainder (\u00a7 28-25-109(c))."
+      "notes": "Ark. Code \u00a7 28-25-109. Divorce or annulment revokes provisions for the divorced spouse only when it occurs after the will is made (\u00a7 28-25-109(b)). No other change in circumstances, condition, or marital status revokes a will (subject to \u00a7 28-39-401 on pretermitted heirs). Partial revocation does not require reattestation of the remainder (\u00a7 28-25-109(c))."
     },
     "special_provisions": "Arkansas is a separate property/common law state. Surviving spouse has dower and curtesy rights: life estate in one-third of real property. Arkansas also provides a statutory allowance and homestead rights to the surviving spouse",
     "statute_citations": [
@@ -389,7 +389,7 @@
     },
     "holographic_wills": {
       "recognized": false,
-      "notes": "Holographic wills are not recognized in Connecticut"
+      "notes": "A holographic (handwritten, unwitnessed) will executed in Connecticut is not valid: every will or codicil must be in writing, subscribed by the testator, and attested by two witnesses, each of them subscribing in the testator's presence (Conn. Gen. Stat. \u00a7 45a-251). Exception: a will executed according to the laws of the state or country where it was executed may be admitted to probate in Connecticut and is effective to pass the testator's Connecticut property, so a holographic will validly made in another jurisdiction may be probated in Connecticut."
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -429,9 +429,9 @@
     },
     "witness_requirements": {
       "count": 2,
-      "qualifications": "Must be credible witnesses at least 18 years old",
-      "presence_rules": "The testator must sign or acknowledge the will in the presence of the witnesses, and the witnesses must sign in the presence of the testator",
-      "interested_witness_rules": "An interested witness does not invalidate the will but the bequest to the interested witness may be voided unless there are two other disinterested witnesses"
+      "qualifications": "2 or more credible witnesses; any person generally competent to be a witness may act as a witness to a will (12 Del. C. \u00a7\u00a7 202(a)(2), 203(a)). Sections 202\u2013203 state no minimum witness age.",
+      "presence_rules": "The will must be in writing and signed by the testator, or by some person subscribing the testator's name in the testator's presence and by the testator's express direction, and (subject to \u00a7 1306) attested and subscribed in the testator's presence by 2 or more credible witnesses. A will not complying with \u00a7 202(a) is void (12 Del. C. \u00a7 202).",
+      "interested_witness_rules": "A will or any provision thereof is not invalid because the will is signed by an interested person (12 Del. C. \u00a7 203(b)). The statute does not void a bequest to an interested witness."
     },
     "notarization": {
       "required": false,
@@ -439,7 +439,7 @@
     },
     "self_proving_affidavit": {
       "available": true,
-      "requirements": "Testator and witnesses sign a sworn affidavit before a notary public or other authorized officer (12 Del. C. \u00a7 1305)"
+      "requirements": "An attested will may be made self-proved at the time of its execution or at any later date, by the testator's acknowledgment and the witnesses' affidavits, each made before an officer authorized to administer oaths under the laws of Delaware. The officer's certificate, under official seal, must be attached or annexed to the will in form and content substantially as the statutory form sets out (12 Del. C. \u00a7 1305). Under that form the testator and witnesses are first duly sworn. The witnesses state that the testator was eighteen years of age or over, of sound mind and under no constraint or undue influence. A will executed in another jurisdiction is also treated as self-proved if it meets that jurisdiction's self-proving requirements (12 Del. C. \u00a7 1306(b))."
     },
     "electronic_wills": {
       "recognized": false,
@@ -447,7 +447,7 @@
     },
     "holographic_wills": {
       "recognized": false,
-      "notes": "Holographic wills are not recognized in Delaware"
+      "notes": "Delaware has no holographic-will exception. Every will must be in writing, signed by the testator, and attested and subscribed in the testator's presence by 2 or more credible witnesses. A will that does not comply is void (12 Del. C. \u00a7 202). Exception: under 12 Del. C. \u00a7 1306(a), a written will signed by the testator is also valid if it complies with the law, at the time of execution, of the place where it was executed. It is also valid if it complies with the law of the place where the testator, at execution or at death, was domiciled, had a place of abode, or was a national. So an unwitnessed handwritten will made in Delaware is void, but one validly executed under another jurisdiction's holographic-will law can be valid in Delaware."
     },
     "nuncupative_wills": {
       "recognized": false,
@@ -455,10 +455,12 @@
     },
     "revocation": {
       "methods": [
-        "Executing a subsequent will or codicil",
-        "Physical destruction (burning, tearing, canceling, obliterating) by the testator or at the testator's direction"
+        "Canceling by the testator, or by some person in the testator's presence and by the testator's express direction",
+        "A valid last will and testament",
+        "A writing signed by the testator, or by some person subscribing the testator's name in the testator's presence and by the testator's express direction, and attested and subscribed in the testator's presence by 2 or more credible witnesses",
+        "Divorce or annulment after executing the will revokes any disposition or appointment of property to the former spouse, any provision conferring a general or special power of appointment on the former spouse, and any nomination of the former spouse as executor, trustee, guardian or other fiduciary, unless the will expressly provides otherwise (12 Del. C. \u00a7 209)"
       ],
-      "notes": "12 Del. C. \u00a7 208"
+      "notes": "12 Del. C. \u00a7 208 applies to the will 'or any clause thereof'. It names 'canceling' as the only physical act. The words burning, tearing and obliterating do not appear in \u00a7 208. \u00a7 208 'shall not preclude nor extend to an implied revocation.' Under 12 Del. C. \u00a7 209, provisions revoked solely by divorce or annulment are revived if the testator remarries the former spouse. A decree of separation that does not end the marriage is not a divorce for this purpose. No changes or circumstances other than those described in \u00a7 209 revoke a will or any part of it."
     },
     "special_provisions": "Delaware is a separate property/common law state. Surviving spouse has an elective share right of one-third of the elective estate (12 Del. C. \u00a7 901). Delaware has no state estate tax for deaths after 2017",
     "statute_citations": [
@@ -477,8 +479,8 @@
       "standard": 18,
       "exceptions": "No specific statutory exception for emancipated minors in the will statute"
     },
-    "testamentary_capacity": "The testator must be of sound and disposing mind and capable of executing a valid deed or contract (DC Code 18-102)",
-    "writing_requirement": "Must be in writing. Can be typed, printed, or handwritten, but all wills must meet standard execution requirements. Electronic wills are recognized under DC Code 18-901 et seq.",
+    "testamentary_capacity": "At the time of executing or acknowledging the will, the testator must be of sound and disposing mind and capable of executing a valid deed or contract; a will, testament, or codicil is not valid for any purpose otherwise (DC Code 18-102)",
+    "writing_requirement": "Must be in writing and signed by the testator, or by another person in the testator's presence and by the testator's express direction, and attested and subscribed in the testator's presence by at least two credible witnesses; otherwise the will is void (DC Code 18-103). 18-103 names no medium, so a typed, printed or handwritten will is valid only if it is signed and witnessed this way. 18-103 has no exception for unwitnessed handwritten (holographic) wills. Two exceptions to 18-103: (1) Nuncupative (oral) wills under DC Code 18-107. Only a person in actual military or naval service or a mariner at sea may make one, and it can dispose of personal property only. It is valid only if proved by at least two witnesses who were present and asked by the testator to bear witness, made during the last illness, and its substance is reduced to writing within 10 days. (2) Electronic wills under DC Code 18-901 et seq. (D.C. Law 24-296). Under 18-905(a) the will must be a record readable as text at the time of signing. It must be signed by the testator, or by another individual in the testator's name, in the testator's physical presence and by the testator's direction. At least 2 individuals must sign in the testator's physical or electronic presence, each a resident of a state and physically located in a state at the time of signing, within a reasonable time after witnessing the signing or the testator's acknowledgment.",
     "signature_requirement": {
       "testator_must_sign": true,
       "proxy_signing_allowed": true,
@@ -486,9 +488,9 @@
     },
     "witness_requirements": {
       "count": 2,
-      "qualifications": "Must be credible witnesses",
-      "presence_rules": "Witnesses must attest and subscribe in the presence of the testator. The testator must either sign before the witnesses or declare to them that the signature is theirs and state that the document is their last will and testament (DC Code 18-103)",
-      "interested_witness_rules": "A devise or legacy to an attesting witness is void under DC Code 18-105. The interested witness may not retain or demand any such devise or legacy. This is one of the strictest interested witness rules in any jurisdiction"
+      "qualifications": "At least two credible witnesses (DC Code 18-103(2))",
+      "presence_rules": "The will must be attested and subscribed by the witnesses in the presence of the testator (DC Code 18-103(2)). The testator, or another person in the testator's presence and by the testator's express direction, must sign it (18-103(1)). DC Code 18-103 contains no requirement that the testator sign in front of the witnesses, acknowledge the signature to them, or declare the document to be a will. Nuncupative wills (18-107) and electronic wills (Chapter 9) are outside 18-103.",
+      "interested_witness_rules": "A gift to an attesting witness is void as to that witness and anyone claiming under them (DC Code 18-104(a)). Exceptions: (1) a witness who would inherit if the will were not established still takes the gift, up to the amount of their intestate share (18-104(b)); (2) the voidance does not apply to charges on real estate for the payment of debts (18-104(c)). The interested witness remains a competent witness to the will's execution (18-104(d)). DC Code 18-105 bars anyone from demanding, receiving or accepting such a void gift, or any compensation for it, directly or through another person."
     },
     "notarization": {
       "required": false,
@@ -500,7 +502,7 @@
     },
     "electronic_wills": {
       "recognized": true,
-      "notes": "DC recognizes electronic wills under DC Code 18-901 et seq. (Uniform Electronic Wills Amendment Act of 2022, D.C. Law 24-296). An electronic will must be readable as text at signing, electronically signed by the testator, and witnessed. Electronic wills may be made self-proving under DC Code 18-908"
+      "notes": "DC recognizes electronic wills under D.C. Code \u00a7 18-901 et seq. (Uniform Electronic Wills Act, enacted by D.C. Law 24-296, the Uniform Electronic Wills Amendment Act of 2022, effective Mar. 10, 2023). Under D.C. Code \u00a7 18-905(a), an electronic will must be (1) a record readable as text at the time of signing; (2) signed by the testator, or by another individual in the testator's name, in the testator's physical presence and by the testator's direction; and (3) signed in the physical or electronic presence of the testator by at least 2 individuals, each a resident of a state and physically located in a state at the time of signing, within a reasonable time after witnessing the signing of the will or the testator's acknowledgment of the signing or of the will (subject to \u00a7 18-908(d); harmless-error rule in \u00a7 18-906). Testator intent that the record be the electronic will may be established by extrinsic evidence (\u00a7 18-905(b)). Under \u00a7 18-908(a), an electronic will may be simultaneously executed, attested, and made self-proving by acknowledgment of the testator and affidavits of the witnesses."
     },
     "holographic_wills": {
       "recognized": false,
@@ -508,14 +510,15 @@
     },
     "nuncupative_wills": {
       "recognized": true,
-      "notes": "Nuncupative wills made after January 1, 1902 are not valid except for persons in actual military or naval service or mariners at sea, who may dispose of personal property by word of mouth. The oral will must be reduced to writing within ten days of its making (DC Code 18-107)"
+      "notes": "A nuncupative will made after January 1, 1902 is not valid in DC, except that a person in actual military or naval service or a mariner at sea may dispose of his personal property by word of mouth, if ALL of the following are met: (1) the oral disposition is proved by at least two witnesses who were present at the making and were requested by the testator to bear witness that the disposition was his last will; (2) the will is made during the time of the last illness of the deceased; and (3) the substance of the will is reduced to writing within 10 days after it was made (DC Code 18-107)"
     },
     "revocation": {
       "methods": [
-        "Executing a later will, codicil, or other writing declaring the revocation, executed as provided by DC Code 18-103",
+        "A later will, codicil, or other writing declaring the revocation, executed as provided by DC Code 18-103 or 18-107",
+        "Burning, tearing, cancelling, or obliterating the will or codicil (or the part thereof) with the intention of revoking it, by the testator himself, or by a person in his presence and by his express direction and consent",
         "By implication of law"
       ],
-      "notes": "DC Code 18-109. Notably, DC does not explicitly include physical destruction (burning, tearing, etc.) as a method of revocation in the statute. Revocation must generally be by a subsequent written instrument executed with the same formalities as a will, or by implication of law"
+      "notes": "DC Code 18-109(a). A will or codicil, or a part of it, can be revoked only by (1) a later will, codicil, or other writing declaring the revocation, executed as provided by 18-103 or 18-107; (2) a physical act (burning, tearing, cancelling, or obliterating) with intent to revoke, by the testator or by another person in the testator's presence and by the testator's express direction and consent; or by implication of law. Partial revocation is permitted. Revival (18-109(b)): a revoked will or codicil can be revived only by re-execution or by a codicil executed as a will must be, and only to the extent an intention to revive is shown."
     },
     "special_provisions": "DC is a separate property jurisdiction. Provides an elective share for the surviving spouse. DC has a unique revocation statute that appears to require a written revocation instrument rather than permitting revocation by physical destruction alone. DC's interested witness rule is strict: devises to attesting witnesses are void under DC Code 18-105. DC adopted the Uniform Electronic Wills Amendment Act of 2022 (D.C. Law 24-296). Nuncupative wills permitted only for military personnel and mariners, with a 10-day writing requirement",
     "statute_citations": [
