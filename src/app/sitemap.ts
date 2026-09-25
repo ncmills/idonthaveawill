@@ -53,6 +53,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     ...statePages,
+    // The same state research keyed by rule instead of by state. No child
+    // routes: every rule is a section on the one page.
+    {
+      url: `${baseUrl}/will-rules`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/data`,
       lastModified: now,
