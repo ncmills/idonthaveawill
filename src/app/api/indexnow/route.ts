@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     "https://yandex.com/indexnow",
   ];
 
-  const batches = [];
+  const batches: string[][] = [];
   for (let i = 0; i < urls.length; i += 500) {
     batches.push(urls.slice(i, i + 500));
   }
