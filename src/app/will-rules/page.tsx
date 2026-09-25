@@ -55,15 +55,19 @@ type WillRule = {
 };
 
 /**
- * Exported so that any future per-rule route reads its list from here rather
- * than restating it — the same reason the state slugs live in one module.
+ * Not exported: a Next.js page.tsx may only export the fields Next.js itself
+ * recognizes (default, metadata, generateStaticParams, …) — an arbitrary
+ * named export here fails the build with "is not a valid Page export field".
+ * If a future per-rule route needs this list, move it to its own module
+ * (the same reason the state slugs live in one module) rather than
+ * re-exporting it from the page.
  *
  * Order is editorial, not by size: notarization is the single highest-volume
  * question this site gets asked (the same reason /will-requirements opens with
  * a short-answer block about it), and a strict count sort would bury it under
  * the handwritten-wills list.
  */
-export const WILL_RULES: WillRule[] = [
+const WILL_RULES: WillRule[] = [
   {
     slug: "notarization",
     label: "Notarization required",
