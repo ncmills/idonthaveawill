@@ -1,3 +1,7 @@
+// Forces a real Vercel rebuild (the previous retry commit was empty and got
+// skipped by the "Ignored Build Step" diff check): confirming whether the
+// prior next/font Google-fonts fetch failure in this build was a transient
+// network blip, unrelated to this file's WILL_RULES export fix.
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildOpenGraph } from "@/lib/og";
