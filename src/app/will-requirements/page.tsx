@@ -9,7 +9,7 @@ import { getStateUrl } from "@/lib/stateSlugs";
 // root layout (src/app/layout.tsx) applies `template: "%s | idonthaveawill.com"`
 // to every page-level string title, so the brand suffix is NOT repeated here
 // — doing so would render "... | idonthaveawill.com | idonthaveawill.com".
-const STATE_COUNT_LABEL = "All 50 States Compared";
+const STATE_COUNT_LABEL = "All 50 States + DC Compared";
 
 export const metadata: Metadata = {
   title: `Will Requirements by State: ${STATE_COUNT_LABEL} (2026)`,
