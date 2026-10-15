@@ -8,6 +8,26 @@ import { BLOG_POSTS } from "@/lib/blog-posts";
 // Google's recrawl signal and stalling indexing at 11 / 108 (10%).
 export const revalidate = 3600;
 
+// SITES-GROWTH unit 5 (2026-10-15). Measured: GSC 90d showed 2,532
+// impressions total, only 38/166 sitemap URLs with any impression, and the
+// /estate-planning family (1 index + 51 state pages = 52 URLs) at ~zero.
+// Checked why: /estate-planning/[slug] renders near-identical boilerplate
+// copy for every state (same section headings, same paragraphs) and only
+// swaps in 5 shared toggle fields — minimum_age.standard,
+// witness_requirements.count, notarization.required,
+// holographic_wills.recognized, and the computed community-property flag.
+// It never reads the state's own narrative/citation fields
+// (testamentary_capacity, special_provisions, revocation.methods,
+// statute_citations, self_proving_affidavit.requirements) even though
+// /will-requirements/[slug] — the page it links out to for "full
+// requirements" — already renders all of those per state. So every
+// estate-planning page is a thinner, near-duplicate twin of an
+// already-sitemapped page with no state-specific substance of its own: the
+// "equally templated, no state-specific data" case. Routes stay live and
+// internally linked (no noindex) — just not submitted in the sitemap until
+// the page gains real per-state legal content.
+const INCLUDE_ESTATE_PLANNING_IN_SITEMAP = false;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://idonthaveawill.com";
   const now = new Date();
@@ -19,12 +39,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const estatePlanningPages = getAllStates().map((s) => ({
-    url: `${baseUrl}/estate-planning/${stateToSlug(s.state)}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  const estatePlanningPages = INCLUDE_ESTATE_PLANNING_IN_SITEMAP
+    ? getAllStates().map((s) => ({
+        url: `${baseUrl}/estate-planning/${stateToSlug(s.state)}`,
+        lastModified: now,
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      }))
+    : [];
 
   const blogPages = BLOG_POSTS.map((p) => ({
     url: `${baseUrl}/blog/${p.slug}`,
@@ -73,12 +95,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/estate-planning`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+    ...(INCLUDE_ESTATE_PLANNING_IN_SITEMAP
+      ? [
+          {
+            url: `${baseUrl}/estate-planning`,
+            lastModified: now,
+            changeFrequency: "weekly" as const,
+            priority: 0.8,
+          },
+        ]
+      : []),
     ...estatePlanningPages,
     {
       url: `${baseUrl}/blog`,
