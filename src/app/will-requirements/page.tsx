@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { buildOpenGraph } from "@/lib/og";
+import { buildOpenGraph, SITE_URL } from "@/lib/og";
 import Link from "next/link";
 import { getAllStates } from "@/lib/stateData";
 import { getStateUrl } from "@/lib/stateSlugs";
 
+// SITES-GROWTH unit 5 (2026-10-15): title states the count so it matches the
+// head query ("will requirements by state") and signals completeness. The
+// root layout (src/app/layout.tsx) applies `template: "%s | idonthaveawill.com"`
+// to every page-level string title, so the brand suffix is NOT repeated here
+// — doing so would render "... | idonthaveawill.com | idonthaveawill.com".
+const STATE_COUNT_LABEL = "All 50 States Compared";
+
 export const metadata: Metadata = {
-  title: "Will Requirements by State: Notarization, Witnesses & Handwritten Wills",
+  title: `Will Requirements by State: ${STATE_COUNT_LABEL} (2026)`,
   description:
     "Louisiana is the only U.S. state that requires a will to be notarized. 48 states use a self-proving affidavit instead. Full witness, holographic, and signing rules for all 50 states + DC.",
   alternates: {
@@ -21,6 +28,26 @@ export const metadata: Metadata = {
 
 export default function WillRequirementsHub() {
   const states = getAllStates();
+
+  // ItemList order matches the visible "Choose Your State" grid and the
+  // comparison table below: alphabetical by state name (the order
+  // getAllStates() already returns — see data/states/all_states.json),
+  // Alabama through Wyoming. Keeping schema order identical to render order
+  // avoids a mismatch between what's marked up and what's shown.
+  const stateItemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Will Requirements by State",
+    description:
+      "All 50 U.S. states and Washington DC, A-Z, each with its own witness, notarization, and will-execution requirements.",
+    numberOfItems: states.length,
+    itemListElement: states.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: `${s.state} Will Requirements`,
+      url: `${SITE_URL}${getStateUrl(s.state)}`,
+    })),
+  };
 
   const statesWithNotarization = states.filter((s) => s.notarization.required);
   const statesWithHolographic = states.filter((s) => s.holographic_wills.recognized);
@@ -73,6 +100,10 @@ export default function WillRequirementsHub() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(stateItemListLd) }}
       />
       <h1 className="font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
         Will Requirements by State
@@ -189,7 +220,7 @@ export default function WillRequirementsHub() {
 
       {/* State grid */}
       <h2 className="mt-14 font-[family-name:var(--font-display)] text-[26px] md:text-[30px] font-medium text-[var(--color-ink)]">
-        Choose Your State
+        Choose Your State <span className="text-[var(--color-ink-soft)] text-base font-normal">(A&ndash;Z, {states.length} total)</span>
       </h2>
       <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
         {states.map((state) => (
