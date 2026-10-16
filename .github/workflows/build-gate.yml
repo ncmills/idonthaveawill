@@ -35,3 +35,6 @@ jobs:
 
       - name: typecheck
         run: npx tsc --noEmit
+
+      - name: internal links
+        run: node scripts/check-internal-links.mjs
