@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
 import { isReservedTestEmail } from "@/lib/testEmailGuard";
+import { isTestRequest } from "@/lib/test-request";
 import { Resend } from "resend";
 
 const resend = process.env.RESEND_API_KEY
@@ -49,7 +50,16 @@ export async function POST(request: Request) {
     // Store in Supabase (primary store)
     {
       const { error } = await supabaseAdmin.from("email_subscribers").upsert(
-        { email, state: validState, subscribed_at: new Date().toISOString() },
+        {
+          email,
+          state: validState,
+          subscribed_at: new Date().toISOString(),
+          // Stamped, never skipped (same rule as /api/funnel and /api/stats).
+          // isReservedTestEmail above only rejects reserved/throwaway DOMAINS; a
+          // harness or e2e run using an ordinary-looking address walks straight
+          // into lead inventory. The header is the only signal that catches that.
+          is_test: isTestRequest(request),
+        },
         { onConflict: "email" }
       );
       if (error) {
