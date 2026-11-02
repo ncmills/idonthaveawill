@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     google: "aSAROWRm5tmjvMJ71KHMPTVNVZCIcIyBpY0o7WbHN10",
   },
   title: {
-    default: "Free Will Maker — Draft a Legal Will (50 States, 10 Min)",
+    default: "Free Will Maker — Legal Will in 10 Min, All 50 States | idonthaveawill.com",
     template: "%s | idonthaveawill.com",
   },
   description:
