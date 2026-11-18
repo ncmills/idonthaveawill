@@ -31,6 +31,12 @@ export default function PostHogProvider({ children }: { children: React.ReactNod
         api_host: (process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com").trim(),
         capture_pageview: false,
         capture_pageleave: true,
+        // Cookieless and anonymous (Nick 2026-11-18): nothing is stored in the browser,
+        // no clicks or typed input are auto-captured, no session is recorded.
+        persistence: "memory",
+        autocapture: false,
+        disable_session_recording: true,
+        person_profiles: "identified_only",
       });
     }
   }, [key]);
