@@ -3,7 +3,7 @@
 import posthog from "posthog-js";
 import { PostHogProvider as PHProvider, usePostHog } from "posthog-js/react";
 import { useEffect, Suspense } from "react";
-import { sanitizePageviewUrl } from "@/lib/pageview-url";
+import { sanitizeEvent, sanitizeUrl } from "@/lib/pageview-url";
 import { usePathname, useSearchParams } from "next/navigation";
 
 function PostHogPageView() {
@@ -16,7 +16,7 @@ function PostHogPageView() {
       let url = window.origin + pathname;
       const search = searchParams.toString();
       if (search) url += "?" + search;
-      ph.capture("$pageview", { $current_url: sanitizePageviewUrl(url) });
+      ph.capture("$pageview", { $current_url: sanitizeUrl(url) });
     }
   }, [pathname, searchParams, ph]);
 
@@ -38,15 +38,10 @@ export default function PostHogProvider({ children }: { children: React.ReactNod
         autocapture: false,
         disable_session_recording: true,
         person_profiles: "identified_only",
-        // The library stamps raw location.href / referrer on every event; keep only
-        // the acquisition allowlist (utm_*, ref, gclid, fbclid) in the query.
+        // The library stamps raw location.href / referrer on every event; send only
+        // a route template (never the raw path) plus the acquisition allowlist (utm_*, ref, gclid, fbclid).
         before_send: (event) => {
-          if (event?.properties) {
-            for (const k of ["$current_url", "$referrer", "$initial_referrer"]) {
-              const v = event.properties[k];
-              if (typeof v === "string") event.properties[k] = sanitizePageviewUrl(v);
-            }
-          }
+          sanitizeEvent(event);
           return event;
         },
       });
