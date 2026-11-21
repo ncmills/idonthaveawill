@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrackedLink } from "@/components/shared/TrackedLink";
 
 const steps = [
   {
@@ -65,10 +66,10 @@ export default function HowItWorks() {
           <p className="font-[family-name:var(--font-display)] italic text-[17px] text-[var(--color-ink-soft)] mb-6">
             Ready? It takes ten minutes.
           </p>
-          <Link href="/create" className="iha-seal">
+          <TrackedLink target="howitworks_begin" href="/create" className="iha-seal">
             <span className="iha-seal-mark" aria-hidden="true" />
             Begin the Draft
-          </Link>
+          </TrackedLink>
         </div>
       </div>
     </section>

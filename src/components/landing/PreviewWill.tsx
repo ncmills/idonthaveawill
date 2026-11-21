@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrackedLink } from "@/components/shared/TrackedLink";
 
 export default function PreviewWill() {
   return (
@@ -20,12 +21,13 @@ export default function PreviewWill() {
             </p>
 
             <div className="mt-8 flex items-center gap-3">
-              <Link
+              <TrackedLink
+                target="preview_draft_yours"
                 href="/create"
                 className="font-[family-name:var(--font-display)] italic text-[17px] text-[var(--color-ink)] underline decoration-[var(--color-sage)] decoration-[1.5px] underline-offset-[6px] hover:decoration-[var(--color-ink)] transition-colors"
               >
                 Draft yours now
-              </Link>
+              </TrackedLink>
               <span className="text-[var(--color-rule)]" aria-hidden="true">·</span>
               <span className="iha-caps">~ ten minutes</span>
             </div>
