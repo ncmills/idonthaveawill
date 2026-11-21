@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import posthog from "posthog-js";
+import { appErrorFirstPartyBody, appErrorVendorProps } from "@/lib/app-error";
 
 export default function Error({
   error,
@@ -14,12 +15,16 @@ export default function Error({
   useEffect(() => {
     console.error("Application error:", error);
     if (typeof window !== "undefined" && posthog.__loaded) {
-      posthog.capture("app_error", {
-        digest: error.digest,
-        message: error.message,
-        name: error.name,
-      });
+      posthog.capture("app_error", appErrorVendorProps(error));
     }
+    try {
+      fetch("/api/funnel", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(appErrorFirstPartyBody(error)),
+        keepalive: true,
+      }).catch(() => {});
+    } catch {}
   }, [error]);
 
   return (
