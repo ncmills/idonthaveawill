@@ -90,12 +90,10 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-xl font-semibold text-[var(--color-brand)]">
-            No Accounts, No Tracking
+            No Accounts, No Ad Tracking
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            We do not require you to create an account. We do not use cookies
-            for tracking. We do not use analytics services that track individual
-            users.
+            We do not require you to create an account. Our analytics tool, PostHog, keeps one random anonymous ID in a first-party cookie and your browser&apos;s storage so we can count return visits; it never holds your name, your will&apos;s contents or anything you type. We do not use advertising cookies or track you across other sites.
           </p>
         </section>
 
