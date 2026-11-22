@@ -226,3 +226,28 @@ test("ALLOWLIST-KEEP-DETAIL: only public content templates are listed; outputs s
     assert.match(out, /^[a-z0-9/:_.-]*$/);
   }
 });
+
+// SWEEP-1121-2115: person props nested inside properties ($set / $set_once) get the same per-key rules as top-level props.
+test("REDACT-ALLOWLIST: invariant over the whole table, nested properties.$set / $set_once", () => {
+  for (const [i] of [...PATH_TABLE, ...URL_TABLE]) {
+    const u = i.startsWith("/") ? O + i : i;
+    const set = { $current_url: u, $pathname: i, $referrer: u, title: i };
+    const once = { $initial_current_url: u, $initial_pathname: i, $initial_referrer: u };
+    const e = { properties: { $set: { ...set }, $set_once: { ...once }, keep: 1 } };
+    const topSet = { properties: { ...set } };
+    const topOnce = { properties: { ...once } };
+    sanitizeEvent(e);
+    sanitizeEvent(topSet);
+    sanitizeEvent(topOnce);
+    assert.deepEqual(e.properties.$set, topSet.properties);
+    assert.deepEqual(e.properties.$set_once, topOnce.properties);
+    assert.equal(e.properties.keep, 1);
+    for (const f of FORBIDDEN) assert.ok(!JSON.stringify(e).includes(f), i + " leaks " + f);
+  }
+});
+
+test("non-object nested $set / $set_once are left alone", () => {
+  const e = { properties: { $set: "x", $set_once: ["y"] } as Record<string, unknown> };
+  sanitizeEvent(e);
+  assert.deepEqual(e.properties, { $set: "x", $set_once: ["y"] });
+});
