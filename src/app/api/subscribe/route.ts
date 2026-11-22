@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
 import { isReservedTestEmail } from "@/lib/testEmailGuard";
+import { isTestRequest } from "@/lib/test-request";
 import { Resend } from "resend";
 
 const resend = process.env.RESEND_API_KEY
@@ -34,7 +35,8 @@ export async function POST(request: Request) {
     // Reject RFC-2606 reserved / test / throwaway domains so junk like
     // foo@example.com or foo@mailinator.com never pollutes email_subscribers
     // or the Resend audience.
-    if (isReservedTestEmail(email)) {
+    const isTest = isTestRequest(request);
+    if (!isTest && isReservedTestEmail(email)) {
       return NextResponse.json({ error: "Valid email required" }, { status: 400 });
     }
 
@@ -45,6 +47,11 @@ export async function POST(request: Request) {
         ? state.toUpperCase()
         : null;
 
+    // Test-flagged request (x-sn-test-run): same success the visitor gets, but
+    // nothing is written to email_subscribers or the Resend audience.
+    if (isTest) {
+      return NextResponse.json({ success: true });
+    }
 
     // Store in Supabase (primary store)
     {
