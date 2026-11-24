@@ -82,7 +82,9 @@ const PATTERNS = [
 const SITE = /https?:\/\/(?:www\.)?idonthaveawill\.com(\/[^"'`)\s]*)/g;
 
 const bad = [];
-for (const f of [...walk(path.join(ROOT, "src"), [".ts", ".tsx", ".mdx"]), ...walk(path.join(ROOT, "content"), [".mdx", ".md"])]) {
+// Test files hold URL fixtures (e.g. redact-allowlist route templates like /estate-planning/:slug), not links a visitor can follow.
+const isTest = (f) => f.split(path.sep).includes("__tests__") || /\.test\.tsx?$/.test(f);
+for (const f of [...walk(path.join(ROOT, "src"), [".ts", ".tsx", ".mdx"]).filter((f) => !isTest(f)), ...walk(path.join(ROOT, "content"), [".mdx", ".md"])]) {
   const lines = fs.readFileSync(f, "utf8").split("\n");
   lines.forEach((line, i) => {
     for (const re of [...PATTERNS, SITE]) {
