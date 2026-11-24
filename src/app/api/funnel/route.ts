@@ -8,6 +8,7 @@ const ALLOWED_EVENTS = [
   "will_generated",
   "download",
   "email_captured",
+  "app_error",
 ];
 
 const ALLOWED_PROPERTY_KEYS = new Set([
@@ -20,7 +21,14 @@ const ALLOWED_PROPERTY_KEYS = new Set([
   "source",
   "duration_ms",
   "total_steps",
+  // app_error (CAPTURE-GAPS-1121): full detail stays first-party, not in PostHog.
+  "error_name",
+  "digest",
+  "message",
 ]);
+
+// Per-key string caps; everything else keeps the 50-char cap.
+const MAX_LEN: Record<string, number> = { message: 200 };
 
 export async function POST(request: Request) {
   try {
@@ -35,7 +43,7 @@ export async function POST(request: Request) {
     const safeProps: Record<string, unknown> = {};
     for (const [key, value] of Object.entries(properties)) {
       if (!ALLOWED_PROPERTY_KEYS.has(key)) continue;
-      if (typeof value === "string" && value.length > 50) continue;
+      if (typeof value === "string" && value.length > (MAX_LEN[key] ?? 50)) continue;
       safeProps[key] = value;
     }
 

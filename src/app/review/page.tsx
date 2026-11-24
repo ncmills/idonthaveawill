@@ -10,7 +10,7 @@ import DownloadButton from "@/components/will/DownloadButton";
 import AttorneyReferral from "@/components/will/AttorneyReferral";
 import EmailCapture from "@/components/will/EmailCapture";
 import { sendAnonymizedStats } from "@/lib/analytics";
-import { trackWillGenerated } from "@/lib/tracking";
+import { trackWillGenerated, trackResultShown, trackFormError } from "@/lib/tracking";
 import { getStateNameByAbbr } from "@/lib/stateDataClient";
 import Link from "next/link";
 import { Suspense } from "react";
@@ -28,6 +28,7 @@ function ReviewContent() {
       const stored = sessionStorage.getItem("idonthaveawill_answers");
       if (!stored) {
         setError("No will data found. Please go back and complete the questionnaire.");
+        trackFormError("generate", "validation");
         return;
       }
       const parsedAnswers = JSON.parse(stored) as WillAnswers;
@@ -35,8 +36,10 @@ function ReviewContent() {
       setWill(generateWill(parsedAnswers));
       sendAnonymizedStats(parsedAnswers);
       trackWillGenerated(parsedAnswers.state);
+      trackResultShown(parsedAnswers.state);
     } catch (e) {
       setError("Something went wrong generating your will. Please try again.");
+      trackFormError("generate", "api");
       console.error(e);
     }
   }, []);

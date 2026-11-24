@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import type { GeneratedWill } from "@/lib/types";
-import { trackDownload, trackEmailCaptured } from "@/lib/tracking";
+import { trackDownload, trackEmailCaptured, trackFormError, classifyFormError } from "@/lib/tracking";
 
 interface Props {
   will: GeneratedWill;
@@ -25,7 +25,10 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
 
   async function handleEmailSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      trackFormError("download_email", "validation");
+      return;
+    }
 
     setSubmitting(true);
     setEmailError("");
@@ -43,6 +46,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
       setEmailSubmitted(true);
       trackEmailCaptured("review");
     } catch (err) {
+      trackFormError("download_email", classifyFormError(err));
       setEmailError(err instanceof Error ? err.message : "Something went wrong");
     } finally {
       setSubmitting(false);
@@ -57,6 +61,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
       trackDownload("word");
     } catch (e) {
       console.error("Word download failed:", e);
+      trackFormError("download_word", "api");
       alert("Download failed. Please try again.");
     } finally {
       setLoading(null);
@@ -71,6 +76,7 @@ export default function DownloadButton({ will, stateAbbr }: Props) {
       trackDownload("pdf");
     } catch (e) {
       console.error("PDF download failed:", e);
+      trackFormError("download_pdf", "api");
       alert("Download failed. Please try again.");
     } finally {
       setLoading(null);

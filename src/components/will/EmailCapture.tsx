@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { trackEmailCaptured } from "@/lib/tracking";
+import { trackEmailCaptured, trackFormError, classifyFormError } from "@/lib/tracking";
 
 interface EmailCaptureProps {
   stateAbbr: string;
@@ -14,7 +14,10 @@ export default function EmailCapture({ stateAbbr }: EmailCaptureProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !email.includes("@")) return;
+    if (!email || !email.includes("@")) {
+      trackFormError("review_email", "validation");
+      return;
+    }
 
     setStatus("loading");
     try {
@@ -30,6 +33,7 @@ export default function EmailCapture({ stateAbbr }: EmailCaptureProps) {
       setStatus("success");
       trackEmailCaptured("review");
     } catch (err) {
+      trackFormError("review_email", classifyFormError(err));
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong");
     }

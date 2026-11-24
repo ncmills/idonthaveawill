@@ -1,4 +1,5 @@
 import { getNetworkSites } from "@/lib/network-sites";
+import { TrackedAnchor } from "@/components/shared/TrackedLink";
 
 /**
  * The cross-site strip — the other free legal tools from the same desk.
@@ -26,7 +27,8 @@ export function NetworkFooter({ currentDomain }: { currentDomain: string }) {
       <ul className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:gap-x-8">
         {sites.map((s) => (
           <li key={s.domain}>
-            <a
+            <TrackedAnchor
+              cta="network_footer"
               href={`https://${s.domain}`}
               rel="noopener"
               className="inline-flex min-h-[44px] items-center text-[13px] text-[var(--color-ink-soft)] transition-colors hover:text-[var(--color-ink)]"
@@ -35,7 +37,7 @@ export function NetworkFooter({ currentDomain }: { currentDomain: string }) {
                 {s.label}
               </span>
               <span>&nbsp;— {s.tagline}</span>
-            </a>
+            </TrackedAnchor>
           </li>
         ))}
       </ul>

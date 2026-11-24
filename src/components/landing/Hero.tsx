@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrackedLink } from "@/components/shared/TrackedLink";
 import WillCounter from "./WillCounter";
 
 export default function Hero() {
@@ -40,10 +41,10 @@ export default function Hero() {
             </p>
 
             <div className="mt-12 flex items-center gap-4">
-              <Link href="/create" className="iha-seal">
+              <TrackedLink target="hero_begin" href="/create" className="iha-seal">
                 <span className="iha-seal-mark" aria-hidden="true" />
                 Begin the Draft
-              </Link>
+              </TrackedLink>
             </div>
 
             <p className="mt-6 font-[family-name:var(--font-display)] italic text-[15px] text-[var(--color-ink-soft)]">

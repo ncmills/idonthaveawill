@@ -4,6 +4,7 @@
  */
 
 import posthog from "posthog-js";
+import type { FormErrorForm, FormErrorKind } from "./tracking-events";
 
 function track(event: string, props?: Record<string, unknown>) {
   if (typeof window !== "undefined" && posthog.__loaded) {
@@ -44,4 +45,29 @@ export function trackDownload(format: "word" | "pdf") {
 
 export function trackEmailCaptured(source: "homepage" | "review") {
   track("email_captured", { source });
+}
+
+// ── PostHog-only gap events (fixed props only; no free text, no form values) ──
+
+function trackPostHogOnly(event: string, props?: Record<string, unknown>) {
+  if (typeof window !== "undefined" && posthog.__loaded) {
+    posthog.capture(event, props);
+  }
+}
+
+export function trackFormError(form: FormErrorForm, kind: FormErrorKind) {
+  trackPostHogOnly("form_error", { form, kind });
+}
+
+/** fetch() rejects with TypeError on network failure; anything else thrown is an API/response error. */
+export function classifyFormError(err: unknown): FormErrorKind {
+  return err instanceof TypeError ? "network" : "api";
+}
+
+export function trackCtaClicked(target: string) {
+  trackPostHogOnly("cta_clicked", { target });
+}
+
+export function trackResultShown(state: string) {
+  trackPostHogOnly("result_shown", { state });
 }

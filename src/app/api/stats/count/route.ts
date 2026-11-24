@@ -1,25 +1,23 @@
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
+import { getWillCount, type WillStatsClient } from "./logic";
 
 export const revalidate = 300;
 
 export async function GET() {
-  try {
-    const { count, error } = await supabaseAdmin
-      .from("will_stats")
-      .select("*", { count: "exact", head: true });
+  // Cast: the real SupabaseClient's generic builder types are structurally
+  // deep enough that TS's comparison against the minimal WillStatsClient
+  // shape hits "excessively deep" (TS2589). The real client is a superset
+  // of WillStatsClient at runtime; this cast only skips the structural
+  // check, not a real behavior difference.
+  const result = await getWillCount(supabaseAdmin as unknown as WillStatsClient);
 
-    if (error) {
-      console.error("[stats/count] error:", error);
-      return NextResponse.json({ count: 0 });
-    }
-
-    return NextResponse.json(
-      { count: count ?? 0 },
-      { headers: { "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600" } }
-    );
-  } catch (error) {
-    console.error("[stats/count] error:", error);
-    return NextResponse.json({ count: 0 });
+  if (!result.ok) {
+    return NextResponse.json({ ok: false, error: result.error }, { status: 500 });
   }
+
+  return NextResponse.json(
+    { count: result.count },
+    { headers: { "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600" } }
+  );
 }
