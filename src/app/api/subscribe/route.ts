@@ -54,31 +54,43 @@ export async function POST(request: Request) {
     }
 
     // Store in Supabase (primary store)
+    let stored = true;
     {
       const { error } = await supabaseAdmin.from("email_subscribers").upsert(
         { email, state: validState, subscribed_at: new Date().toISOString() },
         { onConflict: "email" }
       );
       if (error) {
+        stored = false;
         console.error("[subscribe] supabase error:", error);
       }
     }
 
     // Sync to Resend audience (if configured)
+    let audienceSynced = false;
     if (AUDIENCE_ID && resend) {
       try {
-        await resend.contacts.create({
+        const res = await resend.contacts.create({
           email,
           audienceId: AUDIENCE_ID,
           unsubscribed: false,
         });
+        audienceSynced = !res?.error;
       } catch (resendErr) {
         // Don't fail the request if Resend sync fails
         console.error("[subscribe] resend sync error:", resendErr);
       }
     }
 
-    console.log(`[LEAD] subscribe email=${email} state=${validState ?? "-"}`);
+    // The address stays in the log ONLY when neither durable store has it
+    // (upsert failed AND audience sync did not succeed): then the log is the
+    // only record of the subscribe. Otherwise no address in logs.
+    const outcomes = `state=${validState ?? "-"} stored=${stored} audienceSynced=${audienceSynced}`;
+    console.log(
+      !stored && !audienceSynced
+        ? `[LEAD] subscribe email=${email} ${outcomes}`
+        : `[LEAD] subscribe ${outcomes}`
+    );
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("[subscribe] error:", error);
