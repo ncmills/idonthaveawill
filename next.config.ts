@@ -40,6 +40,14 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // The sitemap and blog routes revalidate at request time and read content/blog/*.mdx
+  // with fs. Without this the files are not traced into the lambda, existsSync is false,
+  // and every revalidated sitemap drops all MDX posts (live 2026-10-31: 56 of 68 blog URLs).
+  outputFileTracingIncludes: {
+    "/sitemap.xml": ["./content/blog/**/*.mdx"],
+    "/blog": ["./content/blog/**/*.mdx"],
+    "/blog/[slug]": ["./content/blog/**/*.mdx"],
+  },
   async redirects() {
     return [
       {

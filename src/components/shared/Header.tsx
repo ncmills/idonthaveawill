@@ -1,5 +1,7 @@
 "use client";
 
+import { trackCtaClicked } from "@/lib/tracking";
+
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Wordmark } from "./Brand";
@@ -47,6 +49,7 @@ export default function Header() {
           </Link>
           <Link
             href="/create"
+            onClick={() => trackCtaClicked("header_begin")}
             className="font-[family-name:var(--font-display)] italic text-[14px] text-[var(--color-ink)] underline decoration-[var(--color-sage)] decoration-[1.5px] underline-offset-[5px] hover:decoration-[var(--color-ink)] transition-colors"
           >
             Begin a draft
@@ -95,7 +98,10 @@ export default function Header() {
                 </Link>
                 <Link
                   href="/create"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    trackCtaClicked("header_begin_mobile");
+                    setMenuOpen(false);
+                  }}
                   className="block px-5 py-3 font-[family-name:var(--font-display)] italic text-[14px] text-[var(--color-ink)] hover:bg-[var(--color-cream-deep)] transition-colors"
                 >
                   Begin a draft

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { trackEmailCaptured } from "@/lib/tracking";
+import { trackEmailCaptured, trackFormError, classifyFormError } from "@/lib/tracking";
 
 export default function HomepageEmailCapture() {
   const [email, setEmail] = useState("");
@@ -10,7 +10,10 @@ export default function HomepageEmailCapture() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !email.includes("@")) return;
+    if (!email || !email.includes("@")) {
+      trackFormError("homepage_email", "validation");
+      return;
+    }
 
     setStatus("loading");
     try {
@@ -26,6 +29,7 @@ export default function HomepageEmailCapture() {
       setStatus("success");
       trackEmailCaptured("homepage");
     } catch (err) {
+      trackFormError("homepage_email", classifyFormError(err));
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong");
     }

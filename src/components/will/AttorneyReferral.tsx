@@ -1,5 +1,7 @@
 "use client";
 
+import { trackCtaClicked } from "@/lib/tracking";
+
 import { getReferralForState } from "@/lib/referralConfig";
 
 interface AttorneyReferralProps {
@@ -33,6 +35,7 @@ export default function AttorneyReferral({ stateAbbr, stateName }: AttorneyRefer
         href={referral.url}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackCtaClicked("attorney_referral")}
         className="inline-flex items-center gap-2.5 mt-6 px-6 py-[0.95rem] bg-[var(--color-cream)] text-[var(--color-ink)] text-[0.92rem] font-medium tracking-[0.02em] uppercase transition-colors hover:bg-[var(--color-cream-deep)]"
       >
         <span

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/validate-state-data.mjs",
+    "prebuild": "node scripts/validate-state-data.mjs && npx tsx scripts/gen-published-paths.ts",
     "build": "next build",
     "postbuild": "npx tsx scripts/submit-indexnow.ts || true",
     "start": "next start",

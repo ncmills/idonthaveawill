@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrackedLink } from "@/components/shared/TrackedLink";
 import WillCounter from "./WillCounter";
 
 export default function Hero() {
@@ -26,9 +27,9 @@ export default function Hero() {
 
       <div className="relative px-6 sm:px-10 lg:px-20 py-20 md:py-28">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
-          {/* Headline block — left */}
-          <div>
-            <h1 className="font-[family-name:var(--font-display)] font-semibold text-[var(--color-ink)] leading-[1.08] tracking-[-0.015em] text-[44px] sm:text-[60px] md:text-[72px]">
+          {/* Headline block — left. Sized against this column, which the lg: grid narrows. */}
+          <div className="@container">
+            <h1 className="font-[family-name:var(--font-display)] font-semibold text-[var(--color-ink)] leading-[1.08] tracking-[-0.015em] text-[clamp(2.75rem,11cqw,4.5rem)]">
               You Don&apos;t Have a Will.
               <br />
               <span className="italic font-medium">Let&apos;s Fix That.</span>
@@ -40,10 +41,10 @@ export default function Hero() {
             </p>
 
             <div className="mt-12 flex items-center gap-4">
-              <Link href="/create" className="iha-seal">
+              <TrackedLink target="hero_begin" href="/create" className="iha-seal">
                 <span className="iha-seal-mark" aria-hidden="true" />
                 Begin the Draft
-              </Link>
+              </TrackedLink>
             </div>
 
             <p className="mt-6 font-[family-name:var(--font-display)] italic text-[15px] text-[var(--color-ink-soft)]">
