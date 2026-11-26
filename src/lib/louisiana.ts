@@ -68,7 +68,9 @@ export function generateLouisianaWill(
       content += `${i + 1}. The Testator bequeaths ${b.item} to ${b.recipient.name}, ${b.recipient.relationship} of the Testator. `;
       if (b.alternateDisposition === "their_children") {
         content += `Should ${b.recipient.name} predecease the Testator, this legacy shall pass to the descendants of ${b.recipient.name}. `;
-      } else if (b.alternateDisposition === "residuary") {
+      } else if (b.alternateDisposition === "specific_person" && b.alternatePerson?.name) {
+        content += `Should ${b.recipient.name} predecease the Testator, this legacy shall pass to ${b.alternatePerson.name}. `;
+      } else if (b.alternateDisposition === "residuary" || b.alternateDisposition === "specific_person") {
         content += `Should ${b.recipient.name} predecease the Testator, this legacy shall fall into the residuary estate. `;
       }
     });
@@ -88,6 +90,14 @@ export function generateLouisianaWill(
       answers.residuaryBeneficiaries.forEach((b) => {
         content += `${b.percentage}% to ${b.name}; `;
       });
+      const rule = answers.residuaryAlternateRule ?? "split_among_others";
+      if (rule === "split_among_others") {
+        content += "Should any named legatee predecease the Testator, that share shall be divided equally among the surviving legatees named above. ";
+      } else if (rule === "their_children") {
+        content += "Should any named legatee predecease the Testator, that share shall pass to the descendants of that legatee. ";
+      } else if (rule === "specific_person" && answers.residuaryAlternate?.name) {
+        content += `Should any named legatee predecease the Testator, that share shall pass to ${answers.residuaryAlternate.name}. `;
+      }
     }
     articles.push({ heading: `ARTICLE ${articleNum++} — UNIVERSAL LEGACY (RESIDUARY)`, content });
   }

@@ -2,10 +2,19 @@ import type { WillAnswers, GeneratedWill, WillArticle } from "./types";
 import { getStateByAbbreviation, isCommunityPropertyState } from "./stateData";
 import { generateLouisianaWill } from "./louisiana";
 import { generateExecutionChecklist } from "./executionChecklist";
+import { dropInactiveAnswers, findIncompleteAnswers } from "./answerConsistency";
 
-export function generateWill(answers: WillAnswers): GeneratedWill {
-  const stateReqs = getStateByAbbreviation(answers.state);
-  if (!stateReqs) throw new Error(`Unknown state: ${answers.state}`);
+export function generateWill(rawAnswers: WillAnswers): GeneratedWill {
+  const stateReqs = getStateByAbbreviation(rawAnswers?.state);
+  if (!stateReqs) throw new Error(`Unknown state: ${rawAnswers?.state}`);
+
+  // Refuse to typeset a will from blank or implausible answers (a stale or
+  // half-filled session can reach /review without passing the step checks).
+  const problems = findIncompleteAnswers(rawAnswers, stateReqs.minimum_age.standard);
+  if (problems.length > 0) throw new Error(`Incomplete answers: ${problems.join(", ")}`);
+
+  // Drop answers whose step is no longer active (e.g. guardian after "No children").
+  const answers = dropInactiveAnswers(rawAnswers);
 
   // Louisiana gets its own generator
   if (answers.state === "LA") {
@@ -75,7 +84,7 @@ export function generateWill(answers: WillAnswers): GeneratedWill {
       content += `${i + 1}. I give ${b.item}${b.isRealEstate && b.propertyAddress ? ` (located at ${b.propertyAddress})` : ""} to ${b.recipient.name}, my ${b.recipient.relationship}. `;
       if (b.alternateDisposition === "their_children") {
         content += `If ${b.recipient.name} predeceases me, this gift shall pass to the then-living descendants of ${b.recipient.name}, per stirpes. `;
-      } else if (b.alternateDisposition === "specific_person" && b.alternatePerson) {
+      } else if (b.alternateDisposition === "specific_person" && b.alternatePerson?.name) {
         content += `If ${b.recipient.name} predeceases me, this gift shall pass to ${b.alternatePerson.name}. `;
       } else {
         content += `If ${b.recipient.name} predeceases me, this gift shall become part of my residuary estate. `;
@@ -98,10 +107,15 @@ export function generateWill(answers: WillAnswers): GeneratedWill {
       answers.residuaryBeneficiaries.forEach((b) => {
         content += `${b.percentage}% to ${b.name}, my ${b.relationship}; `;
       });
-      if (answers.residuaryAlternateRule === "split_among_others") {
+      // The dropdown shows "split_among_others" as its default but never stored
+      // it, so an untouched dropdown must mean the same thing here.
+      const rule = answers.residuaryAlternateRule ?? "split_among_others";
+      if (rule === "split_among_others") {
         content += "If any named beneficiary predeceases me, their share shall be divided equally among the surviving beneficiaries named above. ";
-      } else if (answers.residuaryAlternateRule === "their_children") {
+      } else if (rule === "their_children") {
         content += "If any named beneficiary predeceases me, their share shall pass to their then-living descendants, per stirpes. ";
+      } else if (rule === "specific_person" && answers.residuaryAlternate?.name) {
+        content += `If any named beneficiary predeceases me, their share shall pass to ${answers.residuaryAlternate.name}${answers.residuaryAlternate.relationship ? `, my ${answers.residuaryAlternate.relationship}` : ""}. `;
       }
     }
     articles.push({ heading: `ARTICLE ${toRoman(articleNum++)} — RESIDUARY ESTATE`, content });
@@ -180,11 +194,12 @@ export function generateWill(answers: WillAnswers): GeneratedWill {
   }
 
   // Article — No-Contest
-  if (answers.includeNoContest) {
+  // Florida: Fla. Stat. § 732.517 makes a penalty clause for contest unenforceable
+  // outright (no probable-cause exception), so the clause is not printed; the
+  // execution checklist tells the user why.
+  if (answers.includeNoContest && answers.state !== "FL") {
     let content = `If any beneficiary under this Will, or any person claiming under or through any beneficiary, shall contest or attack this Will or any of its provisions, any share or interest in my estate given to that contesting beneficiary under this Will is hereby revoked and shall be disposed of in the same manner provided herein as if that contesting beneficiary had predeceased me without issue.`;
-    if (answers.state === "FL") {
-      content += ` NOTE: Florida law (Fla. Stat. § 732.517) limits the enforceability of no-contest clauses. Under Florida's statute, a no-contest clause is unenforceable if the contestant has probable cause for the contest. This clause is included to express the Testator's intent but may not be fully enforceable under Florida law.`;
-    } else if (answers.state === "IN") {
+    if (answers.state === "IN") {
       content += ` NOTE: Indiana courts have historically disfavored no-contest clauses and may construe them narrowly. This clause is included to express the Testator's intent but its enforceability may be limited under Indiana law.`;
     }
     articles.push({ heading: `ARTICLE ${toRoman(articleNum++)} — NO-CONTEST CLAUSE`, content });

@@ -24,7 +24,9 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
       : residuaryType === "split"
       ? residuaryBeneficiaries.length >= 2 &&
         residuaryBeneficiaries.every((b) => b.name.trim() !== "" && b.percentage > 0) &&
-        total === 100
+        total === 100 &&
+        (answers.residuaryAlternateRule !== "specific_person" ||
+          !!residuaryAlternate?.name?.trim())
       : false;
 
   function setSingle() {
@@ -41,6 +43,8 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
         { name: "", relationship: "", percentage: 50 },
         { name: "", relationship: "", percentage: 50 },
       ],
+      // The dropdown shows this as its default, so store it.
+      residuaryAlternateRule: answers.residuaryAlternateRule ?? "split_among_others",
     });
   }
 
@@ -172,6 +176,12 @@ export default function ResiduaryEstate({ answers, updateAnswers, onNext, onPrev
               <option value="their_children">Their share goes to their children</option>
               <option value="specific_person">Name someone specific</option>
             </select>
+            {answers.residuaryAlternateRule === "specific_person" && (
+              <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="text" placeholder="Full name" aria-label="Name of the person who receives the share" value={residuaryAlternate?.name ?? ""} onChange={(e) => updateAnswers({ residuaryAlternate: { name: e.target.value, relationship: residuaryAlternate?.relationship ?? "" } })} className="iha-input" />
+                <input type="text" placeholder="Relationship" aria-label="Relationship of the person who receives the share" value={residuaryAlternate?.relationship ?? ""} onChange={(e) => updateAnswers({ residuaryAlternate: { name: residuaryAlternate?.name ?? "", relationship: e.target.value } })} className="iha-input" />
+              </div>
+            )}
           </div>
 
           <button onClick={() => updateAnswers({ residuaryType: "" })} className="text-sm text-gray-400 hover:text-gray-600">Change answer</button>

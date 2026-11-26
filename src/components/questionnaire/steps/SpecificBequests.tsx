@@ -28,7 +28,11 @@ export default function SpecificBequests({ answers, updateAnswers, onNext, onPre
     (hasSpecificBequests === true &&
       specificBequests.length > 0 &&
       specificBequests.every(
-        (b) => b.item.trim() !== "" && b.recipient.name.trim() !== ""
+        (b) =>
+          b.item.trim() !== "" &&
+          b.recipient.name.trim() !== "" &&
+          (b.alternateDisposition !== "specific_person" ||
+            !!b.alternatePerson?.name?.trim())
       ));
 
   function addBequest() {

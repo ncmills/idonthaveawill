@@ -264,6 +264,22 @@ export function generateExecutionChecklist(
     });
   }
 
+  // Florida: the no-contest clause the user asked for is not printed
+  if (answers.includeNoContest && answers.state === "FL") {
+    items.push({
+      step: step++,
+      title: "Florida does not enforce no-contest clauses, so none was added",
+      requirement:
+        "You chose to include a no-contest clause. Under Fla. Stat. § 732.517, a will provision that penalizes a person for contesting the will is unenforceable, so we left it out rather than print a clause that has no effect.",
+      howTo:
+        "Nothing to do. If you are worried about a challenge to your will, talk with a Florida estate planning attorney about other options.",
+      why:
+        "Florida makes these clauses unenforceable. A clause that cannot be enforced adds length to your will without protecting anything.",
+      citations: [{ text: "Fla. Stat. § 732.517 (Penalty clause for contest)" }],
+      required: false,
+    });
+  }
+
   // Elective share warning for spouse disinheritance
   if (
     answers.maritalStatus === "married" &&
