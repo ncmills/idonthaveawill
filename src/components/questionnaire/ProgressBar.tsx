@@ -13,7 +13,7 @@ export default function ProgressBar({
     <div className="w-full">
       <div className="flex justify-between items-baseline mb-3">
         <span className="iha-caps">
-          Folio{" "}
+          Step{" "}
           <span className="font-[family-name:var(--font-display)] italic text-[13px] text-[var(--color-ink)] normal-case tracking-normal">
             {currentStep + 1} of {totalSteps}
           </span>
@@ -32,6 +32,9 @@ export default function ProgressBar({
           style={{ width: `${progress}%` }}
         />
       </div>
+      <p className="mt-2 text-[12px] text-[var(--color-ink-soft)]">
+        Your progress is kept only until you close this tab.
+      </p>
     </div>
   );
 }

@@ -45,8 +45,9 @@ export default function PrivacyPage() {
             JavaScript. Your answers are stored temporarily in your
             browser&apos;s session storage so you don&apos;t lose progress if you
             refresh the page. This data is automatically cleared when you close
-            your browser tab. No data is ever sent to our servers or any third
-            party.
+            your browser tab. The text of your will, including every name and wish, stays on your
+            device and is never sent to our servers or any third party. The only
+            thing we receive is anonymous category counts, described below.
           </p>
         </section>
 

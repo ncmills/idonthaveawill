@@ -36,8 +36,9 @@ export default function Hero() {
             </h1>
 
             <p className="mt-8 text-[17px] md:text-[18px] text-[var(--color-ink-soft)] leading-relaxed max-w-xl">
-              A free tool that helps you draft a simple will in about ten minutes.
-              No account. Your answers never leave the browser.
+              A free tool that helps you draft a simple will. About 10 minutes for a
+              simple situation; longer if you have kids or specific gifts.
+              No account. Your names and wishes never leave your browser.
             </p>
 
             <div className="mt-12 flex items-center gap-4">

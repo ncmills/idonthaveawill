@@ -54,7 +54,7 @@ export default function EmailCapture({ stateAbbr }: EmailCaptureProps) {
 
   return (
     <div className="bg-[var(--color-cream-deep)] p-6 md:p-8 border border-[var(--color-rule)]">
-      <p className="iha-caps">Annual correspondence</p>
+      <p className="iha-caps">Yearly reminder</p>
       <h3 className="mt-3 font-[family-name:var(--font-display)] text-[22px] md:text-[24px] font-medium text-[var(--color-ink)] leading-tight">
         A yearly reminder to review your will.
       </h3>

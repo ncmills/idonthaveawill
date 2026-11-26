@@ -11,7 +11,7 @@ import AttorneyReferral from "@/components/will/AttorneyReferral";
 import EmailCapture from "@/components/will/EmailCapture";
 import { sendAnonymizedStats } from "@/lib/analytics";
 import { trackWillGenerated, trackResultShown, trackFormError } from "@/lib/tracking";
-import { getStateNameByAbbr } from "@/lib/stateDataClient";
+import { getStateNameByAbbr, getStateSlim } from "@/lib/stateDataClient";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -72,6 +72,8 @@ function ReviewContent() {
     );
   }
 
+  const witnessCount = (answers?.state && getStateSlim(answers.state)?.witnessCount) || 0;
+
   return (
     <div>
       <DisclaimerBanner />
@@ -82,6 +84,11 @@ function ReviewContent() {
             <h1 className="mt-3 font-[family-name:var(--font-display)] text-[34px] md:text-[44px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em]">
               Your will is ready.
             </h1>
+            <p className="mt-2 text-[15px] text-[var(--color-ink)]">
+              {witnessCount > 0
+                ? `It becomes valid only after you sign it with ${witnessCount} witness${witnessCount !== 1 ? "es" : ""}. Steps are below.`
+                : "It becomes valid only after you sign it. Steps are below."}
+            </p>
             <p className="mt-2 font-[family-name:var(--font-display)] italic text-[16px] text-[var(--color-ink-soft)]">
               Review it below, then follow the steps to make it official.
             </p>
