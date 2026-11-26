@@ -55,7 +55,7 @@ export default function HomepageEmailCapture() {
   return (
     <section className="py-20 md:py-24 bg-[var(--color-cream-deep)]">
       <div className="max-w-xl mx-auto px-6 text-center">
-        <p className="iha-caps">Annual correspondence</p>
+        <p className="iha-caps">Yearly reminder</p>
         <h3 className="mt-4 font-[family-name:var(--font-display)] text-[26px] md:text-[30px] font-medium text-[var(--color-ink)] leading-tight">
           A yearly reminder to review your will.
         </h3>
