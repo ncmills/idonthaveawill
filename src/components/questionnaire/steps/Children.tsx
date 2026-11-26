@@ -72,7 +72,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
           </button>
           <button
             onClick={() => {
-              updateAnswers({ hasChildren: false, children: [] });
+              updateAnswers({ hasChildren: false, children: [], guardian: undefined, alternateGuardian: undefined, inheritanceAge: undefined });
             }}
             className="py-4 px-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 text-lg font-medium text-gray-700 transition-all"
           >
@@ -202,7 +202,7 @@ export default function Children({ answers, updateAnswers, onNext, onPrev, isFir
           </button>
 
           <button
-            onClick={() => updateAnswers({ hasChildren: null, children: [] })}
+            onClick={() => updateAnswers({ hasChildren: null, children: [], guardian: undefined, alternateGuardian: undefined, inheritanceAge: undefined })}
             className="text-sm text-gray-400 hover:text-gray-600"
           >
             Actually, I don&apos;t have children
