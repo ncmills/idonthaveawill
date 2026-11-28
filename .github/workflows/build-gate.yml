@@ -38,3 +38,9 @@ jobs:
 
       - name: internal links
         run: node scripts/check-internal-links.mjs
+
+      - name: data guards (unsourced facts, stale datasets)
+        run: |
+          node scripts/validate-state-data.mjs
+          node scripts/check-unsourced-facts.mjs
+          node scripts/check-stale-datasets.mjs

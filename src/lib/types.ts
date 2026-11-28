@@ -27,6 +27,10 @@ export interface StateRequirements {
   revocation: { methods: string[]; notes: string };
   special_provisions: string;
   statute_citations: string[];
+  // Primary-source links (official legislature page, fetched and confirmed to be that section).
+  // A citation with no entry is unlinked; its row must carry sourcePendingSince: "YYYY-MM-DD" (expires after 30 days; guard: check-unsourced-facts.mjs).
+  statute_sources?: { citation: string; url: string }[];
+  sourcePendingSince?: string;
   last_researched: string;
 }
 

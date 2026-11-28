@@ -550,12 +550,28 @@ export default async function StatePage({ params }: Props) {
               Relevant {state.state} Statutes
             </h2>
             <ul className="mt-3 space-y-2">
-              {state.statute_citations.map((cite, i) => (
-                <li key={i} className="text-sm font-mono text-gray-500 bg-gray-50 px-3 py-2 rounded-lg">
-                  {cite}
-                </li>
-              ))}
+              {state.statute_citations.map((cite, i) => {
+                const url = state.statute_sources?.find((s) => s.citation === cite)?.url;
+                return (
+                  <li key={i} className="text-sm font-mono text-gray-500 bg-gray-50 px-3 py-2 rounded-lg">
+                    {cite}
+                    {url ? (
+                      <>
+                        {" "}
+                        <a href={url} target="_blank" rel="noopener noreferrer" className="font-sans text-[var(--color-brand)] underline">
+                          Official text
+                        </a>
+                      </>
+                    ) : (
+                      <span className="block font-sans text-xs text-gray-400 mt-1">
+                        Official statute link coming; citation above is the section number.
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
+            <p className="mt-3 text-xs text-gray-400">Last verified {state.last_researched}</p>
           </section>
         </div>
 
