@@ -54,7 +54,8 @@
       "Ala. Code \u00a7 43-8-134 (Interested witnesses)",
       "Ala. Code \u00a7 43-8-136 (Revocation)"
     ],
-    "last_researched": "2026-07-01"
+    "last_researched": "2026-07-01",
+    "sourcePending": true
   },
   {
     "state": "Alaska",
@@ -113,7 +114,8 @@
       "AS 13.12.202 (Elective share)",
       "AS 34.77 (Alaska Community Property Act)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Arizona",
@@ -174,7 +176,41 @@
       "ARS 14-2519 (Self-proved electronic will)",
       "ARS 14-2520 (Qualified custodian)"
     ],
-    "last_researched": "2026-09-18"
+    "last_researched": "2026-09-18",
+    "statute_sources": [
+      {
+        "citation": "ARS 14-2501 (Who may make a will)",
+        "url": "https://www.azleg.gov/ars/14/02501.htm"
+      },
+      {
+        "citation": "ARS 14-2502 (Execution of paper wills; witnessed wills; holographic wills; testamentary intent)",
+        "url": "https://www.azleg.gov/ars/14/02502.htm"
+      },
+      {
+        "citation": "ARS 14-2503 (Holographic will)",
+        "url": "https://www.azleg.gov/ars/14/02503.htm"
+      },
+      {
+        "citation": "ARS 14-2504 (Self-proved wills; sample form; signature requirements)",
+        "url": "https://www.azleg.gov/ars/14/02504.htm"
+      },
+      {
+        "citation": "ARS 14-2507 (Revocation of will; requirements)",
+        "url": "https://www.azleg.gov/ars/14/02507.htm"
+      },
+      {
+        "citation": "ARS 14-2518 (Electronic will; requirements; interpretation)",
+        "url": "https://www.azleg.gov/ars/14/02518.htm"
+      },
+      {
+        "citation": "ARS 14-2519 (Self-proved electronic will)",
+        "url": "https://www.azleg.gov/ars/14/02519.htm"
+      },
+      {
+        "citation": "ARS 14-2520 (Qualified custodian)",
+        "url": "https://www.azleg.gov/ars/14/02520.htm"
+      }
+    ]
   },
   {
     "state": "Arkansas",
@@ -232,7 +268,8 @@
       "Ark. Code \u00a7 28-25-106 (Affidavit of attesting witness)",
       "Ark. Code \u00a7 28-25-109 (Revocation of wills)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "California",
@@ -294,7 +331,8 @@
       "Cal. Prob. Code 6120 (Methods of revocation \u2014 subsequent will or physical act)",
       "Cal. Prob. Code 6121 (Revocation of wills executed in duplicate)"
     ],
-    "last_researched": "2026-08-07"
+    "last_researched": "2026-08-07",
+    "sourcePending": true
   },
   {
     "state": "Colorado",
@@ -353,7 +391,8 @@
       "CRS 15-11-507 (Revocation by writing or by act)",
       "CRS 15-11-1301 et seq. (Colorado Uniform Electronic Wills Act)"
     ],
-    "last_researched": "2026-08-07"
+    "last_researched": "2026-08-07",
+    "sourcePending": true
   },
   {
     "state": "Connecticut",
@@ -411,7 +450,8 @@
       "Conn. Gen. Stat. \u00a7 45a-285 (Self-proved wills)",
       "Conn. Gen. Stat. \u00a7 45a-436 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Delaware",
@@ -470,7 +510,8 @@
       "12 Del. C. \u00a7 901 (Elective share)",
       "12 Del. C. \u00a7 1305 (Self-proved wills)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "District of Columbia",
@@ -531,7 +572,8 @@
       "DC Code 18-908 (Electronic will self-proving)",
       "D.C. Law 24-296 (Uniform Electronic Wills Amendment Act of 2022)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Florida",
@@ -591,7 +633,30 @@
       "Fla. Stat. \u00a7 732.521-528 (Electronic Wills Act)",
       "Fla. Stat. \u00a7 732.2065 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "Fla. Stat. \u00a7 732.502 (Execution of wills)",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/Sections/0732.502.html"
+      },
+      {
+        "citation": "Fla. Stat. \u00a7 732.503 (Self-proved wills)",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/Sections/0732.503.html"
+      },
+      {
+        "citation": "Fla. Stat. \u00a7 732.504 (Interested witnesses)",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/Sections/0732.504.html"
+      },
+      {
+        "citation": "Fla. Stat. \u00a7 732.505 (Revocation)",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/Sections/0732.505.html"
+      },
+      {
+        "citation": "Fla. Stat. \u00a7 732.2065 (Elective share)",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/Sections/0732.2065.html"
+      }
+    ],
+    "sourcePending": true
   },
   {
     "state": "Georgia",
@@ -651,7 +716,8 @@
       "O.C.G.A. \u00a7 53-4-40 (Revocation)",
       "O.C.G.A. \u00a7 53-3-1 (Year's support)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Hawaii",
@@ -709,7 +775,8 @@
       "HRS 560:2-507 (Revocation by writing or by act)",
       "HRS 560:2-202 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Idaho",
@@ -769,7 +836,8 @@
       "Idaho Code 15-2-507 (Revocation by writing or by act)",
       "Idaho Code 15-2-1101 to 15-2-1112 (Uniform Electronic Wills Act)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Illinois",
@@ -827,7 +895,8 @@
       "755 ILCS 6/ (Electronic Wills Act)",
       "755 ILCS 5/2-8 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Indiana",
@@ -886,7 +955,8 @@
       "IC 29-1-21 (Electronic wills)",
       "IC 29-1-3-1 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Iowa",
@@ -942,7 +1012,8 @@
       "Iowa Code \u00a7 633.284 (Revocation)",
       "Iowa Code \u00a7 633.238 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Kansas",
@@ -999,7 +1070,8 @@
       "K.S.A. \u00a7 59-611 (Revocation)",
       "K.S.A. \u00a7 59-6a202 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Kentucky",
@@ -1057,7 +1129,8 @@
       "KRS 394.225 (Self-proved wills)",
       "KRS 392.020 (Renunciation by surviving spouse)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Louisiana",
@@ -1115,7 +1188,8 @@
       "La. C.C. art. 1577 (Notarial testament)",
       "La. C.C. art. 1607 (Revocation)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Maine",
@@ -1172,7 +1246,8 @@
       "18-C MRS \u00a7 2-507 (Revocation by writing or by act)",
       "18-C MRS \u00a7 2-202 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Maryland",
@@ -1231,7 +1306,8 @@
       "Md. Code, Est. & Trusts \u00a7 4-105 (Revocation)",
       "Md. Code, Est. & Trusts \u00a7 3-203 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Massachusetts",
@@ -1288,7 +1364,8 @@
       "MGL c. 190B \u00a7 2-507 (Revocation)",
       "MGL c. 190B \u00a7 2-202 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Michigan",
@@ -1346,7 +1423,33 @@
       "MCL 700.2507 (Revocation)",
       "MCL 700.2202 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "MCL 700.2501 (Who may make a will)",
+        "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2501"
+      },
+      {
+        "citation": "MCL 700.2502 (Execution of wills; holographic wills)",
+        "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2502"
+      },
+      {
+        "citation": "MCL 700.2504 (Self-proved wills)",
+        "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2504"
+      },
+      {
+        "citation": "MCL 700.2505 (Interested witnesses)",
+        "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2505"
+      },
+      {
+        "citation": "MCL 700.2507 (Revocation)",
+        "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2507"
+      },
+      {
+        "citation": "MCL 700.2202 (Elective share)",
+        "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2202"
+      }
+    ]
   },
   {
     "state": "Minnesota",
@@ -1404,7 +1507,33 @@
       "Minn. Stat. \u00a7 524.2-507 (Revocation)",
       "Minn. Stat. \u00a7 524.2-202 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "Minn. Stat. \u00a7 524.2-501 (Who may make a will)",
+        "url": "https://www.revisor.mn.gov/statutes/cite/524.2-501"
+      },
+      {
+        "citation": "Minn. Stat. \u00a7 524.2-502 (Execution of wills)",
+        "url": "https://www.revisor.mn.gov/statutes/cite/524.2-502"
+      },
+      {
+        "citation": "Minn. Stat. \u00a7 524.2-504 (Self-proved wills)",
+        "url": "https://www.revisor.mn.gov/statutes/cite/524.2-504"
+      },
+      {
+        "citation": "Minn. Stat. \u00a7 524.2-505 (Interested witnesses)",
+        "url": "https://www.revisor.mn.gov/statutes/cite/524.2-505"
+      },
+      {
+        "citation": "Minn. Stat. \u00a7 524.2-507 (Revocation)",
+        "url": "https://www.revisor.mn.gov/statutes/cite/524.2-507"
+      },
+      {
+        "citation": "Minn. Stat. \u00a7 524.2-202 (Elective share)",
+        "url": "https://www.revisor.mn.gov/statutes/cite/524.2-202"
+      }
+    ]
   },
   {
     "state": "Mississippi",
@@ -1460,7 +1589,8 @@
       "Miss. Code \u00a7 91-5-15 (Nuncupative wills)",
       "Miss. Code \u00a7 91-1-7 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Missouri",
@@ -1518,7 +1648,8 @@
       "Mo. Rev. Stat. \u00a7 474.400 (Revocation)",
       "Mo. Rev. Stat. \u00a7 474.160 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Montana",
@@ -1576,7 +1707,8 @@
       "MCA 72-2-527 (Revocation by writing or by act)",
       "MCA 72-2-221 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Nebraska",
@@ -1635,7 +1767,8 @@
       "Neb. Rev. Stat. \u00a7 30-2331 (Revocation)",
       "Neb. Rev. Stat. \u00a7 30-2313 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Nevada",
@@ -1699,7 +1832,8 @@
       "NRS 133.100 (Nuncupative will invalid)",
       "NRS 133.120 (Revocation of wills)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "New Hampshire",
@@ -1758,7 +1892,8 @@
       "RSA 551:16 (Nuncupative wills)",
       "RSA 560:10 (Waiver of will by spouse)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "New Jersey",
@@ -1817,7 +1952,8 @@
       "N.J.S.A. 3B:3-13 (Revocation)",
       "N.J.S.A. 3B:8-1 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "New Mexico",
@@ -1875,7 +2011,8 @@
       "NMSA 45-2-506 (Choice of law as to execution)",
       "NMSA 45-2-507 (Revocation by writing or by act)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "New York",
@@ -1936,7 +2073,8 @@
       "EPTL \u00a7 5-1.1-A (Right of election by surviving spouse)",
       "SCPA \u00a7 1406 (Proof of wills)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "North Carolina",
@@ -1996,7 +2134,38 @@
       "N.C.G.S. \u00a7 31-11.6 (Self-proved wills)",
       "N.C.G.S. \u00a7 30-3.1 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "N.C.G.S. \u00a7 31-1 (Who may make a will)",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-1.html"
+      },
+      {
+        "citation": "N.C.G.S. \u00a7 31-3.3 (Attested written will)",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-3.3.html"
+      },
+      {
+        "citation": "N.C.G.S. \u00a7 31-3.4 (Holographic will)",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-3.4.html"
+      },
+      {
+        "citation": "N.C.G.S. \u00a7 31-3.5 (Nuncupative will)",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-3.5.html"
+      },
+      {
+        "citation": "N.C.G.S. \u00a7 31-5.1 (Revocation)",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-5.1.html"
+      },
+      {
+        "citation": "N.C.G.S. \u00a7 31-10 (Interested witnesses)",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-10.html"
+      },
+      {
+        "citation": "N.C.G.S. \u00a7 30-3.1 (Elective share)",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_30/GS_30-3.1.html"
+      }
+    ],
+    "sourcePending": true
   },
   {
     "state": "North Dakota",
@@ -2055,7 +2224,8 @@
       "NDCC Ch. 30.1-37 (Electronic wills)",
       "NDCC \u00a7 30.1-05-02 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Ohio",
@@ -2113,7 +2283,33 @@
       "ORC \u00a7 2107.60 (Nuncupative wills)",
       "ORC \u00a7 2106.01 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "ORC \u00a7 2107.02 (Who may make a will)",
+        "url": "https://codes.ohio.gov/ohio-revised-code/section-2107.02"
+      },
+      {
+        "citation": "ORC \u00a7 2107.03 (Execution of wills)",
+        "url": "https://codes.ohio.gov/ohio-revised-code/section-2107.03"
+      },
+      {
+        "citation": "ORC \u00a7 2107.15 (Interested witnesses)",
+        "url": "https://codes.ohio.gov/ohio-revised-code/section-2107.15"
+      },
+      {
+        "citation": "ORC \u00a7 2107.33 (Revocation)",
+        "url": "https://codes.ohio.gov/ohio-revised-code/section-2107.33"
+      },
+      {
+        "citation": "ORC \u00a7 2107.60 (Nuncupative wills)",
+        "url": "https://codes.ohio.gov/ohio-revised-code/section-2107.60"
+      },
+      {
+        "citation": "ORC \u00a7 2106.01 (Elective share)",
+        "url": "https://codes.ohio.gov/ohio-revised-code/section-2106.01"
+      }
+    ]
   },
   {
     "state": "Oklahoma",
@@ -2172,7 +2368,8 @@
       "58 Okla. Stat. \u00a7 71 (Self-proved wills)",
       "84 Okla. Stat. \u00a7 44 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Oregon",
@@ -2235,7 +2432,38 @@
       "ORS 113.055 (Self-proving affidavit)",
       "ORS 114.600-114.725 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "ORS 112.225 (Who may make a will)",
+        "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors112.html"
+      },
+      {
+        "citation": "ORS 112.235 (Execution of a will)",
+        "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors112.html"
+      },
+      {
+        "citation": "ORS 112.238 (Substantial compliance; harmless error)",
+        "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors112.html"
+      },
+      {
+        "citation": "ORS 112.255 (Validity of execution)",
+        "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors112.html"
+      },
+      {
+        "citation": "ORS 112.285 (Express revocation or alteration)",
+        "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors112.html"
+      },
+      {
+        "citation": "ORS 112.305 (Revocation by marriage)",
+        "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors112.html"
+      },
+      {
+        "citation": "ORS 113.055 (Self-proving affidavit)",
+        "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors113.html"
+      }
+    ],
+    "sourcePending": true
   },
   {
     "state": "Pennsylvania",
@@ -2292,7 +2520,8 @@
       "20 Pa.C.S. \u00a7 2203 (Elective share)",
       "20 Pa.C.S. \u00a7 3132.1 (Self-proved wills)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Rhode Island",
@@ -2350,7 +2579,8 @@
       "R.I. Gen. Laws \u00a7 33-7-26 (Self-proved wills)",
       "R.I. Gen. Laws \u00a7 33-25 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "South Carolina",
@@ -2408,7 +2638,8 @@
       "S.C. Code \u00a7 62-2-507 (Revocation)",
       "S.C. Code \u00a7 62-2-201 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "South Dakota",
@@ -2466,7 +2697,8 @@
       "SDCL \u00a7 29A-2-507 (Revocation)",
       "SDCL \u00a7 29A-2-202 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Tennessee",
@@ -2525,7 +2757,8 @@
       "Tenn. Code \u00a7 32-2-110 (Self-proved wills)",
       "Tenn. Code \u00a7 31-4-101 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Texas",
@@ -2584,7 +2817,8 @@
       "Tex. Est. Code 253.002 (Revocation)",
       "Tex. Est. Code 254.002 (Interested witnesses)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Utah",
@@ -2644,7 +2878,8 @@
       "Utah Code 75-2-202 (Elective share)",
       "Utah Code 75-2-1001 et seq. (Electronic wills)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Vermont",
@@ -2700,7 +2935,8 @@
       "14 V.S.A. \u00a7 11 (Revocation)",
       "14 V.S.A. \u00a7 319 (Waiver of will)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Virginia",
@@ -2758,7 +2994,33 @@
       "Va. Code \u00a7 64.2-410 (Revocation)",
       "Va. Code \u00a7 64.2-302 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "Va. Code \u00a7 64.2-401 (Who may make a will)",
+        "url": "https://law.lis.virginia.gov/vacode/title64.2/chapter4/section64.2-401/"
+      },
+      {
+        "citation": "Va. Code \u00a7 64.2-403 (Execution of wills)",
+        "url": "https://law.lis.virginia.gov/vacode/title64.2/chapter4/section64.2-403/"
+      },
+      {
+        "citation": "Va. Code \u00a7 64.2-404 (Interested witnesses)",
+        "url": "https://law.lis.virginia.gov/vacode/title64.2/chapter4/section64.2-404/"
+      },
+      {
+        "citation": "Va. Code \u00a7 64.2-405 (Self-proved wills)",
+        "url": "https://law.lis.virginia.gov/vacode/title64.2/chapter4/section64.2-405/"
+      },
+      {
+        "citation": "Va. Code \u00a7 64.2-410 (Revocation)",
+        "url": "https://law.lis.virginia.gov/vacode/title64.2/chapter4/section64.2-410/"
+      },
+      {
+        "citation": "Va. Code \u00a7 64.2-302 (Elective share)",
+        "url": "https://law.lis.virginia.gov/vacode/title64.2/chapter3/section64.2-302/"
+      }
+    ]
   },
   {
     "state": "Washington",
@@ -2817,7 +3079,37 @@
       "RCW 11.12.400-11.12.491 (Electronic wills - UEWA)",
       "RCW 11.20.020 (Self-proving affidavit)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "statute_sources": [
+      {
+        "citation": "RCW 11.12.010 (Who may make a will)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.010"
+      },
+      {
+        "citation": "RCW 11.12.020 (Requisites of wills; electronic presence)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.020"
+      },
+      {
+        "citation": "RCW 11.12.025 (Nuncupative wills)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.025"
+      },
+      {
+        "citation": "RCW 11.12.040 (Revocation of will)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.040"
+      },
+      {
+        "citation": "RCW 11.12.160 (Interested witness)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.160"
+      },
+      {
+        "citation": "RCW 11.12.400-11.12.491 (Electronic wills - UEWA)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.12.400-11.12.491"
+      },
+      {
+        "citation": "RCW 11.20.020 (Self-proving affidavit)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.020"
+      }
+    ]
   },
   {
     "state": "West Virginia",
@@ -2876,7 +3168,8 @@
       "W. Va. Code \u00a7 41-5-15 (Self-proved wills)",
       "W. Va. Code \u00a7 42-3-1 (Elective share)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Wisconsin",
@@ -2935,7 +3228,8 @@
       "Wis. Stat. \u00a7 861.02 (Elective share)",
       "Wis. Stat. Ch. 766 (Marital Property Act)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   },
   {
     "state": "Wyoming",
@@ -2993,6 +3287,7 @@
       "Wyo. Stat. 2-6-114 (Self-proving wills)",
       "Wyo. Stat. 2-6-117 (Revocation by writing or by act)"
     ],
-    "last_researched": "2026-03-24"
+    "last_researched": "2026-03-24",
+    "sourcePending": true
   }
 ]
