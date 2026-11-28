@@ -28,9 +28,9 @@ export interface StateRequirements {
   special_provisions: string;
   statute_citations: string[];
   // Primary-source links (official legislature page, fetched and confirmed to be that section).
-  // A citation with no entry is unlinked; its row must carry sourcePending: true (guard: check-unsourced-facts.mjs).
+  // A citation with no entry is unlinked; its row must carry sourcePendingSince: "YYYY-MM-DD" (expires after 30 days; guard: check-unsourced-facts.mjs).
   statute_sources?: { citation: string; url: string }[];
-  sourcePending?: boolean;
+  sourcePendingSince?: string;
   last_researched: string;
 }
 

@@ -15,8 +15,8 @@ const CONFIG = {
   dataFile: process.env.DATA_FILE || "data/states/all_states.json",
   rowLabel: (r) => r.abbreviation || r.state,
   dateField: "last_researched",
-  maxAgeDays: 365,
-  warnAgeDays: 180,
+  maxAgeDays: 180,
+  warnAgeDays: 120,
 };
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");

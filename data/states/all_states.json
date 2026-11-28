@@ -55,7 +55,7 @@
       "Ala. Code \u00a7 43-8-136 (Revocation)"
     ],
     "last_researched": "2026-07-01",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Alaska",
@@ -115,7 +115,7 @@
       "AS 34.77 (Alaska Community Property Act)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Arizona",
@@ -269,7 +269,7 @@
       "Ark. Code \u00a7 28-25-109 (Revocation of wills)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "California",
@@ -332,7 +332,7 @@
       "Cal. Prob. Code 6121 (Revocation of wills executed in duplicate)"
     ],
     "last_researched": "2026-08-07",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Colorado",
@@ -392,7 +392,7 @@
       "CRS 15-11-1301 et seq. (Colorado Uniform Electronic Wills Act)"
     ],
     "last_researched": "2026-08-07",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Connecticut",
@@ -451,7 +451,7 @@
       "Conn. Gen. Stat. \u00a7 45a-436 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Delaware",
@@ -511,7 +511,7 @@
       "12 Del. C. \u00a7 1305 (Self-proved wills)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "District of Columbia",
@@ -573,7 +573,7 @@
       "D.C. Law 24-296 (Uniform Electronic Wills Amendment Act of 2022)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Florida",
@@ -656,7 +656,7 @@
         "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/Sections/0732.2065.html"
       }
     ],
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Georgia",
@@ -717,7 +717,7 @@
       "O.C.G.A. \u00a7 53-3-1 (Year's support)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Hawaii",
@@ -776,7 +776,7 @@
       "HRS 560:2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Idaho",
@@ -837,7 +837,7 @@
       "Idaho Code 15-2-1101 to 15-2-1112 (Uniform Electronic Wills Act)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Illinois",
@@ -896,7 +896,7 @@
       "755 ILCS 5/2-8 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Indiana",
@@ -956,7 +956,7 @@
       "IC 29-1-3-1 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Iowa",
@@ -1013,7 +1013,7 @@
       "Iowa Code \u00a7 633.238 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Kansas",
@@ -1071,7 +1071,7 @@
       "K.S.A. \u00a7 59-6a202 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Kentucky",
@@ -1130,7 +1130,7 @@
       "KRS 392.020 (Renunciation by surviving spouse)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Louisiana",
@@ -1189,7 +1189,7 @@
       "La. C.C. art. 1607 (Revocation)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Maine",
@@ -1247,7 +1247,7 @@
       "18-C MRS \u00a7 2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Maryland",
@@ -1307,7 +1307,7 @@
       "Md. Code, Est. & Trusts \u00a7 3-203 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Massachusetts",
@@ -1365,7 +1365,7 @@
       "MGL c. 190B \u00a7 2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Michigan",
@@ -1590,7 +1590,7 @@
       "Miss. Code \u00a7 91-1-7 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Missouri",
@@ -1649,7 +1649,7 @@
       "Mo. Rev. Stat. \u00a7 474.160 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Montana",
@@ -1708,7 +1708,7 @@
       "MCA 72-2-221 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Nebraska",
@@ -1768,7 +1768,7 @@
       "Neb. Rev. Stat. \u00a7 30-2313 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Nevada",
@@ -1833,7 +1833,7 @@
       "NRS 133.120 (Revocation of wills)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "New Hampshire",
@@ -1893,7 +1893,7 @@
       "RSA 560:10 (Waiver of will by spouse)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "New Jersey",
@@ -1953,7 +1953,7 @@
       "N.J.S.A. 3B:8-1 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "New Mexico",
@@ -2012,7 +2012,7 @@
       "NMSA 45-2-507 (Revocation by writing or by act)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "New York",
@@ -2074,7 +2074,7 @@
       "SCPA \u00a7 1406 (Proof of wills)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "North Carolina",
@@ -2165,7 +2165,7 @@
         "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_30/GS_30-3.1.html"
       }
     ],
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "North Dakota",
@@ -2225,7 +2225,7 @@
       "NDCC \u00a7 30.1-05-02 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Ohio",
@@ -2369,7 +2369,7 @@
       "84 Okla. Stat. \u00a7 44 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Oregon",
@@ -2463,7 +2463,7 @@
         "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors113.html"
       }
     ],
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Pennsylvania",
@@ -2521,7 +2521,7 @@
       "20 Pa.C.S. \u00a7 3132.1 (Self-proved wills)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Rhode Island",
@@ -2580,7 +2580,7 @@
       "R.I. Gen. Laws \u00a7 33-25 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "South Carolina",
@@ -2639,7 +2639,7 @@
       "S.C. Code \u00a7 62-2-201 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "South Dakota",
@@ -2698,7 +2698,7 @@
       "SDCL \u00a7 29A-2-202 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Tennessee",
@@ -2758,7 +2758,7 @@
       "Tenn. Code \u00a7 31-4-101 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Texas",
@@ -2818,7 +2818,7 @@
       "Tex. Est. Code 254.002 (Interested witnesses)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Utah",
@@ -2879,7 +2879,7 @@
       "Utah Code 75-2-1001 et seq. (Electronic wills)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Vermont",
@@ -2936,7 +2936,7 @@
       "14 V.S.A. \u00a7 319 (Waiver of will)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Virginia",
@@ -3169,7 +3169,7 @@
       "W. Va. Code \u00a7 42-3-1 (Elective share)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Wisconsin",
@@ -3229,7 +3229,7 @@
       "Wis. Stat. Ch. 766 (Marital Property Act)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   },
   {
     "state": "Wyoming",
@@ -3288,6 +3288,6 @@
       "Wyo. Stat. 2-6-117 (Revocation by writing or by act)"
     ],
     "last_researched": "2026-03-24",
-    "sourcePending": true
+    "sourcePendingSince": "2026-11-27"
   }
 ]
